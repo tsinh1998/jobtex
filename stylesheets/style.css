@@ -367,12 +367,33 @@ color: #a0a0a0;
 
 .sticky-area-wrap {
     display: flex;
-
+    align-items: center;
 }
 
 .sticky-area-wrap .header-ct-left {
     display: flex;
+    padding-left: 59.57px;
+    gap: 49.5px;
+    align-items: center;
 }
+
+.sticky-area-wrap .header-ct-left .categories a {
+    font-family: "Plus Jakarta Sans" , sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #121212;
+}
+
+.sticky-area-wrap .header-ct-left .categories span {
+    font-size: 24px;
+    color: #000000;
+    margin-right: 8px;
+    position: relative;
+    top: 4px;
+}
+
+
 
 .sticky-area-wrap .header-ct-center {
     flex-grow: 1;
@@ -386,4 +407,36 @@ color: #a0a0a0;
 
 .sticky-area-wrap .header-ct-right {
     display: flex;
+    align-items: center;
+}
+
+.sticky-area-wrap .header-ct-right .help {
+    color: #64666C;
+    font-size: 20px;
+    margin-right: 26px;
+}
+
+.sticky-area-wrap .header-ct-right .bell {
+    color: #121212;
+    font-size: 24px;
+    margin-right: 24px;
+    position: relative;
+}
+
+.sticky-area-wrap .header-ct-right .bell span::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 2px;
+    width: 8px;
+    height: 8px;
+    color: #14A077;
+    border-radius: 4px;
+}
+
+.sticky-area-wrap .header-ct-right .button {
+    margin-right: 60px;
+    padding: 12px 32px;
+    border: 1px solid #14A077;
+
 }
