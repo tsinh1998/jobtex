@@ -397,20 +397,32 @@ color: #a0a0a0;
 
 .sticky-area-wrap .header-ct-center {
     flex-grow: 1;
-    
 }
 
 #menu-primary-menu {
     display: flex;
     justify-content: center;
+    gap: 20px;
 }
+
+#menu-primary-menu li a {
+    font-family: "Plus Jakarta Sans" , sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 80px;
+    color: #121212;
+}
+
+
+
+
 
 .sticky-area-wrap .header-ct-right {
     display: flex;
     align-items: center;
 }
 
-.sticky-area-wrap .header-ct-right .help {
+.sticky-area-wrap .header-ct-right .help a {
     color: #64666C;
     font-size: 20px;
     margin-right: 26px;
@@ -423,7 +435,11 @@ color: #a0a0a0;
     position: relative;
 }
 
-.sticky-area-wrap .header-ct-right .bell span::after {
+.sticky-area-wrap .header-ct-right .bell span {
+    position: relative;
+}
+
+.sticky-area-wrap .header-ct-right .bell::after {
     position: absolute;
     content: "";
     top: 0;
@@ -434,9 +450,29 @@ color: #a0a0a0;
     border-radius: 4px;
 }
 
+.sticky-area-wrap .header-ct-right .account {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    margin-right: 24px;
+}
+
+.sticky-area-wrap .header-ct-right .account img {
+    border-radius: 20px;
+}
+
+.sticky-area-wrap .header-ct-right .account span {
+    font-size: 16px;
+    margin-left: 6px;
+}
+
 .sticky-area-wrap .header-ct-right .button {
     margin-right: 60px;
     padding: 12px 32px;
     border: 1px solid #14A077;
-
+    font-family: "Plus Jakarta Sans" , sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 26px;
+    color: #121212;
 }
