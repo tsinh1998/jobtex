@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?lxdqq1');
-  src:  url('fonts/icomoon.eot?lxdqq1#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?lxdqq1') format('truetype'),
-    url('fonts/icomoon.woff?lxdqq1') format('woff'),
-    url('fonts/icomoon.svg?lxdqq1#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?ezje79');
+  src:  url('fonts/icomoon.eot?ezje79#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?ezje79') format('truetype'),
+    url('fonts/icomoon.woff?ezje79') format('woff'),
+    url('fonts/icomoon.svg?ezje79#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,65 +25,86 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-call-calling .path1:before {
+  content: "\e908";
+  color: rgb(20, 160, 119);
+}
+.icon-call-calling .path2:before {
+  content: "\e90f";
+  margin-left: -1em;
+  color: rgb(20, 160, 119);
+  opacity: 0.5;
+}
+.icon-call-calling .path3:before {
+  content: "\e910";
+  margin-left: -1em;
+  color: rgb(20, 160, 119);
+  opacity: 0.5;
+}
+.icon-call-calling .path4:before {
+  content: "\e9b3";
+  margin-left: -1em;
+  color: rgb(20, 160, 119);
+}
 .icon-categorie-2:before {
-  content: "\e904";
+  content: "\e909";
   color: #14a077;
 }
 .icon-file-doc:before {
-  content: "\e905";
+  content: "\e90a";
   color: #14a077;
 }
 .icon-file-pdf:before {
-  content: "\e906";
+  content: "\e90b";
   color: #14a077;
 }
 .icon-wishlist .path1:before {
-  content: "\e907";
+  content: "\e90c";
   color: rgb(255, 179, 33);
   opacity: 0.1;
 }
 .icon-wishlist .path2:before {
-  content: "\e908";
+  content: "\e9b4";
   margin-left: -1em;
   color: rgb(255, 179, 33);
 }
 .icon-review .path1:before {
-  content: "\e909";
+  content: "\e90d";
   color: rgb(20, 129, 96);
   opacity: 0.1;
 }
 .icon-review .path2:before {
-  content: "\e90a";
+  content: "\e9b5";
   margin-left: -1em;
   color: rgb(20, 160, 119);
 }
 .icon-application .path1:before {
-  content: "\e90b";
+  content: "\e90e";
   color: rgb(235, 77, 77);
   opacity: 0.1;
 }
 .icon-application .path2:before {
-  content: "\e90c";
+  content: "\e9b6";
   margin-left: -1em;
   color: rgb(235, 77, 77);
 }
 .icon-application .path3:before {
-  content: "\e90d";
+  content: "\e9b7";
   margin-left: -1em;
   color: rgb(235, 77, 77);
 }
 .icon-application .path4:before {
-  content: "\e90e";
+  content: "\e9b8";
   margin-left: -1em;
   color: rgb(235, 77, 77);
 }
 .icon-application .path5:before {
-  content: "\e90f";
+  content: "\e9b9";
   margin-left: -1em;
   color: rgb(235, 77, 77);
 }
 .icon-application .path6:before {
-  content: "\e910";
+  content: "\e9ba";
   margin-left: -1em;
   color: rgb(235, 77, 77);
 }
@@ -412,6 +433,32 @@
   content: "\e956";
   color: #fff;
 }
+.icon-refect:before {
+  content: "\e9bb";
+}
+.icon-download:before {
+  content: "\e9bc";
+}
+.icon-my-apply:before {
+  content: "\e900";
+  color: #64666c;
+}
+.icon-resumes:before {
+  content: "\e902";
+  color: #64666c;
+}
+.icon-log-out:before {
+  content: "\e983";
+  color: #64666c;
+}
+.icon-change-passwords:before {
+  content: "\e903";
+  color: #64666c;
+}
+.icon-following:before {
+  content: "\e901";
+  color: #64666c;
+}
 .icon-categorie-1:before {
   content: "\e957";
   color: #64666c;
@@ -445,6 +492,12 @@
 }
 .icon-write1:before {
   content: "\e95f";
+}
+.icon-arrow-back:before {
+  content: "\e960";
+}
+.icon-arrow-next:before {
+  content: "\e961";
 }
 .icon-ic_Bold:before {
   content: "\e962";
@@ -586,19 +639,11 @@
   content: "\e981";
 }
 .icon-dolar1:before {
-  content: "\e900";
+  content: "\e905";
   color: #64666c;
 }
 .icon-hourglass:before {
   content: "\e982";
-  color: #64666c;
-}
-.icon-log-out:before {
-  content: "\e983";
-  color: #64666c;
-}
-.icon-change-passwords:before {
-  content: "\e901";
   color: #64666c;
 }
 .icon-meeting:before {
@@ -670,11 +715,71 @@
   color: #fff;
 }
 .icon-like1:before {
-  content: "\e903";
+  content: "\e907";
   color: #6a6a6a;
 }
 .icon-instagram1:before {
   content: "\e995";
+}
+.icon-smile:before {
+  content: "\e9e1";
+}
+.icon-plus:before {
+  content: "\ea0a";
+}
+.icon-minus:before {
+  content: "\ea0b";
+}
+.icon-share2:before {
+  content: "\ea82";
+}
+.icon-menu:before {
+  content: "\e9bd";
+}
+.icon-star-full:before {
+  content: "\e9d9";
+}
+.icon-heart:before {
+  content: "\e9da";
+}
+.icon-twitter:before {
+  content: "\ea96";
+}
+.icon-youtube:before {
+  content: "\ea9d";
+}
+.icon-linkedin2:before {
+  content: "\eaca";
+}
+.icon-facebook:before {
+  content: "\ea90";
+}
+.icon-arrow-right2:before {
+  content: "\ea3c";
+}
+.icon-trash:before {
+  content: "\e9aa";
+}
+.icon-time:before {
+  content: "\e9a9";
+}
+.icon-link:before {
+  content: "\e9ab";
+}
+.icon-bolt:before {
+  content: "\e9ac";
+}
+.icon-pinterest:before {
+  content: "\e9ad";
+}
+.icon-search:before {
+  content: "\e9ae";
+}
+.icon-clear:before {
+  content: "\e904";
+}
+.icon-close:before {
+  content: "\e904";
 }
 .icon-calendar_today:before {
   content: "\e996";
@@ -730,65 +835,11 @@
 .icon-cancel:before {
   content: "\e9a7";
 }
-.icon-close:before {
-  content: "\e9a7";
-}
 .icon-mail-envelope-closed:before {
   content: "\e9a8";
 }
-.icon-time:before {
-  content: "\e9a9";
-}
-.icon-trash:before {
-  content: "\e9aa";
-}
-.icon-link:before {
-  content: "\e9ab";
-}
-.icon-bolt:before {
-  content: "\e9ac";
-}
-.icon-pinterest:before {
-  content: "\e9ad";
-}
-.icon-search:before {
-  content: "\e9ae";
-}
 .icon-bubble:before {
   content: "\e9af";
-}
-.icon-plus:before {
-  content: "\ea0a";
-}
-.icon-minus:before {
-  content: "\ea0b";
-}
-.icon-share2:before {
-  content: "\ea82";
-}
-.icon-menu:before {
-  content: "\e9bd";
-}
-.icon-star-full:before {
-  content: "\e9d9";
-}
-.icon-heart:before {
-  content: "\e9da";
-}
-.icon-twitter:before {
-  content: "\ea96";
-}
-.icon-youtube:before {
-  content: "\ea9d";
-}
-.icon-linkedin2:before {
-  content: "\eaca";
-}
-.icon-facebook:before {
-  content: "\ea90";
-}
-.icon-arrow-right2:before {
-  content: "\ea3c";
 }
 .icon-caret-down:before {
   content: "\e9b0";
@@ -797,7 +848,7 @@
   content: "\e9b1";
 }
 .icon-dollar:before {
-  content: "\e902";
+  content: "\e906";
 }
 .icon-check:before {
   content: "\e9b2";
