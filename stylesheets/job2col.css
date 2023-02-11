@@ -71,10 +71,14 @@ input.input-filter-search::placeholder {
   position: absolute;
 }
 button.btn-find {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 26px;
   padding: 12px 32px;
   background-color: #14a077;
   color: #ffffff;
   border-radius: 4px;
+  text-transform: none;
 }
 /* header */
 .wrapper-content-header {
