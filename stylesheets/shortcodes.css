@@ -243,7 +243,14 @@
     font-weight: 500;
     font-size: 16px;
     line-height: 28px;
+}
+
+.widget-side-bar .recent-posts .widget-blog-1 .content .text a {
     color: #121212;
+}
+
+.widget-side-bar .recent-posts .widget-blog-1 .content .text:hover a {
+    color: #14A077;
 }
 
 .widget-popular-tags .widget-popular-tags-wrap {
@@ -308,6 +315,14 @@
 
 .widget-news .widget-news-wrap .widget-blog-1 .content {
     padding: 24px;
+}
+
+.widget-news .widget-news-wrap .widget-blog-1 .content .main-title a {
+    color: #121212;
+}
+
+.widget-news .widget-news-wrap .widget-blog-1 .content .main-title:hover a {
+    color: #14A077;
 }
 
 .widget-news .widget-news-wrap .widget-blog-1:hover {
