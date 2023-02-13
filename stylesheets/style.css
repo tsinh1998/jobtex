@@ -813,6 +813,12 @@ color: #a0a0a0;
     color: #121212;
     background-color: #fff;
     border-radius: 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+.widget-social .widget-social-content .widget-social-item:hover {
+    color: #FFFFFF;
+    background-color: #14A077;
 }
 
 /* footer-content */
@@ -931,6 +937,10 @@ color: #a0a0a0;
     color: #64666C;
 } 
 
+.footer .footer-links-item a:hover {
+    color: #14A077;
+}
+
 /* footer-coppyright */
 .footer-coppyright {
     width: 100%;
@@ -994,6 +1004,14 @@ color: #a0a0a0;
     max-width: 490px;
 }
 
+.blog .list-blog .widget-blog-1 .main-title a {
+    color: #121212;
+}
+
+.blog .list-blog .widget-blog-1 .main-title:hover a {
+    color: #14A077;
+}
+
 /* Blog masonry
 --------------------------- */
 .blog-masonry.main-content {
@@ -1040,6 +1058,14 @@ color: #a0a0a0;
     padding: 24px;
 }
 
+.blog-masonry .list-blog .widget-blog-1 .content .main-title a {
+    color: #121212;
+}
+
+.blog-masonry .list-blog .widget-blog-1 .content .main-title:hover a {
+    color: #14A077;
+}
+
 .blog-masonry .widget-pagination {
     width: 100%;
     justify-content: center;
@@ -1081,6 +1107,14 @@ color: #a0a0a0;
 
 .blog-grid .list-blog-wrap .widget-blog-1 .content {
     padding: 24px;
+}
+
+.blog-grid .list-blog-wrap .widget-blog-1 .content .main-title a {
+    color: #121212;
+}
+
+.blog-grid .list-blog-wrap .widget-blog-1 .content .main-title:hover a {
+    color: #14A077;
 }
 
 .blog-grid .widget-pagination {
