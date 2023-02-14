@@ -1,0 +1,192 @@
+
+.themes-container {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+    width: 1200px;
+    max-width: 100%;
+}
+
+h1 { font: 50px/50px "Plus Jakarta Sans", sans-serif;}
+h2 { font: 45px/45px "Plus Jakarta Sans", sans-serif;}
+h3 { font: 20px/28px "Plus Jakarta Sans", sans-serif; font-weight: 700;}
+h4 { font: 25px/25px "Plus Jakarta Sans", sans-serif;}
+h5 { font: 22px/22px "Plus Jakarta Sans", sans-serif;}
+h6 { font: 20px/20px "Plus Jakarta Sans", sans-serif;}
+
+body {
+    background: #F5F5F5;
+}
+
+.flex {
+    display: flex;
+}
+
+.page-title-dashboard {
+    padding: 28px 0;
+}
+
+.page-title-dashboard .title-dash {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.page-title-dashboard  svg {
+    margin-right: 12px;
+}
+
+
+
+
+.dashboard .btn{
+    position: fixed;
+    z-index: 99;
+    top: 80px;
+    left: 45px;
+    height: 45px;
+    width: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+    transition: left 0.4s ease;
+}
+
+.dashboard .btn.click { 
+    left: 300px;
+}
+
+.dashboard .btn.click span:before{
+    content: '\e9a7';
+    color: red;
+}
+
+.dashboard .btn span{
+    color: #000;
+    font-size: 28px;
+}
+
+    .dashboard__sidebar {
+        position: fixed;
+        z-index: 99;
+        width: 280px;
+        height: 100%;
+        left: -360px;
+        background: #fff;
+        box-shadow: 11.811px 11.811px 59.0551px rgba(0, 0, 0, 0.5);
+        backdrop-filter: blur(11.811px);
+        transition: left 0.4s ease;
+    }
+    .dashboard__sidebar.show {
+        left: 0px;
+    }
+    .dashboard__sidebar .sidebar__menu {
+        /* height: 60vh; */
+        width: 100%;
+        list-style: none;
+        overflow-x: hidden;
+        overflow-y: auto;
+        padding: 21px 25px 17px 17px;
+    }
+    .dashboard__sidebar .sidebar__menu  li{
+        line-height: 49px;
+        margin-bottom: 3px;
+        text-transform: capitalize;
+    }
+
+    .dashboard__sidebar .sidebar__menu li a{
+        position: relative;
+        color: #121212;
+        padding-left: 10px;
+        /* background-color: #fff; */
+        width: 100%;
+        font-weight: 700;
+        font-size: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        transition: 0.3s all ease-in-out;
+    }
+
+    .dashboard__sidebar .sidebar__menu li a:hover {
+        background-color: #F5F5F2;
+    }
+    .dashboard__sidebar .sidebar__menu .active {
+        background-color: #F5F5F2;
+    }
+
+    .dashboard__sidebar .sidebar__menu .active a span {
+        color: #14A077;
+    }
+    .dashboard__sidebar .sidebar__menu li a:hover span {
+        color: #14A077;
+    }
+
+    .dashboard__sidebar .sidebar__menu li a span::before {
+        transition: 0.3s all ease-in-out;
+    }
+
+    .dashboard__sidebar .sidebar__menu li a:hover span::before {
+        color: #14A077;
+    }
+
+    .dashboard__sidebar .sidebar__menu li a span {
+        margin-right: 12px;
+        font-size: 24px;
+    }
+
+    .dashboard__sidebar .sidebar__menu li a.feat-btn::after {
+        color: #fff;
+        font-family: "icomoon";
+        content: "\e900";
+        font-size: 17px;
+        font-weight: 400;
+        position: absolute;
+        right: 16px;
+        top: 2px;
+        transform: rotate(-90deg);
+    }
+
+    .dashboard__sidebar .sidebar__menu  li ul{
+        position: static;
+        display: none;
+        margin-top: 10px;
+    }
+
+    .dashboard__sidebar .sidebar__menu li ul.feat-show.show{
+        display: block;
+    }
+
+    .dashboard__sidebar .sidebar__menu  li ul li {
+        line-height: 42px;
+        border-top: none;
+    }
+    .dashboard__sidebar .sidebar__menu  li ul li a {
+        font-size: 17px;
+        color: #e6e6e6;
+        padding-left: 90px;
+        background: transparent !important;
+    }
+
+    .dashboard__sidebar .sidebar__menu  li ul li a::before {
+        display: none;
+    }
+
+    .dashboard .dashboard__sidebar .sidebar__menu::-webkit-scrollbar {
+        width: 3px;
+        background: rgba(255,255,255,0.1);
+    }
+    .dashboard .dashboard__sidebar .sidebar__menu::-webkit-scrollbar-thumb {
+        background: linear-gradient(216.56deg, #E250E5 5.32%, #4B50E6 94.32%);
+    }
+
+    .dashboard.show .dashboard__content {
+        margin-left: 289px;
+    }
+
+   
+
+    
