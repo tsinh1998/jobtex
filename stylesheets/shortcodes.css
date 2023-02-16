@@ -1064,7 +1064,7 @@ button.btn-find:hover {
   text-align: end;
 }
 
-.button-status {
+.dashboard .button-status {
   background-color: #1481601a;
   font-weight: 700;
   border-radius: 24px;
@@ -1075,12 +1075,12 @@ button.btn-find:hover {
   height: 34px;
 }
 
-.button-status.style {
+.dashboard .button-status.style {
   background-color: #ffb3211a;
   color: #ffb321;
 }
 
-.button-cancel {
+.dashboard .button-cancel {
   border: 1px solid #14a077;
   background-color: #fff;
   padding: 6px 19px;
@@ -1088,7 +1088,7 @@ button.btn-find:hover {
   transition: all 0.3s ease;
 }
 
-.button-cancel:hover {
+.dashboard .button-cancel:hover {
   background-color: #14a077;
   color: #fff;
 }
@@ -1101,15 +1101,6 @@ button.btn-find:hover {
 .flat-dashboard-bottom h5 {
   color: #64666c;
 }
-
-/* .noti-icon::before {
-    content: '\e987';
-    color: #14A077;
-} */
-
-/* .dashboard #chart {
-    max-width: 750px;
-  } */
 
 /* dyagram */
 .dashboard .toolbar {
