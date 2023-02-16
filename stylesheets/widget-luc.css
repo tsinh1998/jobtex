@@ -1,0 +1,349 @@
+/*===================== wd-1========================== */
+.wd-feature-job {
+  max-width: 1410px;
+  margin: 80px auto;
+}
+.wd-feature-job .title {
+  margin-bottom: 40px;
+}
+.wd-feature-job .title h1,
+p {
+  text-align: center;
+}
+.wd-feature-job .title h1 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 44px;
+  color: #121212;
+  margin-bottom: 16px;
+}
+.wd-feature-job .title p {
+  color: #64666c;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+}
+/*==================== wd-2========================== */
+.content-job {
+  max-width: 829px;
+}
+.job-block .inner-box .button-readmore {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.job-block .inner-box .button-readmore > span.icon-heart {
+  position: unset;
+  margin-right: 20px;
+}
+.job-block .inner-box .button-readmore button.btn-apply {
+  background-color: #14a077;
+  color: #ffffff;
+  padding: 8px 20px;
+  display: inline-flex;
+  align-items: center;
+  font-size: 16px;
+  line-height: 26px;
+  text-transform: none;
+  border: none;
+  border-radius: 4px;
+}
+.job-block .inner-box .button-readmore button.btn-apply:hover {
+  background-color: #148160;
+}
+.job-block .inner-box .button-readmore button.btn-apply span {
+  font-size: 20px;
+  margin-right: 8px;
+}
+.content-job .job-info span.icon-dollar {
+  width: 19px;
+  height: 19px;
+  font-size: 12px;
+  border: 1px solid;
+  border-radius: 50%;
+  padding: 5px;
+  display: inline-flex;
+  align-items: center;
+  margin-right: 8px;
+  color: #121212;
+}
+.content-job .job-info span.icon-dollar:hover {
+  background-color: #14a077;
+  color: #ffffff;
+  cursor: pointer;
+}
+/*======================= wd-feature-job style2 =====================*/
+
+.job-fullwidth {
+  width: 100%;
+  border: 1px solid #e5e5e5;
+  padding: 24px;
+  margin-bottom: 0;
+}
+.job-fullwidth:hover {
+  border: 1px solid #14a077;
+}
+.job-fullwidth .inner-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.job-fullwidth .inner-box .company {
+  width: 25%;
+  display: flex;
+  align-items: center;
+}
+.job-fullwidth .inner-box .img {
+  max-width: 60px;
+  margin-right: 16px;
+}
+.job-fullwidth .inner-box.img > img {
+  width: 100%;
+}
+.job-fullwidth .content h4 {
+  line-height: 24px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+}
+.job-fullwidth .content h4 a {
+  color: #14a077;
+}
+.job-fullwidth .content h3 {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 28px;
+}
+.job-fullwidth .content h3 a {
+  color: #121212;
+}
+.job-fullwidth .content h3 > span {
+  font-size: 14px;
+  background-color: #504cfe;
+  border-radius: 50%;
+  padding: 3px;
+  color: #ffffff;
+}
+.job-fullwidth .content .star span {
+  font-size: 12.8px;
+  color: #ffb321;
+}
+.job-fullwidth .content .star span:last-child {
+  color: #e5e5e5;
+}
+.job-fullwidth .info {
+  color: #64666c;
+  font-size: 14px;
+  font-weight: 400;
+  display: inline-flex;
+}
+.job-fullwidth .info li:first-child {
+  margin-right: 16px;
+}
+.job-fullwidth .info span.icon-map-pin {
+  color: #64666c;
+  font-size: 16px;
+  margin-right: 4px;
+}
+
+.job-fullwidth .category {
+  margin: 16px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.job-fullwidth .category .tag span {
+  background-color: #f1f1f1;
+  color: #121212;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 500;
+  padding: 8px 16px;
+  border-radius: 52px;
+}
+.job-fullwidth .category .tag span:first-child {
+  margin-right: 8px;
+}
+
+.job-fullwidth .salary {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 26px;
+  color: #121212;
+}
+.job-fullwidth .salary .dollar {
+  font-size: 20px;
+  color: #121212;
+  margin-right: 8px;
+}
+.job-fullwidth .salary span.year {
+  font-weight: 400;
+  color: #64666c;
+}
+.job-fullwidth .group-btn {
+  display: flex;
+  align-items: center;
+}
+.job-fullwidth .group-btn span.icon-heart {
+  position: unset;
+  margin-right: 20px;
+  height: 40px;
+  border-radius: 1000px;
+  padding: 12px;
+  color: #e5e5e5;
+  font-size: 17.42px;
+  border: 1px solid #e5e5e5;
+}
+.job-fullwidth .group-btn span.icon-heart:active,
+.job-fullwidth .group-btn span.icon-heart:hover {
+  color: #eb4d4d;
+}
+.job-fullwidth .group-btn button {
+  background-color: #14a077;
+  color: #ffffff;
+  border-radius: 4px;
+  padding: 8px 24px;
+  border: none;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 26px;
+  text-transform: none;
+}
+.job-fullwidth .group-btn button:hover {
+  background-color: #148160;
+}
+
+/*============== wd-Employer ================== */
+.wd-employer {
+  margin: 80px 0px;
+}
+.header-employer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.header-employer h1 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 44px;
+  color: #121212;
+  margin-bottom: 16px;
+}
+.header-employer p {
+  color: #64666c;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+}
+.header-employer button {
+  border: none;
+  display: inline-flex;
+  align-items: center;
+  text-transform: none;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 26px;
+}
+.header-employer button span {
+  color: #14a077;
+  font-size: 20px;
+  margin-left: 4px;
+}
+/* employer-block */
+.employer-block {
+  margin-bottom: 32px;
+  border: 1px solid #e5e5e5;
+  padding: 24px;
+  border-radius: 8px;
+}
+.employer-block:hover {
+  border: 1px solid #14a077;
+}
+.employer-block .inner-box {
+  display: flex;
+  align-items: center;
+}
+.employer-block .inner-box .img {
+  max-width: 60px;
+  margin-right: 16px;
+}
+.employer-block .inner-box .img > img {
+  width: 100%;
+}
+.employer-block .content h3 a {
+  transition: all 300ms ease;
+  font-size: 20px;
+  font-weight: 700;
+  color: #121212;
+  line-height: 28px;
+}
+.employer-block .content h3 a:hover {
+  color: #14a077;
+}
+.employer-block .content h3 span.icon-bolt {
+  font-size: 14px;
+  background-color: #504cfe;
+  border-radius: 50%;
+  padding: 3px;
+  color: #ffffff;
+}
+
+.employer-block .content p.info {
+  margin-top: 4px;
+  color: #64666c;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  display: inline-block;
+}
+.employer-block .content .star span {
+  font-size: 12.8px;
+  color: #ffb321;
+  cursor: pointer;
+}
+.employer-block .content .star span:last-child {
+  color: #e5e5e5;
+}
+/* ================= wd-employer style2 =================== */
+.employer-2-col:hover {
+  border-color: #ffffff;
+  box-shadow: 0px 10px 25px rgba(54, 95, 104, 0.1);
+}
+.employer-2-col .inner-box {
+  position: relative;
+}
+.employer-2-col .inner-box .button-readmore {
+  position: absolute;
+  right: 0;
+}
+.employer-2-col .inner-box .button-readmore span {
+  margin-right: 16px;
+  height: 40px;
+  border-radius: 1000px;
+  padding: 12px;
+  color: #e5e5e5;
+  font-size: 17.42px;
+  border: 1px solid #e5e5e5;
+  cursor: pointer;
+}
+.employer-2-col .inner-box .button-readmore span.icon-heart:active,
+.employer-2-col .inner-box .button-readmore span.icon-heart:hover {
+  color: #eb4d4d;
+}
+.employer-2-col .inner-box .button-readmore button {
+  border: 1px solid #14a077;
+  border-radius: 4px;
+  padding: 8px 20px;
+  line-height: 24px;
+  text-transform: none;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 700;
+}
+.employer-2-col .inner-box .button-readmore button:hover {
+  background-color: #14a077;
+  color: #ffffff;
+}
