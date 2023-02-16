@@ -1050,7 +1050,7 @@ max-width: 785px;
     text-align: end;
 }
 
-.button-status {
+.dashboard .button-status {
    background-color: #1481601A;
    font-weight: 700;
    border-radius: 24px;
@@ -1061,12 +1061,12 @@ max-width: 785px;
    height: 34px;
 }
 
-.button-status.style {
+.dashboard .button-status.style {
     background-color: #FFB3211A;
     color: #FFB321;
 }
 
-.button-cancel {
+.dashboard .button-cancel {
     border: 1px solid #14A077;
     background-color: #fff;
     padding: 6px 19px;
@@ -1074,7 +1074,7 @@ max-width: 785px;
     transition        : all 0.3s ease;
 }
 
-.button-cancel:hover {
+.dashboard .button-cancel:hover {
     background-color: #14A077;
     color: #fff;
 }
@@ -1087,16 +1087,6 @@ max-width: 785px;
 .flat-dashboard-bottom h5 {
     color: #64666C;
 }
-
-
-/* .noti-icon::before {
-    content: '\e987';
-    color: #14A077;
-} */
-
-/* .dashboard #chart {
-    max-width: 750px;
-  } */
 
   /* dyagram */
   .dashboard .toolbar {
