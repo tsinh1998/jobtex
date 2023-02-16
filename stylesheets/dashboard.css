@@ -1,5 +1,5 @@
 
-.themes-container {
+.dashboard .themes-container {
     position: relative;
     margin-left: auto;
     margin-right: auto;
@@ -9,68 +9,72 @@
     max-width: 100%;
 }
 
-a {
+.dashboard a {
     display: inline-block;
     cursor: pointer;
     color: #000;
-    transition        : all 0.3s ease;
 }
 
-a:hover {
+.dashboard a:hover {
     color: #14A077;
 }
 
-h1 { font: 50px/50px "Plus Jakarta Sans", sans-serif;}
-h2 { font: 45px/45px "Plus Jakarta Sans", sans-serif;}
-h3 { font: 20px/28px "Plus Jakarta Sans", sans-serif; font-weight: 700;}
-h4 { font: 16px/28px "Plus Jakarta Sans", sans-serif; font-weight: 500;}
-h5 { font: 14px/24px "Plus Jakarta Sans", sans-serif;}
-h6 { font: 20px/20px "Plus Jakarta Sans", sans-serif;}
+.dashboard h1 { font: 50px/50px "Plus Jakarta Sans", sans-serif;}
+.dashboard h2 { font: 45px/45px "Plus Jakarta Sans", sans-serif;}
+.dashboard h3 { font: 20px/28px "Plus Jakarta Sans", sans-serif; font-weight: 700;}
+.dashboard h4 { font: 16px/28px "Plus Jakarta Sans", sans-serif; font-weight: 500;}
+.dashboard h5 { font: 14px/24px "Plus Jakarta Sans", sans-serif;}
+.dashboard h6 { font: 20px/20px "Plus Jakarta Sans", sans-serif;}
 
-p { font: 16px/26px "Plus Jakarta Sans", sans-serif; font-weight: 400; color: #64666C; }
+.dashboard p { font: 16px/26px "Plus Jakarta Sans", sans-serif; font-weight: 400; color: #64666C; }
 
-.p-16 {
+.dashboard .p-16 {
     font-size: 16px ;
     font-weight: 400; 
     line-height: 26px;
 }
 
-.fw-6 {
+.dashboard .fw-6 {
     font-weight: 600;
 }
 
-.fw-7 {
+.dashboard .fw-7 {
     font-weight: 700;
 }
 
+.dashboard .center {
+    text-align: center;
+}
 
 
-.color-1 {
+
+.dashboard .color-1 {
     color: #000;
 }
-.color-2 {
+.dashboard .color-2 {
     color: #fff;
 }
-.color-3 {
+.dashboard .color-3 {
     color: #14A077;
 }
-.color-4 {
+.dashboard .color-4 {
     color: #64666C;
 }
 
-body {
+.dashboard {
     background: #F5F5F5;
 }
 
-.flex {
+.dashboard .flex {
     display: flex;
 }
 
-.flex2 {
+.dashboard .flex2 {
     display: flex;
     align-items: center;
 }
 
+/* .page-title-dashboard */
 .page-title-dashboard {
     padding: 38px 0 32px;
 }
@@ -198,7 +202,7 @@ body {
 
 /* flat dashboard applicants */
 .flat-dashboard-applicants {
-    padding-bottom: 100px;
+    padding-bottom: 40px;
    
 }
 .flat-dashboard-applicants .applicants {
@@ -327,6 +331,7 @@ body {
 
 .button-cancel {
     border: 1px solid #14A077;
+    background-color: #fff;
     padding: 6px 19px;
     border-radius: 4px;
     transition        : all 0.3s ease;
@@ -336,6 +341,17 @@ body {
     background-color: #14A077;
     color: #fff;
 }
+
+/* flat-dashboard-bottom */
+.flat-dashboard-bottom {
+    margin-bottom: 20px;
+}
+
+.flat-dashboard-bottom h5 {
+    color: #64666C;
+}
+
+
 /* .noti-icon::before {
     content: '\e987';
     color: #14A077;
