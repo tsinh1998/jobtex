@@ -13,6 +13,7 @@ a {
     display: inline-block;
     cursor: pointer;
     color: #000;
+    transition        : all 0.3s ease;
 }
 
 a:hover {
@@ -33,17 +34,6 @@ p { font: 16px/26px "Plus Jakarta Sans", sans-serif; font-weight: 400; color: #6
     font-weight: 400; 
     line-height: 26px;
 }
-
-/* .title-14 {
-    background-color: #1481601A;
-    font-weight: 700;
-    border-radius: 24px;
-    display: inline-flex;
-    justify-content: center;
-    width: 100px;
-    align-items: center;
-    height: 34px;
- } */
 
 .fw-6 {
     font-weight: 600;
@@ -240,6 +230,7 @@ body {
 .flat-dashboard-applicants .applicants .box.box-content {
     padding: 43px 16px 26px;
     border-bottom: 1px solid #E5E5E5;
+    transition        : all 0.3s ease;
 }
 
 .flat-dashboard-applicants .applicants .box.box-content:last-child {
@@ -300,6 +291,7 @@ body {
     border-radius: 4px;
     margin-right: 8px;
     font-size: 20px;
+    transition        : all 0.3s ease;
 }
 
 .flat-dashboard-applicants .applicants .box-1 {
@@ -328,10 +320,16 @@ body {
    height: 34px;
 }
 
+.button-status.style {
+    background-color: #FFB3211A;
+    color: #FFB321;
+}
+
 .button-cancel {
     border: 1px solid #14A077;
     padding: 6px 19px;
     border-radius: 4px;
+    transition        : all 0.3s ease;
 }
 
 .button-cancel:hover {
