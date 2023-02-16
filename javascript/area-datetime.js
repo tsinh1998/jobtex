@@ -12,7 +12,7 @@ $('.btn').click(function(){
     $(this).addClass("active").siblings().removeClass("active");
   });
 
-  
+
 window.Promise ||
 document.write(
   '<script src="https://cdn.jsdelivr.net/npm/promise-polyfill@8/dist/polyfill.min.js"><\/script>'
@@ -316,7 +316,7 @@ var options = {
     chart: {
     id: 'area-datetime',
     type: 'area',
-    height: 500,
+    height: 438,
     zoom: {
       autoScaleYaxis: true
     }
