@@ -1,16 +1,4 @@
 
-$('.btn').click(function(){
-  $(this).toggleClass("click");
-  $('.dashboard__sidebar').toggleClass("show");
-  $('.dashboard').toggleClass("show");
-});
-  $('.feat-btn').click(function(){
-    $('nav ul .feat-show').toggleClass("show");
-  });
-
-  $('.sidebar__menu li').click(function(){
-    $(this).addClass("active").siblings().removeClass("active");
-  });
 
 
 window.Promise ||
