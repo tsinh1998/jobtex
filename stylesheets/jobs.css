@@ -6,16 +6,16 @@
   margin: 60px auto;
 } */
 /* Job Search Form */
-.tf-container .job-search-form {
+.tf-container .job-search-form form {
   width: 100%;
   border: 1px solid #e5e5e5;
   box-shadow: 0px 2px 2px rgba(28, 36, 51, 0.1);
   border-radius: 8px;
   margin: 60px 0px;
-}
-.job-search-form form {
   padding: 16px 18px 16px 27px;
 }
+/* .job-search-form form {
+} */
 .row-group-search {
   display: flex;
   flex-wrap: wrap;
@@ -25,6 +25,7 @@
 .job-search-form .form-group-1 {
   width: 30%;
   position: relative;
+  border-right: 1px solid #e5e5e5;
 }
 .job-search-form .form-group-2 {
   width: 31%;
@@ -1432,3 +1433,19 @@ input[type="number"]::-webkit-inner-spin-button {
   width: 100%;
 }
 /* ==================== End widget Luc */
+.wd-feature-map {
+  position: relative;
+}
+.wd-feature-map iframe {
+  filter: grayscale(80%);
+  position: relative;
+}
+/* .wd-feature-map iframe::after {
+  content: "";
+  background-image: url(../images/logo-company/Property\ 1=Frame\ 3466098.png);
+  position: absolute;
+} */
+.wd-feature-map .inner-form-map form {
+  margin-top: -55px;
+  margin-bottom: 40px;
+}
