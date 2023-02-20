@@ -168,24 +168,25 @@ var swiper2 = function(){
   });}}
 
   var gallery = function(){
-    if ( $('div').hasClass('widget-adv-video') ){
-  var slider = new Swiper ('.gallery-slider', {
+    if ( $('div').hasClass('widget-dash-video') ){
+  var slider = new Swiper ('.gallery-slide', {
     slidesPerView: 1,
     centeredSlides: true,
     loop: true,
-    loopedSlides: 6,
+    loopedSlides: 3,
     navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-    },
+      clickable: true,
+      nextEl: '.swiper-button-next3',
+      prevEl: '.swiper-button-prev3',
+  },
   });
   
-  var thumbs = new Swiper ('.gallery-thumbs', {
+  var thumbs = new Swiper ('.gallery-thumb', {
     slidesPerView: 'auto',
-    spaceBetween: 30,
+    spaceBetween: 20,
     loop: true,
     slideToClickedSlide: true,
-    
+    slidesPerView: 3,
     
   });
     slider.controller.control = thumbs;
