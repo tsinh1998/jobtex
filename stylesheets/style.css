@@ -314,6 +314,35 @@ h6 {
   margin: 0;
 }
 
+h1,h2,h3,h4,h5,h6 {
+  font-weight: 700;
+  color: #121212;
+}
+h1 {
+  font-size: 80px;
+  line-height: 1.1em;
+}
+h2 {
+  font-size: 56px;
+  line-height: 1.2142857142857142em;
+}
+h3 {
+  font-size: 44px;
+  line-height: 1.1363636363636365em;
+}
+h4 {
+  font-size: 36px;
+  line-height: 1.2222222222222223em;
+}
+h5 {
+  font-size: 30px;
+  line-height: 1.4em;
+}
+h6 {
+  font-size: 24px;
+  line-height: 1.25em;
+}
+
 button {
   border: none;
 }
