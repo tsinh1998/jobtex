@@ -1076,16 +1076,16 @@ input[type="number"]::-webkit-inner-spin-button {
 .content-job {
   max-width: 829px;
 }
-.job-block .inner-box .button-readmore {
+.features-box .inner-box .button-readmore {
   position: absolute;
   top: 0;
   right: 0;
 }
-.job-block .inner-box .button-readmore > span.icon-heart {
+.features-box .inner-box .button-readmore > span.icon-heart {
   position: unset;
   margin-right: 20px;
 }
-.job-block .inner-box .button-readmore button.btn-apply {
+.features-box .inner-box .button-readmore button.btn-apply {
   background-color: #14a077;
   color: #ffffff;
   padding: 8px 20px;
@@ -1097,10 +1097,10 @@ input[type="number"]::-webkit-inner-spin-button {
   border: none;
   border-radius: 4px;
 }
-.job-block .inner-box .button-readmore button.btn-apply:hover {
+.features-box .inner-box .button-readmore button.btn-apply:hover {
   background-color: #148160;
 }
-.job-block .inner-box .button-readmore button.btn-apply span {
+.features-box .inner-box .button-readmore button.btn-apply span {
   font-size: 20px;
   margin-right: 8px;
 }
@@ -1449,3 +1449,92 @@ input[type="number"]::-webkit-inner-spin-button {
   margin-top: -55px;
   margin-bottom: 40px;
 }
+.logo-company {
+  position: absolute;
+  top: 0;
+  left: 55rem;
+}
+/* ========== wd-employe style5 =============== */
+.dashboard-candidates {
+  border: none;
+}
+.dashboard-candidates:hover {
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  border: none;
+}
+.dashboard-candidates .inner-box .company {
+  width: 40%;
+}
+.dashboard-candidates .inner-box .company ul li {
+  /* display: inline-block; */
+}
+.dashboard-candidates .inner-box .action {
+  position: relative;
+  font-weight: bold;
+  font-size: 20px;
+  color: #000000;
+  cursor: pointer;
+}
+.dashboard-candidates .inner-box .action .sub-action {
+  display: none;
+  position: absolute;
+  top: -19px;
+  z-index: 10;
+  right: -15px;
+}
+.sub-action button {
+  border: none;
+  width: 118px;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 0;
+  text-transform: initial;
+  padding: 8px 16px;
+}
+.sub-action button:hover {
+  color: #eb4d4d;
+  background-color: #e5e5e5;
+
+  border-radius: 0px 0px 4px 4px;
+}
+.dashboard-candidates .inner-box .action .sub-action a {
+  display: block;
+}
+.dashboard-candidates .inner-box .action:hover .sub-action {
+  display: block;
+}
+.dashboard-candidates .inner-box .action:hover span {
+  /* visibility: visible; */
+  visibility: hidden;
+}
+.dashboard-candidates .category {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4px 10px;
+  width: 100px;
+  border-radius: 24px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+}
+.seen {
+  color: #504cfe;
+  background: rgba(80, 76, 254, 0.1);
+}
+.pending {
+  color: #ffb321;
+  background: rgba(255, 179, 33, 0.1);
+}
+.responded {
+  color: #14a077;
+  background: rgba(20, 129, 96, 0.1);
+}
+.date {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: #121212;
+}
+/* =============================================== Job - Single ============================== */
