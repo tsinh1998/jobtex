@@ -1049,10 +1049,10 @@ input[type="number"]::-webkit-inner-spin-button {
 
 /* widget-luc.css */
 /*===================== wd-1========================== */
-.wd-feature-job {
+/* .wd-feature-job {
   max-width: 1410px;
   margin: 80px auto;
-}
+} */
 .wd-feature-job .title {
   margin-bottom: 40px;
 }
@@ -1537,4 +1537,140 @@ input[type="number"]::-webkit-inner-spin-button {
   line-height: 22px;
   color: #121212;
 }
-/* =============================================== Job - Single ============================== */
+/* ===============================================wd-icon-box ============================== */
+#map {
+  height: 600px;
+  width: 100%;
+}
+.wd-icon-box {
+  padding: 80px 0px;
+  background-color: #f5f5f2;
+}
+.wd-icon-box .box-icon-title {
+  margin-bottom: 40px;
+}
+.wd-icon-box .box-icon-title h1,
+.group-icon .group-icon-desc h2 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 44px;
+  color: #121212;
+  margin-bottom: 8px;
+}
+.wd-icon-box .box-icon-title p,
+.group-icon .group-icon-desc p {
+  color: #64666c;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+}
+.group-icon img {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 20px;
+}
+.group-icon .group-icon-desc h2 {
+  font-size: 20px;
+  line-height: 28px;
+}
+.group-icon .group-icon-desc p {
+  font-size: 16px;
+  line-height: 26px;
+}
+/* wd-box-icon-style-2 */
+.wd-icon-box-style {
+  height: 709px;
+}
+.box-icon-col-6 {
+  padding: 80px 139px 80px 67px;
+  height: 100%;
+}
+.wd-icon-box-style .img img {
+  width: 100%;
+  height: 100%;
+}
+.box-icon-title-style {
+  margin-bottom: 32px;
+}
+.box-icon-title-style h1 {
+  font-size: 36px;
+  line-height: 44px;
+  color: #121212;
+  margin-bottom: 8px;
+}
+.box-icon-title-style p {
+  color: #64666c;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+}
+.group-icon-style .desc h2 {
+  font-size: 20px;
+  line-height: 28px;
+}
+.group-icon-style .desc > h4 {
+  color: #64666c;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+}
+.icon-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 24px;
+}
+.icon-item img {
+  width: 40px;
+  height: 40px;
+  margin-right: 37px;
+}
+/* =======================wd-icon-box style3=============================== */
+.wd-icon-box-style-2 {
+  padding: 80px 0px;
+  background-color: #123841;
+}
+.box-work {
+  margin-bottom: 64px;
+  text-align: center;
+}
+.box-work h1,
+.work-icon-desc h2 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 44px;
+  color: #ffffff;
+  margin-bottom: 16px;
+}
+.box-work p,
+.work-icon-desc p {
+  color: #b1b1b1;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+}
+.wd-icon-box-style-2 .col-style-3 {
+  max-width: 300px;
+  width: 100%;
+  margin-right: 70px;
+  text-align: center;
+}
+.wd-icon-box-style-2 .col-style-3:last-child {
+  margin-right: 0;
+}
+.group-work-icon .work-icon-desc h2 {
+  font-size: 20px;
+  line-height: 28px;
+}
+.group-work-icon .work-icon-desc p {
+  font-size: 16px;
+  line-height: 26px;
+}
+.wd-icon-box-style-2 .group-work-icon .bg-icon-work {
+  width: 100px;
+  height: 100px;
+  border-radius: 99px;
+  background-color: #ffffff;
+  display: inline-block;
+  padding: 25px;
+  margin-bottom: 32px;
+}

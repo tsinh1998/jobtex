@@ -45,15 +45,24 @@
     <!-- css job -->
     <!-- <link rel="stylesheet" href="stylesheets/jobs1.css" /> -->
     <!-- <link rel="stylesheet" href="stylesheets/widget-luc.css" /> -->
+    <!-- <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCFC3m2n0jBRFTMvUNZc0-6Y0Rzlcadzcw&callback=initMap&v=weekly"
+      defer
+    ></script> -->
+
   </head>
 
   <body>
 
     <!-- wd-feature-job-map- -->
-    <div class="wd-feature-map">
+    <section class="listing-maps style-two wd-feature-map">
       
-      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d5213.545482626337!2d-74.00018650223194!3d40.70839196922629!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1676623982617!5m2!1sen!2s" width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d5213.545482626337!2d-74.00018650223194!3d40.70839196922629!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1676623982617!5m2!1sen!2s" width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
       <!-- Job Search Form -->
+      <div id="map" data-map-zoom="9" data-map-scroll="true">
+        <!-- map goes here -->
+      </div>
+
       <div class="tf-container">
         <div class="job-search-form inner-form-map">
         <form method="post">
@@ -89,11 +98,11 @@
       </div>
       </div>
       
-    </div>
+    </section>
 
 
     <!--wd-feature-job -->
-    <div class="wd-feature-job">
+    <section class="tf-container wd-feature-job">
       <div class="title">
         <h1>Featured Jobs</h1>
         <p>Find the job that’s perfect for you. about 800+ new jobs everyday</p>
@@ -1420,12 +1429,164 @@
         </div>
       </div>
 
-    </div>
+    </section>
+
+    <!-- wd-icon-box -->
+    <section class="wd-icon-box" style="margin: 100px 0px;">
+      <div class="tf-container">
+          <div class="box-icon-title">
+            <h1>What can I do with Jobtex?</h1>
+            <p>Streamline your hiring process with strategic channels to reach qualified candidates</p>
+          </div>
+          <div class="row group-icon">
+            <div class="col-lg-3">
+              <img src="icons/home/icon-1.svg" alt="icons/home/icon.svg">
+              <div class="group-icon-desc">
+                <h2>Reduce Hiring bias</h2>
+                <p>Structured digital interviews increase the predictive validity of your hires by 65%.</p>
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <img src="icons/home/icon-2.svg" alt="icons/home/icon.svg">
+              <div class="group-icon-desc">
+                <h2>Save time & headspace</h2>
+                <p>Reduce your time-to-hire by up to 75% and free up headspace for other HR</p>
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <img src="icons/home/icon-3.svg" alt="icons/home/icon.svg">
+              <div class="group-icon-desc">
+                <h2>Minimize environmental impact</h2>
+                <p>Did you know? U.S. office workers use ~10,000 sheets of paper every year.</p>
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <img src="icons/home/icon-4.svg" alt="icons/home/icon.svg">
+              <div class="group-icon-desc">
+                <h2>Reduce Hiring bias</h2>
+                <p>Structured digital interviews increase the predictive validity of your hires by 65%.</p>
+              </div>
+            </div>
+          </div>
+      </div>
+    </section>
+
+    <section class="wd-icon-box-style" style="margin: 100px 0px;">
+      <div class="tf-container">
+        <div class="row" style="background-color: #F9F1F0; height: 709px;">
+          <div class="col-lg-6">
+            <div class="img" style="margin-left: -15px;">
+              <img src="images/job/img-home-1.jpg" alt="./images/job/img-home-1.jpg">
+            </div>
+          </div>
+          <div class="col-lg-6 box-icon-col-6">
+            <div class="box-icon-title-style">
+              <h1>What can I do with Jobtex?</h1>
+              <p>Streamline your hiring process with strategic channels to reach qualified candidates</p>
+            </div>
+            <div class="group-icon-style">
+              <div class="icon-item">
+                <img src="icons/home/icon-5.svg" alt="icons/home/icon.svg">
+                <div class="desc">
+                  <h2>Reduce Hiring bias</h2>
+                  <h4>Structured digital interviews increase the predictive validity of your hires by 65%.</h4>
+                </div>
+              </div>
+              <div class="icon-item">
+                <img src="icons/home/icon-6.svg" alt="icons/home/icon.svg">
+                <div class="desc">
+                  <h2>Save time & headspace</h2>
+                  <h4>Reduce your time-to-hire by up to 75% and free up headspace for other HR priorities.</h4>
+                </div>
+              </div>
+              <div class="icon-item">
+                <img src="icons/home/icon-2.svg" alt="icons/home/icon.svg">
+                <div class="desc">
+                  <h2>Minimize environmental impact</h2>
+                  <h4>Did you know? U.S. office workers use ~10,000 sheets of paper every year.</h4>
+                </div>
+              </div>
+              <div class="icon-item">
+                <img src="icons/home/icon-4.svg" alt="icons/home/icon.svg">
+                <div class="desc">
+                  <h2>Save money</h2>
+                  <h4>Interview more candidates, more quickly – and still save money.</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+     <!-- wd-icon-box -->
+     <section class="wd-icon-box-style-2" style="margin: 100px 0px;">
+      <div class="tf-container">
+          <div class="box-work">
+            <h1>How It Work</h1>
+            <p>Streamline your hiring process with strategic channels to reach qualified candidates</p>
+          </div>
+          <div class="row group-work-icon">
+            <div class="col-lg-3 col-style-3">
+              <div class="bg-icon-work">
+                <img src="icons/home/icon-1.svg" alt="icons/home/icon.svg">
+              </div>
+              <div class="work-icon-desc">
+                <h2>1.&nbsp; Post A job</h2>
+                <p>Stacks is a production-ready library of stackable content blocks built in React Native.</p>
+              </div>
+            </div>
+            <div class="col-lg-3 col-style-3">
+              <div class="bg-icon-work">
+                <img src="icons/home/icon-7.svg" alt="icons/home/icon.svg">
+
+              </div>
+              <div class="work-icon-desc">
+                <h2>2.&nbsp; Find Employers</h2>
+                <p>Stacks is a production-ready library of stackable content blocks built in React Native.</p>
+               
+              </div>
+            </div>
+            <div class="col-lg-3 col-style-3">
+              <div class="bg-icon-work">
+                <img src="icons/home/icon-4.svg" alt="icons/home/icon.svg">
+
+              </div>
+              <div class="work-icon-desc">
+                <h2>3.&nbsp; pay Safely</h2>
+                <p>Stacks is a production-ready library of stackable content blocks built in React Native.</p>
+                
+              </div>
+            </div>
+            <div class="col-lg-3 col-style-3">
+              <div class="bg-icon-work">
+                <img src="icons/home/icon-5.svg" alt="icons/home/icon.svg">
+
+              </div>
+              <div class="work-icon-desc">
+                <h2>4.&nbsp; We’re here to help</h2>
+                <p>Stacks is a production-ready library of stackable content blocks built in React Native.</p>
+                
+              </div>
+            </div>
+          </div>
+      </div>
+    </section>
+
 
     <script src="javascript/jquery.min.js"></script>
     <script src="javascript/swiper-bundle.min.js"></script>
     <script src="javascript/bootstrap.min.js"></script>
     <script src="javascript/wow.min.js"></script>
     <script src="javascript/main.js"></script>
+
+     <!-- Maps -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCFC3m2n0jBRFTMvUNZc0-6Y0Rzlcadzcw"></script>
+  
+  <script src="javascript/infobox.min.js"></script>
+  <script src="javascript/markerclusterer.js"></script>
+  <script src="javascript/maps.js"></script> 
+  <!-- <script src="javascript/test.js"></script> -->
+
   </body>
 </html>
