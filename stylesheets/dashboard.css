@@ -57,6 +57,10 @@
     font-weight: 700;
 }
 
+.dashboard .fs-16 {
+    font-size: 16px;
+}
+
 .dashboard .center {
     text-align: center;
 }
@@ -292,12 +296,13 @@
     margin-bottom: 7px;
 }
 
-.flat-dashboard-applicants .applicants .content .map::before {
+.dashboard .map::before {
     content: '\e99e';
     font-family: 'icomoon';
     font-size: 16px;
     margin-right: 5px;
 }
+
 .flat-dashboard-applicants .applicants .action-wrap ul {
     justify-content: end;
 }
@@ -580,6 +585,10 @@
     margin-bottom: 2px;
 }
 
+.dashboard .check-box h3 {
+    margin-right: 8px;
+}
+
 .dashboard .tf-button a {
     padding: 11px 47px;
     border: 1px solid #14A077;
@@ -592,31 +601,35 @@
 
 /* .flat-dashboard-about  */
 .flat-dashboard-about {
-    margin-bottom: 50px;
+    margin-bottom: 20px;
 }
 
 .flat-dashboard-about .side-bar {
-    width: 30%;
+    width: 33.2%;
     margin-right: 20px;
 }
 
 .flat-dashboard-about .sidebar-map {
     background-color: #fff;
-    padding: 20px;
+    padding: 24px;
     margin-bottom: 20px;
 }
 
 .flat-dashboard-about .sidebar-map iframe {
     width: 100%;
     height: 324px;
-    margin-bottom: 30px;
+    margin-bottom: 27px;
 }
 
 .flat-dashboard-about .sidebar-map .title-box {
-    justify-content: space-between;
-    padding-bottom: 10px;
+    padding-bottom: 14px;
     border-bottom: 1px solid #E5E5E5;
-    margin-bottom: 10px;
+    margin-bottom: 17px;
+    justify-content: space-between;
+}
+
+.flat-dashboard-about .sidebar-map .wrap-icon h4 {
+    margin-bottom: 15px;
 }
 
 .flat-dashboard-about .sidebar-map .box-icon a {
@@ -627,20 +640,30 @@
     align-items: center;
     justify-content: center;
     background: #E5E5E5;
-    margin-right: 4px;
+    margin-right: 12px;
+}
+
+.flat-dashboard-about .sidebar-map .box-icon a:hover {
+    background: #14A077;
+    color: #fff;
 }
 
 .flat-dashboard-about .sidebar-extended {
     background-color: #fff;
-    padding: 30px 20px;
+    padding: 24px;
 }
 
 .flat-dashboard-about .sidebar-extended h4 {
-    margin-bottom: 10px;
+    margin-bottom: 19px;
+}
+
+.flat-dashboard-about .sidebar-extended p {
+    padding-right: 100px;
+    margin-bottom: 19px;
 }
 .flat-dashboard-about .sidebar-extended .month-box {
     align-items: baseline;
-    margin-bottom: 10px;
+    margin-bottom: 16px;
 }
 
 .flat-dashboard-about .sidebar-extended .month-box span {
@@ -648,40 +671,42 @@
 }
 
 .flat-dashboard-about .sidebar-extended .images {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .flat-dashboard-about .sidebar-extended .tf-button a {
     padding: 11px 0;
     width: 100%;
     text-align: center;
+    background: #14A077;
+    color: #fff;
 }
 
 
 .flat-dashboard-about .post-about {
     background-color: #fff;
-    width: 70%;
-    padding: 30px 40px;
+    width: 66.8%;
+    padding: 25px 32px 32px;
 }
 
 .flat-dashboard-about .post-about .title-about {
-    margin-bottom: 20px;
+    margin-bottom: 17px;
 }
 
 .flat-dashboard-about .post-about .text-1 {
-    margin-bottom: 10px;
+    margin-bottom: 16px;
 }
 
 .flat-dashboard-about .post-about .text-2 {
-    margin-bottom: 50px;
+    margin-bottom: 68px;
 }
 
 .flat-dashboard-about .video-wrap {
-    margin-bottom: 30px;
+    margin-bottom: 26px;
 }
 
 .flat-dashboard-about .title-jobs {
-    margin-bottom: 30px;
+    margin-bottom: 22px;
 }
 
 .flat-dashboard-about .profile-wrap .button-wrap a {
@@ -692,10 +717,19 @@
     font-weight: 500;
 }
 
+.flat-dashboard-about .profile-wrap .button-wrap a:hover {
+    background-color: #14A077;
+    color: #fff;
+}
+
+.flat-dashboard-about .profile-wrap .button-wrap .time {
+    margin-right: 6px;
+}
+
 .flat-dashboard-about .profile-wrap .button-wrap {
     border-bottom: 1px solid #E5E5E5;
-    padding-bottom: 10px;
-    margin-bottom: 10px;
+    padding-bottom: 14px;
+    margin-bottom: 16px;
     justify-content: space-between;
 }
 
@@ -705,14 +739,63 @@
     margin-left: 1px;
 }
 
+.flat-dashboard-about .profile-wrap .button-wrap .star .style {
+    color: #E5E5E5;
+}
+
+
 .flat-dashboard-about .profile-wrap .box {
     border: 1px solid #E5E5E5;
-    padding: 20px;
+    padding: 23px 26px 23px 23px;
 }
 
 .flat-dashboard-about .profile-wrap .inner {
-    margin-bottom: 20px;
+    margin-bottom: 13px;
 }
+
+.flat-dashboard-about .profile-wrap .check-box {
+    margin-bottom: 3px;
+}
+
+.flat-dashboard-about .profile-wrap .icon-heart {
+    color: #E5E5E5;
+    border: 1px solid #E5E5E5;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition        : all 0.3s ease;
+}
+
+.flat-dashboard-about .profile-wrap .icon-heart:hover {
+    color: red;
+}
+
+.flat-dashboard-about .profile-wrap .map {
+    margin-right: 16px;
+}
+
+.dashboard .day::before {
+    content: '\e996';
+    font-family: 'icomoon';
+    font-size: 16px;
+    margin-right: 5px;
+}
+
+.flat-dashboard-about .profile-wrap .money {
+    margin-right: 2px;
+}
+
+.flat-dashboard-about .profile-wrap .icon-dolar1::before {
+    font-size: 20px;
+    color: #000;
+}
+.flat-dashboard-about .profile-wrap .icon-dolar1 {
+    margin-right: 8px;
+}
+
 
 
 .flat-dashboard-about .profile-wrap .images {
@@ -738,7 +821,7 @@
 }
 
 .widget-dash-video .gallery-slide {
-    margin: 0 0 30px 0;
+    margin: 0 0 20px 0;
 }
 
 .widget-dash-video .gallery-slide .swiper-slide {
@@ -752,9 +835,9 @@
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 400px;
+    height: 478px;
     width: 100%;
-    max-width: 770px;
+    max-width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -789,7 +872,7 @@
 
 .widget-dash-video .gallery-thumb .swiper-slide {
     /* width: 210px ; */
-    height: 120px;
+    height: 152px;
     overflow: hidden;
     background-position: center center;
     background-repeat: no-repeat;
@@ -809,6 +892,308 @@
 
 .widget-dash-video .gallery-thumb .swiper-slide.swiper-slide-3 {
     background-image: url(../images/dashboard/video-4.jpg);
+}
+
+
+/* search */
+
+
+.dash-search {
+    
+    padding: 25px 40px 23px;
+
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #E5E5E5
+}
+
+.dash-search .search-form .search-field {
+    width: 300px;
+    padding: 14px 10px 12px 49px;
+    font-style: unset;
+    background-color: #F5F5F5;
+    border: unset;
+}
+
+.dash-search .search-form .search-field::placeholder {
+    color: #B1B1B1 !important;
+    line-height: 20px;
+    font-size: 16px !important;
+}
+
+.dash-search .search-form .search-field:focus {
+    border: 1px solid #64666C;
+    border-radius: 5px;
+    padding: 14px 10px 12px 49px;
+}
+
+.dash-search .search-form .search-submit {
+    padding: 15.5px 17.5px 14.5px;
+}
+
+.dash-search .search .search-submit {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    font-size: 22px;
+    font-weight: 500;
+    background: transparent;
+    color: #fff;
+    border: none;
+    line-height: 20px;
+    padding: 14.5px 12.5px 14.5px 13.5px;
+    transition: all 0.3s ease;
+    border-top-right-radius: 4px;
+}
+
+.dash-search .search .search-submit.search-icon::after {
+    content: "\e9ae";
+    font-family: 'icomoon';
+    color: #000;
+}
+
+.dash-search .search-flat {
+    position: relative;
+}
+
+/*  */
+
+.dash-search .dropdown ul,
+.dash-search .dropdown li.active,
+.dash-search .dropdown ul,
+.dash-search .dropdown li:hover {
+    background: #14A077;
+    color: #fff;
+}
+
+
+.dashboard .dropdown>a {
+    position             : relative;
+    display              : block;
+    padding: 10px 15px;
+    border-radius        : 6px;
+    -moz-border-radius   : 6px;
+    -webkit-border-radius: 6px;
+    background           : transparent;
+    font-size            : 14px;
+    font-weight          : 400;
+    line-height          : 26px;
+    border-radius: 4px;
+    color                : #000;
+    /* @include transition3; */
+    z-index              : 10;
+    background-color: #F1F1F1;
+    width: 176px;
+   
+}
+
+.dashboard .dropdown>a::after {
+    font-family      : 'icomoon';
+    content          : "\e9a2";
+    font-size        : 14px;
+    font-weight      : 600;
+    position         : absolute;
+    color            : #B1B1B1;
+    right            : 20px;
+    top              : 45%;
+    transform        : translateY(-50%);
+}
+
+.dashboard .dropdown>a ul {
+    position: absolute;
+}
+
+
+.dashboard .dropdown ul.show {
+    opacity           : 1;
+    position: absolute;
+    width: 176px;
+
+    transform         : translateY(0);
+    transition        : all 0.3s ease;
+}
+
+.dashboard .dropdown li {
+        border-top        : 0.5px solid rgba(122, 121, 138, 0.1);
+        background        : #fff;
+        color             : #000;
+        width             : 100%;
+        padding           : 9px 10px 8px 16px;
+        list-style        : none;
+        display           : inline-block;
+        margin            : 0;
+        cursor: pointer;
+        transition        : all 0.3s ease;
+        font-size: 14px;
+        box-shadow: 0px 2px 4px rgb(0 0 0 / 10%);
+    }
+   
+.dashboard .dropdown .country {
+    position: absolute;
+    z-index: 99;
+    margin-left: 13px;
+    margin-top: 5px;
+    color: #818089;
+} 
+
+
+/* up file */
+
+.flat-dashboard-setting .profile-setting {
+    background-color: #fff;
+    padding: 32px;
+}
+
+.flat-dashboard-setting .author-profile {
+    margin-bottom: 64px;
+}
+.flat-dashboard-setting .author-profile .wrap-img .img-box {
+    position: relative;
+    margin-right: 20px;
+    flex: none;
+}
+.flat-dashboard-setting .author-profile .wrap-img .img-box img {
+    width: 120px;
+    height: 120px;
+}
+
+.flat-dashboard-setting .wrap-img h6 {
+    margin-bottom: 10px;
+    margin-top: 1px;
+}
+
+.flat-dashboard-setting .wrap-img {
+    width: 38.3%;
+}
+
+.flat-dashboard-setting .tf-button {
+    text-align: end;
+    width: 23.2%;
+}
+
+.flat-dashboard-setting .tf-button a {
+    padding: 11px 31px;
+    background: #14A077;
+    color: #fff;
+}
+
+/*  */
+
+.flat-dashboard-setting .up-file {
+    border: 1px solid #E5E5E5;
+    padding: 8px 12px;
+    width: 220px;
+}
+
+.dashboard .uploadFile {
+    width: 100%;
+    border: 1px solid rgba(138, 138, 160, 0.3);
+    border-radius: 8px;
+    font-size: 14px;
+    line-height: 100px;
+    overflow: hidden;
+    padding: 31px 0 27px 3px;
+    position: relative;
+    resize: none;
+    cursor: pointer;
+}
+
+.dashboard .uploadFile input[type=file] {
+    cursor: pointer;
+    width: 210px;
+    height: 50px;
+    overflow: hidden;
+    position: relative;
+    padding: 0 0;
+    border: none;
+    border-radius: 8px;
+    margin: auto;
+}
+
+.dashboard .uploadFile input[type=file]:hover::after {
+    color: #fff;
+}
+.dashboard .uploadFile .inputfile:hover::before {
+    background-color: #8E2AC3;
+    color: #fff;
+}
+
+.dashboard .uploadFile .form-control {
+    background: #7759F312 !important;
+    color: #fff;
+}
+
+.dashboard .uploadFile input[type=file]:before {
+    width: 210px;
+    height: 50px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 50px;
+    content: 'Upload Your Photo';
+    display: inline-block;
+    background: #7759F312;
+    color: var(--primary-color8);
+    text-align: center;
+    border-radius: 8px;
+    font-family: 'Open Sans';
+    @include transition3;
+    padding-left: 29px;
+}
+
+.dashboard .uploadFile input[type=file]::after {
+    content: '\f0ee';
+    font-family: "Font Awesome 5 Pro";
+    font-size: 18px;
+    @include transition3;
+    color: var(--primary-color8);
+    position: absolute;
+    top: 11px;
+    left: 27px;
+}
+
+/* form */
+/* .form-profile {
+    .form-infor-profile {
+        margin-bottom: 50px;
+        .form-infor {
+            margin-left: -30px;
+        }
+        .info-social,
+        .info-account {
+            width: calc(50% - 30px);
+            margin-left: 30px;
+        }
+    }
+    .message {
+        p {
+            margin-bottom: 4px;
+        }
+        textarea {
+            background: var(--primary-color10);  
+            padding: 9px 15px 17px 18.5px;
+        }
+    }
+} */
+.flat-dashboard-setting .title-info {
+    margin-bottom: 16px;
+}
+.flat-dashboard-setting .form-infor {
+    margin-left: -30px;
+}
+.flat-dashboard-setting .form-infor .info-box {
+    width: calc(50% - 30px);
+    margin-left: 30px;
+}
+.flat-dashboard-setting .form-infor .info-box fieldset {
+    margin-bottom: 10px;
+}
+.flat-dashboard-setting .form-infor .info-box h5 {
+    margin-bottom: 10px;
+
+}
+
+.flat-dashboard-setting .form-infor .info-box input {
+    font-style: unset;
 }
 
 
