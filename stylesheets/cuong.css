@@ -352,6 +352,23 @@ color: #123841;
 .wd-review-job .thumb3 .group-user .user-box {
     margin-right: 16px;
 }
+/* get app */
+.wd-get-app .thumb {
+    margin-left: -16.5%;
+}
+.wd-get-app .content h4 {
+    margin-bottom: 15px;
+}
+.wd-get-app .content p {
+    font-size: 18px;
+    line-height: 28px;
+    color: #64666C;
+    margin-bottom: 40px;
+}
+.wd-get-app .content .group-btn a:first-child {
+    margin-right: 40px;
+}
+
 .ani1 {
     -webkit-animation: ani1 10s infinite linear;
     animation: ani1 10s infinite linear;
