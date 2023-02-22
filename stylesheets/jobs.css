@@ -1629,20 +1629,20 @@ input[type="number"]::-webkit-inner-spin-button {
   padding: 80px 0px;
   background-color: #123841;
 }
-.box-work {
+.wd-icon-box-style-2 .heading {
   margin-bottom: 64px;
   text-align: center;
 }
-.box-work h1,
-.work-icon-desc h2 {
+.wd-icon-box-style-2 .heading h1,
+.wd-icon-box-style-2 .work-icon-desc h2 {
   font-weight: 700;
   font-size: 36px;
   line-height: 44px;
   color: #ffffff;
   margin-bottom: 16px;
 }
-.box-work p,
-.work-icon-desc p {
+.wd-icon-box-style-2 .heading p,
+.wd-icon-box-style-2 .work-icon-desc p {
   color: #b1b1b1;
   font-weight: 400;
   font-size: 18px;
@@ -1652,6 +1652,8 @@ input[type="number"]::-webkit-inner-spin-button {
   max-width: 300px;
   width: 100%;
   margin-right: 70px;
+}
+.group-work-icon {
   text-align: center;
 }
 .wd-icon-box-style-2 .col-style-3:last-child {
@@ -1673,4 +1675,36 @@ input[type="number"]::-webkit-inner-spin-button {
   display: inline-block;
   padding: 25px;
   margin-bottom: 32px;
+}
+/* ============= wd-icon-box style4============= */
+.wd-icon-bg-white {
+  background-color: #ffffff;
+}
+.wd-icon-bg-white .heading h1,
+.wd-icon-bg-white .work-icon-desc h2 {
+  color: #121212;
+}
+.wd-icon-bg-white .group-work-icon .work-icon-content {
+  padding: 40px 32px;
+  border-radius: 8px;
+  border: 1px solid #e5e5e5;
+}
+.wd-icon-bg-white .group-work-icon .bg-icon-work img {
+  border-radius: 99px;
+}
+.wd-icon-bg-white .group-work-icon .work-icon-content:hover {
+  border: 1px solid #14a077;
+}
+.wd-icon-bg-white .work-icon-content .bg-icon-work {
+  padding: 0;
+  margin-bottom: 28px;
+}
+.wd-icon-bg-white .work-icon-content button {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 26px;
+  margin-top: 20px;
+  color: #14a077;
+  border: none;
+  text-transform: none;
 }
