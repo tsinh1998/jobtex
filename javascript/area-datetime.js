@@ -1,5 +1,11 @@
 
 
+
+
+
+  // $(function () {
+
+  // }
   // var gallery = function(){
   //   if ( $('div').hasClass('widget-dash-video') ){
   // var slider = new Swiper ('.gallery-slide', {
