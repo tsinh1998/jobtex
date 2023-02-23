@@ -52,3 +52,6 @@ slider.oninput = function () {
   const value = this.value;
   this.style.background = `linear-gradient(to right, #14A077 0%, #14A077 ${value}%, #ddd ${value}%, #ddd 0%)`;
 };
+
+
+//carousel
