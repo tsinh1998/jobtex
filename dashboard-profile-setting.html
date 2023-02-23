@@ -420,76 +420,38 @@
                                         </div>
                                        
 
-                                        <div class="toolbar">
-                                            <ul class="tool-list">
-                                                <li class="tool">
-                                                    <button 
-                                                        type="button" 
-                                                        data-command='justifyLeft'
-                                                        class="tool--btn icon-Alighment-left">
-                                                        <i class="icon-Alighment-left"></i>
-                                                    </button>
-                                                </li>
-                                                <li class="tool">
-                                                    <button 
-                                                        type="button" 
-                                                        data-command='justifyCenter' 
-                                                        class="tool--btn">
-                                                        <span class=' fas fa-align-center'></span>
-                                                    </button>
-                                                </li>
-                                                <li class="tool">
-                                                    <button 
-                                                        type="button" 
-                                                        data-command="bold" 
-                                                        class="tool--btn">
-                                                        <i class=' fas fa-bold'></i>
-                                                    </button>
-                                                </li>
-                                                <li class="tool">
-                                                    <button 
-                                                        type="button" 
-                                                        data-command="italic"
-                                                        class="tool--btn">
-                                                        <i class=' fas fa-italic'></i>
-                                                    </button>
-                                                </li>
-                                                <li class="tool">
-                                                    <button 
-                                                        type="button" 
-                                                        data-command="underline"
-                                                        class="tool--btn">
-                                                        <i class=' fas fa-underline'></i>
-                                                    </button>
-                                                </li>
-                                                <li class="tool">
-                                                    <button 
-                                                        type="button" 
-                                                        data-command="insertOrderedList"
-                                                        class="tool--btn">
-                                                        <i class=' fas fa-list-ol'></i>
-                                                    </button>
-                                                </li>
-                                                <li class="tool">
-                                                    <button 
-                                                        type="button" 
-                                                        data-command="insertUnorderedList"
-                                                        class="tool--btn">
-                                                        <i class=' fas fa-list-ul'></i>
-                                                    </button>
-                                                </li>
-                                                <li class="tool">
-                                                    <button 
-                                                        type="button" 
-                                                        data-command="createlink" 
-                                                        class="tool--btn">
-                                                        <i class=' fas fa-link'></i>
-                                                    </button>
-                                                </li>
-                                            </ul>
+                                        <div class="text-editor-wrap">
+                                            <div class="text-editor-main">
+                                                <div class="options">
+                                                    <button class="my-text-btn" data-command="undo"><i class ="fas fa-undo"></i></button>
+                                                    <button class="my-text-btn" data-command="redo"><i class ="fas fa-redo"></i></button>
+                                                    <button class="my-text-btn" data-command="bold"><i class ="fas fa-bold"></i></button>
+                                                    <button class="my-text-btn" data-command="italic"><i class ="fas fa-italic"></i></button>
+                                                    <button class="my-text-btn" data-command="underline"><i class ="fas fa-underline"></i></button>
+                                                    <button class="my-text-btn" data-command="strikeThrough"><i class ="fas fa-strikethrough"></i></button>
+                                                    <button class="my-text-btn" data-command="formatBlock" data-block="H1">H1</button>
+                                                    <button class="my-text-btn" data-command="formatBlock" data-block="H2">H2</button>
+                                                    <button class="my-text-btn" data-command="formatBlock" data-block="H2">H3</button>
+                                                    <button class="my-text-btn" data-command="superscript"><i class ="fas fa-superscript"></i></button>
+                                                    <button class="my-text-btn" data-command="subscript"><i class ="fas fa-subscript"></i></button>
+                                                    <button class="my-text-btn" data-command="insertUnorderedList"><i class ="fas fa-list-ul"></i></button>
+                                                    <button class="my-text-btn" data-command="insertOrderedList"><i class ="fas fa-list-ol"></i></button>
+                                                    <button class="my-text-btn" data-command="justifyLeft"><i class ="fas fa-align-left"></i></button>
+                                                    <button class="my-text-btn" data-command="justifyCenter"><i class ="fas fa-align-center"></i></button>
+                                                    <button class="my-text-btn" data-command="justifyRight"><i class ="fas fa-align-right"></i></button>
+                                                    <button class="my-text-btn" data-command="justifyFull"><i class ="fas fa-align-justify"></i></button>
+                                                    <button class="my-text-btn" data-command="insertImage"><i class ="fas fa-images"></i></button>
+                                                    <button class="my-text-btn" data-command="createLink"><i class ="fas fa-link"></i></button>
+                                                    <button class="my-text-btn" data-command="formatBlock" data-block="blockquote"><i class ="fas fa-quote-right"></i></button>
+                                                    <button class="my-text-btn" data-command="formatBlock" data-block="pre"><i class ="fas fa-code"></i></button>
+                                                </div>
+                                                    <div class="contentOutput" contenteditable="true" ></div>
+                                        
+                                            </div>
+                                            
                                         </div>
                                         
-                                        <div id="output" contenteditable="true"></div>
+                                    
                                        
                                     </div>
                                 </form> 
@@ -516,7 +478,7 @@
                 </div>
             </section>
         </div>
-    
+        <script src="https://kit.fontawesome.com/275e820b94.js" crossorigin="anonymous"></script>
         <script src="javascript/text-editor.js"></script>
         <script src="javascript/tag-input.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
