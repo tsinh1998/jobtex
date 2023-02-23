@@ -22,6 +22,8 @@
     <!-- Mobile Specific Metas -->
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/thinline.css">
+
     <!-- Theme Style -->
     <link rel="stylesheet" type="text/css" href="stylesheets/shortcodes.css">
     <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
@@ -345,7 +347,7 @@
                                     <div class="form-infor-profile">
                                         <h3 class="title-info">Information</h3>
                                         <div class="form-infor flex flat-form">
-                                            <div class="info-box">                              
+                                            <div class="info-box info-wd">                              
                                                 <fieldset>
                                                     <h5 class="title-user fw-7">Employer Name</h5>
                                                     <input type="text" placeholder="Avitex Agency" required>
@@ -356,17 +358,17 @@
                                                 </fieldset>
                                                 <fieldset>
                                                     <h5 class="title-user fw-7">Founded Date</h5>
-                                                    <input type="date" placeholder="2018" required>
+                                                    <input type="datetime" placeholder="2018" required>
                                                 </fieldset>                                                                           
                                             </div>
-                                            <div class="info-box">                                 
+                                            <div class="info-box info-wd">                                 
                                                 <fieldset>
                                                     <h5 class="title-user fw-7">Email</h5>
-                                                    <input type="tel" placeholder="hi.avitex@gmail.com" required>                                             
+                                                    <input type="email" placeholder="hi.avitex@gmail.com" required>                                             
                                                 </fieldset>
                                                 <fieldset>
                                                     <h5 class="title-user fw-7">Website</h5>
-                                                    <input type="password" placeholder="avitex.com" required>
+                                                    <input type="url" placeholder="avitex.com" required>
                                             
                                                 </fieldset>
                                                 <fieldset>
@@ -375,6 +377,120 @@
                                                 </fieldset>
                                             </div>  
                                         </div>
+                                        <div class="show-wrap ">
+                                            <h5 class="title-size fw-7">Show profile</h5>
+                                            <div class="show-box flex">
+                                               
+                                                <div class="show-inner">
+                                                    <input type="radio" id="r1" name="rr" />
+                                                    <label for="r1"><span></span>Show</label>
+                                                </div>
+                                                <div class="show-inner">
+                                                    <input type="radio" id="r2" name="rr" />
+                                                    <label for="r2"><span></span>Hidden</label>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="tag-wrap">
+                                            <h5 class="title-tag fw-7">Categories *</h5>
+                                            
+                                            <!-- <div class="content-box">
+                                                <div class="content tag-input" >
+                                                    <p>Bạn hãy nhập từ khoá và nhập enter để lưu từ khoá.</p>
+                                                    <ul ><input type="text" spellcheck="false"></ul>
+                                                  </div>
+                                                  <div class="details">
+                                                    <p><span>10</span> tags tối đa</p>
+                                                    <button>Xoá tất cả tag</button>
+                                                  </div>
+                                            </div> -->
+                                            <div class="tag-area">
+                                                <!-- <label for="tag-input" class="label">Add Languages</label> -->
+                                                <ul>
+                                                    <input type="text" class="tag-input" id="tag-input" />
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="wrap-url">
+                                            <fieldset class="info-wd">
+                                                <h5 class="title-url fw-7">Profile URL</h5>
+                                                <input type="text" placeholder="https://www.avitex.vn" required>
+                                            </fieldset>
+                                        </div>
+                                       
+
+                                        <div class="toolbar">
+                                            <ul class="tool-list">
+                                                <li class="tool">
+                                                    <button 
+                                                        type="button" 
+                                                        data-command='justifyLeft'
+                                                        class="tool--btn icon-Alighment-left">
+                                                        <i class="icon-Alighment-left"></i>
+                                                    </button>
+                                                </li>
+                                                <li class="tool">
+                                                    <button 
+                                                        type="button" 
+                                                        data-command='justifyCenter' 
+                                                        class="tool--btn">
+                                                        <span class=' fas fa-align-center'></span>
+                                                    </button>
+                                                </li>
+                                                <li class="tool">
+                                                    <button 
+                                                        type="button" 
+                                                        data-command="bold" 
+                                                        class="tool--btn">
+                                                        <i class=' fas fa-bold'></i>
+                                                    </button>
+                                                </li>
+                                                <li class="tool">
+                                                    <button 
+                                                        type="button" 
+                                                        data-command="italic"
+                                                        class="tool--btn">
+                                                        <i class=' fas fa-italic'></i>
+                                                    </button>
+                                                </li>
+                                                <li class="tool">
+                                                    <button 
+                                                        type="button" 
+                                                        data-command="underline"
+                                                        class="tool--btn">
+                                                        <i class=' fas fa-underline'></i>
+                                                    </button>
+                                                </li>
+                                                <li class="tool">
+                                                    <button 
+                                                        type="button" 
+                                                        data-command="insertOrderedList"
+                                                        class="tool--btn">
+                                                        <i class=' fas fa-list-ol'></i>
+                                                    </button>
+                                                </li>
+                                                <li class="tool">
+                                                    <button 
+                                                        type="button" 
+                                                        data-command="insertUnorderedList"
+                                                        class="tool--btn">
+                                                        <i class=' fas fa-list-ul'></i>
+                                                    </button>
+                                                </li>
+                                                <li class="tool">
+                                                    <button 
+                                                        type="button" 
+                                                        data-command="createlink" 
+                                                        class="tool--btn">
+                                                        <i class=' fas fa-link'></i>
+                                                    </button>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        
+                                        <div id="output" contenteditable="true"></div>
+                                       
                                     </div>
                                 </form> 
                                 
@@ -401,8 +517,8 @@
             </section>
         </div>
     
-
-    
+        <script src="javascript/text-editor.js"></script>
+        <script src="javascript/tag-input.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
     <script src="javascript/jquery.min.js"></script>
     <script src="javascript/swiper-bundle.min.js"></script>
@@ -412,6 +528,7 @@
     <script src="javascript/countto.js"></script>
     <script src="javascript/area-datetime.js"></script>
     
+  
 
 </body>
 </html>
