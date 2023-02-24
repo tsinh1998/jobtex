@@ -1599,7 +1599,6 @@ input[type="number"]::-webkit-inner-spin-button {
 .wd-iconbox.style-2 .title-iconbox,
 .wd-iconbox.style-2 .iconbox,
 .wd-iconbox.style-3 .title-iconbox {
-  padding-bottom: 64px;
   text-align: center;
 }
 .wd-iconbox.style-2 .title-iconbox {
