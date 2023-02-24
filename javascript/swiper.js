@@ -36,6 +36,10 @@ var swiper =  new Swiper(".location-slider", {
         nextEl: ".button-lo-next",
         prevEl: ".button-lo-prev",
     },
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
     breakpoints: {
         600: {
             slidesPerView: 2,
