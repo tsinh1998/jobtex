@@ -368,7 +368,36 @@ color: #123841;
 .wd-get-app .content .group-btn a:first-child {
     margin-right: 40px;
 }
+/* widget counter */
+.wd-counter {
+    text-align: center;
+}
+.wd-counter p {
+    font-size: 20px;
+line-height: 30px;
+color: #64666C;
+}
+.wd-counter h2 {
+    font-size: 48px;
+letter-spacing: -0.02em;
+color: #121212;
+font-family: 'DM Sans';
+font-weight: 700;
+}
+.wd-counter .inner {
+    margin-bottom: 3px;
+}
+.bg-pri1 {
+    background: #123841;
+}
+.wd-counter.style-light h2 {
+    color: #fff;
+}
+.wd-counter.style-light p {
+    color: #FFFFFF;
 
+opacity: 0.5;
+}
 .ani1 {
     -webkit-animation: ani1 10s infinite linear;
     animation: ani1 10s infinite linear;
