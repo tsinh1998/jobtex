@@ -54,13 +54,23 @@
 // });
 
 
-const tagInput = document.querySelector(".tag-input");
+const tagInput = document.querySelector("ul .tag-input ");
 const tagArea = document.querySelector(".tag-area");
 const ul = document.querySelector(".tag-area ul");
 const label = document.querySelector(".label");
 
-let tags = [];
+let tags = ['Developer','Graphic Designer'];
 
+
+// input.addEventListener('keyup', function(event){
+//    if(event.key === 'Enter'){
+//      if(!tags.includes(this.value)){
+//         tags.push(this.value);
+//         showTags();
+//      }
+//      this.value = '';
+//    }
+// })
 function addEvent(element) {
     tagArea.addEventListener("click", () => {
         element.focus();
@@ -82,15 +92,7 @@ function addEvent(element) {
             renderTags();
         }
     });
-    /**
-     * NOTE: Keyboard events works unexpected on mobile devices.
-     * For mobile devices you need to add this code
-     * to get the last character user entered.
-     * value[value.length - 1] === " "
-     *
-     * keycode 32 is for SpaceBar
-     * keycode 13 is for EnterKey
-     */
+    
 
     element.addEventListener("keydown", (e) => {
         console.log(e);
@@ -111,6 +113,7 @@ function addEvent(element) {
             renderTags();
         }
     });
+    event.preventDefault();
 }
 addEvent(tagInput);
 
@@ -144,6 +147,40 @@ function createTag(tag, index) {
     ul.appendChild(li);
 }
 
-// 
+// let ul = document.querySelector('.tags-input ul');
+// let input = document.querySelector('.tags-input input');
+// let deleteAll = document.querySelector('.removeAll button');
+// let tags = ['html', 'css', 'javascript'];
+
+// function showTags(){
+//     document.querySelectorAll('.tags-input ul li').forEach(li => li.remove());
+//     tags.forEach((value, key) => {
+//         let newTag = document.createElement('li');
+//         newTag.innerText = value;
+//         let newRemove = document.createElement('div');
+//         newRemove.classList.add('remove');
+//         newRemove.setAttribute('onclick', `removeTagItem(${key})`);
+//         newTag.appendChild(newRemove);
+//         ul.appendChild(newTag);
+//     })
+// }
+// function removeTagItem(key){
+//     delete tags[key];
+//     showTags();
+// }
+// showTags();
+// input.addEventListener('keyup', function(event){
+//    if(event.key === 'Enter'){
+//      if(!tags.includes(this.value)){
+//         tags.push(this.value);
+//         showTags();
+//      }
+//      this.value = '';
+//    }
+// })
+// deleteAll.addEventListener('click', function(){
+//     tags = [];
+//     showTags();
+// })
 
 
