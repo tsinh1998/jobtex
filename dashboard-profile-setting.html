@@ -15,7 +15,7 @@
     
     <!-- Bootstrap -->
     <link rel="stylesheet" href="stylesheets/bootstrap.min.css">
-
+ <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous"> -->
     <!-- swiper slider -->
     <link rel="stylesheet" href="stylesheets/swiper-bundle.min.css"/>
 
@@ -338,7 +338,7 @@
   
                                         </div> 
                                     </div>
-                                    <div class="tf-button">
+                                    <div class="tf-button button-style">
                                         <a href="#">Save Profile</a>
                                     </div>                                           
                                 </div>
@@ -355,11 +355,18 @@
                                                 <fieldset>
                                                     <h5 class="title-user fw-7">Phone Number</h5>
                                                     <input type="tel" placeholder="123  456  7890 " required>
-                                                </fieldset>
-                                                <fieldset>
+                                                </fieldset> 
+                                                <div id="item_date" class="dropdown titles-dropdown ">
                                                     <h5 class="title-user fw-7">Founded Date</h5>
-                                                    <input type="datetime" placeholder="2018" required>
-                                                </fieldset>                                                                           
+                                                    <a class="btn-selector nolink "> 2018</a>
+                                                    <ul >
+                                                        <li ><span>2018</span></li>
+                                                        <li><span>2019</span></li>                                     
+                                                        <li ><span>2020</span></li>
+                                                        <li ><span>2021</span></li>
+                                                        <li ><span>2022</span></li>
+                                                    </ul>
+                                                </div>                                                                        
                                             </div>
                                             <div class="info-box info-wd">                                 
                                                 <fieldset>
@@ -371,21 +378,26 @@
                                                     <input type="url" placeholder="avitex.com" required>
                                             
                                                 </fieldset>
-                                                <fieldset>
+                                                <div id="item_size" class="dropdown titles-dropdown ">
                                                     <h5 class="title-user fw-7">Company Size</h5>
-                                                    <input type="password" placeholder="50 - 120" required>                                              
-                                                </fieldset>
+                                                    <a class="btn-selector nolink "> 50 - 120</a>
+                                                    <ul >
+                                                        <li ><span>10 - 50</span></li>
+                                                        <li><span>50 - 120</span></li>                                     
+                                                        <li ><span>120 - 500</span></li>
+                                                    </ul>
+                                                </div> 
                                             </div>  
                                         </div>
                                         <div class="show-wrap ">
                                             <h5 class="title-size fw-7">Show profile</h5>
                                             <div class="show-box flex">
                                                
-                                                <div class="show-inner">
+                                                <div class="show-inner flex2">
                                                     <input type="radio" id="r1" name="rr" />
                                                     <label for="r1"><span></span>Show</label>
                                                 </div>
-                                                <div class="show-inner">
+                                                <div class="show-inner flex2">
                                                     <input type="radio" id="r2" name="rr" />
                                                     <label for="r2"><span></span>Hidden</label>
                                                 </div>
@@ -406,11 +418,11 @@
                                                   </div>
                                             </div> -->
                                             <div class="tag-area">
-                                                <!-- <label for="tag-input" class="label">Add Languages</label> -->
                                                 <ul>
                                                     <input type="text" class="tag-input" id="tag-input" />
                                                 </ul>
                                             </div>
+
                                         </div>
                                         <div class="wrap-url">
                                             <fieldset class="info-wd">
@@ -421,6 +433,7 @@
                                        
 
                                         <div class="text-editor-wrap">
+                                            <h3>About Company</h3>
                                             <div class="text-editor-main">
                                                 <div class="options">
                                                     <button class="my-text-btn" data-command="undo"><i class ="fas fa-undo"></i></button>
@@ -432,26 +445,104 @@
                                                     <button class="my-text-btn" data-command="formatBlock" data-block="H1">H1</button>
                                                     <button class="my-text-btn" data-command="formatBlock" data-block="H2">H2</button>
                                                     <button class="my-text-btn" data-command="formatBlock" data-block="H2">H3</button>
-                                                    <button class="my-text-btn" data-command="superscript"><i class ="fas fa-superscript"></i></button>
-                                                    <button class="my-text-btn" data-command="subscript"><i class ="fas fa-subscript"></i></button>
-                                                    <button class="my-text-btn" data-command="insertUnorderedList"><i class ="fas fa-list-ul"></i></button>
-                                                    <button class="my-text-btn" data-command="insertOrderedList"><i class ="fas fa-list-ol"></i></button>
                                                     <button class="my-text-btn" data-command="justifyLeft"><i class ="fas fa-align-left"></i></button>
                                                     <button class="my-text-btn" data-command="justifyCenter"><i class ="fas fa-align-center"></i></button>
                                                     <button class="my-text-btn" data-command="justifyRight"><i class ="fas fa-align-right"></i></button>
                                                     <button class="my-text-btn" data-command="justifyFull"><i class ="fas fa-align-justify"></i></button>
                                                     <button class="my-text-btn" data-command="insertImage"><i class ="fas fa-images"></i></button>
                                                     <button class="my-text-btn" data-command="createLink"><i class ="fas fa-link"></i></button>
-                                                    <button class="my-text-btn" data-command="formatBlock" data-block="blockquote"><i class ="fas fa-quote-right"></i></button>
-                                                    <button class="my-text-btn" data-command="formatBlock" data-block="pre"><i class ="fas fa-code"></i></button>
                                                 </div>
                                                     <div class="contentOutput" contenteditable="true" ></div>
                                         
                                             </div>
-                                            
+                                            <!-- <div class="contentOutput" contenteditable="true" ></div> -->
                                         </div>
                                         
-                                    
+                                        <div class="photo-wrap">
+                                            <h3>Profile Photo</h3>
+                                            <ul class="flex">
+                                                <li><img class="" src="images/dashboard/photo-1.jpg" alt="">  </li>
+                                                <li><img class="" src="images/dashboard/photo-2.jpg" alt="">  </li>
+                                                <li><img class="" src="images/dashboard/photo-3.jpg" alt="">  </li>
+                                            </ul>
+                                        </div>
+
+                                        <div class="button-wrap">
+                                            <div class="tf-button button-browse">
+                                                <a href="#">Browse</a>
+                                            </div>
+                                        </div>
+
+                                        <div class="wrap-url">
+                                            <fieldset class="info-wd">
+                                                <h5 class="title-url fw-7">Introduction Video</h5>
+                                                <input type="text" placeholder="https://www.youtube.com/watch?v=I6ZLgk_bq90" required>
+                                            </fieldset>
+                                        </div>
+                                        <div class="social-wrap">
+                                            <h3>Social Network</h3>
+                                            <div class="form-infor flex flat-form">
+                                                <div class="info-box info-wd">                              
+                                                    <fieldset class="flex2">
+                                                        <span class="icon-facebook"></span>
+                                                        <input type="url" placeholder="http://www.facebook.com/avitex" required>
+                                                    </fieldset>
+                                                    <fieldset class="flex2">
+                                                        <span class="icon-twitter"></span>
+                                                        <input type="url" placeholder="URL" required>
+                                                    </fieldset>
+                                                    <fieldset class="flex2">
+                                                        <span class="icon-instagram1"></span>
+                                                        <input type="url" placeholder="URL" required>
+                                                    </fieldset>                                                                                                                         
+                                                </div>
+                                                <div class="info-box info-wd">                                 
+                                                    <fieldset class="flex2">
+                                                        <span class="icon-linkedin2"></span>
+                                                        <input type="url" placeholder="URL" required>
+                                                    </fieldset>
+                                                    <fieldset class="flex2">
+                                                        <span class="icon-pinterest"></span>
+                                                        <input type="url" placeholder="URL" required>
+                                                    </fieldset>
+                                                    <fieldset class="flex2">
+                                                        <span class="icon-youtube"></span>
+                                                        <input type="url" placeholder="URL" required>
+                                                    </fieldset>    
+                                                    
+                                                </div>  
+                                            </div>
+                                        </div>
+                                        <div class="member-wrap">
+                                            <h3>Member</h3>
+                                            <div class="form-infor flex flat-form">
+                                                <div class="info-box info-wd">                              
+                                                    <fieldset class="flex2">
+                                                        <h5 class="title-user fw-7">Name</h5>
+                                                        <input type="text" placeholder="Maverick Nguyen" required>
+                                                    </fieldset>
+                                                    <fieldset class="flex2">
+                                                        <h5 class="title-user fw-7">Designation</h5>
+                                                        <input type="text" placeholder="Manager" required>
+                                                    </fieldset>
+                                                    <fieldset class="flex2">
+                                                        <h5 class="title-user fw-7">Experience</h5>
+                                                        <input type="text" placeholder="2 years" required>
+                                                    </fieldset>    
+                                                    <fieldset class="flex2">
+                                                        <h5 class="title-user fw-7">Social Network</h5>
+                                                        <input type="url" placeholder="http://www.facebook.com/avitex" required>
+                                                    </fieldset>    
+                                                    <div id="upload-profile2" class="flex2">
+                                                        <h5 class="fw-6">Upload a new cover:</h5>
+                                                        <input class="up-file" id="tf-upload-img2" type="file" name="profile" required="">
+              
+                                                    </div>                                                                                                                     
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                                
                                        
                                     </div>
                                 </form> 
@@ -478,9 +569,10 @@
                 </div>
             </section>
         </div>
+        <script src="javascript/tag-input.js"></script>
         <script src="https://kit.fontawesome.com/275e820b94.js" crossorigin="anonymous"></script>
         <script src="javascript/text-editor.js"></script>
-        <script src="javascript/tag-input.js"></script>
+        
     <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
     <script src="javascript/jquery.min.js"></script>
     <script src="javascript/swiper-bundle.min.js"></script>

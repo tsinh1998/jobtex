@@ -62,7 +62,6 @@
 //     },
 // });
 
-
 window.Promise ||
 document.write(
   '<script src="https://cdn.jsdelivr.net/npm/promise-polyfill@8/dist/polyfill.min.js"><\/script>'

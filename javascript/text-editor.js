@@ -14,29 +14,10 @@ buttons.forEach(button =>{
         else{
         document.execCommand(myEvent, false, null);
         }
+		event.preventDefault();
     })
+
 })
-
-// for (let i = 0; i<buttons.length; i++){
-//     buttons[i].addEventListener('click', ()=>{
-        
-        
-//         let myEvent = buttons[i].dataset['command'];
-//         console.log(myEvent);
-
-//         if(buttons[i].name === "active"){
-//             buttons[i].classList.toggle('active');
-//         }
-
-//         if(myEvent === "insertImage" || myEvent === "createLink"){
-//             let url = prompt("Enter your Link Here: ");
-//             document.execCommand(myEvent, false, url);
-//         }
-//         else{
-//         document.execCommand(myEvent, false, null);
-//         }
-//     })
-// }
 
 
 fullScreen[0].addEventListener('click', ()=>{
@@ -54,4 +35,5 @@ fullScreen[0].addEventListener('click', ()=>{
         fullScreen[0].childNodes[0].classList.add('fa-expand-arrows-alt');
         fullScreen[0].childNodes[0].classList.remove('fa-compress-arrows-alt');
     }
+	
 })
