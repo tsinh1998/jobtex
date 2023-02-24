@@ -1687,3 +1687,21 @@ input[type="number"]::-webkit-inner-spin-button {
   display: inline-flex;
   align-items: center;
 }
+/* wd-partner */
+
+.wd-partner {
+  background-color: #123841;
+  padding: 40px 0px;
+}
+.wd-partner h1 {
+  font-family: "Plus Jakarta Sans";
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  color: #ffffff;
+  padding-bottom: 20px;
+}
+.wd-partner .swiper-wrapper {
+  align-items: center;
+}
