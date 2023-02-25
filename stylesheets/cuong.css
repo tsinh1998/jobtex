@@ -108,15 +108,22 @@ color: #64666C;
 line-height: 28px;
 margin-bottom: 30px;
 }
-.wd-review-job.contentbox1 .list-review li {
+.wd-list-icon li {
     font-size: 20px;
     margin-bottom: 21px;
 }
-.wd-review-job.contentbox1 .list-review li:last-child {
+.wd-list-icon li:last-child {
     margin-bottom: 0;
 }
-.wd-review-job.contentbox1 .list-review li .icon {
+.wd-list-icon li .icon {
     margin-right: 15px;
+}
+.group-list-icon {
+    display: flex;
+
+}
+.group-list-icon .wd-list-icon:first-child {
+    margin-right: 56px;
 }
 .wd-review-job.contentbox1 .list-review.style2 li {
     width: 50%;
@@ -808,3 +815,4 @@ line-height: 26px;
       transform: rotate(360deg); 
   }
   }
+  

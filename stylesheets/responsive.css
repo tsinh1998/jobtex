@@ -1,0 +1,43 @@
+/* respondsive */
+@media only screen and (max-width: 1800px) {
+
+}
+@media only screen and (max-width: 1700px) {
+    .sticky-area-wrap .header-ct-left {
+        padding-right: 20px;
+    }
+}
+@media only screen and (max-width: 1600px) {
+    
+}
+@media only screen and (max-width: 1550px) {
+    .header-customize-item.help,
+    .header-customize-item.bell {
+        display: none;
+    }
+    .sticky-area-wrap .header-ct-right .button {
+        margin-right: 15px;
+    }
+    .sticky-area-wrap .header-ct-left {
+        padding-left: 15px;
+    }
+    #menu-primary-menu > li {
+        padding: 26px 15px 26px 0;
+    }
+}
+@media only screen and (max-width: 1300px) {
+    .sticky-area-wrap .header-ct-left .categories {
+        display: none;
+    }
+}
+@media only screen and (max-width: 1200px) {
+    .sticky-area-wrap .header-ct-right .account {
+        display: none;
+    }
+}
+@media only screen and (max-width: 991px) {
+    
+}
+@media only screen and (max-width: 767px) {
+    
+}
