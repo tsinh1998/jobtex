@@ -350,15 +350,15 @@
                                             <div class="info-box info-wd">                              
                                                 <fieldset>
                                                     <h5 class="title-user fw-7">Employer Name</h5>
-                                                    <input type="text" placeholder="Avitex Agency" required>
+                                                    <input type="text"  id="valueInput" class="input-form" value="Avitex Agency" fdprocessedid="3xi1s" required>
                                                 </fieldset>
                                                 <fieldset>
                                                     <h5 class="title-user fw-7">Phone Number</h5>
-                                                    <input type="tel" placeholder="123  456  7890 " required>
+                                                    <input type="tel" id="valueInput" class="input-form" value="123  456  7890" fdprocessedid="3xi1s" required>                                             
                                                 </fieldset> 
-                                                <div id="item_date" class="dropdown titles-dropdown ">
+                                                <div id="item_date" class="dropdown titles-dropdown">
                                                     <h5 class="title-user fw-7">Founded Date</h5>
-                                                    <a class="btn-selector nolink "> 2018</a>
+                                                    <a class="btn-selector nolink input-form"> 2018</a>
                                                     <ul >
                                                         <li ><span>2018</span></li>
                                                         <li><span>2019</span></li>                                     
@@ -370,17 +370,16 @@
                                             </div>
                                             <div class="info-box info-wd">                                 
                                                 <fieldset>
-                                                    <h5 class="title-user fw-7">Email</h5>
-                                                    <input type="email" placeholder="hi.avitex@gmail.com" required>                                             
+                                                    <h5 class="title-user fw-7">Email</h5>    
+                                                    <input type="email" id="valueInput" class="input-form" value="hi.avitex@gmail.com" fdprocessedid="3xi1s" required>                                              
                                                 </fieldset>
                                                 <fieldset>
                                                     <h5 class="title-user fw-7">Website</h5>
-                                                    <input type="url" placeholder="avitex.com" required>
-                                            
+                                                    <input type="url" id="valueInput" class="input-form" value="avitex.com" fdprocessedid="3xi1s" required>       
                                                 </fieldset>
                                                 <div id="item_size" class="dropdown titles-dropdown ">
                                                     <h5 class="title-user fw-7">Company Size</h5>
-                                                    <a class="btn-selector nolink "> 50 - 120</a>
+                                                    <a class="btn-selector nolink input-form"> 50 - 120</a>
                                                     <ul >
                                                         <li ><span>10 - 50</span></li>
                                                         <li><span>50 - 120</span></li>                                     
@@ -406,17 +405,7 @@
 
                                         <div class="tag-wrap">
                                             <h5 class="title-tag fw-7">Categories *</h5>
-                                            
-                                            <!-- <div class="content-box">
-                                                <div class="content tag-input" >
-                                                    <p>Bạn hãy nhập từ khoá và nhập enter để lưu từ khoá.</p>
-                                                    <ul ><input type="text" spellcheck="false"></ul>
-                                                  </div>
-                                                  <div class="details">
-                                                    <p><span>10</span> tags tối đa</p>
-                                                    <button>Xoá tất cả tag</button>
-                                                  </div>
-                                            </div> -->
+
                                             <div class="tag-area">
                                                 <ul>
                                                     <input type="text" class="tag-input" id="tag-input" />
@@ -427,7 +416,7 @@
                                         <div class="wrap-url">
                                             <fieldset class="info-wd">
                                                 <h5 class="title-url fw-7">Profile URL</h5>
-                                                <input type="text" placeholder="https://www.avitex.vn" required>
+                                                <input type="url" id="valueInput" class="input-form" value="https://www.avitex.vn" fdprocessedid="3xi1s" > 
                                             </fieldset>
                                         </div>
                                        
@@ -467,81 +456,122 @@
                                             </ul>
                                         </div>
 
-                                        <div class="button-wrap">
+                                        <div class="button-wrap flex2">
                                             <div class="tf-button button-browse">
                                                 <a href="#">Browse</a>
                                             </div>
+                                            <div class="fs-16"><a >Upload image</a> </div>
                                         </div>
 
                                         <div class="wrap-url">
                                             <fieldset class="info-wd">
                                                 <h5 class="title-url fw-7">Introduction Video</h5>
-                                                <input type="text" placeholder="https://www.youtube.com/watch?v=I6ZLgk_bq90" required>
+                                                <input type="url" id="valueInput" class="input-form" value="https://www.youtube.com/watch?v=I6ZLgk_bq90" fdprocessedid="3xi1s" > 
                                             </fieldset>
                                         </div>
                                         <div class="social-wrap">
                                             <h3>Social Network</h3>
-                                            <div class="form-infor flex flat-form">
-                                                <div class="info-box info-wd">                              
+                                            <div class="form-social form-wg flex flat-form">
+                                                <div class="form-box info-wd wg-box">                              
                                                     <fieldset class="flex2">
                                                         <span class="icon-facebook"></span>
-                                                        <input type="url" placeholder="http://www.facebook.com/avitex" required>
+                                                        <input type="url" id="valueInput" class="input-form" value="http://www.facebook.com/avitex" fdprocessedid="3xi1s">
                                                     </fieldset>
                                                     <fieldset class="flex2">
                                                         <span class="icon-twitter"></span>
-                                                        <input type="url" placeholder="URL" required>
+                                                        <input type="url" class="input-form2" placeholder="URL" required>
                                                     </fieldset>
                                                     <fieldset class="flex2">
                                                         <span class="icon-instagram1"></span>
-                                                        <input type="url" placeholder="URL" required>
+                                                        <input type="url" class="input-form2" placeholder="URL" required>
                                                     </fieldset>                                                                                                                         
                                                 </div>
-                                                <div class="info-box info-wd">                                 
+                                                <div class="form-box info-wd wg-box">                                 
                                                     <fieldset class="flex2">
                                                         <span class="icon-linkedin2"></span>
-                                                        <input type="url" placeholder="URL" required>
+                                                        <input type="url" class="input-form2" placeholder="URL" required>
                                                     </fieldset>
                                                     <fieldset class="flex2">
                                                         <span class="icon-pinterest"></span>
-                                                        <input type="url" placeholder="URL" required>
+                                                        <input type="url" class="input-form2" placeholder="URL" required>
                                                     </fieldset>
                                                     <fieldset class="flex2">
                                                         <span class="icon-youtube"></span>
-                                                        <input type="url" placeholder="URL" required>
+                                                        <input type="url" class="input-form2" placeholder="URL" required>
                                                     </fieldset>    
                                                     
                                                 </div>  
                                             </div>
                                         </div>
-                                        <div class="member-wrap">
-                                            <h3>Member</h3>
-                                            <div class="form-infor flex flat-form">
-                                                <div class="info-box info-wd">                              
-                                                    <fieldset class="flex2">
-                                                        <h5 class="title-user fw-7">Name</h5>
-                                                        <input type="text" placeholder="Maverick Nguyen" required>
-                                                    </fieldset>
-                                                    <fieldset class="flex2">
-                                                        <h5 class="title-user fw-7">Designation</h5>
-                                                        <input type="text" placeholder="Manager" required>
-                                                    </fieldset>
-                                                    <fieldset class="flex2">
-                                                        <h5 class="title-user fw-7">Experience</h5>
-                                                        <input type="text" placeholder="2 years" required>
-                                                    </fieldset>    
-                                                    <fieldset class="flex2">
-                                                        <h5 class="title-user fw-7">Social Network</h5>
-                                                        <input type="url" placeholder="http://www.facebook.com/avitex" required>
-                                                    </fieldset>    
-                                                    <div id="upload-profile2" class="flex2">
-                                                        <h5 class="fw-6">Upload a new cover:</h5>
-                                                        <input class="up-file" id="tf-upload-img2" type="file" name="profile" required="">
-              
-                                                    </div>                                                                                                                     
+                                        <div class="member-wrap ">
+                                            
+                                            <div class="member-box">
+                                                <h3>Member</h3>
+                                                <div class="form-info info-wd">                                               
+                                                    <input type="text" id="valueInput" class="form-member1 input-form" value="Member 1" fdprocessedid="3xi1s">
+                                                    <div class="info-box ">                              
+                                                        <fieldset class="flex2">
+                                                            <h5 class="title-user fw-7">Name</h5>
+                                                            <input type="text" id="valueInput" class="input-form" value="Maverick Nguyen" fdprocessedid="3xi1s">
+                                                        </fieldset>
+                                                        <fieldset class="flex2">
+                                                            <h5 class="title-user fw-7">Designation</h5>
+                                                            <input type="text" id="valueInput" class="input-form" value="Manager" fdprocessedid="3xi1s">
+                                                        </fieldset>
+                                                        <fieldset class="flex2">
+                                                            <h5 class="title-user fw-7">Experience</h5>
+                                                            <input type="text" id="valueInput" class="input-form" value="2 years" fdprocessedid="3xi1s">
+                                                        </fieldset>    
+                                                        <fieldset class="flex2">
+                                                            <h5 class="title-user fw-7">Social Network</h5>
+                                                            <input type="url" id="valueInput" class="input-form" value="http://www.facebook.com/avitex" fdprocessedid="3xi1s">
+                                                        </fieldset>    
+                                                        <div id="upload-profile2" class="upload-wrap flex2">
+                                                            <h5 class="fw-6">Profile Image</h5>
+                                                            <input class="up-file" id="tf-upload-img2" type="file" name="profile" required="">
+                  
+                                                        </div>  
+                                                        <fieldset class="message-wrap flex">
+                                                            <h5 class="fw-6">Description</h5>
+                                                            <textarea id="comment-message" name="message" rows="5" tabindex="5"
+                                                                placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit..."></textarea>
+                                                        </fieldset>  
+                                                        <!-- <input type="password" class="form-control" id="exampleInputpassword" value="44512465" fdprocessedid="v4film">                                                                                                                  -->
+                                                    </div>
+                                                    <input type="text" id="valueInput" class="form-member1 input-form" value="Member 2" fdprocessedid="3xi1s">
+                                                    <div class="member-button">
+                                                        <a href="" class=""><h4 class="fw-7">Member</h4> </a> 
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                        </div>
+                                        <div class="contact-wrap info-wd">
+                                            <h3>Contact Information</h3>
+                                          
+                                            <fieldset class="address-box">
+                                                <h5 class="title-user fw-7">Address</h5>
+                                                <input type="text" id="valueInput" class="input-form" value="71  St. Takayamio, Tokyo" fdprocessedid="3xi1s">
+                                            </fieldset> 
+                                            <div class="form-social form-wg flex flat-form">
+                                                <div class="form-box  wg-box"> 
+                                                    <fieldset class="">
+                                                        <h5 class="title-user fw-7">Location</h5>
+                                                        <input type="text" id="valueInput" class="input-form" value="Tokyo" fdprocessedid="3xi1s">
+                                                    </fieldset> 
+                                                </div>
+                                                <div class="form-box  wg-box"> 
+                                                    <fieldset class="">
+                                                        <h5 class="title-user fw-7">Map Location</h5>
+                                                        <input type="text" id="valueInput" class="input-form" value="243- 235  St. Takayamio, Tokyo" fdprocessedid="3xi1s">
+                                                    </fieldset> 
                                                 </div>
                                             </div>
                                         </div>
-                                        
+                                        <div class="map-content">
+                                            <iframe class="map-box"
+                                            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7302.453092836291!2d90.47477022812872!3d23.77494577893369!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1svi!2s!4v1627293157601!5m2!1svi!2s" allowfullscreen="" loading="lazy"></iframe>
+                                        </div>
                                                 
                                        
                                     </div>
