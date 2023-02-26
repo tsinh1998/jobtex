@@ -186,31 +186,32 @@ button.btn-find:hover {
     margin-top: 28px;
     margin-bottom: 40px;
   } */
-.features-box {
+.features-job {
   margin-bottom: 32px;
   border: 1px solid #e5e5e5;
   padding: 24px;
+  transition: all 0.5s ease-in-out;
 }
-.features-box:hover {
-  border: 1px solid #14a077;
+.features-job:hover {
+  border: 1px solid #14a077 !important;
 }
-.features-box .job-detail {
+.features-job .job-detail {
   position: relative;
   border-bottom: 1px solid #e5e5e5;
 }
-.features-box .inner-box {
+.features-job .inner-box {
   display: flex;
   align-items: center;
 }
-.features-box .inner-box .img {
+.features-job .inner-box .img {
   max-width: 60px;
   margin-right: 16px;
 }
-.features-box .inner-box .img > img {
+.features-job .inner-box .img > img {
   width: 100%;
 }
 
-.job-block-col-6 .inner-box span.icon-heart {
+.features-job .inner-box span.icon-heart {
   right: 0;
   top: 10px;
   position: absolute;
@@ -220,56 +221,61 @@ button.btn-find:hover {
   font-size: 17.42px;
   border: 1px solid #e5e5e5;
   cursor: pointer;
+  transition: all 0.5s ease-in-out;
 }
-.features-box .inner-box span.icon-heart:active,
-.features-box .inner-box span.icon-heart:hover {
+.features-job .inner-box span.icon-heart:active,
+.features-job .inner-box span.icon-heart:hover {
   color: #eb4d4d;
 }
-.features-box .content h4 a {
-  transition: all 300ms ease;
+.features-job .content h4 {
+  line-height: 24px;
+  font-size: 14px;
+}
+.features-job .content h4 a {
+  transition: all 0.5s ease-in-out;
   color: #14a077;
   font-weight: 600;
-  font-size: 14px;
-  line-height: 24px;
 }
-.features-box .content h3 a {
-  transition: all 300ms ease;
+.features-job .content h3 {
+  line-height: 28px;
   font-size: 20px;
+}
+.features-job .content h3 a {
+  transition: all 0.5s ease-in-out;
   font-weight: 700;
   color: #121212;
-  line-height: 28px;
 }
-.features-box .content h3 a:hover {
+.features-job .content h3 a:hover {
   color: #14a077 !;
 }
-.features-box .content h3 span.icon-bolt {
+.features-job .content h3 span.icon-bolt {
   font-size: 14px;
   background-color: #504cfe;
   border-radius: 50%;
   padding: 3px;
   color: #ffffff;
 }
-.features-box .content ul {
+.features-job .content ul {
   margin-top: 4px;
 }
-.features-box .content ul li {
+.features-job .content ul li {
   color: #64666c;
   font-size: 14px;
   font-weight: 400;
   line-height: 22px;
   display: inline-block;
 }
-.features-box .content ul li:first-child {
+.features-job .content ul li:first-child {
   margin-right: 16px;
 }
-.features-box .category {
+.features-job .category {
   margin: 16px 0px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   cursor: pointer;
 }
-.features-box .category .tag span {
+.features-job .category .tag span {
   background-color: #f1f1f1;
   color: #121212;
   font-size: 12px;
@@ -278,17 +284,17 @@ button.btn-find:hover {
   padding: 8px 16px;
   border-radius: 52px;
 }
-.features-box .category .tag span:first-child {
+.features-job .category .tag span:first-child {
   margin-right: 8px;
 }
-.features-box .category .star span {
+.features-job .category .star span {
   font-size: 12.8px;
   color: #ffb321;
 }
-.features-box .category .star span:last-child {
+.features-job .category .star span:last-child {
   color: #e5e5e5;
 }
-.features-box .job-info {
+.features-job .job-info {
   margin-top: 16px;
   display: flex;
   justify-content: space-between;
@@ -296,7 +302,7 @@ button.btn-find:hover {
   font-size: 16px;
 }
 
-.features-box .job-info .job-info-left {
+.features-job .job-info .job-info-left {
   display: flex;
   align-items: center;
   font-weight: 600;
@@ -304,16 +310,16 @@ button.btn-find:hover {
   line-height: 26px;
   color: #121212;
 }
-.features-box .job-info span.dollar {
+.features-job .job-info span.dollar {
   font-size: 20px;
   color: #121212;
   margin-right: 8px;
 }
-.features-box .job-info-left span.year {
+.features-job .job-info-left span.year {
   font-weight: 400;
   color: #64666c;
 }
-.features-box .job-info-right {
+.features-job .job-info-right {
   color: #64666c;
   font-weight: 400;
   font-size: 14px;
@@ -496,6 +502,7 @@ button.btn-find:hover {
   font-size: 17.42px;
   border: 1px solid #e5e5e5;
   cursor: pointer;
+  transition: all 0.5s ease-in-out;
 }
 .job-block-col-12 .group-btn span.icon-heart:active {
   color: #eb4d4d;
@@ -532,7 +539,7 @@ button.btn-find:hover {
   color: #eb4d4d;
 }
 .job-block .content h4 a {
-  transition: all 300ms ease;
+  transition: all 0.5s ease-in-out;
   color: #14a077;
   font-weight: 600;
   font-size: 14px;
@@ -901,6 +908,7 @@ input[type="number"]::-webkit-inner-spin-button {
   font-size: 17.42px;
   border: 1px solid #e5e5e5;
   cursor: pointer;
+  transition: all 0.5s ease-in-out;
 }
 .job-sb-12 .inner-box span.icon-heart:active,
 .job-sb-12 .inner-box span.icon-heart:hover {
@@ -1040,6 +1048,7 @@ input[type="number"]::-webkit-inner-spin-button {
   font-size: 17.42px;
   border: 1px solid #e5e5e5;
   cursor: pointer;
+  transition: all 0.5s ease-in-out;
 }
 .job-sb-6 .inner-box span.icon-heart:active,
 .job-sb-6 .inner-box span.icon-heart:hover {
@@ -1076,16 +1085,16 @@ input[type="number"]::-webkit-inner-spin-button {
 .content-job {
   max-width: 829px;
 }
-.features-box .inner-box .button-readmore {
+.features-job .inner-box .button-readmore {
   position: absolute;
   top: 0;
   right: 0;
 }
-.features-box .inner-box .button-readmore > span.icon-heart {
+.features-job .inner-box .button-readmore > span.icon-heart {
   position: unset;
   margin-right: 20px;
 }
-.features-box .inner-box .button-readmore button.btn-apply {
+.features-job .inner-box .button-readmore button.btn-apply {
   background-color: #14a077;
   color: #ffffff;
   padding: 8px 20px;
@@ -1097,10 +1106,10 @@ input[type="number"]::-webkit-inner-spin-button {
   border: none;
   border-radius: 4px;
 }
-.features-box .inner-box .button-readmore button.btn-apply:hover {
+.features-job .inner-box .button-readmore button.btn-apply:hover {
   background-color: #148160;
 }
-.features-box .inner-box .button-readmore button.btn-apply span {
+.features-job .inner-box .button-readmore button.btn-apply span {
   font-size: 20px;
   margin-right: 8px;
 }
@@ -1123,85 +1132,83 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 /*======================= wd-feature-job style2 =====================*/
 
-.job-fullwidth {
+.features-job.style-2 {
   width: 100%;
   border: 1px solid #e5e5e5;
   padding: 24px;
   margin-bottom: 0;
 }
-.job-fullwidth:hover {
-  border: 1px solid #14a077;
-}
-.job-fullwidth .inner-box {
+
+.features-job.style-2 .inner-box {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.job-fullwidth .inner-box .company {
+.features-job.style-2 .inner-box .company {
   width: 25%;
   display: flex;
   align-items: center;
 }
-.job-fullwidth .inner-box .img {
+.features-job.style-2 .inner-box .img {
   max-width: 60px;
   margin-right: 16px;
 }
-.job-fullwidth .inner-box.img > img {
+.features-job.style-2 .inner-box.img > img {
   width: 100%;
 }
-.job-fullwidth .content h4 {
+.features-job.style-2 .content h4 {
   line-height: 24px;
   font-weight: 600;
   font-size: 14px;
   line-height: 24px;
 }
-.job-fullwidth .content h4 a {
+.features-job.style-2 .content h4 a {
   color: #14a077;
 }
-.job-fullwidth .content h3 {
+.features-job.style-2 .content h3 {
   font-size: 20px;
   font-weight: 700;
   line-height: 28px;
 }
-.job-fullwidth .content h3 a {
+.features-job.style-2 .content h3 a {
   color: #121212;
 }
-.job-fullwidth .content h3 > span {
+.features-job.style-2 .content h3 > span {
   font-size: 14px;
   background-color: #504cfe;
   border-radius: 50%;
   padding: 3px;
   color: #ffffff;
 }
-.job-fullwidth .content .star span {
+.features-job.style-2 .content .star span {
   font-size: 12.8px;
   color: #ffb321;
 }
-.job-fullwidth .content .star span:last-child {
+.features-job.style-2 .content .star span:last-child {
   color: #e5e5e5;
 }
-.job-fullwidth .info {
+.features-job.style-2 .info {
   color: #64666c;
   font-size: 14px;
   font-weight: 400;
   display: inline-flex;
 }
-.job-fullwidth .info li:first-child {
+.features-job.style-2 .info li:first-child {
   margin-right: 16px;
 }
-.job-fullwidth .info span.icon-map-pin {
+.features-job.style-2 .info span.icon-map-pin {
   color: #64666c;
   font-size: 16px;
   margin-right: 4px;
 }
 
-.job-fullwidth .category {
+.features-job.style-2 .category {
   margin: 16px 0px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.job-fullwidth .category .tag span {
+.features-job.style-2 .category .tag span {
   background-color: #f1f1f1;
   color: #121212;
   font-size: 12px;
@@ -1210,11 +1217,11 @@ input[type="number"]::-webkit-inner-spin-button {
   padding: 8px 16px;
   border-radius: 52px;
 }
-.job-fullwidth .category .tag span:first-child {
+.features-job.style-2 .category .tag span:first-child {
   margin-right: 8px;
 }
 
-.job-fullwidth .salary {
+.features-job.style-2 .salary {
   display: flex;
   align-items: center;
   font-weight: 600;
@@ -1222,20 +1229,20 @@ input[type="number"]::-webkit-inner-spin-button {
   line-height: 26px;
   color: #121212;
 }
-.job-fullwidth .salary .dollar {
+.features-job.style-2 .salary .dollar {
   font-size: 20px;
   color: #121212;
   margin-right: 8px;
 }
-.job-fullwidth .salary span.year {
+.features-job.style-2 .salary span.year {
   font-weight: 400;
   color: #64666c;
 }
-.job-fullwidth .group-btn {
+.features-job.style-2 .group-btn {
   display: flex;
   align-items: center;
 }
-.job-fullwidth .group-btn span.icon-heart {
+.features-job.style-2 .group-btn span.icon-heart {
   position: unset;
   margin-right: 20px;
   height: 40px;
@@ -1244,12 +1251,13 @@ input[type="number"]::-webkit-inner-spin-button {
   color: #e5e5e5;
   font-size: 17.42px;
   border: 1px solid #e5e5e5;
+  transition: all 0.5s ease-in-out;
 }
-.job-fullwidth .group-btn span.icon-heart:active,
-.job-fullwidth .group-btn span.icon-heart:hover {
+.features-job.style-2 .group-btn span.icon-heart:active,
+.features-job.style-2 .group-btn span.icon-heart:hover {
   color: #eb4d4d;
 }
-.job-fullwidth .group-btn button {
+.features-job.style-2 .group-btn button {
   background-color: #14a077;
   color: #ffffff;
   border-radius: 4px;
@@ -1260,7 +1268,7 @@ input[type="number"]::-webkit-inner-spin-button {
   line-height: 26px;
   text-transform: none;
 }
-.job-fullwidth .group-btn button:hover {
+.features-job.style-2 .group-btn button:hover {
   background-color: #148160;
 }
 
@@ -1322,12 +1330,15 @@ input[type="number"]::-webkit-inner-spin-button {
 .employer-block .inner-box .img > img {
   width: 100%;
 }
-.employer-block .content h3 a {
-  transition: all 300ms ease;
+.employer-block .content h3 {
+  line-height: 28px;
   font-size: 20px;
+}
+.employer-block .content h3 a {
+  transition: all 0.5s ease-in-out;
+
   font-weight: 700;
   color: #121212;
-  line-height: 28px;
 }
 .employer-block .content h3 a:hover {
   color: #14a077;
@@ -1361,7 +1372,7 @@ input[type="number"]::-webkit-inner-spin-button {
 .employer-3-col:hover {
   border-color: #ffffff;
   box-shadow: 0px 10px 25px rgba(54, 95, 104, 0.1);
-  transition: all 300ms ease;
+  transition: all 0.5s ease-in-out;
 }
 .employer-2-col .inner-box {
   position: relative;
@@ -1379,6 +1390,7 @@ input[type="number"]::-webkit-inner-spin-button {
   font-size: 17.42px;
   border: 1px solid #e5e5e5;
   cursor: pointer;
+  transition: all 0.5s ease-in-out;
 }
 .employer-2-col .inner-box .button-readmore span.icon-heart:active,
 .employer-2-col .inner-box .button-readmore span.icon-heart:hover {
@@ -1423,6 +1435,7 @@ input[type="number"]::-webkit-inner-spin-button {
   font-size: 17.42px;
   border: 1px solid #e5e5e5;
   cursor: pointer;
+  transition: all 0.5s ease-in-out;
 }
 .employer-3-col .inner-box span.icon-heart:active,
 .employer-3-col .inner-box span.icon-heart:hover {
@@ -1543,15 +1556,7 @@ input[type="number"]::-webkit-inner-spin-button {
   width: 100%;
 }
 /* 
-.wd-icon-bg-white .work-icon-content button {
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 26px;
-  margin-top: 20px;
-  color: #14a077;
-  border: none;
-  text-transform: none;
-} */
+
 /* ================widget-icon-box  */
 .wd-iconbox.flat-row {
   padding: 80px 0;
