@@ -21,8 +21,13 @@
     .sticky-area-wrap .header-ct-left {
         padding-left: 15px;
     }
-    #menu-primary-menu > li {
-        padding: 26px 15px 26px 0;
+    .sticky-area-wrap .header-ct-left .logo {
+        margin-right: 20px;
+    }
+}
+@media only screen and (max-width: 1400px) {
+    #main-nav #menu-primary-menu > li:not(:first-child) {
+        margin-left: 20px;
     }
 }
 @media only screen and (max-width: 1300px) {
@@ -33,6 +38,14 @@
 @media only screen and (max-width: 1200px) {
     .sticky-area-wrap .header-ct-right .account {
         display: none;
+    }
+    .sticky-area-wrap .header-ct-right .button a {
+        margin: 10px 0;
+    }
+}
+@media only screen and (max-width: 1024px) {
+    .sticky-area-wrap .header-ct-center {
+        justify-content: right;
     }
 }
 @media only screen and (max-width: 991px) {
@@ -75,5 +88,15 @@
     .group-location .box-3,
     .group-location .box-6 {
         width: calc(100% - 20px );
+    }
+    .sticky-area-wrap .header-ct-right .button a,
+    .sticky-area-wrap .header-ct-right {
+       display: none;
+    }
+    #header {
+        padding: 20px 0;
+    }
+    .header .header-ct-center .mobile-button { 
+        margin: 0;
     }
 }
