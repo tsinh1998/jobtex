@@ -1524,51 +1524,77 @@
     font-size: 16px;
 }
 .flat-dashboard-setting .member-wrap {
-    margin-bottom: 30px;
-    padding-bottom: 16px;
+    margin-bottom: 31px;
+    padding-bottom: 31px;
     border-bottom: 1px solid #E5E5E5;
 }
 
 .flat-dashboard-setting .member-wrap .member-box {
     width: 52.5%;
 }
+
+.flat-dashboard-setting .form-member {
+    margin-bottom: 21px;
+    position: relative;
+}
+.flat-dashboard-setting .form-member a {
+    position: absolute;
+    right: 16px;
+    font-size: 20px;
+}
+
 .flat-dashboard-setting .member-wrap h3 {
     margin-bottom: 22px;
 }
 .flat-dashboard-setting .member-wrap h5 {
-    width: 26%;
+    width: 25%;
     flex: none;
+    margin-bottom: 0;
 }
-.flat-dashboard-setting .member-wrap input {
-    border: 0px solid #E5E5E5 !important;
+.flat-dashboard-setting .member-wrap .info-box {
+    padding-left: 10px;
 }
-
+.flat-dashboard-setting .member-wrap .input-form {
+    border: 0px ;
+}
+.flat-dashboard-setting .member-wrap .message-wrap {
+    margin-bottom: 21px;
+}
 .flat-dashboard-setting .member-wrap fieldset {
-    margin-bottom: 10px;
+    margin-bottom: 16px;
 }
 .flat-dashboard-setting .upload-wrap {
-    margin-bottom: 10px;
+    margin-bottom: 19px;
+    padding-top: 2px;
 }
 
-.flat-dashboard-setting .message-wrap textarea{
-    font-style: unset;
-    background: linear-gradient(0deg, #F5F5F5, #F5F5F5),
-    linear-gradient(0deg, #E5E5E5, #E5E5E5);
-    padding: 8px 15px;
-    color: #000;
-    border: 1px solid #E5E5E5;
-    font-size: 16px;
+
+.flat-dashboard-setting .message-wrap h5 {
+    padding-top: 9px;
 }
 
 .flat-dashboard-setting .message-wrap .info-box {
     margin-bottom: 10px;
 }
-.form-member1 {
-    margin-bottom: 17px;
+.flat-dashboard-setting .message-wrap textarea {
+    font-style: unset;
+    background: linear-gradient(0deg, #F5F5F5, #F5F5F5),
+    linear-gradient(0deg, #E5E5E5, #E5E5E5);
+    padding: 8px 15px;
+    color: #000;
+    font-size: 16px;
+    padding: 12px 15px;
+    height: unset;
+    border: 0;
+}
+.flat-dashboard-setting .message-wrap textarea::placeholder {
+    color: #B1B1B1;
 }
 
+
+
 .member-button {
-    margin-bottom: 20px;
+    /* margin-bottom: 30px; */
 }
 .member-button  a {
     width: 100%;
@@ -1592,11 +1618,15 @@
 }
 .contact-wrap {
     margin-bottom: 30px;
-    padding-bottom: 30px;
+    padding-bottom: 33px;
     border-bottom: 1px solid #E5E5E5;
 }
+
+.flat-dashboard-setting .contact-wrap .input-form {
+    height: 56px;
+}
 .contact-wrap h3 {
-    margin-bottom: 20px;
+    margin-bottom: 17px;
 }
 
 .contact-wrap .address-box {
@@ -1606,6 +1636,14 @@
 .flat-dashboard-setting .map-box {
     width: 100%;
     height: 281px;
+}
+.fl-item2,
+.fl-item {
+    display: none;
+}
+.loadmore2,
+.loadmore {
+    display:unset !important;
 }
 
     
