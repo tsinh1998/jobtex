@@ -6,6 +6,10 @@
   margin: 60px auto;
 } */
 /* Job Search Form */
+/* @import url("https://cdn-uicons.flaticon.com/uicons-thin-rounded/css/uicons-thin-rounded.css");
+
+@import url("https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css"); */
+
 .tf-container .job-search-form form {
   width: 100%;
   border: 1px solid #e5e5e5;
@@ -13,6 +17,7 @@
   border-radius: 8px;
   margin: 60px 0px;
   padding: 16px 18px 16px 27px;
+  background-color: #ffffff;
 }
 /* .job-search-form form {
 } */
@@ -25,7 +30,7 @@
 .job-search-form .form-group-1 {
   width: 30%;
   position: relative;
-  border-right: 1px solid #e5e5e5;
+  /* border-right: 1px solid #e5e5e5; */
 }
 .job-search-form .form-group-2 {
   width: 31%;
