@@ -410,7 +410,7 @@
       if (mobile.matches) {
         $("#main-nav")
           .attr("id", "main-nav-mobi")
-          .appendTo("#header_main")
+          .appendTo(".nav-wrap")
           .hide()
           .children(".menu")
           .append(navExt)
