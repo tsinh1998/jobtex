@@ -356,6 +356,34 @@
     }
   }
 
+  var flatProgressBar = function () {
+    if ($('.chart-box.counter').length > 0) {
+      $('.counter').appear(function () {
+        var bar= $(this).find('.chart').data("barcolor"),
+        track = $(this).find('.chart').data("trackcolor"),
+        size = $(this).find('.chart').data("size"),
+        withh = $(this).find('.chart').data("withh"),
+        text = $(this).find('.chart').data("text");
+        $(this).find('.chart .text').append(text);
+          $('.chart').easyPieChart({
+              easing: 'easeOut',
+              lineWidth: withh,
+              size: size,
+              scaleColor: false,
+              barColor: bar,
+              trackColor: track,
+              animate: 5000,
+              onStep: function (from, to, percent) {
+                  $(this.el).find('.percent').text(Math.round(percent));
+              }
+          });
+  
+      }, {
+          offset: 400
+      });
+    }
+};
+
   $("#tf-upload-img").change(function () {
     fasterPreview(this);
   });
@@ -473,6 +501,7 @@
     swiper5();
     partner();
     gallery();
+    flatProgressBar();
     accordion();
     goTop();
     mobileNav();
