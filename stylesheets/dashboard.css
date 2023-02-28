@@ -1144,11 +1144,11 @@
     content: 'Upload Your Photo';
     display: inline-block;
     background: #7759F312;
-    color: var(--primary-color8);
+    /* color: var(--primary-color8); */
     text-align: center;
     border-radius: 8px;
     font-family: 'Open Sans';
-    @include transition3;
+    transition : all 0.3s ease;
     padding-left: 29px;
 }
 
@@ -1156,36 +1156,15 @@
     content: '\f0ee';
     font-family: "Font Awesome 5 Pro";
     font-size: 18px;
-    @include transition3;
-    color: var(--primary-color8);
+    transition : all 0.3s ease;
+    /* color: var(--primary-color8); */
     position: absolute;
     top: 11px;
     left: 27px;
 }
 
 /* form */
-/* .form-profile {
-    .form-infor-profile {
-        margin-bottom: 50px;
-        .form-infor {
-            margin-left: -30px;
-        }
-        .info-social,
-        .info-account {
-            width: calc(50% - 30px);
-            margin-left: 30px;
-        }
-    }
-    .message {
-        p {
-            margin-bottom: 4px;
-        }
-        textarea {
-            background: var(--primary-color10);  
-            padding: 9px 15px 17px 18.5px;
-        }
-    }
-} */
+
 .flat-dashboard-setting .title-info {
     margin-bottom: 16px;
 }
@@ -1469,21 +1448,21 @@
 }
 
 /* */
-.photo-wrap {
+.dashboard .photo-wrap {
     margin-bottom: 20px;
 }
-.photo-wrap h3{
+.dashboard .photo-wrap h3{
     margin-bottom: 20px;
 }
 
-.photo-wrap ul li {
+.dashboard .photo-wrap ul li {
     margin-right: 20px;
 }
 
-.button-wrap {
+.dashboard .button-wrap {
     margin-bottom: 20px;
 }
-.button-wrap .tf-button a {
+.dashboard .button-wrap .tf-button a {
     padding: 11px 31.5px;
     margin-right: 28px;
 }
@@ -1703,11 +1682,24 @@
 }
 
 /* Submit Job */
+.page-title-dashboard.style {
+    padding: 38px 0 14px;
+}
+.page-title-dashboard.style .title-dashboard {
+    justify-content: space-between;
+}
+
+.page-title-dashboard.style .tf-button a {
+    padding: 11px 32px;
+    background: #14A077;
+    color: #fff;
+}
+
 .flat-dashboard-submit {
-    padding-bottom: 50px;
+    padding-bottom: 41px;
 }
 .flat-dashboard-submit .submit-job h3 {
-    margin-bottom: 20px;
+    margin-bottom: 27px;
 }
 .flat-dashboard-submit .package-wrap {
     margin-left: -20px;
@@ -1718,20 +1710,131 @@
     width: calc(50% - 20px);
     margin-left: 20px;
     background-color: #fff;
-    padding: 25px;
-    margin-bottom: 20px;
+    padding: 24px 23px 22px;
+    margin-bottom: 19px;
+    border: 1px solid #fff;
+    border-radius: 8px;
+    transition        : all 0.3s ease;
+}
+.flat-dashboard-submit .package-wrap .box:hover {
+    border: 1px solid #14A077;
+}
+.flat-dashboard-submit .package-wrap .box h4 {
+    margin-bottom: 1px;
 }
 .flat-dashboard-submit .package-wrap .box input {
-    margin: 0 8px 0 0;
+    margin: 0 14px 0 0;
     width: 20px;
     height: 20px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+input[type='radio']:checked:after {
+    width: 14px;
+    height: 14px;
+    border-radius: 20px;
+    position: absolute;
+    background-color: #14A077;
+    content: '';
 }
 
+
+/* .flat dashboard month */
+.flat-dashboard-month {
+    padding-bottom: 39px;
+}
 .flat-dashboard-month .wrap-title {
-    margin-bottom: 20px;
+    margin-bottom: 28px;
 }
 
 .flat-dashboard-month .wrap-month {
-    padding: 10px;
     background-color: #fff;
+    border: 1px solid #E5E5E5;
+    box-shadow: 0px 2px 2px rgba(28, 36, 51, 0.1);
+    border-radius: 8px;
+    padding: 23px 25px 23px 23px;
+    transition        : all 0.3s ease;
 }
+.flat-dashboard-month .wrap-month:hover,
+.flat-dashboard-month .wrap-month.active {
+    border: 1px solid #14A077;
+    box-shadow: 0px 10px 25px rgba(54, 95, 104, 0.1);
+}
+.flat-dashboard-month .wrap-month:hover .tf-button a,
+.flat-dashboard-month .wrap-month.active .tf-button a {
+    background: #14A077;
+    color: #fff;
+}
+
+.flat-dashboard-month .wrap-month .titles {
+    margin-bottom: 23px;
+}
+.flat-dashboard-month .wrap-month .money-box {
+    align-items: baseline;
+    margin-bottom: 35px;
+}
+
+.flat-dashboard-month .wrap-month .money-box span {
+    font-size: 30px;
+}
+.flat-dashboard-month .wrap-month ul {
+    margin-bottom: 32px;
+}
+.flat-dashboard-month .wrap-month ul li {
+    margin-bottom: 17px;
+}
+.flat-dashboard-month .wrap-month ul li:last-child {
+    margin-bottom: 0
+}
+.flat-dashboard-month .wrap-month ul li span {
+    vertical-align: middle;
+}
+.flat-dashboard-month .wrap-month ul li span::before {
+    content: '\e9b2';
+    font-family: 'icomoon';
+    font-size: 11px;
+    width: 20px;
+    height: 20px;
+    background-color: #14A077;
+    padding: 5px;
+    border-radius: 50%;
+    color: #fff;
+    padding: 4.6px;
+    border-radius: 50%;
+    color: #fff;
+    margin-right: 11px;
+    
+}
+.flat-dashboard-month .wrap-month .tf-button a {
+    width: 100%;
+    text-align: center;
+    padding: 11px 15px;
+}
+.titles-box {
+    justify-content: space-between;
+}
+.flat-dashboard-month .wrap-month .sub-title {
+    margin-top: -3px;
+}
+.flat-dashboard-month .wrap-month .sub-title a {
+    background-color: #14A077;
+    font-size: 10px;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 4px 6px;
+    letter-spacing: 0.1em;
+    line-height: 13px;
+    border-radius: 4px;
+}
+
+
+
+
+/* .flat-dashboard-month input[type='radio']:after {
+    position: relative;
+    background-color: #14A077;
+    color: #14A077;
+} */
+
