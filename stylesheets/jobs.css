@@ -10,12 +10,14 @@
 
 @import url("https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css"); */
 
-.tf-container .job-search-form form {
+.form-section {
+  margin: 60px 0px;
+}
+.job-search-form form {
   width: 100%;
   border: 1px solid #e5e5e5;
   box-shadow: 0px 2px 2px rgba(28, 36, 51, 0.1);
   border-radius: 8px;
-  margin: 60px 0px;
   padding: 16px 18px 16px 27px;
   background-color: #ffffff;
 }
@@ -23,25 +25,26 @@
 } */
 .row-group-search {
   display: flex;
-  flex-wrap: wrap;
-  display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 .job-search-form .form-group-1 {
-  width: 30%;
+  /* width: 30%; */
+  flex: 1;
   position: relative;
-  /* border-right: 1px solid #e5e5e5; */
 }
 .job-search-form .form-group-2 {
-  width: 31%;
+  /* width: 31%; */
+  flex: 1;
   position: relative;
 }
 .job-search-form .form-group-3 {
-  width: 29%;
+  /* width: 29%; */
+  flex: 0.9;
   position: relative;
 }
 .job-search-form .form-group-4 {
-  width: 10%;
+  /* width: 10%; */
 }
 
 .job-search-form .form-group-2,
@@ -1209,13 +1212,13 @@ input[type="number"]::-webkit-inner-spin-button {
   display: flex;
   align-items: center;
 }
-.features-job.style-2 .inner-box .img {
+/* .features-job.style-2 .inner-box .img {
   max-width: 60px;
   margin-right: 16px;
 }
 .features-job.style-2 .inner-box.img > img {
   width: 100%;
-}
+} */
 .features-job.style-2 .content h4 {
   line-height: 24px;
   font-weight: 600;
@@ -2062,4 +2065,8 @@ input[type="number"]::-webkit-inner-spin-button {
 
 .slide-8 .slide-8-content .job-search-form {
   max-width: 785px;
+}
+
+/* Responsive */
+@media only screen and (max-width: 500px) {
 }
