@@ -29,10 +29,17 @@
     #main-nav #menu-primary-menu > li:not(:first-child) {
         margin-left: 20px;
     }
+    .tf-slider .heading h2 {
+        padding-right: 200px;
+    }
 }
 @media only screen and (max-width: 1300px) {
     .sticky-area-wrap .header-ct-left .categories {
         display: none;
+    }
+    .tf-slider .list-category li:not(:last-child) {
+        margin-right: 20px;
+        margin-bottom: 5px;
     }
 }
 @media only screen and (max-width: 1200px) {
@@ -48,6 +55,20 @@
     .sticky-area-wrap .header-ct-right .button {
       margin-right: 0px;
     }
+    .tf-slider .heading h2,
+    .tf-slider .heading p {
+        padding-right: 100px;
+    }
+    .tf-slider .form-sl .row-group-search {
+        margin-right: 0;
+    }
+    .tf-slider.sl2 .list-category {
+        margin-bottom: 100px;
+    }
+    .tf-slider .chart-box {
+        top: 0%;
+        right: 23.5%;
+    }
 }
 @media only screen and (max-width: 1024px) {
     .sticky-area-wrap .header-ct-center {
@@ -58,6 +79,16 @@
     .group-location .box-3,
     .group-location .box-6 {
         width: calc(50% - 20px );
+    }
+    .tf-sl2.wd-review-job.thumb2 {
+        margin-top: 0%;
+    }
+    .tf-sl2.wd-review-job.thumb2 .tes-box {
+        left: 18.5%;
+    }
+    .tf-slider .heading h2,
+    .tf-slider .heading p {
+        padding-right: 100px;
     }
     .wd-counter {
         margin-bottom: 30px;
@@ -89,11 +120,32 @@
         text-align: center;
         margin-bottom: 60px;
     }
+    .tf-slider.sl3 .list-category {
+        margin-bottom: 100px;
+    }
+    .tf-sl3.wd-review-job.thumb2 .thumb .box1 {
+        margin-top: 0%;
+    }
+    .tf-sl3.wd-review-job.thumb2 .icon2 {
+        left: 11%;
+    }
+    .tf-sl3.wd-review-job.thumb2 .thumb .box1 .markk {
+        right: 26%;
+    }
+    .tf-sl3.wd-review-job.thumb2 .thumb .box2 .markk {
+        right: 18%;
+    }
+    .tf-slider.sl3 {
+        padding-bottom: 100px;
+    }
 }
 @media only screen and (max-width: 767px) {
     .group-location .box-3,
     .group-location .box-6 {
         width: calc(100% - 20px );
+    }
+    .tf-slider .form-sl .form-group-4 {
+        margin: 10px auto;
     }
     .sticky-area-wrap .header-ct-right .button a,
     .sticky-area-wrap .header-ct-right {
@@ -104,5 +156,19 @@
     }
     .header .header-ct-center .mobile-button { 
         margin: 0;
+    }
+    .tf-sl2.wd-review-job.thumb2 .tes-box {
+        left: 11.5%;
+        top: 36%;
+    }
+    .tf-slider .heading h2,
+    .tf-slider .heading p {
+        padding-right: 0px;
+    }
+    .tf-slider .heading h2 {
+        font-size: 40px;
+    }
+    .tf-slider .form-sl .form-group-1 input {
+        border: unset;
     }
 }
