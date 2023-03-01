@@ -545,13 +545,14 @@
     counter();
     tfTabs();
     filter();
+    dropdown("#item_date");
+    dropdown("#item_size");
+    dropdown("#item_category2");
     loadmore();
     UpImg();
     delete_img();
     popUpLightBox();
-    dropdown("#item_date");
-    dropdown("#item_size");
-    dropdown("#item_category2");
+   
 
     preload();
   });
