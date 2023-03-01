@@ -900,3 +900,13 @@ button.tf-button.style-1 {
   padding-top: 48px;
   padding-bottom: 80px;
 }
+.swiper-wrapper.style-1 {
+  padding-bottom: 32px;
+}
+.tes-bullet.style-1 {
+  bottom: 0 !important;
+}
+/* .swiper-slide.style-2 {
+  max-width: 1420px !important;
+  width: 100%;
+} */
