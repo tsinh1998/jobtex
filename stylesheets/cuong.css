@@ -733,6 +733,11 @@ padding-right: 280px;
     padding-bottom: 0px;
     background: #F2F1FA;
 }
+.tf-slider.sl5 {
+    padding-top: 60px;
+    padding-bottom: 73px;
+    background-image: url(../images/slider/slider2.jpg);
+}
 .tf-slider.sl2 h2 {
     color: #123841;
 }
@@ -958,6 +963,30 @@ margin-bottom: 3px;
     top: 31%;
     right: -37%;
 }
+.tf-slider.sl5 .content .text-center {
+    text-align: center;
+}
+
+.tf-slider .heading.text-center h2,
+.tf-slider .heading.text-center p {
+    padding-right: 0px;
+}
+.tf-slider .heading.text-center h2 {
+    padding: 0 30%;
+}
+.tf-slider .heading.text-center p {
+    padding: 0 22%;
+}
+.tf-slider.sl5 .form-sl {
+    margin-top: 50px;
+    margin-bottom: -110px;
+    margin-left: 231px;
+    margin-right: 247px;
+}
+.tf-slider.sl5 .form-sl .row-group-search {
+    border: 1px solid #148160;
+}
+
 /* -----------------------------------------animation------------------------------------ */
 .ani1 {
     -webkit-animation: ani1 10s infinite linear;
