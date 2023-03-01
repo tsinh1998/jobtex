@@ -196,9 +196,13 @@ button.btn-find:hover {
   } */
 .features-job {
   margin-bottom: 32px;
+  gap: 32;
   border: 1px solid #e5e5e5;
   padding: 24px;
   transition: all 0.5s ease-in-out;
+}
+.features-job:last-child {
+  /* margin-bottom: 0; */
 }
 .features-job:hover {
   border: 1px solid #14a077 !important;
@@ -229,7 +233,7 @@ button.btn-find:hover {
   font-size: 17.42px;
   border: 1px solid #e5e5e5;
   cursor: pointer;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 .features-job .inner-box span.icon-heart:active,
 .features-job .inner-box span.icon-heart:hover {
@@ -510,7 +514,7 @@ button.btn-find:hover {
   font-size: 17.42px;
   border: 1px solid #e5e5e5;
   cursor: pointer;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 .job-block-col-12 .group-btn span.icon-heart:active {
   color: #eb4d4d;
@@ -916,7 +920,7 @@ input[type="number"]::-webkit-inner-spin-button {
   font-size: 17.42px;
   border: 1px solid #e5e5e5;
   cursor: pointer;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 .job-sb-12 .inner-box span.icon-heart:active,
 .job-sb-12 .inner-box span.icon-heart:hover {
@@ -1056,7 +1060,7 @@ input[type="number"]::-webkit-inner-spin-button {
   font-size: 17.42px;
   border: 1px solid #e5e5e5;
   cursor: pointer;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 .job-sb-6 .inner-box span.icon-heart:active,
 .job-sb-6 .inner-box span.icon-heart:hover {
@@ -1314,7 +1318,7 @@ input[type="number"]::-webkit-inner-spin-button {
   color: #e5e5e5;
   font-size: 17.42px;
   border: 1px solid #e5e5e5;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 .features-job.style-2 .group-btn span.icon-heart:active,
 .features-job.style-2 .group-btn span.icon-heart:hover {
@@ -1336,9 +1340,9 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 /*============== wd-Employer ================== */
-.wd-employer {
+/* .wd-employer {
   margin: 80px 0px;
-}
+} */
 .tf-title {
   display: flex;
   justify-content: space-between;
@@ -1358,7 +1362,7 @@ input[type="number"]::-webkit-inner-spin-button {
   font-weight: 400;
   line-height: 28px;
 }
-.tf-title button {
+button.tf-button {
   border: none;
   display: inline-flex;
   align-items: center;
@@ -1367,7 +1371,7 @@ input[type="number"]::-webkit-inner-spin-button {
   font-weight: 700;
   line-height: 26px;
 }
-.tf-title button span {
+button.tf-button span {
   color: #14a077;
   font-size: 20px;
   margin-left: 4px;
@@ -1454,7 +1458,7 @@ input[type="number"]::-webkit-inner-spin-button {
   font-size: 17.42px;
   border: 1px solid #e5e5e5;
   cursor: pointer;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 .employer-2-col .inner-box .button-readmore span.icon-heart:active,
 .employer-2-col .inner-box .button-readmore span.icon-heart:hover {
@@ -1499,7 +1503,7 @@ input[type="number"]::-webkit-inner-spin-button {
   font-size: 17.42px;
   border: 1px solid #e5e5e5;
   cursor: pointer;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 .employer-3-col .inner-box span.icon-heart:active,
 .employer-3-col .inner-box span.icon-heart:hover {

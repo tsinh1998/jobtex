@@ -881,3 +881,22 @@
 .dashboard.show .dashboard__content {
   margin-left: 289px;
 }
+
+/*=============== HOME PAGE ==================*/
+.tf-title.style-2 {
+  text-align: center;
+  display: block;
+}
+.wrap-button {
+  padding-top: 8px;
+  text-align: center;
+}
+button.tf-button.style-1 {
+  border: 1px solid #14a077;
+  padding: 12px 32px;
+  border-radius: 4px;
+}
+.wrap-testimonials {
+  padding-top: 48px;
+  padding-bottom: 80px;
+}
