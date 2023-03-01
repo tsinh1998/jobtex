@@ -61,13 +61,19 @@
     }
     .tf-slider .form-sl .row-group-search {
         margin-right: 0;
+        flex-wrap: wrap;
     }
-    .tf-slider.sl2 .list-category {
+    .tf-slider.sl2 .list-category,
+    .tf-slider.sl4 .list-category {
         margin-bottom: 100px;
     }
     .tf-slider .chart-box {
         top: 0%;
         right: 23.5%;
+    }
+    .tf-sl4.wd-review-job.thumb2 .trader-box {
+        top: 55%;
+        right: 0%;
     }
 }
 @media only screen and (max-width: 1024px) {
@@ -138,6 +144,16 @@
     .tf-slider.sl3 {
         padding-bottom: 100px;
     }
+    .tf-sl4.wd-review-job.thumb2 .tes-box {
+        left: 6.5%;
+    }
+    .tf-sl4.wd-review-job.thumb2 .trader-box {
+        top: 38%;
+    }
+    .tf-sl4.wd-review-job.thumb2 .thumb {
+        margin-right: 0%;
+        margin-top: 0%;
+    }
 }
 @media only screen and (max-width: 767px) {
     .group-location .box-3,
@@ -170,5 +186,8 @@
     }
     .tf-slider .form-sl .form-group-1 input {
         border: unset;
+    }
+    .tf-sl4.wd-review-job.thumb2 .tes-box {
+        top: -6%;
     }
 }

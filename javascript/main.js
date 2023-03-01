@@ -342,19 +342,7 @@
     });
   };
 
-  //
-  $("#profileimg").click(function (e) {
-    $("#tf-upload-img").click();
-  });
-
-  function fasterPreview(uploader) {
-    if (uploader.files && uploader.files[0]) {
-      $("#profileimg").attr(
-        "src",
-        window.URL.createObjectURL(uploader.files[0])
-      );
-    }
-  }
+  
 
   var flatProgressBar = function () {
     if ($('.chart-box.counter').length > 0) {
@@ -384,11 +372,49 @@
     }
 };
 
+  // 
+  var loadmore = function () {
+    $(".fl-item").slice(0, 0).show();
+    $(".fl-item2").slice(0, 0).show();
+    $(".fl-collection.fl-item3").slice(0, 3).show();
+
+    $(".loadmore").on("click", function(e){
+      e.preventDefault();
+
+      $(".fl-item:hidden").slice(0, 1).slideDown();
+      $(".fl-item2:hidden").slice(0, 1).slideDown();
+      $(".fl-item3:hidden").slice(0, 3).slideDown();
+      if($(".fl-item:hidden").length == 0) {
+        $(".loadmore").hide();
+      }
+      if($(".fl-item2:hidden").length == 0) {
+        $("#loadmore2").hide();
+      }
+      if($(".fl-item3:hidden").length == 0) {
+        $("#loadmore").hide();
+      }
+
+    });
+  };
+
+  // up img 1
+  $("#profileimg").click(function (e) {
+    $("#tf-upload-img").click();
+  });
+
+  function fasterPreview(uploader) {
+    if (uploader.files && uploader.files[0]) {
+      $("#profileimg").attr(
+        "src",
+        window.URL.createObjectURL(uploader.files[0])
+      );
+    }
+  }
   $("#tf-upload-img").change(function () {
     fasterPreview(this);
   });
 
-  //
+  // up img 2
   var UpImg = function () {
     $("#profileimg2").click(function (e) {
       $("#tf-upload-img2").click();
@@ -407,6 +433,17 @@
       fasterPreview(this);
     });
   };
+
+  // delete
+  var delete_img = function(e) {
+  
+    $('.remove-file').on('click',function(e) {
+      e.preventDefault();
+      var $this = $(this);
+      $this.closest('.file-delete').remove();
+
+    });
+  }
 
   var tfTabs = function(){
     $('.tf-tab').each(function(){
@@ -508,7 +545,9 @@
     counter();
     tfTabs();
     filter();
+    loadmore();
     UpImg();
+    delete_img();
     popUpLightBox();
     dropdown("#item_date");
     dropdown("#item_size");
