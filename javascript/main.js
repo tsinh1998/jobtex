@@ -21,6 +21,27 @@
 (function ($) {
   "use strict";
 
+  var isMobile = {
+    Android: function () {
+        return navigator.userAgent.match(/Android/i);
+    },
+    BlackBerry: function () {
+        return navigator.userAgent.match(/BlackBerry/i);
+    },
+    iOS: function () {
+        return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+    },
+    Opera: function () {
+        return navigator.userAgent.match(/Opera Mini/i);
+    },
+    Windows: function () {
+        return navigator.userAgent.match(/IEMobile/i);
+    },
+    any: function () {
+        return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
+    }
+};
+
   var headerFixed = function () {
     $(window).on("load scroll", function () {
       if ($(window).scrollTop() >= 100) {
@@ -72,6 +93,14 @@
       });
     }
   };
+
+  var parallax = function () {
+    if ($(".parallax").length > 0) {
+      if ($().parallax && isMobile.any() == null) {
+          $('.parallax').parallax("50%", -0.5);
+      }
+    }
+};
 
   var goTop = function () {
     $(window).scroll(function () {
@@ -400,6 +429,7 @@
     counter();
     tfTabs();
     filter();
+    parallax();
     dropdown("#item_date");
     dropdown("#item_size");
     dropdown("#item_category");
