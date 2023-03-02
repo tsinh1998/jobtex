@@ -677,24 +677,24 @@
   left: 20.7%;
 }
 .trader-box.sl7 .content {
-  background: #FFFFFF;
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-border-radius: 15px;
-padding: 7px 20px 9px 20px;
-display: inline-block;
-text-align: center;
+  background: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+  padding: 7px 20px 9px 20px;
+  display: inline-block;
+  text-align: center;
 }
 .trader-box.sl7 .content h3 {
   font-weight: 800;
-font-size: 24px;
-line-height: 30px;  
-color: #148160;
+  font-size: 24px;
+  line-height: 30px;
+  color: #148160;
 }
 .trader-box.sl7 .content .des {
   font-weight: 400;
-font-size: 16px;
-line-height: 26px;
-color: #64666C;
+  font-size: 16px;
+  line-height: 26px;
+  color: #64666c;
 }
 .trader-box.sl7 .shape {
   z-index: 0;
@@ -781,7 +781,7 @@ color: #64666C;
 .tf-slider.sl7 {
   padding-top: 167px;
   padding-bottom: 0px;
-  background: linear-gradient(84.42deg, #F7ECEA 0%, #F4F0E7 100%);
+  background: linear-gradient(84.42deg, #f7ecea 0%, #f4f0e7 100%);
 }
 .tf-slider.sl8 {
   padding-top: 240px;
@@ -1077,14 +1077,14 @@ color: #64666C;
 }
 .tf-slider .list-tag li {
   font-weight: 500;
-font-size: 14px;
-line-height: 22px;
+  font-size: 14px;
+  line-height: 22px;
 }
 .tf-slider .list-tag li a {
-  color: #64666C;
+  color: #64666c;
 }
 .tf-slider .list-tag li:not(:last-child) a::after {
-  content: ',';
+  content: ",";
   margin-right: 2px;
 }
 .tf-slider .list-tag li a:hover {
@@ -1169,22 +1169,22 @@ line-height: 22px;
 }
 .sl-icon-box .icon {
   width: 68px;
-height: 68px;
-background: rgba(255, 255, 255, 0.3);
-backdrop-filter: blur(2px);
-border-radius: 50%;
-display: inline-flex;
-align-items: center;
-justify-content: center;
-margin-bottom: 9px;
+  height: 68px;
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(2px);
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 9px;
 }
 .sl-icon-box .icon-content h5 {
   font-weight: 700;
-font-size: 16px;
-line-height: 26px;
+  font-size: 16px;
+  line-height: 26px;
 }
 .sl-icon-box .icon-content h5 a {
-  color: #FFFFFF;
+  color: #ffffff;
 }
 .sl-icon-box .icon-content h5 a:hover {
   color: #148160;
