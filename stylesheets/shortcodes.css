@@ -898,7 +898,9 @@ button.tf-button.style-1 {
   padding: 12px 32px;
   border-radius: 4px;
 }
-
+.wrap-testimonials {
+  padding-bottom: 80px;
+}
 .swiper-wrapper.style-1 {
   padding-bottom: 32px;
   cursor: pointer;
