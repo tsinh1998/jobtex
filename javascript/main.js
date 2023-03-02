@@ -571,7 +571,14 @@
     filter();
     dropdown("#item_date");
     dropdown("#item_size");
+    dropdown("#item_category");
     dropdown("#item_category2");
+    dropdown("#item_apply");
+    dropdown("#item_qualification");
+    dropdown("#item_1");
+    dropdown("#item_2");
+    dropdown("#item_3");
+    dropdown("#item_4");
     loadmore();
     UpImg();
     delete_img();
