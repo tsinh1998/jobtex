@@ -182,10 +182,7 @@
         slidesPerView: 1,
         loop: true,
         spaceBetween: 69,
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
+        autoplay: true,
         breakpoints: {
           800: {
             slidesPerView: 3,
@@ -259,7 +256,7 @@
   };
 
   var counter = function () {
-    if ($('.wrap-counter').length > 0) {
+    if ($(".wrap-counter").length > 0) {
       var a = 0;
       $(window).scroll(function () {
         var oTop = $(".wrap-counter").offset().top - window.innerHeight;
@@ -533,11 +530,12 @@
   };
 
   var dropOptionForm = function () {
-    if ($('select').length > 0) {
-      $('select:not(#billing_country):not(.country_select):not(#billing_state)').niceSelect();
+    if ($("select").length > 0) {
+      $(
+        "select:not(#billing_country):not(.country_select):not(#billing_state)"
+      ).niceSelect();
     }
-
-}
+  };
 
   var preload = function () {
     $(window).on("load", function () {
