@@ -87,7 +87,6 @@ var swiper1 = function () {
     var swiper1 = new Swiper(".slide-type-1", {
       direction: "horizontal",
       loop: true,
-      overPlay: true,
       pagination: {
         el: ".swiper-pagination",
         clickable: true,
