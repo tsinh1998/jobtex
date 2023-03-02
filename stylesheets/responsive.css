@@ -41,6 +41,12 @@
         margin-right: 20px;
         margin-bottom: 5px;
     }
+    .tf-slider .heading.text-center h2 {
+        padding: 0;
+    }
+    .wd-review-job.sl7 .thumb3 .group-user {
+        right: 0%;
+    }
 }
 @media only screen and (max-width: 1200px) {
     .sticky-area-wrap .header-ct-right .account {
@@ -75,10 +81,41 @@
         top: 55%;
         right: 0%;
     }
+    .tf-slider.sl5 .form-sl,
+    .tf-slider.sl6 .form-sl {
+        margin-left: 100px;
+        margin-right: 100px;
+    }
 }
 @media only screen and (max-width: 1024px) {
     .sticky-area-wrap .header-ct-center {
         justify-content: right;
+    }
+    .header-style2 .nav-wrap {
+        margin-bottom: 0px;
+        margin-top: 0px;
+    }
+    .header-style2 .header-ct-center .mobile-button {
+        margin: auto;
+        margin-top: 10px;
+    }
+    .header-style2 .nav-wrap {
+        position: unset;
+    }
+    .header-style2,
+    .tf-slider.sl7 .heading h2,
+    .tf-slider.sl7 .heading p {
+        padding: 0;
+    }
+    .header-style2 .sticky-area-wrap .header-ct-center {
+        padding: 20px 0;
+    }
+    .trader-box.sl7 {
+        left: 5.7%;
+        z-index: 2;
+    }
+    .tf-slider.sl7 .form-sl .row-group-search {
+        margin: 0;
     }
 }
 @media only screen and (max-width: 991px) {
@@ -105,6 +142,9 @@
     .wd-review-job.thumb1 .trader-box.box3 {
         bottom: 7%;
         left: 8.5%;
+    }
+    .header-style2 .logo {
+        padding: 20px 0;
     }
     .wd-review-job.contentbox1,
     .wd-review-job.thumb-style3 {
@@ -150,9 +190,42 @@
     .tf-sl4.wd-review-job.thumb2 .trader-box {
         top: 38%;
     }
-    .tf-sl4.wd-review-job.thumb2 .thumb {
+    .tf-sl4.wd-review-job.thumb2 .thumb,
+    .wd-review-job.sl7 .group-thumb {
         margin-right: 0%;
         margin-top: 0%;
+    }
+    .tf-slider.sl5 .form-sl,
+    .tf-slider.sl6 .form-sl {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    .tf-slider .heading.text-center p {
+        padding: 0 5%;
+    }   
+    .tf-slider .heading.text-center h2 {
+        font-size: 45px;
+    }
+    .header-style2 .sticky-area-wrap .header-ct-left {
+        display: none;
+    }
+    .header-style2 .sticky-area-wrap .header-ct-center {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .header-style2 .header-ct-center .mobile-button {
+        margin-top: 0px;
+        margin-right: 30px;
+    }
+    .wd-review-job.sl7 .group-thumb {
+        text-align: center;
+    }
+    .wd-review-job.sl7 .thumb3 .shape-thumb {
+        right: 5%;
+    }
+    .wd-review-job.sl7 .thumb3 {
+        margin-top: 40px;
     }
 }
 @media only screen and (max-width: 767px) {
@@ -161,13 +234,13 @@
         width: calc(100% - 20px );
     }
     .tf-slider .form-sl .form-group-4 {
-        margin: 10px auto;
+        margin: 40px auto 0px auto;
     }
     .sticky-area-wrap .header-ct-right .button a,
     .sticky-area-wrap .header-ct-right {
        display: none;
     }
-    #header {
+    #header .logo {
         padding: 20px 0;
     }
     .header .header-ct-center .mobile-button { 
@@ -176,6 +249,9 @@
     .tf-sl2.wd-review-job.thumb2 .tes-box {
         left: 11.5%;
         top: 36%;
+    }
+    .trader-box.sl7 {
+        top: 37%;
     }
     .tf-slider .heading h2,
     .tf-slider .heading p {
@@ -189,5 +265,20 @@
     }
     .tf-sl4.wd-review-job.thumb2 .tes-box {
         top: -6%;
+    }
+    .tf-slider .form-sl .form-group-2,
+    .tf-slider .form-sl .form-group-1 {
+        width: 100%;
+    }
+    .tf-slider.sl5 .form-sl,
+    .tf-slider.sl6 .form-sl {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .tf-slider .form-sl .form-group-1 {
+        margin-bottom: 20px;
+    }
+    .tf-slider .heading.text-center h2 {
+        font-size: 40px;
     }
 }

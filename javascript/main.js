@@ -256,7 +256,7 @@
   };
 
   var counter = function () {
-    if ($("div").hasClass("widget-counter")) {
+    if ($('.wrap-counter').length > 0) {
       var a = 0;
       $(window).scroll(function () {
         var oTop = $(".wrap-counter").offset().top - window.innerHeight;
@@ -516,6 +516,13 @@
     });
   };
 
+  var dropOptionForm = function () {
+    if ($('select').length > 0) {
+      $('select:not(#billing_country):not(.country_select):not(#billing_state)').niceSelect();
+    }
+
+}
+
   var preload = function () {
     $(window).on("load", function () {
       $("#preload")
@@ -538,6 +545,7 @@
     swiper5();
     partner();
     gallery();
+    dropOptionForm();
     flatProgressBar();
     accordion();
     goTop();
