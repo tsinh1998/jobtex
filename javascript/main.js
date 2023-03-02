@@ -182,7 +182,10 @@
         slidesPerView: 1,
         loop: true,
         spaceBetween: 69,
-
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
         breakpoints: {
           800: {
             slidesPerView: 3,
@@ -342,58 +345,57 @@
     });
   };
 
-  
-
   var flatProgressBar = function () {
-    if ($('.chart-box.counter').length > 0) {
-      $('.counter').appear(function () {
-        var bar= $(this).find('.chart').data("barcolor"),
-        track = $(this).find('.chart').data("trackcolor"),
-        size = $(this).find('.chart').data("size"),
-        withh = $(this).find('.chart').data("withh"),
-        text = $(this).find('.chart').data("text");
-        $(this).find('.chart .text').append(text);
-          $('.chart').easyPieChart({
-              easing: 'easeOut',
-              lineWidth: withh,
-              size: size,
-              scaleColor: false,
-              barColor: bar,
-              trackColor: track,
-              animate: 5000,
-              onStep: function (from, to, percent) {
-                  $(this.el).find('.percent').text(Math.round(percent));
-              }
+    if ($(".chart-box.counter").length > 0) {
+      $(".counter").appear(
+        function () {
+          var bar = $(this).find(".chart").data("barcolor"),
+            track = $(this).find(".chart").data("trackcolor"),
+            size = $(this).find(".chart").data("size"),
+            withh = $(this).find(".chart").data("withh"),
+            text = $(this).find(".chart").data("text");
+          $(this).find(".chart .text").append(text);
+          $(".chart").easyPieChart({
+            easing: "easeOut",
+            lineWidth: withh,
+            size: size,
+            scaleColor: false,
+            barColor: bar,
+            trackColor: track,
+            animate: 5000,
+            onStep: function (from, to, percent) {
+              $(this.el).find(".percent").text(Math.round(percent));
+            },
           });
-  
-      }, {
-          offset: 400
-      });
+        },
+        {
+          offset: 400,
+        }
+      );
     }
-};
+  };
 
-  // 
+  //
   var loadmore = function () {
     $(".fl-item").slice(0, 0).show();
     $(".fl-item2").slice(0, 0).show();
     $(".fl-collection.fl-item3").slice(0, 3).show();
 
-    $(".loadmore").on("click", function(e){
+    $(".loadmore").on("click", function (e) {
       e.preventDefault();
 
       $(".fl-item:hidden").slice(0, 1).slideDown();
       $(".fl-item2:hidden").slice(0, 1).slideDown();
       $(".fl-item3:hidden").slice(0, 3).slideDown();
-      if($(".fl-item:hidden").length == 0) {
+      if ($(".fl-item:hidden").length == 0) {
         $(".loadmore").hide();
       }
-      if($(".fl-item2:hidden").length == 0) {
+      if ($(".fl-item2:hidden").length == 0) {
         $("#loadmore2").hide();
       }
-      if($(".fl-item3:hidden").length == 0) {
+      if ($(".fl-item3:hidden").length == 0) {
         $("#loadmore").hide();
       }
-
     });
   };
 
@@ -435,33 +437,47 @@
   };
 
   // delete
-  var delete_img = function(e) {
-  
-    $('.remove-file').on('click',function(e) {
+  var delete_img = function (e) {
+    $(".remove-file").on("click", function (e) {
       e.preventDefault();
       var $this = $(this);
-      $this.closest('.file-delete').remove();
-
+      $this.closest(".file-delete").remove();
     });
-  }
+  };
 
-  var tfTabs = function(){
-    $('.tf-tab').each(function(){
-        $(this).find('.content-tab').children().hide();
-        $(this).find('.content-tab').children().first().show();
-        $(this).find('.menu-tab').children('div.user-tag').on('click',function(e){
-            e.preventDefault();
-            var liActive = $(this).index();
-            var contentActive=$(this).siblings().removeClass('active').parents('.tf-tab').find('.content-tab').children().eq(liActive);
-            contentActive.addClass('active').fadeIn("slow");
-            contentActive.siblings().removeClass('active');
-            $(this).addClass('active').parents('.tf-tab').find('.content-tab').children().eq(liActive).siblings().hide();
+  var tfTabs = function () {
+    $(".tf-tab").each(function () {
+      $(this).find(".content-tab").children().hide();
+      $(this).find(".content-tab").children().first().show();
+      $(this)
+        .find(".menu-tab")
+        .children("div.user-tag")
+        .on("click", function (e) {
+          e.preventDefault();
+          var liActive = $(this).index();
+          var contentActive = $(this)
+            .siblings()
+            .removeClass("active")
+            .parents(".tf-tab")
+            .find(".content-tab")
+            .children()
+            .eq(liActive);
+          contentActive.addClass("active").fadeIn("slow");
+          contentActive.siblings().removeClass("active");
+          $(this)
+            .addClass("active")
+            .parents(".tf-tab")
+            .find(".content-tab")
+            .children()
+            .eq(liActive)
+            .siblings()
+            .hide();
         });
     });
-};
+  };
 
-   // Mobile Navigation
-   var mobileNav = function () {
+  // Mobile Navigation
+  var mobileNav = function () {
     var mobile = window.matchMedia("(max-width: 1024px)");
     var wrapMenu = $(".header-ct-center");
     var navExtw = $(".nav-extend.active");
@@ -553,13 +569,13 @@
     counter();
     tfTabs();
     filter();
+    dropdown("#item_date");
+    dropdown("#item_size");
+    dropdown("#item_category2");
     loadmore();
     UpImg();
     delete_img();
     popUpLightBox();
-    dropdown("#item_date");
-    dropdown("#item_size");
-    dropdown("#item_category2");
 
     preload();
   });

@@ -1731,7 +1731,8 @@
     align-items: center;
     justify-content: center;
 }
-input[type='radio']:checked:after {
+
+.flat-dashboard-submit .package-wrap input[type='radio']:checked:after {
     width: 14px;
     height: 14px;
     border-radius: 20px;
@@ -1815,10 +1816,10 @@ input[type='radio']:checked:after {
 .titles-box {
     justify-content: space-between;
 }
-.flat-dashboard-month .wrap-month .sub-title {
+.flat-dashboard-month .wrap-month .sub-titles {
     margin-top: -3px;
 }
-.flat-dashboard-month .wrap-month .sub-title a {
+.flat-dashboard-month .wrap-month .sub-titles a {
     background-color: #14A077;
     font-size: 10px;
     color: #fff;

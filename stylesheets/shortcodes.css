@@ -883,3 +883,32 @@
 .dashboard.show .dashboard__content {
   margin-left: 289px;
 }
+
+/*=============== HOME PAGE ==================*/
+.tf-title.style-2 {
+  text-align: center;
+  display: block;
+}
+.wrap-button {
+  padding-top: 8px;
+  text-align: center;
+}
+button.tf-button.style-1 {
+  border: 1px solid #14a077;
+  padding: 12px 32px;
+  border-radius: 4px;
+}
+.wrap-testimonials {
+  padding-top: 48px;
+  padding-bottom: 80px;
+}
+.swiper-wrapper.style-1 {
+  padding-bottom: 32px;
+}
+.tes-bullet.style-1 {
+  bottom: 0 !important;
+}
+/* .swiper-slide.style-2 {
+  max-width: 1420px !important;
+  width: 100%;
+} */
