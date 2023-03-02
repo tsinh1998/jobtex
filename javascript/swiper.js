@@ -27,69 +27,67 @@ if ($("div").hasClass("swiper")) {
       },
     },
   });
- }
+}
 
- if ($("div").hasClass("swiper")) {
-   var swiper = new Swiper(".location-slider", {
-     loop: true,
-     slidesPerView: 1,
-     spaceBetween: 19.5,
-     navigation: {
-       clickable: true,
-       nextEl: ".button-lo-next",
-       prevEl: ".button-lo-prev",
-     },
-     pagination: {
-       el: ".swiper-pagination",
-       clickable: true,
-     },
-     breakpoints: {
-       600: {
-         slidesPerView: 2,
-         spaceBetween: 19.5,
-       },
-       992: {
-         slidesPerView: 3,
-         spaceBetween: 19.5,
-       },
-       1200: {
-         slidesPerView: 4,
-         spaceBetween: 19.5,
-       },
-     },
-   });
- }
+if ($("div").hasClass("swiper")) {
+  var swiper = new Swiper(".location-slider", {
+    loop: true,
+    slidesPerView: 1,
+    spaceBetween: 19.5,
+    navigation: {
+      clickable: true,
+      nextEl: ".button-lo-next",
+      prevEl: ".button-lo-prev",
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    breakpoints: {
+      600: {
+        slidesPerView: 2,
+        spaceBetween: 19.5,
+      },
+      992: {
+        slidesPerView: 3,
+        spaceBetween: 19.5,
+      },
+      1200: {
+        slidesPerView: 4,
+        spaceBetween: 19.5,
+      },
+    },
+  });
+}
 
- if ($("div").hasClass("swiper")) {
-   var swiper = new Swiper(".jobs-slider", {
-     loop: true,
-     slidesPerView: 1,
-     spaceBetween: 32,
-     navigation: {
-       clickable: true,
-       nextEl: ".button-tes-next",
-       prevEl: ".button-tes-prev",
-     },
-     pagination: {
-       el: ".swiper-pagination",
-       clickable: true,
-     },
-     breakpoints: {
-       1200: {
-         slidesPerView: 1,
-       },
-     },
-   });
-
- }
-
+if ($("div").hasClass("swiper")) {
+  var swiper = new Swiper(".jobs-slider", {
+    loop: true,
+    slidesPerView: 1,
+    spaceBetween: 32,
+    navigation: {
+      clickable: true,
+      nextEl: ".button-tes-next",
+      prevEl: ".button-tes-prev",
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    breakpoints: {
+      1200: {
+        slidesPerView: 1,
+      },
+    },
+  });
+}
 
 var swiper1 = function () {
   if ($("div").hasClass("swiper")) {
     var swiper1 = new Swiper(".slide-type-1", {
       direction: "horizontal",
       loop: true,
-
+      overPlay: true,
       pagination: {
         el: ".swiper-pagination",
         clickable: true,
@@ -212,10 +210,6 @@ var partner = function () {
       slidesPerView: 1,
       loop: true,
       spaceBetween: 69,
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
       breakpoints: {
         800: {
           slidesPerView: 3,
