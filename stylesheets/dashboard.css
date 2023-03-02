@@ -35,6 +35,10 @@
     color: #64666C !important;
 }  
 
+.dashboard .color-red {
+    color: red;
+} 
+
 .dashboard h1 { font: 50px/50px "Plus Jakarta Sans", sans-serif;}
 .dashboard h2 { font: 36px/44px "Plus Jakarta Sans", sans-serif; font-weight: 700;}
 .dashboard h3 { font: 20px/28px "Plus Jakarta Sans", sans-serif; font-weight: 700;}
@@ -1830,12 +1834,60 @@
     border-radius: 4px;
 }
 
+/*  */
 
+.flat-dashboard-post .post-new {
+    padding: 20px 32px 35px;
+}
 
+.flat-dashboard-post .post-new .title-img {
+    margin-bottom: 20px;
+}
 
-/* .flat-dashboard-month input[type='radio']:after {
-    position: relative;
-    background-color: #14A077;
-    color: #14A077;
-} */
+.flat-dashboard-post .btn-wrap .tf-button a {
+    margin-right: 48px;
+}
 
+.flat-dashboard-post .btn-wrap {
+    margin-bottom: 40px;
+}
+
+.flat-dashboard-post .wrap-titles {
+    margin-bottom: 31px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #E5E5E5;
+}
+
+.flat-dashboard-post .contentOutput {
+    height: 125px;
+    border: 0;
+}
+
+.flat-dashboard-post .text-editor-wrap {
+    margin-bottom: 51px;
+    border: 0;
+    padding: 0;
+}
+
+.flat-dashboard-post .form-map {
+    margin-bottom: 20px;
+}
+
+.flat-dashboard-post .titles-dropdown {
+    margin-bottom: 15px;
+}
+
+.flat-dashboard-post .form-infor {
+    margin-bottom: 0;
+}
+
+.flat-dashboard-post .wrap-date {
+    margin-bottom: 41px;
+}
+
+.flat-dashboard-post .map-content {
+    margin-bottom: 36px;
+}
+.flat-dashboard-post .area-wrap {
+    margin-bottom: 20px;
+}
