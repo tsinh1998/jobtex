@@ -705,6 +705,7 @@ color: #64666C;
   padding: 100px 0;
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center center;
   position: relative;
 }
 .tf-slider .overlay {
@@ -783,8 +784,8 @@ color: #64666C;
   background: linear-gradient(84.42deg, #F7ECEA 0%, #F4F0E7 100%);
 }
 .tf-slider.sl8 {
-  padding-top: 276px;
-  padding-bottom: 194px;
+  padding-top: 240px;
+  padding-bottom: 39px;
   background-image: url(../images/slider/slider4.jpg);
 }
 .tf-slider.sl2 h2,
@@ -1163,6 +1164,43 @@ line-height: 22px;
   position: relative;
   z-index: 1;
 }
+.sl-icon-box {
+  text-align: center;
+}
+.sl-icon-box .icon {
+  width: 68px;
+height: 68px;
+background: rgba(255, 255, 255, 0.3);
+backdrop-filter: blur(2px);
+border-radius: 50%;
+display: inline-flex;
+align-items: center;
+justify-content: center;
+margin-bottom: 9px;
+}
+.sl-icon-box .icon-content h5 {
+  font-weight: 700;
+font-size: 16px;
+line-height: 26px;
+}
+.sl-icon-box .icon-content h5 a {
+  color: #FFFFFF;
+}
+.sl-icon-box .icon-content h5 a:hover {
+  color: #148160;
+}
+.group-icon {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -40px;
+  margin-top: 133px;
+}
+
+.group-icon .sl-icon-box.box {
+  width: calc(12.5% - 40px);
+  margin-left: 40px;
+}
+
 /* -----------------------------------------animation------------------------------------ */
 .ani1 {
   -webkit-animation: ani1 10s infinite ease-in-out alternate;
