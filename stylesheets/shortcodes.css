@@ -899,6 +899,21 @@ button.tf-button.style-1 {
   padding: 12px 32px;
   border-radius: 4px;
 }
+button.tf-button.style-1:hover {
+  background: #14a077;
+  color: #fff;
+}
+button.tf-button.style-1 span {
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;  
+}
+button.tf-button.style-1:hover span {
+  color: #fff;
+
+}
 .wrap-testimonials {
   padding-bottom: 80px;
 }

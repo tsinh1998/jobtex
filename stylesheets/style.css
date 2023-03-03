@@ -1229,6 +1229,11 @@ line-height: 22px;
   display: block;
 }
 
+.sticky-area-wrap .header-ct-right .button a:hover {
+  background: #14A077;
+  color: #fff;
+}
+
 .sticky-area-wrap .header-ct-right .button a {
   color: #121212;
 }
@@ -1957,4 +1962,8 @@ margin-bottom: 15px;
 }
 .aln-center {
   align-items: center;
+}
+.mg-bt-0 {
+  margin-bottom: 0 !important
+  ;
 }
