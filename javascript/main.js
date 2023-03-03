@@ -188,9 +188,9 @@
             if( mode === 'desktop'){
                 $(this).attr('style','height:' + $(this).data('desktop') + 'px')
             }else if( mode == 'mobile') {
-                $(this).attr('style','height:' + $(this).data('mobile') + 'px')
+                $(this).attr('style','height:' + $(this).data('mobi') + 'px')
             }else {
-                $(this).attr('style','height:' + $(this).data('smobile') + 'px')
+                $(this).attr('style','height:' + $(this).data('smobi') + 'px')
             }
         });
     });
@@ -216,10 +216,10 @@
 
     opt.on("click", function () {
       dd.hide();
-      var txt = $(this).text();
+      var txt = $(this).html();
       opt.removeClass("active");
       $(this).addClass("active");
-      btn.text(txt);
+      btn.html(txt);
     });
   };
 
@@ -445,6 +445,7 @@
     flatSpacer();
     dropdown("#item_date");
     dropdown("#item_size");
+    dropdown("#language");
     dropdown("#item_category");
     dropdown("#item_category2");
     dropdown("#item_apply");

@@ -91,6 +91,9 @@
         width: calc(25% - 40px);
         margin-bottom: 40px;
       }
+      .footer-cl-5 {
+        margin-left: 20%;
+    }
 }
 @media only screen and (max-width: 1024px) {
     .sticky-area-wrap .header-ct-center {
@@ -212,7 +215,8 @@
     .tf-slider .heading.text-center h2 {
         font-size: 45px;
     }
-    .header-style2 .sticky-area-wrap .header-ct-left {
+    .header-style2 .sticky-area-wrap .header-ct-left,
+    .footer .wd-social span {
         display: none;
     }
     .header-style2 .sticky-area-wrap .header-ct-center {
@@ -233,6 +237,25 @@
     .wd-review-job.sl7 .thumb3 {
         margin-top: 40px;
     }
+    .footer-cl-1 {
+        margin-right: 0;
+    }
+    .footer-cl-3 {
+        margin-left: 0;
+    }
+    .footer-cl-1,
+    .footer-cl-2,
+    .footer-cl-3,
+    .footer-cl-4,
+    .footer-cl-5 {
+        margin-bottom: 50px;
+    }
+    .footer-cl-2 {
+        margin-left: 30%;
+    }
+    .footer .bt-left .copyright {
+        margin-right: 20px;
+    }
 }
 @media only screen and (max-width: 767px) {
     .group-location .box-3,
@@ -243,10 +266,12 @@
         margin: 40px auto 0px auto;
     }
     .sticky-area-wrap .header-ct-right .button a,
-    .sticky-area-wrap .header-ct-right {
+    .sticky-area-wrap .header-ct-right,
+    .footer .select-language {
        display: none;
     }
-    #header .logo {
+    #header .logo,
+    .footer .bottom {
         padding: 20px 0;
     }
     .header .header-ct-center .mobile-button { 
@@ -258,6 +283,10 @@
     }
     .trader-box.sl7 {
         top: 37%;
+    }
+    .footer-cl-4,
+    .footer-cl-5 {
+        margin-left: 0;
     }
     .tf-slider .heading h2,
     .tf-slider .heading p {
@@ -290,4 +319,23 @@
     .group-icon .sl-icon-box.box {
         width: calc(50% - 40px);
       }
+      .footer-cl-2 {
+        margin-left: 0%;
+    }
+    .footer .bt-left {
+        margin-bottom: 10px;
+    }
+    .footer .bt-left,
+    .menu-bottom {
+        justify-content: center;
+    }
+    .footer .wd-social {
+        justify-content: center;
+    }
+    .footer-logo {
+        text-align: center;
+    }
+    .footer-logo {
+        margin-bottom: 30px;
+    }
 }
