@@ -414,13 +414,6 @@
     headerFixed();
     showsearch();
     btn();
-    swiper1();
-    swiper2();
-    swiper3();
-    swiper4();
-    swiper5();
-    partner();
-    gallery();
     dropOptionForm();
     flatProgressBar();
     accordion();

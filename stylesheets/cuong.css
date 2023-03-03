@@ -788,6 +788,9 @@
   padding-bottom: 39px;
   background-image: url(../images/slider/slider4.jpg);
 }
+.tf-slider.sl9 {
+  padding: 17px 0;
+}
 .tf-slider.sl2 h2,
 .tf-slider.sl7 h2 {
   color: #123841;
@@ -1059,11 +1062,12 @@
   right: 20.6%;
 }
 .tf-slider.sl6 .form-sl,
-.tf-slider.sl8 .form-sl {
+.tf-slider.sl8 .form-sl,
+.tf-slider.sl9 .form-sl {
   margin-top: 40px;
   margin-bottom: 20px;
-  margin-left: 237px;
-  margin-right: 241px;
+  margin-left: 229px;
+  margin-right: 228px;
 }
 .tf-slider.sl6 .list-category {
   justify-content: center;
@@ -1229,6 +1233,33 @@ margin-bottom: 15px;
 .wrap-testimonials .menu-tab .user-tag.active {
   background: #14A077;
   color: #fff;
+}
+.tf-slider.sl9 .form-sl .row-group-search {
+  border: 1px solid #E5E5E5;
+  box-shadow: 0px 2px 2px rgba(28, 36, 51, 0.1);
+}
+.tf-slider.sl6 .form-sl .row-group-search,
+ .tf-slider.sl8 .form-sl .row-group-search,
+  .tf-slider.sl9 .form-sl .row-group-search { 
+  margin-right: 0;
+}
+
+.category-filter {
+  display: flex;
+  align-items: center;
+}
+.category-filter > li:not(:last-child) {
+  margin-right: 8px;
+}
+.category-filter .nice-select .current {
+  padding: 8px 16px 8px 16px;
+  background: #F1F1F1;
+border-radius: 4px;
+}
+.category-filter .nice-select .option {
+  width: max-content;
+  padding: 8px 16px 8px 16px;
+  margin: 0;
 }
 
 /* -----------------------------------------animation------------------------------------ */

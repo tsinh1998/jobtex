@@ -157,6 +157,7 @@
 }
 .nice-select .list::-webkit-scrollbar {
     width: 6px;
+    height: 4px;
     background-color: #f5f5f5;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
