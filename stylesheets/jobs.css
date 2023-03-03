@@ -216,11 +216,11 @@ button.btn-find:hover {
   align-items: center;
 }
 .features-job .inner-box .img {
-  max-width: 60px;
   margin-right: 16px;
 }
 .features-job .inner-box .img > img {
-  width: 100%;
+  width: 60px;
+  height: 60px;
 }
 
 .features-job .inner-box span.icon-heart {

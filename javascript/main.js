@@ -23,24 +23,30 @@
 
   var isMobile = {
     Android: function () {
-        return navigator.userAgent.match(/Android/i);
+      return navigator.userAgent.match(/Android/i);
     },
     BlackBerry: function () {
-        return navigator.userAgent.match(/BlackBerry/i);
+      return navigator.userAgent.match(/BlackBerry/i);
     },
     iOS: function () {
-        return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+      return navigator.userAgent.match(/iPhone|iPad|iPod/i);
     },
     Opera: function () {
-        return navigator.userAgent.match(/Opera Mini/i);
+      return navigator.userAgent.match(/Opera Mini/i);
     },
     Windows: function () {
-        return navigator.userAgent.match(/IEMobile/i);
+      return navigator.userAgent.match(/IEMobile/i);
     },
     any: function () {
-        return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
-    }
-};
+      return (
+        isMobile.Android() ||
+        isMobile.BlackBerry() ||
+        isMobile.iOS() ||
+        isMobile.Opera() ||
+        isMobile.Windows()
+      );
+    },
+  };
 
   var headerFixed = function () {
     $(window).on("load scroll", function () {
@@ -97,10 +103,10 @@
   var parallax = function () {
     if ($(".parallax").length > 0) {
       if ($().parallax && isMobile.any() == null) {
-          $('.parallax').parallax("50%", -0.5);
+        $(".parallax").parallax("50%", -0.5);
       }
     }
-};
+  };
 
   var goTop = function () {
     $(window).scroll(function () {
@@ -177,24 +183,24 @@
     }
   };
 
-  var flatSpacer = function() {
-    $(window).on('load resize', function(){
-        var mode = 'desktop';
-        if(matchMedia('only screen and (max-width: 991px)').matches) 
-            mode = 'mobile';
-        if(matchMedia('only screen and (max-width: 767px)').matches)
-            mode = 'smobile';
-        $('.wprt-spacer').each( function(){
-            if( mode === 'desktop'){
-                $(this).attr('style','height:' + $(this).data('desktop') + 'px')
-            }else if( mode == 'mobile') {
-                $(this).attr('style','height:' + $(this).data('mobile') + 'px')
-            }else {
-                $(this).attr('style','height:' + $(this).data('smobile') + 'px')
-            }
-        });
+  var flatSpacer = function () {
+    $(window).on("load resize", function () {
+      var mode = "desktop";
+      if (matchMedia("only screen and (max-width: 991px)").matches)
+        mode = "mobile";
+      if (matchMedia("only screen and (max-width: 767px)").matches)
+        mode = "smobile";
+      $(".wprt-spacer").each(function () {
+        if (mode === "desktop") {
+          $(this).attr("style", "height:" + $(this).data("desktop") + "px");
+        } else if (mode == "mobile") {
+          $(this).attr("style", "height:" + $(this).data("mobi") + "px");
+        } else {
+          $(this).attr("style", "height:" + $(this).data("smobi") + "px");
+        }
+      });
     });
-};
+  };
 
   var dropdown = function (id) {
     var obj = $(id + ".dropdown");

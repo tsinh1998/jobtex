@@ -201,28 +201,27 @@ var swiper5 = function () {
     });
   }
 };
-var partner = function () {
-  if ($("div").hasClass("swiper")) {
-    const swiper5 = new Swiper(".partner-type-6", {
-      direction: "horizontal",
-      effect: "slide",
-      slidesPerView: 1,
-      loop: true,
-      spaceBetween: 69,
-      breakpoints: {
-        800: {
-          slidesPerView: 3,
-        },
-        1170: {
-          slidesPerView: 6,
-        },
+
+if ($("div").hasClass("swiper")) {
+  const swiper = new Swiper(".partner-type-6", {
+    direction: "horizontal",
+    effect: "slide",
+    slidesPerView: 1,
+    loop: true,
+    spaceBetween: 69,
+    breakpoints: {
+      800: {
+        slidesPerView: 3,
       },
-      autoplay: {
-        delay: 3000,
+      1170: {
+        slidesPerView: 6,
       },
-    });
-  }
-};
+    },
+    autoplay: {
+      delay: 3000,
+    },
+  });
+}
 
 var gallery = function () {
   if ($("div").hasClass("widget-dash-video")) {
