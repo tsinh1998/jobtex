@@ -230,8 +230,8 @@
   };
 
   var flatProgressBar = function () {
-    if ($(".chart-box.counter").length > 0) {
-      $(".counter").appear(
+    if ($(".chart-box").length > 0) {
+      $(".chart-box").appear(
         function () {
           var bar = $(this).find(".chart").data("barcolor"),
             track = $(this).find(".chart").data("trackcolor"),
