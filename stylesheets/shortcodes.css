@@ -954,3 +954,6 @@ button.tf-button.style-1 {
   display: flex;
   gap: 12px;
 }
+.wrap-count {
+  padding: 40px 0px;
+}

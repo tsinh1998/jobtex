@@ -217,6 +217,9 @@ var partner = function () {
           slidesPerView: 6,
         },
       },
+      autoplay: {
+        delay: 3000,
+      },
     });
   }
 };
