@@ -177,6 +177,25 @@
     }
   };
 
+  var flatSpacer = function() {
+    $(window).on('load resize', function(){
+        var mode = 'desktop';
+        if(matchMedia('only screen and (max-width: 991px)').matches) 
+            mode = 'mobile';
+        if(matchMedia('only screen and (max-width: 767px)').matches)
+            mode = 'smobile';
+        $('.wprt-spacer').each( function(){
+            if( mode === 'desktop'){
+                $(this).attr('style','height:' + $(this).data('desktop') + 'px')
+            }else if( mode == 'mobile') {
+                $(this).attr('style','height:' + $(this).data('mobile') + 'px')
+            }else {
+                $(this).attr('style','height:' + $(this).data('smobile') + 'px')
+            }
+        });
+    });
+};
+
   var dropdown = function (id) {
     var obj = $(id + ".dropdown");
     var btn = obj.find(".btn-selector");
@@ -423,6 +442,7 @@
     tfTabs();
     filter();
     parallax();
+    flatSpacer();
     dropdown("#item_date");
     dropdown("#item_size");
     dropdown("#item_category");

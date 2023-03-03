@@ -1250,209 +1250,36 @@ line-height: 22px;
 ------------------------------------------ */
 .footer {
   background-color: #f5f5f2;
-}
-
-/* footer-logo */
-.footer-logo {
-  width: 100%;
-  max-width: 1410px;
-  margin: auto;
-  display: flex;
-  justify-content: space-between;
-  border-bottom: 1px solid #e5e5e5;
   padding-top: 60px;
-  padding-bottom: 20px;
+  padding-bottom: 100px;
 }
-
-.widget-social {
-  display: flex;
-  gap: 16px;
-  align-items: center;
+.list-social li a {
+  background: #FFFFFF;
+border-radius: 50%;
+width: 40px;
+height: 40px;
+display: inline-flex;
+align-items: center;
+justify-content: center;
+color: #121212;
+} 
+.list-social li:not(:last-child) {
+  margin-right: 12px;
 }
-
-.widget-social-title {
-  font-family: "Plus Jakarta Sans", sans-serif;
+.list-social li a:hover {
+  background: #14A077;
+  color: #fff;
+}
+.footer .wd-social {
+ justify-content: right;
+}
+.footer .wd-social span {
   font-weight: 600;
-  font-size: 14px;
-  line-height: 24px;
-  color: #121212;
+font-size: 14px;
+line-height: 24px;
+color: #121212;
+margin-right: 17px;
 }
-
-.widget-social .widget-social-content {
-  display: flex;
-  gap: 12px;
-}
-
-.widget-social .widget-social-content .widget-social-item {
-  font-size: 16px;
-  padding: 7.5px 12px;
-  color: #121212;
-  background-color: #fff;
-  border-radius: 20px;
-  transition: all 0.3s ease-in-out;
-}
-
-.widget-social .widget-social-content .widget-social-item:hover {
-  color: #ffffff;
-  background-color: #14a077;
-}
-
-/* footer-content */
-.footer-content {
-  width: 100%;
-  max-width: 1410px;
-  margin: auto;
-  border-bottom: 1px solid #e5e5e5;
-  padding-top: 40px;
-  padding-bottom: 40px;
-  display: flex;
-  gap: 150px;
-}
-
-.footer-content .footer-about {
-  max-width: 340px;
-}
-
-.footer-content .footer-about .phone {
-  display: flex;
-  gap: 17px;
-  margin-bottom: 22px;
-}
-
-.footer-content .footer-about .phone span.icon-call-calling {
-  font-size: 36px;
-}
-
-.footer-content .footer-about .phone .text {
-  max-width: 138px;
-  font-family: "Plus Jakarta Sans", sans-serif;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 16px;
-  color: #121212;
-}
-
-.footer-content .footer-about .phone .text a {
-  display: block;
-  font-family: "Plus Jakarta Sans", sans-serif;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 26px;
-  color: #1d1d1d;
-}
-
-.footer-content .footer-about > p {
-  font-family: "DM Sans", sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 22px;
-  color: #1d1d1d;
-  margin-bottom: 12px;
-}
-
-.footer-content .footer-about .address {
-  font-family: "DM Sans", sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 22px;
-  color: #121212;
-  margin-bottom: 20px;
-}
-
-.footer-content .footer-about .address span {
-  font-size: 16px;
-  margin-right: 8px;
-  color: #64666c;
-}
-
-.widget-block-search-1-wrap {
-  display: flex;
-}
-
-.widget-block-search-1-wrap input {
-  background-color: #fff;
-  font-family: "Plus Jakarta Sans", sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 22px;
-  color: #b1b1b1;
-  padding-top: 12px;
-  padding-left: 16px;
-  font-style: normal;
-  border-radius: 8px 0 0 8px;
-}
-
-.widget-block-search-1-wrap .widget-block-search-1-button {
-  font-size: 16px;
-  padding: 15px 16px;
-  background-color: #14a077;
-  color: #ffffff;
-  border-radius: 0 8px 8px 0;
-  border: none;
-}
-
-.footer-title {
-  font-family: "Plus Jakarta Sans", sans-serif;
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 24px;
-  color: #121212;
-  margin-bottom: 16px;
-}
-
-.footer .footer-links-item {
-  font-family: "Plus Jakarta Sans", sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 22px;
-  margin-bottom: 8px;
-}
-
-.footer .footer-links-item a {
-  color: #64666c;
-}
-
-.footer .footer-links-item a:hover {
-  color: #14a077;
-}
-
-/* footer-coppyright */
-.footer-coppyright {
-  width: 100%;
-  max-width: 1410px;
-  margin: auto;
-  padding: 14px 0;
-  display: flex;
-  justify-content: space-between;
-}
-
-.footer-coppyright-left {
-  display: flex;
-  gap: 40px;
-}
-
-.footer-coppyright-left .language {
-  display: flex;
-  gap: 10px;
-  font-family: "Plus Jakarta Sans", sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 22px;
-  color: #121212;
-}
-
-.footer-coppyright-right {
-  font-family: "Plus Jakarta Sans", sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 22px;
-  color: #e5e5e5;
-}
-
-.footer-coppyright-right a {
-  color: #64666c;
-}
-
 /* Blog
 --------------------------- */
 .blog.main-content {
@@ -1948,4 +1775,11 @@ line-height: 22px;
 
 .text-pri {
   color: #14A077;
+}
+
+.d-flex {
+  display: flex;
+}
+.aln-center {
+  align-items: center;
 }

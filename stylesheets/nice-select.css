@@ -29,7 +29,6 @@
     border-bottom: 2px solid #191919;
     border-right: 2px solid #191919;
     content: '';
-    display: block;
     height: 8px;
     width: 8px;
     margin-top: -4px;
@@ -202,6 +201,7 @@ padding-left: 33px;
 }
 .nice-select .option:hover, .nice-select .option.focus, .nice-select .option.selected.focus {
     background-color: #f6f6f6;
+    width: 100%;
 }
 
 .nice-select .option.selected {
