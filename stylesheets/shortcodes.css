@@ -912,11 +912,10 @@ button.tf-button.style-1 span {
   -moz-transition: all 0.3s ease-in-out;
   -ms-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;  
+  transition: all 0.3s ease-in-out;
 }
 button.tf-button.style-1:hover span {
   color: #fff;
-
 }
 .wrap-testimonials {
   padding-bottom: 80px;
@@ -981,4 +980,22 @@ button.tf-button.style-1:hover span {
 }
 .wrap-testimonials.style-1 {
   padding-bottom: 0;
+}
+.listing-maps .i4ewOd-pzNkMb-haAclf {
+  display: none !important;
+}
+.tf-slider.style-1 {
+  background: none;
+  padding: 0;
+}
+/* .form-sl.style-1 {
+  background: #ffffff;
+  box-shadow: 0px 2px 2px rgb(28 36 51 / 10%);
+  border-radius: 8px;
+  margin-right: -20px;
+  padding: 16px 16px 14px 16px;
+} */
+.tf-slider.style-1 .content .form-sl {
+  margin-bottom: 0;
+  margin-top: -50px;
 }
