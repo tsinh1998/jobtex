@@ -898,7 +898,6 @@
   margin-bottom: 8px;
 }
 .wrap-button {
-  padding-top: 8px;
   text-align: center;
 }
 button.tf-button.style-1 {
@@ -1011,4 +1010,7 @@ button.tf-button.style-1:hover span {
 }
 .box-latest ul li:first-child {
   margin-right: 16px;
+}
+.bg-get-app {
+  background: linear-gradient(84.42deg, #f7ecea 0%, #f4f0e7 100%);
 }
