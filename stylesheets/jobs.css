@@ -201,25 +201,19 @@ button.btn-find:hover {
   padding: 24px;
   transition: all 0.5s ease-in-out;
 }
-.features-job:last-child {
-  /* margin-bottom: 0; */
-}
 .features-job:hover {
-  border: 1px solid #14a077 !important;
-}
-.features-job .job-detail {
-  position: relative;
-  border-bottom: 1px solid #e5e5e5;
+  border: 1px solid #14a077;
 }
 .features-job .inner-box {
+  position: relative;
   display: flex;
   align-items: center;
 }
-.features-job .inner-box .img {
+.features-job .inner-box .logo-company {
   margin-right: 16px;
 }
-.features-job .inner-box .img > img {
-  width: 60px;
+.features-job .inner-box .logo-company > img {
+  max-width: 60px;
   height: 60px;
 }
 
@@ -239,56 +233,61 @@ button.btn-find:hover {
 .features-job .inner-box span.icon-heart:hover {
   color: #eb4d4d;
 }
-.features-job .content h4 {
+.features-job .box-content h4 {
   line-height: 24px;
   font-size: 14px;
 }
-.features-job .content h4 a {
+.features-job .box-content h4 a {
   transition: all 0.3s ease-in-out;
   color: #14a077;
   font-weight: 600;
 }
-.features-job .content h3 {
+.features-job .box-content h3 {
   line-height: 28px;
   font-size: 20px;
 }
-.features-job .content h3 a {
+.features-job .box-content h3 a {
   transition: all 0.3s ease-in-out;
   font-weight: 700;
   color: #121212;
   text-transform: capitalize;
 }
-.features-job .content h3 a:hover {
+.features-job .box-content h3 a:hover {
   color: #14a077;
 }
-.features-job .content h3 span.icon-bolt {
+.features-job .box-content h3 span.icon-bolt {
   font-size: 14px;
   background-color: #504cfe;
   border-radius: 50%;
   padding: 3px;
   color: #ffffff;
 }
-.features-job .content ul {
+.features-job .box-content ul {
   margin-top: 4px;
 }
-.features-job .content ul li {
+.features-job .box-content ul li {
   color: #64666c;
   font-size: 14px;
   font-weight: 400;
   line-height: 22px;
   display: inline-block;
 }
-.features-job .content ul li:first-child {
+.features-job .box-content ul li:first-child {
   margin-right: 16px;
 }
-.features-job .category {
-  margin: 16px 0px;
+.features-job .job-footer-left {
+  border-bottom: 1px solid #e5e5e5;
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  cursor: pointer;
+  padding: 16px 0px;
 }
-.features-job .category .tag span {
+.features-job .job-footer-right {
+  padding-top: 16px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+}
+.features-job .job-archive-footer .job-tag span {
   background-color: #f1f1f1;
   color: #121212;
   font-size: 12px;
@@ -297,25 +296,20 @@ button.btn-find:hover {
   padding: 8px 16px;
   border-radius: 52px;
 }
-.features-job .category .tag span:first-child {
+.features-job .job-archive-footer .job-tag span:first-child {
   margin-right: 8px;
 }
-.features-job .category .star span {
+.features-job .star span,
+.employer-block .star span {
   font-size: 12.8px;
   color: #ffb321;
+  cursor: pointer;
 }
-.features-job .category .star span:last-child {
+.features-job .star span:last-child,
+.employer-block .star span:last-child {
   color: #e5e5e5;
 }
-.features-job .job-info {
-  margin-top: 16px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-size: 16px;
-}
-
-.features-job .job-info .job-info-left {
+.features-job .job-footer-right .price {
   display: flex;
   align-items: center;
   font-weight: 600;
@@ -323,18 +317,17 @@ button.btn-find:hover {
   line-height: 26px;
   color: #121212;
 }
-.features-job .job-info span.dollar {
+.features-job span.icon-dolar1 {
   font-size: 20px;
   color: #121212;
   margin-right: 8px;
 }
-.features-job .job-info-left span.year {
+.features-job span.year {
   font-weight: 400;
   color: #64666c;
 }
-.features-job .job-info-right {
+.features-job .job-footer-right .days {
   color: #64666c;
-  font-weight: 400;
   font-size: 14px;
   line-height: 22px;
 }
@@ -411,43 +404,43 @@ button.btn-find:hover {
   display: flex;
   align-items: center;
 }
-.job-block-col-12 .inner-box .img {
+.job-block-col-12 .inner-box .logo-company {
   max-width: 60px;
   margin-right: 16px;
   /* flex: 1; */
 }
-.job-block-col-12 .inner-box.img > img {
+.job-block-col-12 .inner-box.logo-company > img {
   width: 100%;
 }
-.job-block-col-12 .content h4 {
+.job-block-col-12 .box-content h4 {
   line-height: 24px;
   font-weight: 600;
   font-size: 14px;
   line-height: 24px;
 }
-.job-block-col-12 .content h4 a {
+.job-block-col-12 .box-content h4 a {
   color: #14a077;
 }
-.job-block-col-12 .content h3 {
+.job-block-col-12 .box-content h3 {
   font-size: 20px;
   font-weight: 700;
   line-height: 28px;
 }
-.job-block-col-12 .content h3 a {
+.job-block-col-12 .box-content h3 a {
   color: #121212;
 }
-.job-block-col-12 .content h3 > span {
+.job-block-col-12 .box-content h3 > span {
   font-size: 14px;
   background-color: #504cfe;
   border-radius: 50%;
   padding: 3px;
   color: #ffffff;
 }
-.job-block-col-12 .content .star span {
+.job-block-col-12 .box-content .star span {
   font-size: 12.8px;
   color: #ffb321;
 }
-.job-block-col-12 .content .star span:last-child {
+.job-block-col-12 .box-content .star span:last-child {
   color: #e5e5e5;
 }
 .job-block-col-12 .info {
@@ -551,7 +544,7 @@ button.btn-find:hover {
 .job-block-col-4 .inner-box span.icon-heart:active {
   color: #eb4d4d;
 }
-.job-block .content h4 a {
+.job-block .box-content h4 a {
   transition: all 0.5s ease-in-out;
   color: #14a077;
   font-weight: 600;
@@ -940,101 +933,6 @@ input[type="number"]::-webkit-inner-spin-button {
 .btn-apply-job button:hover {
   background-color: #148160;
 }
-
-/* .job-block .content h4 a {
-  transition: all 300ms ease;
-  color: #14a077;
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 24px;
-}
-.job-block .content h3 a {
-  transition: all 300ms ease;
-  font-size: 20px;
-  font-weight: 700;
-  color: #121212;
-  line-height: 28px;
-}
-.job-block .content h3 a:hover {
-  color: #148160;
-}
-.job-block .content h3 span.icon-bolt {
-  font-size: 14px;
-  background-color: #504cfe;
-  border-radius: 50%;
-  padding: 3px;
-  color: #ffffff;
-}
-.job-block .content ul {
-  margin-top: 4px;
-}
-.job-block .content ul li {
-  color: #64666c;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 22px;
-  display: inline-block;
-}
-.job-block .content ul li:first-child {
-  margin-right: 16px;
-}
-.job-block .category {
-  margin: 16px 0px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  cursor: pointer;
-}
-.job-block .category .tag span {
-  background-color: #f1f1f1;
-  color: #121212;
-  font-size: 12px;
-  line-height: 16px;
-  font-weight: 500;
-  padding: 8px 16px;
-  border-radius: 52px;
-}
-.job-block.category .tag span:first-child {
-  margin-right: 8px;
-}
-.job-block .category .star span {
-  font-size: 12.8px;
-  color: #ffb321;
-}
-.job-block .category .star span:last-child {
-  color: #e5e5e5;
-}
-.job-block .job-info {
-  margin-top: 16px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-size: 16px;
-}
-
-.job-block .job-info .job-info-left {
-  display: flex;
-  align-items: center;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 26px;
-  color: #121212;
-}
-.job-block .job-info span.dollar {
-  font-size: 20px;
-  color: #121212;
-  margin-right: 8px;
-}
-.job-info .job-info-left span.year {
-  font-weight: 400;
-  color: #64666c;
-}
-.job-info .job-info-right {
-  color: #64666c;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 22px;
-} */
 /* End main job */
 /* Pagination */
 .tf-container .main-jobs .job-link {
@@ -1077,6 +975,9 @@ input[type="number"]::-webkit-inner-spin-button {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
+}
+.group-category-job.padding {
+  padding-bottom: 50px;
 }
 .job-category-box {
   width: 266px;
@@ -1153,6 +1054,7 @@ input[type="number"]::-webkit-inner-spin-button {
 .content-job {
   max-width: 829px;
 }
+
 .features-job .inner-box .button-readmore {
   position: absolute;
   top: 0;
@@ -1181,7 +1083,7 @@ input[type="number"]::-webkit-inner-spin-button {
   font-size: 20px;
   margin-right: 8px;
 }
-.content-job .job-info span.icon-dollar {
+.features-job.style-2 .job-footer-right span.icon-dollar {
   width: 19px;
   height: 19px;
   font-size: 12px;
@@ -1193,90 +1095,83 @@ input[type="number"]::-webkit-inner-spin-button {
   margin-right: 8px;
   color: #121212;
 }
-.content-job .job-info span.icon-dollar:hover {
+.features-job.style-2 .job-footer-right span.icon-dollar:hover {
   background-color: #14a077;
   color: #ffffff;
   cursor: pointer;
 }
-/*======================= wd-feature-job style2 =====================*/
+/*======================= wd-feature-job style3 =====================*/
 
-.features-job.style-2 {
+.features-job.style-3 {
   width: 100%;
   border: 1px solid #e5e5e5;
   padding: 24px;
   margin-bottom: 0;
 }
-
-.features-job.style-2 .inner-box {
+.features-job.style-3 .company {
+  display: flex;
+  align-items: center;
+  flex: 0.8;
+}
+.features-job.style-3 .inner-box {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.features-job.style-2 .inner-box .company {
-  width: 25%;
-  display: flex;
-  align-items: center;
-}
-/* .features-job.style-2 .inner-box .img {
-  max-width: 60px;
-  margin-right: 16px;
-}
-.features-job.style-2 .inner-box.img > img {
-  width: 100%;
-} */
-.features-job.style-2 .content h4 {
+
+.features-job.style-3 .box-content h4 {
   line-height: 24px;
   font-weight: 600;
   font-size: 14px;
   line-height: 24px;
 }
-.features-job.style-2 .content h4 a {
+.features-job.style-3 .box-content h4 a {
   color: #14a077;
 }
-.features-job.style-2 .content h3 {
+.features-job.style-3 .box-content h3 {
   font-size: 20px;
   font-weight: 700;
   line-height: 28px;
 }
-.features-job.style-2 .content h3 a {
+.features-job.style-3 .box-content h3 a {
   color: #121212;
 }
-.features-job.style-2 .content h3 > span {
+.features-job.style-3 .box-content h3 > span {
   font-size: 14px;
   background-color: #504cfe;
   border-radius: 50%;
   padding: 3px;
   color: #ffffff;
 }
-.features-job.style-2 .content .star span {
+/* .features-job.style-3 .box-content .star span {
   font-size: 12.8px;
   color: #ffb321;
-}
-.features-job.style-2 .content .star span:last-child {
+} */
+.features-job.style-3 .box-content .star span:last-child {
   color: #e5e5e5;
 }
-.features-job.style-2 .info {
+.features-job.style-3 .info {
   color: #64666c;
   font-size: 14px;
   font-weight: 400;
   display: inline-flex;
 }
-.features-job.style-2 .info li:first-child {
+.features-job.style-3 .info li:first-child {
   margin-right: 16px;
 }
-.features-job.style-2 .info span.icon-map-pin {
+.features-job.style-3 .info span.icon-map-pin {
   color: #64666c;
   font-size: 16px;
   margin-right: 4px;
 }
 
-.features-job.style-2 .category {
+.features-job.style-3 .category {
   margin: 16px 0px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.features-job.style-2 .category .tag span {
+.features-job.style-3 .category .tag span {
   background-color: #f1f1f1;
   color: #121212;
   font-size: 12px;
@@ -1285,11 +1180,11 @@ input[type="number"]::-webkit-inner-spin-button {
   padding: 8px 16px;
   border-radius: 52px;
 }
-.features-job.style-2 .category .tag span:first-child {
+.features-job.style-3 .category .tag span:first-child {
   margin-right: 8px;
 }
 
-.features-job.style-2 .salary {
+.features-job.style-3 .salary {
   display: flex;
   align-items: center;
   font-weight: 600;
@@ -1297,20 +1192,20 @@ input[type="number"]::-webkit-inner-spin-button {
   line-height: 26px;
   color: #121212;
 }
-.features-job.style-2 .salary .dollar {
+.features-job.style-3 .salary .dollar {
   font-size: 20px;
   color: #121212;
   margin-right: 8px;
 }
-.features-job.style-2 .salary span.year {
+.features-job.style-3 .salary span.year {
   font-weight: 400;
   color: #64666c;
 }
-.features-job.style-2 .group-btn {
+.features-job.style-3 .group-btn {
   display: flex;
   align-items: center;
 }
-.features-job.style-2 .group-btn span.icon-heart {
+.features-job.style-3 .group-btn span.icon-heart {
   position: unset;
   margin-right: 20px;
   height: 40px;
@@ -1321,11 +1216,11 @@ input[type="number"]::-webkit-inner-spin-button {
   border: 1px solid #e5e5e5;
   transition: all 0.3s ease-in-out;
 }
-.features-job.style-2 .group-btn span.icon-heart:active,
-.features-job.style-2 .group-btn span.icon-heart:hover {
+.features-job.style-3 .group-btn span.icon-heart:active,
+.features-job.style-3 .group-btn span.icon-heart:hover {
   color: #eb4d4d;
 }
-.features-job.style-2 .group-btn button {
+.features-job.style-3 .group-btn button {
   background-color: #14a077;
   color: #ffffff;
   border-radius: 4px;
@@ -1336,7 +1231,7 @@ input[type="number"]::-webkit-inner-spin-button {
   line-height: 26px;
   text-transform: none;
 }
-.features-job.style-2 .group-btn button:hover {
+.features-job.style-3 .group-btn button:hover {
   background-color: #148160;
 }
 
@@ -1392,27 +1287,27 @@ button.tf-button span {
   display: flex;
   align-items: center;
 }
-.employer-block .inner-box .img {
+.employer-block .inner-box .logo-company {
   max-width: 60px;
   margin-right: 16px;
 }
-.employer-block .inner-box .img > img {
+.employer-block .inner-box .logo-company > img {
   width: 100%;
 }
-.employer-block .content h3 {
+.employer-block .box-content h3 {
   line-height: 28px;
   font-size: 20px;
 }
-.employer-block .content h3 a {
+.employer-block .box-content h3 a {
   transition: all 0.5s ease-in-out;
 
   font-weight: 700;
   color: #121212;
 }
-.employer-block .content h3 a:hover {
+.employer-block .box-content h3 a:hover {
   color: #14a077;
 }
-.employer-block .content h3 span.icon-bolt {
+.employer-block .box-content h3 span.icon-bolt {
   font-size: 14px;
   background-color: #504cfe;
   border-radius: 50%;
@@ -1420,7 +1315,7 @@ button.tf-button span {
   color: #ffffff;
 }
 
-.employer-block .content p.info {
+.employer-block .box-content p.info {
   margin-top: 4px;
   color: #64666c;
   font-size: 14px;
@@ -1428,14 +1323,7 @@ button.tf-button span {
   line-height: 22px;
   display: inline-block;
 }
-.employer-block .content .star span {
-  font-size: 12.8px;
-  color: #ffb321;
-  cursor: pointer;
-}
-.employer-block .content .star span:last-child {
-  color: #e5e5e5;
-}
+
 /* ================= wd-employer style2 =================== */
 .employer-2-col:hover,
 .employer-3-col:hover {
@@ -1490,7 +1378,7 @@ button.tf-button span {
   align-items: center;
   position: relative;
 }
-.employer-3-col .inner-box .content {
+.employer-3-col .inner-box .box-content {
   text-align: center;
 }
 .employer-3-col .inner-box span.icon-heart {
@@ -1522,16 +1410,12 @@ button.tf-button span {
   filter: grayscale(40%);
   position: relative;
 }
-/* .wd-feature-map iframe::after {
-  content: "";
-  background-image: url(../images/logo-company/Property\ 1=Frame\ 3466098.png);
-  position: absolute;
-} */
+
 .wd-feature-map .inner-form-map form {
   margin-top: -55px;
   margin-bottom: 40px;
 }
-.logo-company {
+.wd-feature-map .inner-form-map form .logo-company {
   position: absolute;
   top: 0;
   left: 55rem;
