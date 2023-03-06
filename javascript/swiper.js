@@ -222,29 +222,3 @@ if ($("div").hasClass("swiper")) {
     },
   });
 }
-
-var gallery = function () {
-  if ($("div").hasClass("widget-dash-video")) {
-    var slider = new Swiper(".gallery-slide", {
-      slidesPerView: 1,
-      centeredSlides: true,
-      loop: true,
-      loopedSlides: 3,
-      navigation: {
-        clickable: true,
-        nextEl: ".swiper-button-next3",
-        prevEl: ".swiper-button-prev3",
-      },
-    });
-
-    var thumbs = new Swiper(".gallery-thumb", {
-      slidesPerView: "auto",
-      spaceBetween: 17,
-      loop: true,
-      slideToClickedSlide: true,
-      slidesPerView: 3,
-    });
-    slider.controller.control = thumbs;
-    thumbs.controller.control = slider;
-  }
-};

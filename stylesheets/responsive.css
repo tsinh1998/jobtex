@@ -32,6 +32,9 @@
     .tf-slider .heading h2 {
         padding-right: 200px;
     }
+    .post-navigation {
+        padding: 0px;
+    }
 }
 @media only screen and (max-width: 1300px) {
     .sticky-area-wrap .header-ct-left .categories {
@@ -46,6 +49,12 @@
     }
     .wd-review-job.sl7 .thumb3 .group-user {
         right: 0%;
+    }
+    .meta-category-job {
+        display: block;
+    }
+    .category-filter {
+        margin-bottom: 10px;
     }
 }
 @media only screen and (max-width: 1200px) {
@@ -94,6 +103,17 @@
       .footer-cl-5 {
         margin-left: 20%;
     }
+    .job-article .inner-content {
+        padding: 0px;
+    }
+    .features-job .inner-box span.icon-heart {
+        padding: 10px;
+        font-size: 12px;
+    }
+    .tf-slider.sl6 .form-sl, .tf-slider.sl8 .form-sl, .tf-slider.sl9 .form-sl {
+        margin-left: 100px;
+        margin-right: 100px;
+    }
 }
 @media only screen and (max-width: 1024px) {
     .sticky-area-wrap .header-ct-center {
@@ -124,6 +144,18 @@
     }
     .tf-slider.sl7 .form-sl .row-group-search {
         margin: 0;
+    }
+    .post-navigation {
+        display: block !important;
+    }
+    .wd-social {
+        margin-bottom: 30px;
+    }
+    .wd-social .list-social {
+        flex-wrap: wrap;
+    }
+    .wd-social .list-social li {
+        margin-bottom: 15px;
     }
 }
 @media only screen and (max-width: 991px) {
@@ -173,6 +205,10 @@
         margin-left: 0%;
         text-align: center;
         margin-bottom: 60px;
+    }
+    .tf-slider.sl6 .form-sl, .tf-slider.sl8 .form-sl, .tf-slider.sl9 .form-sl {
+        margin-left: 50px;
+        margin-right: 50px;
     }
     .tf-slider.sl3 .list-category {
         margin-bottom: 100px;
@@ -337,5 +373,9 @@
     }
     .footer-logo {
         margin-bottom: 30px;
+    }
+    .tf-slider.sl6 .form-sl, .tf-slider.sl8 .form-sl, .tf-slider.sl9 .form-sl {
+        margin-left: 20px;
+        margin-right: 20px;
     }
 }
