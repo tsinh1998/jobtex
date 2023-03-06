@@ -1246,7 +1246,7 @@ input[type="color"],
 }
 
 #header.style-absolute .sticky-area-wrap .header-ct-left .categories > a span,
-#header.style-absolute .sticky-area-wrap .header-ct-left .categories a,
+#header.style-absolute .sticky-area-wrap .header-ct-left .categories > a,
 #header.style-absolute #main-nav #menu-primary-menu > li > a,
 #header.style-absolute .sticky-area-wrap .header-ct-right .help a,
 #header.style-absolute .sticky-area-wrap .header-ct-right .bell,
