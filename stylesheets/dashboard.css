@@ -2062,7 +2062,9 @@ tbody tr td:nth-child(2) {
 .flat-dashboard-alerts thead tr th:nth-child(4) {
     padding-left: 16px;
 }
-
+.flat-dashboard-alerts tr td:nth-child(5) {
+    text-align: end;
+}
 .flat-dashboard-alerts .cancel-icon {
     font-size: 20px;
     color: #64666C;
