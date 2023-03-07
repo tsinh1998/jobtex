@@ -74,6 +74,10 @@
     font-size: 12px;
 }
 
+.dashboard .lh-24 {
+    line-height: 24px;
+}
+
 .dashboard .center {
     text-align: center;
 }
@@ -288,9 +292,10 @@ thead tr th:nth-child(2) {
     padding-left: 39px;
 }
 
-tbody tr th:last-child {
+tbody tr td:last-child {
     text-align: end;
 }
+
 tbody tr td  {
     padding: 43px 16px 26px;
     border-bottom: 1px solid #E5E5E5;
@@ -455,6 +460,11 @@ tbody tr td:nth-child(2) {
 .dashboard .button-status.style {
     background-color: #FFB3211A;
     color: #FFB321;
+}
+
+.dashboard .button-status.style-2 {
+    background-color: #504CFE1A;
+    color: #504CFE;
 }
 
 .dashboard .button-cancel {
@@ -1784,9 +1794,6 @@ tbody tr td:nth-child(2) {
 .flat-dashboard-myjob .applicants .action-icon {
     margin-right: 16px;
 }
-.flat-dashboard-myjob .applicants .button-status {
-    /* margin-left:  16px; */
-}
 
 .flat-dashboard-myjob thead tr th:nth-child(2) {
     padding-left: 16px; 
@@ -2062,10 +2069,102 @@ tbody tr td:nth-child(2) {
 .flat-dashboard-alerts thead tr th:nth-child(4) {
     padding-left: 16px;
 }
-.flat-dashboard-alerts tr td:nth-child(5) {
+/* .flat-dashboard-alerts tr td:nth-child(5) {
     text-align: end;
-}
+} */
 .flat-dashboard-alerts .cancel-icon {
     font-size: 20px;
     color: #64666C;
+}
+
+/*  */
+.flat-dashboard-my-packages .applicants .wrap-applicants {
+    padding: 0px 32px 24px 32px;
+}
+
+.flat-dashboard-my-packages thead tr th {
+    border: 0;
+    padding: 16px 16px 32px 16px;
+}
+.flat-dashboard-my-packages thead tr th:last-child {
+    padding-right: 35px;
+}
+.flat-dashboard-my-packages thead tr th:nth-child(1) {
+    padding-left: 20px;
+}
+.flat-dashboard-my-packages thead tr th:nth-child(2) {
+    padding-left: 16px;
+}
+.flat-dashboard-my-packages thead tr th:nth-child(4) {
+    padding-left: 16px;
+}
+
+.flat-dashboard-my-packages tbody tr td {
+    padding: 15px 16px 16px;
+}
+.flat-dashboard-my-packages tbody tr td:nth-child(1) {
+    width: 13%;
+    padding-left: 20px;
+}
+.flat-dashboard-my-packages tbody tr td:nth-child(2) {
+    width: 13.3%;
+}
+.flat-dashboard-my-packages tbody tr td:nth-child(3) {
+    padding-left: 28px;
+    width: 18.7%;
+}
+
+.flat-dashboard-my-packages tbody tr td:nth-child(4) {
+    padding-left: 30px;
+    width: 21%;
+}
+.flat-dashboard-my-packages tbody tr td:last-child {
+    padding-right: 28px;
+}
+
+/* dashboard-meetings.html */
+.page-title-dashboard.style2 {
+    padding: 38px 0 33px;
+}
+
+.page-title-dashboard.style2 .tf-button a {
+    font-size: 14px;
+}
+
+.flat-dashboard-meetings {
+
+}
+.flat-dashboard-meetings .applicants .wrap-applicants {
+    padding: 0px 50px 15px 48px;
+}
+.flat-dashboard-meetings .dec-box {
+    margin-right: 50px;
+}
+.flat-dashboard-meetings .dec-box .title-dec {
+    width: 76px;
+    height: 28px;
+    background-color: #14A077;
+    color: #fff;
+}
+.flat-dashboard-meetings .dec-box .dec {
+    width: 76px;
+    height: 46px;
+    background-color: #FAF7F1;
+    font-size: 24px;
+}
+.flat-dashboard-meetings .time-box .time-1 {
+    margin-right: 15px;
+}
+.flat-dashboard-meetings .time-box .time-1::before {
+    font-family      : 'icomoon';
+    content          : "\e9a9";
+}
+.flat-dashboard-meetings .time-box .time-2::before {
+    font-family      : 'icomoon';
+    content          : "\e982";
+}
+
+
+.flat-dashboard-meetings tbody tr td {
+    padding: 38px 16px 26px;
 }
