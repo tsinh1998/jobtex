@@ -210,8 +210,13 @@ if ($("div").hasClass("swiper")) {
     loop: true,
     spaceBetween: 69,
     breakpoints: {
-      800: {
+      400: {
         slidesPerView: 3,
+        spaceBetween: 20,
+      },
+      800: {
+        slidesPerView: 5,
+        spaceBetween: 30,
       },
       1170: {
         slidesPerView: 6,
