@@ -303,6 +303,25 @@
     });
 };
 
+var loadmore2 = function () {
+  $(".fl-item").slice(0, 0).show();
+  $(".fl-item2").slice(0, 0).show();
+
+  $(".loadmore2").on("click", function (e) {
+    e.preventDefault();
+
+    $(".fl-item:hidden").slice(0, 1).slideDown();
+    $(".fl-item2:hidden").slice(0, 1).slideDown();
+    if ($(".fl-item:hidden").length == 0) {
+      $(".loadmore2").hide();
+    }
+    if ($(".fl-item2:hidden").length == 0) {
+      $("#loadmore2").hide();
+    }
+
+  });
+};
+
   // up img 1
   $("#profileimg").click(function (e) {
     $("#tf-upload-img").click();
@@ -480,7 +499,6 @@
     tfTabs();
     filter();
     parallax();
-    progressProduct();
     gallery();
     flatSpacer();
     dropdown("#item_date");
@@ -495,10 +513,11 @@
     dropdown("#item_3");
     dropdown("#item_4");
     loadmore();
+    loadmore2();
     UpImg();
     delete_img();
     popUpLightBox();
-
+    progressProduct();
     preload();
   });
 })(jQuery);
