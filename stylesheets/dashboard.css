@@ -101,6 +101,10 @@
     justify-content: center;
 }
 
+.dashboard .relative {
+    position: relative;
+}
+
 .dashboard .p-16 {
     font-size: 16px ;
     font-weight: 400; 
@@ -305,6 +309,7 @@ tbody tr td  {
 tbody tr:last-child td {
     padding: 43px 16px 35px;
     border-bottom: 0px solid #E5E5E5;
+    transition   : all 0.3s ease;
 }
 
 tbody tr td:nth-child(1) {
@@ -314,6 +319,16 @@ tbody tr td:nth-child(2) {
     width: 17.2%;
 }
 
+.flat-dashboard-applicants .applicants tbody tr:hover td{
+    background: #f5f5f5;
+}
+  
+.flat-dashboard-applicants .applicants tbody tr:hover .action-icon {
+background: #fff;
+}
+
+
+
  .tbody tr.active,
 .tbody tr:hover td {
     background: #F5F5F5;
@@ -321,7 +336,7 @@ tbody tr td:nth-child(2) {
 
 /* flat dashboard applicants */
 .flat-dashboard-applicants {
-    padding-bottom: 40px;
+    /* padding-bottom: 40px; */
 }
 
 .flat-dashboard-applicants .applicants .title-appli {
@@ -333,6 +348,7 @@ tbody tr td:nth-child(2) {
 .flat-dashboard-applicants .applicants .wrap-applicants {
     padding: 0px 32px 15px 32px;
 }
+
 
 .flat-dashboard-applicants .applicants .candidates-wrap .images {
     border-radius: 50%;
@@ -383,6 +399,11 @@ tbody tr td:nth-child(2) {
     transition        : all 0.3s ease;
     position: relative;
 }
+
+.flat-dashboard-applicants .applicants .action-icon.style {
+    margin-right: 16px;
+    font-size: 22px;
+}
 /* .flat-dashboard-applicants .applicants .action-icon:hover {
     background: #14A077;
     color: #fff;
@@ -430,21 +451,6 @@ tbody tr td:nth-child(2) {
     transform: translateY(-3px) scale(1.1);
 }
 /*  */
-
-/* .flat-dashboard-applicants .applicants .box-1 {
-    width: 29%;
-}
-.flat-dashboard-applicants .applicants .box-2 {
-    width: 26%;
-    text-align: center;
-}
-.flat-dashboard-applicants .applicants .box-3 {
-    width: 15%;
-}
-.flat-dashboard-applicants .applicants .box-4 {
-    width: 28.7%;
-    text-align: end;
-} */
 
 .dashboard .button-status {
    background-color: #1481601A;
@@ -713,6 +719,11 @@ tbody tr td:nth-child(2) {
     font-size: 16px;
     line-height: 26px;
     border-radius: 4px;
+}
+
+.dashboard .tf-button a.btn-3 {
+    background: #14A077;
+    color: #fff;
 }
 
 /* .flat-dashboard-about  */
@@ -1768,25 +1779,6 @@ tbody tr td:nth-child(2) {
     padding: 30px 16px 30px;
 }
 
-/* .flat-dashboard-myjob .applicants .box-1 {
-   width: 27.7%;
-}
-.flat-dashboard-myjob .applicants .box-2 {
-    text-align: unset;
-    width: 14.6%;
-}
-.flat-dashboard-myjob .applicants .box-3 {
-    width: 17.5%;
-}
-.flat-dashboard-myjob .applicants .box-4 {
-    text-align: center;
-    width: 14.5%;
-}
-.flat-dashboard-myjob .applicants .box-5 {
-    text-align: end;
-    width: 24.4%;
-} */
-
 .flat-dashboard-myjob .applicants .title-1 {
     padding-left: 9px;
  }
@@ -1821,7 +1813,7 @@ tbody tr td:nth-child(2) {
     width: 20.6%;
 }
 
-/* Submit Job */
+/* flat Submit Job */
 .page-title-dashboard.style {
     padding: 38px 0 14px;
 }
@@ -1953,7 +1945,7 @@ tbody tr td:nth-child(2) {
     text-align: center;
     padding: 11px 15px;
 }
-.titles-box {
+.flat-dashboard-month .titles-box {
     justify-content: space-between;
 }
 .flat-dashboard-month .wrap-month .sub-titles {
@@ -1970,7 +1962,7 @@ tbody tr td:nth-child(2) {
     border-radius: 4px;
 }
 
-/*  */
+/* flat-dashboard-post */
 
 .flat-dashboard-post .post-new {
     padding: 20px 32px 35px;
@@ -2040,14 +2032,14 @@ tbody tr td:nth-child(2) {
     margin-bottom: 25px;
 }
 
-.change-password fieldset {
+.change-password .inner {
     margin-bottom: 27px;
 }
-.change-password fieldset:last-child {
+.change-password .inner:nth-child(3) {
     margin-bottom: 33px;
 }
 
-.flat-dashboard-password .change-password fieldset input {
+.flat-dashboard-password .change-password input {
     height: 56px;
     border: 0px;
 }
@@ -2056,6 +2048,12 @@ tbody tr td:nth-child(2) {
     padding: 11px 31px;
 }
 
+.change-password .inputs-group a {
+    position: absolute;
+    right: 15px;
+    font-size: 20px;
+}
+/* flat-dashboard-detele */
 .flat-dashboard-detele h3 {
     margin-bottom: 5px;
 }
@@ -2063,18 +2061,64 @@ tbody tr td:nth-child(2) {
     margin-bottom: 15px;
 }
 
+.flat-dashboard-detele .change-password .form-password {
+    width: 48%;
+}
+.flat-dashboard-detele .change-password .inner {
+    margin-bottom: 17px;
+}
+
+.flat-dashboard-detele .tf-button a {
+    background: #EB4D4D;
+    color: #fff !important; 
+    border: 1px solid #EB4D4D;
+}
+
+
+/* flat-dashboard-alerts */
+.flat-dashboard-alerts .dash-search {
+    padding: 25px 33px 23px 31px;
+}
+.flat-dashboard-alerts tbody tr td {
+    padding: 14px 18px 13px;
+}
+.flat-dashboard-alerts thead tr th {
+    padding: 16px 16px 37px 16px;
+    border: unset;
+}
+.flat-dashboard-alerts tbody tr:last-child td {
+    padding: 14px 16px 22px;
+}
 .flat-dashboard-alerts tr th:nth-child(4) {
     text-align: center;
 }
 .flat-dashboard-alerts thead tr th:nth-child(4) {
     padding-left: 16px;
 }
-/* .flat-dashboard-alerts tr td:nth-child(5) {
-    text-align: end;
-} */
+.flat-dashboard-alerts thead tr th:nth-child(1) {
+    padding-left: 40px;
+}
+.flat-dashboard-alerts thead tr th:nth-child(2) {
+    padding-left: 16px;
+}
+.flat-dashboard-alerts tbody tr td:nth-child(1) {
+    padding-left: 40px;
+    width: 35.6%;
+}
+.flat-dashboard-alerts tbody tr td:nth-child(2) {
+    width: 19.1%;
+}
+.flat-dashboard-alerts tbody tr td:nth-child(3) {
+    width: 20%;
+}
+
+.flat-dashboard-alerts tbody tr td:nth-child(5) {
+    padding-right: 37px;
+} 
+
 .flat-dashboard-alerts .cancel-icon {
     font-size: 20px;
-    color: #64666C;
+    color: #B1B1B1;
 }
 
 /*  */
@@ -2131,40 +2175,62 @@ tbody tr td:nth-child(2) {
     font-size: 14px;
 }
 
-.flat-dashboard-meetings {
-
-}
 .flat-dashboard-meetings .applicants .wrap-applicants {
-    padding: 0px 50px 15px 48px;
+    padding: 26px 50px 15px 48px;
 }
+.flat-dashboard-meetings tbody tr td {
+    padding: 11px 16px 11.5px;
+}
+
+
+
 .flat-dashboard-meetings .dec-box {
-    margin-right: 50px;
+    margin-right: 51px;
 }
 .flat-dashboard-meetings .dec-box .title-dec {
     width: 76px;
     height: 28px;
     background-color: #14A077;
     color: #fff;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
 }
 .flat-dashboard-meetings .dec-box .dec {
     width: 76px;
     height: 46px;
     background-color: #FAF7F1;
     font-size: 24px;
+    transition : all 0.3s ease;
 }
+
+.flat-dashboard-meetings .applicants tbody tr:hover .dec-box .dec {
+    background: #fff;
+}
+.flat-dashboard-meetings .dec-wrap .content {
+    padding-top: 5px;
+}
+
+.flat-dashboard-meetings .dec-wrap .content .title-box {
+    line-height: 21px;
+    margin-bottom: 2px;
+}
+
 .flat-dashboard-meetings .time-box .time-1 {
-    margin-right: 15px;
+    margin-right: 17px;
+    margin-left: 0px;
 }
 .flat-dashboard-meetings .time-box .time-1::before {
     font-family      : 'icomoon';
     content          : "\e9a9";
+    font-size: 15px;
+    margin-right: 4px;
 }
 .flat-dashboard-meetings .time-box .time-2::before {
     font-family      : 'icomoon';
     content          : "\e982";
+    font-size: 15px;
+    margin-right: 4px;
 }
 
 
-.flat-dashboard-meetings tbody tr td {
-    padding: 38px 16px 26px;
-}
+
