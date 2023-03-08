@@ -717,6 +717,7 @@ input[type="color"],
   width: 100%;
   display: flex;
   align-items: center;
+  padding-left: 175px;
 }
 
 #main-nav #menu-primary-menu {
