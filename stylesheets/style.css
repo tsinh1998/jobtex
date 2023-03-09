@@ -619,7 +619,9 @@ input[type="color"],
 .header-style2 {
   padding: 22px 0;
 }
-
+.header-style2 .sticky-area-wrap .header-ct-center {
+  padding-left: 0;
+}
 .header-style2 .nav-wrap {
   margin-bottom: -90px;
   margin-top: 10px;

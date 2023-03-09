@@ -60,11 +60,11 @@
   position: absolute;
 }
 
-.form-group-2 {
+/* .form-group-2 {
   border-right: 1px solid #e5e5e5;
-}
+} */
 /* input */
-.form-group-1 > input {
+.row-group-search .form-group-1 > input {
   padding: 12px 24px;
   border-top: hidden;
   border-bottom: hidden;
@@ -1532,6 +1532,9 @@ button.tf-button span {
   background-color: #123841;
 }
 .title-iconbox {
+  padding-bottom: 40px;
+}
+.wd-iconbox.style-1 .title-iconbox {
   padding-bottom: 32px;
 }
 .title-iconbox h1,
