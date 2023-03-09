@@ -321,20 +321,20 @@
      </div>
      <nav class="dashboard__sidebar show">
         <ul class="sidebar__menu">
-            <li class="active"><a href="dashboard.html"><span class="icon-dashboard"></span>Dashboard</a></li>
-            <li><a href="dashboard-profile.html"><span class="icon-profile"></span>Profile</a></li>
-            <li><a href="dashboard-my-job.html"><span class="icon-work"></span>My Job</a></li>
-            <li><a href="dashboard-submit-job.html"><span class="icon-submit"></span>Submit Job</a></li>
-            <li><a href="dashboard-team.html"><span class="icon-applicant"></span>applicants Jobs</a></li>
-            <li><a href="dashboard-faq.html"><span class="icon-save-candidate"></span>Saved Candidates</a></li>
-            <li><a href="dashboard-creations.html"><span class="icon-bell1"></span>candidate Alerts</a></li>
-            <li><a href="dashboard-team.html"><span class="icon-mypackage"></span> My Packages</a></li>
-            <li><a href="dashboard-faq.html"><span class="icon-chat"></span>Messages</a></li>
-            <li><a href="dashboard-faq.html"><span class="icon-meeting"></span>Meeting</a></li>
-            <li><a href="dashboard-creations.html"><span class="icon-change-passwords"></span>Change passwords</a></li>
-            <li><a href="dashboard-team.html"><span class="icon-trash"></span>Delete Profile</a></li>
-            <li><a href="dashboard-faq.html"><span class="icon-log-out"></span>Log out</a></li>
-         </ul>
+          <li ><a href="dashboard.html"><span class="icon-dashboard"></span>Dashboard</a></li>
+          <li><a href="dashboard-profile.html"><span class="icon-profile"></span>Profile</a></li>
+          <li><a href="dashboard-my-job.html"><span class="icon-work"></span>My Job</a></li>
+          <li><a href="dashboard-submit-job.html"><span class="icon-submit"></span>Submit Job</a></li>
+          <li><a href="dashboard-applicants-jobs.html"><span class="icon-applicant"></span>applicants Jobs</a></li>
+          <li><a href="dashboard-saved-candidates.html"><span class="icon-save-candidate"></span>Saved Candidates</a></li>
+          <li><a href="dashboard-alerts-candidate.html"><span class="icon-bell1"></span>candidate Alerts</a></li>
+          <li><a href="dashboard-my-packages.html"><span class="icon-mypackage"></span> My Packages</a></li>
+          <li><a href="dashboard-faq.html"><span class="icon-chat"></span>Messages</a></li>
+          <li><a href="dashboard-meetings.html"><span class="icon-meeting"></span>Meeting</a></li>
+          <li class="active"><a href="dashboard-change-passwords.html"><span class="icon-change-passwords"></span>Change passwords</a></li>
+          <li><a href="dashboard-delete-profile.html"><span class="icon-trash"></span>Delete Profile</a></li>
+          <li><a href="dashboard-faq.html"><span class="icon-log-out"></span>Log out</a></li>
+        </ul>
      </nav>
     
   
@@ -454,8 +454,8 @@
                                             <a class="btn-selector nolink input-form"> Freelance </a>
                                             <ul >
                                                 <li ><span>Online</span></li>
-                                                <li><span>50 - 120</span></li>                                     
-                                                <li ><span>120 - 500</span></li>
+                                                <li><span>Freelance</span></li>                                     
+                                                <li ><span>Offline</span></li>
                                             </ul>
                                         </div>  
                                         <div id="item_2" class="dropdown titles-dropdown ">
@@ -474,7 +474,7 @@
                                         <div id="item_3" class="dropdown titles-dropdown ">
                                           <label class="title-user fw-7">Salary Type</label>
                                           <a class="btn-selector nolink input-form"> Month</a>
-                                          <ul >
+                                          <ul>
                                               <li ><span>1</span></li>
                                               <li><span>6</span></li>                                     
                                               <li ><span>12</span></li>
@@ -489,9 +489,9 @@
                                           <label class="title-user fw-7">Career Level</label>
                                           <a class="btn-selector nolink input-form"> Manager</a>
                                           <ul >
-                                              <li ><span>1</span></li>
-                                              <li><span>6</span></li>                                     
-                                              <li ><span>12</span></li>
+                                              <li ><span>Managerial</span></li>
+                                              <li><span>Manager</span></li>                                     
+                                              <li ><span>Personnel</span></li>
                                           </ul>
                                         </div>
                                         <fieldset>
@@ -515,31 +515,37 @@
                                   </ul>
                                 </div>
 
-                              <div class="button-wrap flex2">
+                              <div class="btn-wrap button-wrap flex2">
                                   <div class="tf-button button-browse">
-                                      <a href="#">Browse</a>
+                                      <a href="#" class="btn-3">Browse</a>
                                   </div>
-                                  <div class="fs-16"><a >Upload image</a> </div>
+                                  <div class="fs-16"><a >Upload image, video</a> </div>
                               </div>
                               <div class="contact-wrap info-wd">
                                 <h3>Location</h3>
                                 <div class="form-map form-wg flex flat-form">
                                     <div class="form-box  wg-box"> 
                                         <fieldset class="">
-                                            <label class="title-user fw-7">Location</label>
-                                            <input type="text" class="input-form" value="Tokyo" fdprocessedid="3xi1s">
+                                            <label class="title-user fs-16"> Address</label>
+                                            <input type="text" class="input-form" value="Las Vegas, NV 89107, USA" fdprocessedid="3xi1s">
                                         </fieldset> 
                                     </div>
                                     <div class="form-box  wg-box"> 
-                                        <fieldset class="">
-                                            <label class="title-user fw-7">Map Location</label>
-                                            <input type="text" class="input-form" value="243- 235  St. Takayamio, Tokyo" fdprocessedid="3xi1s">
-                                        </fieldset> 
+                                        <div id="item_category2" class="dropdown titles-dropdow">
+                                          <label class="title-user fs-16">Location</label>
+                                          <a class="btn-selector nolink input-form"> Tokyo </a>
+                                          <ul >
+                                              <li ><span>VietNam</span></li>
+                                              <li><span>Tokyo</span></li>                                     
+                                              <li ><span>USA</span></li>
+                                              <li ><span>England</span></li>
+                                          </ul>
+                                      </div>   
                                     </div>
                                 </div>
                                 <fieldset class="address-box">
-                                  <label class="title-user fw-7">Address</label>
-                                  <input type="text"  class="input-form" value="71  St. Takayamio, Tokyo" fdprocessedid="3xi1s">
+                                  <label class="title-user fs-16">Map Location</label>
+                                  <input type="text"  class="input-form" fdprocessedid="3xi1s">
                                 </fieldset> 
                               </div>
                               <div class="map-content">
@@ -550,12 +556,12 @@
                                           <div class="form-social form-wg flex flat-form">
                                               <div class="form-box  wg-box"> 
                                                   <fieldset class="">
-                                                      <input type="text" class="input-form" value="40.69499198068389" fdprocessedid="3xi1s">
+                                                      <input type="text" class="input-form input-style" value="40.69499198068389" fdprocessedid="3xi1s">
                                                   </fieldset> 
                                               </div>
                                               <div class="form-box  wg-box"> 
                                                   <fieldset class="">
-                                                      <input type="text" class="input-form" value="-73.9959976171989" fdprocessedid="3xi1s">
+                                                      <input type="text" class="input-form input-style" value="-73.9959976171989" fdprocessedid="3xi1s">
                                                   </fieldset> 
                                               </div>
                                           </div>
@@ -563,7 +569,7 @@
                                     <div class="wrap-video">
                                       <fieldset class="info-wd">
                                           <label class="title-url fw-4 fs-16 color-4">Introduction Video</label>
-                                          <input type="url" id="valueInput" class="input-form" value="https://www.youtube.com/watch?v=I6ZLgk_bq90" fdprocessedid="3xi1s" > 
+                                          <input type="url" id="valueInput" class="input-form input-style" value="https://www.youtube.com/watch?v=I6ZLgk_bq90" fdprocessedid="3xi1s" > 
                                       </fieldset>
                                   </div> 
                             </div>
