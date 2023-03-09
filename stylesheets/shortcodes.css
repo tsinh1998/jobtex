@@ -1019,3 +1019,14 @@ button.tf-button.style-1:hover span {
 .wd-review-job.contentbox1.padding {
   padding-top: 72.92px;
 }
+/* OVERRIDE */
+/* WD-get app */
+.wd-get-app .thumb img {
+  height: 438px;
+}
+.wd-get-app .thumb {
+  margin-left: 0%;
+}
+.wd-get-app .content {
+  padding-left: 52px;
+}

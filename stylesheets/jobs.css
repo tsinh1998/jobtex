@@ -1620,11 +1620,17 @@ button.tf-button span {
   width: 709px;
 }
 .wd-iconbox.style-2 .colum3 {
-  width: 21%;
+  width: 21.2%;
   margin-right: 70px;
 }
 .wd-iconbox.style-2 .colum3:last-child {
   margin-right: 0px;
+}
+.title-iconbox.style-2 h1 {
+  margin-bottom: 16px;
+}
+.tf-iconbox.style-2 .box-content p {
+  line-height: 26px;
 }
 .tf-iconbox.style-2 .icon.bg-white {
   background-color: #ffffff;
@@ -1634,6 +1640,12 @@ button.tf-button span {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: 32px;
+}
+.tf-iconbox.style-2 .box-content .box-title {
+  font-size: 24px;
+  line-height: 30px;
+  margin-bottom: 12px;
 }
 .tf-iconbox.style-3 .box-header .img1 img {
   width: 120px;
@@ -1707,6 +1719,10 @@ button.tf-button span {
   }
   .wd-iconbox.style-1 .column-6 {
     width: 100%;
+  }
+  /* wd-get-app */
+  .wd-get-app .thum img {
+    height: auto;
   }
 }
 /* tablet */
