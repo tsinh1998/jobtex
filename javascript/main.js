@@ -464,15 +464,17 @@ var loadmore2 = function () {
   };
 
   var progressProduct = function () {
-    $(".progress-item").appear(function () {
-        $(this).find("div.donat-bg").each(function () {
-            $(this).find(".custom-donat").delay(600).animate({
-                width: $(this).attr("data-percent")
-            }, 1000, "easeInCirc");
-            var txt = $(this).attr("data-percent");
-            $(this).closest(".rating-details").find(".percent").text(txt);
-        });
-    });
+    if ($(".progress-item").length > 0) {
+      $(".progress-item").appear(function () {
+          $(this).find("div.donat-bg").each(function () {
+              $(this).find(".custom-donat").delay(600).animate({
+                  width: $(this).attr("data-percent")
+              }, 1000, "easeInCirc");
+              var txt = $(this).attr("data-percent");
+              $(this).closest(".rating-details").find(".percent").text(txt);
+          });
+      });
+    }
 };
 
   var preload = function () {
