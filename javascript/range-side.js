@@ -41,10 +41,9 @@ rangeInput.forEach((input) => {
   });
 });
 
-//one range
+//one range job
 var slider = document.getElementById("myRange");
 var output = document.getElementById("default-side");
-
 output.innerHTML = slider.value;
 slider.oninput = function () {
   output.innerHTML = this.value;

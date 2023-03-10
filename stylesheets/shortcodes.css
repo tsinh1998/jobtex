@@ -1024,6 +1024,9 @@ button.tf-button.style-1:hover span {
 .wd-get-app .thumb img {
   height: 438px;
 }
+.wd-get-app.style-1 .thumb img {
+  height: 478px;
+}
 .wd-get-app .thumb {
   margin-left: 0%;
 }
