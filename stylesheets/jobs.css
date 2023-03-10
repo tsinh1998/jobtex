@@ -217,7 +217,7 @@ button.btn-find:hover {
   height: 60px;
 }
 
-.features-job .inner-box span.icon-heart {
+.features-job .job-archive-header span.icon-heart {
   right: 0;
   top: 0;
   position: absolute;
@@ -229,50 +229,50 @@ button.btn-find:hover {
   cursor: pointer;
   transition: all 0.3s ease-in-out;
 }
-.features-job .inner-box span.icon-heart:active,
-.features-job .inner-box span.icon-heart:hover {
+.features-job .job-archive-header span.icon-heart:active,
+.features-job .job-archive-header span.icon-heart:hover {
   color: #eb4d4d;
 }
-.features-job .box-content h4 {
+.features-job .job-archive-header h4 {
   line-height: 24px;
   font-size: 14px;
 }
-.features-job .box-content h4 a {
+.features-job .job-archive-header h4 a {
   transition: all 0.3s ease-in-out;
   color: #14a077;
   font-weight: 600;
 }
-.features-job .box-content h3 {
+.features-job .job-archive-header h3 {
   line-height: 28px;
   font-size: 20px;
 }
-.features-job .box-content h3 a {
+.features-job .job-archive-header h3 a {
   transition: all 0.3s ease-in-out;
   font-weight: 700;
   color: #121212;
   text-transform: capitalize;
 }
-.features-job .box-content h3 a:hover {
+.features-job .job-archive-header h3 a:hover {
   color: #14a077;
 }
-.features-job .box-content h3 span.icon-bolt {
+.features-job .job-archive-header h3 span.icon-bolt {
   font-size: 14px;
   background-color: #504cfe;
   border-radius: 50%;
   padding: 3px;
   color: #ffffff;
 }
-.features-job .box-content ul {
+.features-job .job-archive-header ul {
   margin-top: 4px;
 }
-.features-job .box-content ul li {
+.features-job .job-archive-header ul li {
   color: #64666c;
   font-size: 14px;
   font-weight: 400;
   line-height: 22px;
   display: inline-block;
 }
-.features-job .box-content ul li:first-child {
+.features-job .job-archive-header ul li:first-child {
   margin-right: 16px;
 }
 .features-job .job-footer-left {
@@ -1768,6 +1768,143 @@ button.tf-button span {
   background: #14a077;
   cursor: pointer;
 }
+
+/*wd-thumb-career */
+.wd-thum-career {
+  border: 1px solid #e5e5e5;
+  border-radius: 8px;
+}
+.wd-thum-career:hover {
+  box-shadow: 0px 10px 25px rgba(54, 95, 104, 0.1);
+  border: 1px solid #e5e5e5;
+}
+.wd-thum-career .thumb {
+  width: 62px;
+  height: 61px;
+  border-radius: 50%;
+  margin: 16px 16px 32px 0px;
+}
+.wd-thum-career .job-archive-header,
+.wd-thum-career .career-header-left {
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+}
+.wd-thum-career .job-archive-header {
+  border-bottom: 1px solid #e5e5e5;
+}
+.wd-thum-career .career-header-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.wd-thum-career .job-archive-header span.icon-heart {
+  position: unset;
+  margin-bottom: 12px;
+}
+.wd-thum-career button {
+  text-transform: capitalize;
+}
+.wd-thum-career .job-archive-header .career-info li {
+  font-size: 14px;
+  line-height: 22px;
+  cursor: pointer;
+  color: #64666c;
+}
+.wd-thum-career .job-archive-header .career-info li:first-child {
+  padding: 7px 12px;
+  background: rgba(20, 129, 96, 0.1);
+  border-radius: 24px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  color: #14a077;
+  margin-right: 12px;
+}
+.wd-thum-career .job-archive-header .career-info.style-2 li:first-child {
+  background: rgba(55, 184, 83, 0.1);
+  color: #37b853;
+}
+.wd-thum-career .job-archive-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.wd-thum-career .job-archive-footer .career-tag li {
+  display: inline-block;
+}
+.wd-thum-career .career-tag li a {
+  background-color: #f1f1f1;
+  padding: 8px 12px;
+
+  border-radius: 24px;
+  margin-right: 8px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+}
+.wd-thum-career .job-archive-footer {
+  margin-top: 12px;
+}
+.wd-thum-career .career-tag li a:hover {
+  background: #148160;
+  color: #fff;
+}
+.wd-thum-career .carrer-footer-right {
+  display: flex;
+  align-items: center;
+  color: #121212;
+  font-size: 14px;
+  line-height: 22px;
+}
+/*wd-thumb-career style-2 */
+.wd-thum-career.style-2 .thumb {
+  margin-bottom: 12px;
+  width: 82.67px;
+  height: 81.33px;
+}
+.wd-thum-career.style-2 .job-archive-header {
+  padding: 0px 31.25px 20px;
+  position: relative;
+  flex-direction: column;
+  border: hidden;
+}
+.wd-thum-career.style-2 .career-header-left {
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.wd-thum-career.style-2 .career-info {
+  margin-top: 14px;
+  display: inline-flex;
+}
+.wd-thum-career.style-2 .career-tag {
+  margin-top: 16px;
+}
+.wd-thum-career.style-2 .career-tag li:first-child {
+  margin: 0;
+}
+.wd-thum-career.style-2 .job-archive-header .career-info li:first-child {
+  position: absolute;
+  top: 0;
+  left: 31.25px;
+}
+.wd-thum-career.style-2 .job-archive-header .career-info li:last-child {
+  margin-left: 12px;
+  display: flex;
+  align-items: center;
+}
+.wd-thum-career.style-2 .job-archive-header span.icon-heart {
+  position: absolute;
+  right: 31.25px;
+}
+.wd-thum-career.style-2 .job-archive-footer {
+  margin: 0;
+}
+.wd-thum-career.style-2 button {
+  width: 100%;
+}
+/* responsive */
 @media (max-width: 1440px) {
   .features-job.style-3 {
     height: auto;
