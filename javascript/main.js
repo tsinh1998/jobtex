@@ -477,6 +477,28 @@ var loadmore2 = function () {
     }
 };
 
+var Modal_Right = function() {
+  const body = $('body');
+  const modalMenu = $('.sidebar-popup');
+  const modalMenuBody = modalMenu.children('.widget-filter');
+
+  if (modalMenu.length) {
+      const open = function() {
+          modalMenu.addClass('modal-menu--open');
+      };
+      const close = function() {
+          modalMenu.removeClass('modal-menu--open');
+      };
+
+      $('.button-filter').on('click', function() {
+          open();
+      });
+      $('.modal-menu__backdrop, .title-button-group').on('click', function() {
+          close();
+      });
+  }
+};
+
   var preload = function () {
     $(window).on("load", function () {
       $("#preload")
@@ -495,6 +517,7 @@ var loadmore2 = function () {
     dropOptionForm();
     flatProgressBar();
     accordion();
+    Modal_Right();
     goTop();
     mobileNav();
     counter();

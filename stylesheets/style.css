@@ -488,6 +488,10 @@ input[type="color"],
   color: #a0a0a0;
 }
 
+.tf-container.ctn-full {
+  width: 100%;
+}
+
 /* Header
 ---------------------------------------------- */
 .tf-container.ct2 {
