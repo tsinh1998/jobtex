@@ -899,6 +899,7 @@
   margin-bottom: 8px;
 }
 .wrap-button {
+  margin-top: 8px;
   text-align: center;
 }
 button.tf-button.style-1 {
@@ -930,7 +931,7 @@ button.tf-button.style-1:hover span {
 .tes-bullet.style-1 {
   bottom: 0 !important;
 }
-.tf-title.style-3 {
+.tf-title.margin {
   margin-bottom: 32px;
 }
 
@@ -1014,4 +1015,18 @@ button.tf-button.style-1:hover span {
 }
 .bg-get-app {
   background: linear-gradient(84.42deg, #f7ecea 0%, #f4f0e7 100%);
+}
+.wd-review-job.contentbox1.padding {
+  padding-top: 72.92px;
+}
+/* OVERRIDE */
+/* WD-get app */
+.wd-get-app .thumb img {
+  height: 438px;
+}
+.wd-get-app .thumb {
+  margin-left: 0%;
+}
+.wd-get-app .content {
+  padding-left: 52px;
 }

@@ -107,7 +107,7 @@
   position: absolute;
 }
 .wd-review-job.contentbox1 {
-  padding-top: 84px;
+  padding: 86px 0px 82px 127px;
 }
 .wd-review-job.contentbox1 h3 {
   margin-bottom: 16px;
@@ -141,7 +141,7 @@
   width: 66%;
 }
 .wd-review-job.contentbox1.style2 {
-  padding-top: 105px;
+  padding: 103px 114px 103px 0px;
 }
 /* style2 */
 .wd-review-job.thumb2 {
@@ -348,9 +348,9 @@
 }
 
 .wd-review-job .list-review2 li {
-  padding-left: 49px;
+  padding-left: 40px;
   position: relative;
-  margin-bottom: 34.5px;
+  margin-bottom: 32px;
 }
 .wd-review-job .list-review2 li:last-child {
   margin-bottom: 0;
@@ -546,7 +546,7 @@
   cursor: e-resize;
 }
 .tes-bullet {
-  bottom: -14.5% !important;
+  bottom: -10.5% !important;
 }
 .tes-bullet.tes2 {
   bottom: -17.6% !important;
