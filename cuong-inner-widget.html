@@ -42,6 +42,77 @@
 </head>
 
 <body>
+
+  <div class="sidebar-popup">
+    <div class="widget-filter">
+      <form action="GET">
+        <div class="group-form">
+          <label class="title">Search Company</label>
+          <div class="group-input search-ip">
+            <button><i class="icon-search"></i></button>
+            <input type="text" placeholder="Keywork" required>
+          </div>
+        </div>
+        <div class="group-form">
+          <label class="title">Location</label>
+          <div class="group-input has-icon">
+            <i class="icon-map-pin"></i>
+            <select>
+              <option value="0">All Location</option>
+              <option value="0">India</option>
+              <option value="0">Singapore</option>
+              <option value="0">French</option>
+            </select>
+          </div>
+        </div>
+        <div class="group-form">
+          <label class="title">Job Title</label>
+          <div class="group-input">
+            <select>
+              <option value="0">Design & Creative </option>
+              <option value="0">Design</option>
+              <option value="0">Ux/Ui</option>
+            </select>
+          </div>
+        </div>
+        <div class="group-form">
+          <label class="title">On-site/Remote</label>
+          <div class="group-input">
+            <select>
+              <option value="0">On-site  </option>
+              <option value="0">Remote</option>
+              <option value="0">Freelancer</option>
+            </select>
+          </div>
+        </div>
+        <div class="group-form">
+          <label class="title">Job Types</label>
+          <div class="group-input">
+            <select>
+              <option value="0">SoftWere  </option>
+              <option value="0">Website</option>
+            </select>
+          </div>
+        </div>
+        <div class="group-form">
+          <label class="title">Salaries</label>
+          <div class="group-input">
+            <select>
+              <option value="0">All Salaries </option>
+              <option value="0">Website</option>
+            </select>
+          </div>
+        </div>
+        <div class="group-form">
+          <label class="title">Radius: <span id="default-side" class="color-pri1"></span> <span>Miles</span>  </label>
+          <div class="group-input">
+            <input type="range" min="1" max="100" value="25" id="myRange" />
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+
   <!-- HEADER -->
   <header id="header" class="header header-default">
 
@@ -344,7 +415,7 @@
                 <div class="col-lg-4">
                     <div class="wd-cv-template">
                         <div class="features">
-                            <img src="images/review/cv1.jpg" alt="images">
+                            <a href="#"><img src="images/review/cv1.jpg" alt="images"></a>
                         </div>
                         <div class="content">
                             <div class="top-content">
@@ -371,7 +442,7 @@
                 <div class="col-lg-4">
                     <div class="wd-cv-template">
                         <div class="features">
-                            <img src="images/review/cv1.jpg" alt="images">
+                            <a href="#"><img src="images/review/cv1.jpg" alt="images"></a>
                         </div>
                         <div class="content">
                             <div class="top-content">
@@ -398,7 +469,7 @@
                 <div class="col-lg-4">
                     <div class="wd-cv-template">
                         <div class="features">
-                            <img src="images/review/cv1.jpg" alt="images">
+                            <a href="#"><img src="images/review/cv1.jpg" alt="images"></a>
                         </div>
                         <div class="content">
                             <div class="top-content">
@@ -592,6 +663,7 @@
 <script src="javascript/jquery.fancybox.js"></script>
 <script src="javascript/plugin.min.js"></script>
 <script src='javascript/wow.min.js'></script>
+<script src="javascript/sidebar-job.js"></script>
 <script src='javascript/swiper.js'></script>
 <script src='javascript/jquery.nice-select.min.js'></script>
 <script src="javascript/main.js"></script>
