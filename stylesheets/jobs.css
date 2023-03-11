@@ -255,7 +255,7 @@ button.btn-find:hover {
 .features-job .job-archive-header h3 a:hover {
   color: #14a077;
 }
-.features-job .job-archive-header h3 span.icon-bolt {
+h3 span.icon-bolt {
   font-size: 14px;
   background-color: #504cfe;
   border-radius: 50%;
@@ -2051,6 +2051,156 @@ button.tf-button span {
 }
 .tf-btn-submit.style-2 {
   padding: 12px 49px;
+  text-transform: capitalize;
+}
+/* wd-job-author */
+.wd-job-author {
+  display: flex;
+  justify-content: space-between;
+}
+.wd-job-author h3 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 28px;
+}
+.wd-job-author .inner-job-left {
+  display: flex;
+  align-items: center;
+}
+.wd-job-author .inner-job-left .group-btn button {
+  text-transform: none;
+}
+.wd-job-author .inner-job-left .group-btn button:first-child {
+  margin-right: 12px;
+}
+.wd-job-author .job-info {
+  margin: 4px 0 12px;
+}
+.wd-job-author .inner-job-right {
+  display: flex;
+  align-items: flex-start;
+}
+.wd-job-author .logo-company {
+  width: 100px;
+  height: 100px;
+  margin-right: 32px;
+}
+.wd-job-author .inner-job-right .icon-share2 {
+  border-radius: 1000px;
+  padding: 12px;
+  /* color: #e5e5e5; */
+  font-size: 16px;
+  border: 1px solid #e5e5e5;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  margin-right: 20px;
+}
+.wd-job-author .inner-job-right .icon-share2:hover {
+  background: #148160;
+  border-color: #148160;
+  color: #fff;
+}
+.wd-job-author .inner-job-right button {
+  display: block;
+}
+.wd-job-author .inner-job-right .tf-btn-submit {
+  text-transform: capitalize;
+  margin-bottom: 12px;
+  padding: 12px 32px;
+}
+.wd-job-author .inner-job-right .tf-btn {
+  padding: 12px 54.5px;
+  text-transform: capitalize;
+}
+/* wd-author-pagetitle */
+.wrapper-author-page-title {
+  background-image: url("../images/page-title/bg-author-page-title.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 40px 0px;
+}
+.wd-author-page-title .author-archive-header {
+  display: flex;
+  margin-bottom: 28px;
+}
+.wd-author-page-title .logo-company {
+  width: 120px;
+  height: 120px;
+  border-radius: 8px;
+  margin: 9px 28px 9px 0px;
+}
+.wd-author-page-title p {
+  background-color: #14a077;
+  padding: 7px 12px;
+  color: #ffffff;
+  border-radius: 24px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  display: inline-block;
+  cursor: pointer;
+}
+.wd-author-page-title h4 {
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 400;
+  padding: 4px 0px;
+}
+.wd-author-page-title h4 a {
+  color: #ffffff;
+}
+.wd-author-page-title h3 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 28px;
+}
+.wd-author-page-title h3 a {
+  color: #ffffff;
+  margin-right: 9px;
+}
+.wd-author-page-title .author-list {
+  display: flex;
+  align-items: center;
+  margin-top: 12px;
+}
+.wd-author-page-title .author-list .tag {
+  background: rgba(241, 241, 241, 0.2);
+  border-radius: 24px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  color: #ffffff;
+  padding: 8px 12px;
+  cursor: pointer;
+  margin-right: 8px;
+}
+
+.wd-author-page-title .author-list .map {
+  margin-left: 16px;
+  margin-right: 24px;
+}
+.wd-author-page-title .author-list .map,
+.wd-author-page-title .author-list .price {
+  color: #ffffff;
+  cursor: pointer;
+}
+.wrapper-author-page-title .tf-btn {
+  text-transform: capitalize;
+  border: 1px solid #ffffff;
+  color: #14a077;
+  width: 184px;
+  padding: 12px 0px;
+}
+.wrapper-author-page-title .tf-btn:hover {
+  border: 1px solid #14a077;
+  color: #ffffff;
+}
+.wrapper-author-page-title .btn-author {
+  background: transparent;
+  color: #ffffff;
+  margin-left: 16px;
+  padding: 12px 56.5px;
+  border: 1px solid #ffffff;
   text-transform: capitalize;
 }
 /* responsive */
