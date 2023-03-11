@@ -544,6 +544,8 @@ var loadmore2 = function () {
 var Modal_Right = function() {
   const body = $('body');
   const modalMenu = $('.sidebar-popup');
+  const modalMenu2 = $('.wd-popup-form');
+  const modalMenu3 = $('.wd-popup-job-apply');
   const modalMenuBody = modalMenu.children('.widget-filter');
 
   if (modalMenu.length) {
@@ -560,6 +562,22 @@ var Modal_Right = function() {
       $('.modal-menu__backdrop, .title-button-group').on('click', function() {
           close();
       });
+  }
+  if (modalMenu2.length) {
+    const close = function() {
+      modalMenu2.addClass('modal-menu--close');
+    };
+    $('.modal-menu__backdrop, .title-button-group').on('click', function() {
+      close();
+    });
+  }
+  if (modalMenu3.length) {
+    const close = function() {
+      modalMenu3.addClass('modal-menu--close');
+    };
+    $('.modal-menu__backdrop, .title-button-group').on('click', function() {
+      close();
+    });
   }
 };
 
