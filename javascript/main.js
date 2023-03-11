@@ -604,7 +604,8 @@ var Modal_Right = function() {
     loadmore2();
     UpImg();
     delete_img();
-    delete_im();
+    // delete_im();
+    Modal_Right();
     popUpLightBox();
     progressProduct();
     preload();
