@@ -87,6 +87,9 @@
     .category-filter {
         margin-bottom: 10px;
     }
+    .wd-filter-radio .content .fl-cl {
+        width: calc(30% - 30px);
+      }
 }
 @media only screen and (max-width: 1200px) {
     .sticky-area-wrap .header-ct-right .account {
@@ -157,6 +160,9 @@
     }
     .group-half-map .content-left {
         margin-bottom: 50px;
+    }
+    .wd-filter-radio {
+        padding: 50px 20px;
     }
 }
 @media only screen and (max-width: 1024px) {
@@ -418,7 +424,8 @@
     .tf-slider .form-sl .form-group-1,
     .wd-popup-job-apply .content .group-file .inner.left,
     .wd-popup-job-apply .content .group-seclect-file,
-    .wd-popup-job-apply .content h6 {
+    .wd-popup-job-apply .content h6,
+    .wd-popup-job-apply .group-form .inner:first-child {
         margin-bottom: 20px;
     }
     .tf-slider .heading.text-center h2 {
@@ -455,17 +462,24 @@
         flex-wrap: wrap;
     }
     .wd-cv-item .item-group .content-left,
-    .wd-cv-item .item-group .content-right {
+    .wd-cv-item .item-group .content-right,
+    .wd-filter-radio .content .fl-cl {
         width: calc(100% - 30px);
     }
     .wd-popup-job-apply .content .group-file .inner {
         width: calc(100% - 40px);
+    }
+    .wd-popup-job-apply .group-form .inner {
+        width: calc(100% - 20px);
     }
     .wd-cv-item .content-right {
         padding: 50px 20px;
     }
     .cv-road-map {
         margin: 0;
+    }
+    .wd-popup-job-apply.style3 .content {
+        padding: 40px 20px;
     }
     .sidebar-popup .widget-filter {
         width: 80%;

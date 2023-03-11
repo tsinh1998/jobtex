@@ -519,7 +519,7 @@ var Modal_Right = function() {
   const modalMenu = $('.sidebar-popup');
   const modalMenu2 = $('.wd-popup-form');
   const modalMenu3 = $('.wd-popup-job-apply');
-  const modalMenuBody = modalMenu.children('.widget-filter');
+  const modalMenu4 = $('.wd-filter-radio');
 
   if (modalMenu.length) {
       const open = function() {
@@ -550,6 +550,11 @@ var Modal_Right = function() {
     };
     $('.modal-menu__backdrop, .title-button-group').on('click', function() {
       close();
+    });
+  }
+  if (modalMenu4.length) {
+    $('.filter-radio').on('click', function() {
+      modalMenu4.toggleClass('modal-menu--open');
     });
   }
 };
