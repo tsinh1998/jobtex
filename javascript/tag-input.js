@@ -5,7 +5,7 @@ const tagArea = document.querySelector(".tag-area");
 const ul = document.querySelector(".tag-area ul");
 const label = document.querySelector(".label");
 
-let tags = ['Developer','Graphic Designer'];
+let tags = ['Developer','Graphic Designer','VFX Artist'];
 
 
 
