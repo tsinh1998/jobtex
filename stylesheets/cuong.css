@@ -2524,6 +2524,76 @@ color: #121212;
 .group-half-map.style2  .features-job .inner-box .button-readmore > span.icon-heart {
   margin-right: 0px;
 }
+
+/* -----------------------------------------popup------------------------------------ */
+.wd-popup-form .content,
+.wd-popup-form .modal-menu__backdrop {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 99999;
+  visibility: visible;
+  opacity: 1;
+  transition: .3s;
+}
+
+.wd-popup-form.modal-menu--close .content,
+.wd-popup-form.modal-menu--close .modal-menu__backdrop {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.wd-popup-form .modal-menu__backdrop {
+  right: 0;
+  background: #12121255;
+  opacity: 1;
+  will-change: opacity;
+  transition: opacity .25s cubic-bezier(.25, .46, .45, .94);
+  cursor: url(../images/review/icon-close.png), auto;
+}
+
+.wd-popup-form .content {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  background: #FFFFFF;
+border-left: 1px solid #E5E5E5;
+filter: drop-shadow(0px 10px 25px rgba(54, 95, 104, 0.1));
+border-radius: 8px;
+overflow: hidden;
+width: 750px;
+}
+.wd-popup-form .content .content-right {
+  background: #fff;
+  padding: 17px 17px 24px 21px;
+}
+.wd-popup-form .content .content-right {
+  width: 48%;
+}
+.wd-popup-form .content .content-left {
+  width: 52%;
+}
+.wd-popup-form .content .content-left .thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.wd-popup-form .content .content-right .title-button-group {
+  text-align: right;
+  display: block;
+  font-size: 30px;
+  margin-bottom: 17px;
+}
+.wd-popup-form .content .content-right p {
+  font-size: 16px;
+line-height: 26px;
+color: #64666C;
+}
+.wd-popup-form .content .content-right h6 {
+  margin-bottom: 8px;
+}
 /* -----------------------------------------animation------------------------------------ */
 .ani1 {
   -webkit-animation: ani1 10s infinite ease-in-out alternate;
