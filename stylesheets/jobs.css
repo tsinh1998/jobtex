@@ -1904,6 +1904,155 @@ button.tf-button span {
 .wd-thum-career.style-2 button {
   width: 100%;
 }
+/*wd-form-rating-page  */
+.wd-form-rating-page {
+  max-width: 930px;
+  margin: 57px auto;
+}
+.wd-form-rating-page .form-company {
+  display: flex;
+  align-items: center;
+}
+.wd-form-rating-page .logo-company {
+  width: 88px;
+  height: 88px;
+  border-radius: 11px;
+  margin-right: 32px;
+}
+.wd-form-rating-page .form-title,
+.wd-form-rating-page .form-company,
+.wd-form-rating-page .form-rating,
+.wd-form-rating-page .form-notes {
+  margin-bottom: 32px;
+}
+.wd-form-rating-page input::placeholder {
+  color: #121212;
+}
+.wd-form-rating-page textarea::placeholder {
+  color: #b1b1b1;
+}
+.wd-form-rating-page input[type="text"],
+.wd-form-rating-page textarea {
+  padding: 12px;
+  background: #ffffff;
+  border: 1px solid #e5e5e5;
+  border-radius: 8px;
+}
+.wd-form-rating-page h1 {
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 42px;
+  margin-bottom: 8px;
+}
+.wd-form-rating-page h4,
+.wd-form-rating-page h3 {
+  font-size: 16px;
+  line-height: 26px;
+  margin-bottom: 12px;
+  position: relative;
+  display: inline-block;
+}
+.wd-form-rating-page h4 {
+  color: #64666c;
+}
+.wd-form-rating-page h4::after,
+.wd-form-rating-page h3::after {
+  content: "*";
+  position: absolute;
+  right: -12px;
+  color: #eb4d4d;
+  font-size: 16px;
+}
+.wd-form-rating-page .list-star li {
+  font-size: 38.4px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+.wd-form-rating-page .list-star li:last-child {
+  color: #e5e5e5;
+}
+.tf-btn-submit {
+  text-transform: capitalize;
+  background-color: #14a077;
+  color: #ffffff;
+  padding: 8px 20px;
+  display: inline-flex;
+  align-items: center;
+  font-size: 16px;
+  line-height: 26px;
+  text-transform: none;
+  border: none;
+  border-radius: 4px;
+}
+.tf-btn-submit:hover {
+  background-color: #148160;
+}
+/*wd-form-rating */
+.wd-form-rating {
+  border: 1px solid #e5e5e5;
+  border-radius: 8px;
+  padding: 40px;
+}
+.wd-form-rating h3 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 28px;
+}
+.wd-form-rating .form-rating-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.wd-form-rating .form-rating-heading .group-rating {
+  display: flex;
+  align-items: center;
+}
+.wd-form-rating .form-rating-heading .group-rating label {
+  margin-right: 16px;
+}
+.wd-form-rating .form-rating-heading .list-star .icon-star-full {
+  font-size: 32px;
+  margin-right: 8px;
+  cursor: pointer;
+}
+.wd-form-rating .form-rating-heading .list-star .icon-star-full:last-child {
+  color: #e5e5e5;
+}
+.wd-form-rating .form-rating-content {
+  margin: 24px 0px 32px;
+}
+.wd-form-rating .wrap-input,
+.wd-form-rating .wrap-checkbox {
+  margin-bottom: 20px;
+}
+.wd-form-rating .wrap-checkbox input {
+  margin-right: 9px;
+}
+.wd-form-rating .wrap-input label,
+.wd-form-rating .wrap-notes label {
+  margin-bottom: 12px;
+}
+.wd-form-rating .wrap-input input,
+.wd-form-rating .wrap-notes textarea {
+  padding: 15px 16px;
+  border-radius: 8px;
+  background: #f5f5f5;
+  border: hidden;
+}
+.wd-form-rating .wrap-input input:focus {
+  color: #121212;
+  border: 1px solid#14A077;
+}
+.wd-form-rating input::placeholder {
+  color: #121212;
+}
+.wd-form-rating textarea::placeholder {
+  color: #b1b1b1;
+}
+.tf-btn-submit.style-2 {
+  padding: 12px 49px;
+  text-transform: capitalize;
+}
 /* responsive */
 @media (max-width: 1440px) {
   .features-job.style-3 {
