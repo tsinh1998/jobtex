@@ -1,3 +1,5 @@
+
+
 /*
 
   headerFixed
@@ -88,29 +90,7 @@
     });
 
   };
-  // $(document).on("click", ".mobile-button-style2", function () {
-  //   $(this).toggleClass("active");
-  //   $("#main-nav-mobi").slideToggle();
-  // });
-  // $(document).on("click", "#main-nav-mobi .arrow", function () {
-  //   $(this).toggleClass("active").next().slideToggle();
-  // });
 
-  // var delete_im = function (e) {
-  //   $(".feat-btn").on("click", function (e) {
-  //     e.preventDefault();
-  //     var $this = $(this);
-  //     $this.closest(".feat-show").toggleClass("show");
-  //   });
-  // };
-
-  // var delete_img = function (e) {
-  //   $(".remove-file").on("click", function (e) {
-  //     e.preventDefault();
-  //     var $this = $(this);
-  //     $this.closest(".file-delete").remove();
-  //   });
-  // };
 
     /*---categories slideToggle---*/
     $(".categories_title").on("click", function() {
@@ -283,13 +263,6 @@
           nextEl: ".swiper-button-next3",
           prevEl: ".swiper-button-prev3",
         },
-        // breakpoints: {
-        //   600: {
-        //       slidesPerView: 2,
-        //       spaceBetween: 17,
-        //   },
-
-        // },
       });
   
       var thumbs = new Swiper(".gallery-thumb", {
@@ -604,7 +577,6 @@ var Modal_Right = function() {
     loadmore2();
     UpImg();
     delete_img();
-    // delete_im();
     Modal_Right();
     popUpLightBox();
     progressProduct();
