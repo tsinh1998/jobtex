@@ -1122,6 +1122,11 @@ input[type="number"]::-webkit-inner-spin-button {
   /* padding: 24px; */
   margin-bottom: 0;
 }
+
+.features-job.style-3:hover {
+  border-color: #14A077;
+}
+
 .features-job.style-3 .company {
   display: flex;
   align-items: center;

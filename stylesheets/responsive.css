@@ -164,6 +164,9 @@
     .wd-filter-radio {
         padding: 50px 20px;
     }
+    .group-col-3 .cl3 {
+        width: calc(50% - 32px);
+      }
 }
 @media only screen and (max-width: 1024px) {
     .sticky-area-wrap .header-ct-center {
@@ -490,6 +493,9 @@
     .wd-popup-job-apply .group-form .inner {
         width: calc(100% - 20px);
     }
+    .group-col-3 .cl3 {
+        width: calc(100% - 32px);
+      }
     .wd-cv-item .content-right {
         padding: 50px 20px;
     }

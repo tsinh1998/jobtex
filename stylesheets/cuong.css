@@ -2470,7 +2470,7 @@ color: #121212;
 .pagination-job li a i {
   font-size: 24px;
 }
-.pagination-job {
+.pagination-job.absolute {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -2951,13 +2951,15 @@ background: #fff;
 }
 .group-select-display .btn-display svg path {
   transition: .3s;
+  fill: #A0A0A0;
 }
 .group-select-display .btn-display:hover,
-.group-select-display .btn-display.current {
+.group-select-display .btn-display.active {
 background: #14A077;
+border-color: #14A077;
 }
 .group-select-display .btn-display:hover svg path,
-.group-select-display .btn-display.current svg path {
+.group-select-display .btn-display.active svg path {
   fill: #fff;
 }
 .group-select-display .inner,
@@ -2973,6 +2975,15 @@ background: #14A077;
 }
 .group-select-display .inner {
   margin-right: 17px;
+}
+.group-col-3 {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -32px;
+}
+.group-col-3 .cl3 {
+  width: calc(33.3333% - 32px);
+  margin-left: 32px;
 }
 /* -----------------------------------------animation------------------------------------ */
 .ani1 {
