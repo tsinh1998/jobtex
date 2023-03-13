@@ -3133,13 +3133,7 @@ color: #121212;
     -ms-transform: translateY(-7px);
     transform: translateY(-7px);
   }
-  to {
-    -webkit-transform: translateY(-7px);
-    -moz-transform: translateY(-7px);
-    -o-transform: translateY(-7px);
-    -ms-transform: translateY(-7px);
-    transform: translateY(-7px);
-  }
+  
 }
 
 
