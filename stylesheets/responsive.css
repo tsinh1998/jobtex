@@ -164,6 +164,9 @@
     .wd-filter-radio {
         padding: 50px 20px;
     }
+    .group-col-3 .cl3 {
+        width: calc(50% - 32px);
+      }
 }
 @media only screen and (max-width: 1024px) {
     .sticky-area-wrap .header-ct-center {
@@ -212,6 +215,18 @@
     }
     .group-half-map.style2 .content-left .inner {
         padding: 15px;
+    }
+    .row-group-search { 
+        display: block;
+    }
+    .job-search-form .form-group-2,
+     .job-search-form .form-group-3,
+     .job-search-form .form-group-1 {
+        padding: 0px;
+        border: unset;
+    }
+    .job-search-form .nice-select {
+        padding: 20px 0;
     }
 }
 @media only screen and (max-width: 991px) {
@@ -361,6 +376,12 @@
     .wd-popup-job-apply .content .group-radio input {
         flex-shrink: 0;
     }
+    .wd-findjob-filer { 
+        display: block;
+    }
+    .group-select-display {
+        margin-bottom: 30px;
+    }
 }
 @media only screen and (max-width: 767px) {
     .group-location .box-3,
@@ -472,6 +493,9 @@
     .wd-popup-job-apply .group-form .inner {
         width: calc(100% - 20px);
     }
+    .group-col-3 .cl3 {
+        width: calc(100% - 32px);
+      }
     .wd-cv-item .content-right {
         padding: 50px 20px;
     }
