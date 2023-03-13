@@ -213,6 +213,18 @@
     .group-half-map.style2 .content-left .inner {
         padding: 15px;
     }
+    .row-group-search { 
+        display: block;
+    }
+    .job-search-form .form-group-2,
+     .job-search-form .form-group-3,
+     .job-search-form .form-group-1 {
+        padding: 0px;
+        border: unset;
+    }
+    .job-search-form .nice-select {
+        padding: 20px 0;
+    }
 }
 @media only screen and (max-width: 991px) {
     .group-location .box-3,
@@ -360,6 +372,12 @@
     }
     .wd-popup-job-apply .content .group-radio input {
         flex-shrink: 0;
+    }
+    .wd-findjob-filer { 
+        display: block;
+    }
+    .group-select-display {
+        margin-bottom: 30px;
     }
 }
 @media only screen and (max-width: 767px) {

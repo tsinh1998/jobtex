@@ -2939,6 +2939,41 @@ color: #121212;
   margin-left: 30px;
   margin-bottom: 30px;
 }
+.group-select-display .btn-display {
+  width: 32px;
+height: 32px;
+border: 1px solid #E5E5E5;
+display: inline-flex;
+align-items: center;
+justify-content: center;
+cursor: pointer;
+background: #fff;
+}
+.group-select-display .btn-display svg path {
+  transition: .3s;
+}
+.group-select-display .btn-display:hover,
+.group-select-display .btn-display.current {
+background: #14A077;
+}
+.group-select-display .btn-display:hover svg path,
+.group-select-display .btn-display.current svg path {
+  fill: #fff;
+}
+.group-select-display .inner,
+.group-select-display {
+  display: flex;
+  align-items: center;
+}
+.group-select-display .inner a:not(:last-child) {
+  margin-right: 15px;
+}
+.group-select-display p {
+  margin: 0;
+}
+.group-select-display .inner {
+  margin-right: 17px;
+}
 /* -----------------------------------------animation------------------------------------ */
 .ani1 {
   -webkit-animation: ani1 10s infinite ease-in-out alternate;
