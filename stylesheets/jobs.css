@@ -1912,6 +1912,8 @@ button.tf-button span {
 .wd-form-rating-page {
   max-width: 930px;
   margin: 57px auto;
+  padding-right: 15px;
+  padding-left: 15px;
 }
 .wd-form-rating-page .form-company {
   display: flex;
@@ -1963,7 +1965,7 @@ button.tf-button span {
 .wd-form-rating-page h3::after {
   content: "*";
   position: absolute;
-  right: -12px;
+  right: auto;
   color: #eb4d4d;
   font-size: 16px;
 }
@@ -2407,5 +2409,61 @@ button.tf-button span {
   }
   .wd-thum-career.style-2 .job-archive-header span.icon-heart {
     right: 0;
+  }
+  /* wd form rating page*/
+
+  /* wd form rating */
+  .wd-form-rating .form-rating-heading {
+    flex-direction: column;
+  }
+  .wd-form-rating .form-rating-heading .group-rating {
+    padding-top: 12px;
+  }
+  .wd-form-rating .form-rating-heading .group-rating label {
+    margin-right: 9px;
+  }
+  .wd-form-rating .form-rating-heading .list-star .icon-star-full {
+    font-size: 20px;
+    margin-right: 4px;
+  }
+  .tf-btn-submit.style-2 {
+    padding: 12px 32px;
+  }
+  /* wd-job-author */
+  .wd-job-author .inner-job-right .icon-share2 {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  .wd-job-author .inner-job-left .group-btn .tf-btn {
+    margin-bottom: 12px;
+  }
+
+  /* .wd-job-author .group-btn button {
+    display: block;
+  } */
+  .wd-job-author .inner-job-left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+@media (max-width: 700px) {
+  /* wd-job-author */
+  .wd-job-author {
+    flex-direction: column;
+  }
+  .wd-job-author .inner-job-right {
+    align-items: center;
+    padding-top: 12px;
+  }
+  .wd-job-author .inner-job-right .group-btn {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  .wd-job-author .inner-job-right .tf-btn-submit {
+    margin-bottom: 0px;
   }
 }
