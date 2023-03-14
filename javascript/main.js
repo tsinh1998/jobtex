@@ -1,5 +1,4 @@
 
-
 /*
 
   headerFixed
@@ -280,6 +279,30 @@
     });
   };
 
+  var dropdown2 = function (id) {
+    var obj = $(id + ".dropdown" );
+    var btn = obj.find(".btn-selector");
+    var dd = obj.find("ul");
+    var opt = dd.find("li");
+    dd.hide();
+    obj
+      .on("mouseenter", function () {
+        dd.show();
+        dd.addClass("show");
+        $(this).css("z-index", 1000);
+      })
+      .on("mouseleave", function () {
+        dd.hide();
+        $(this).css("z-index", "auto");
+        dd.removeClass("show");
+      });
+
+    opt.on("click", function () {
+      dd.hide();
+      // var txt = $(this).html();
+      // btn.html(txt);
+    });
+  };
 
   var gallery = function () {
     if ($("div").hasClass("widget-dash-video")) {
@@ -626,6 +649,11 @@ var Modal_Right = function() {
     dropdown("#item_2");
     dropdown("#item_3");
     dropdown("#item_4");
+    dropdown2("#items_1");
+    dropdown2("#items_2");
+    dropdown2("#items_3");
+    dropdown2("#items_4");
+    dropdown2("#items_5");
     loadmore();
     loadmore2();
     UpImg();
