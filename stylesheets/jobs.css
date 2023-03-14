@@ -1254,9 +1254,6 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 /*============== wd-Employer ================== */
-/* .wd-employer {
-  margin: 80px 0px;
-} */
 .tf-title {
   display: flex;
   justify-content: space-between;
@@ -1346,20 +1343,26 @@ button.tf-button span {
 }
 
 /* ================= wd-employer style2 =================== */
-.employer-2-col:hover,
-.employer-3-col:hover {
+.employer-block.style-2:hover,
+.employer-block.style-3:hover {
   border-color: #ffffff;
   box-shadow: 0px 10px 25px rgba(54, 95, 104, 0.1);
   transition: all 0.5s ease-in-out;
 }
-.employer-2-col .inner-box {
+.employer-block.style-2 {
+  margin-bottom: 16px;
+}
+.employer-block.style-3 {
+  margin-bottom: 32px;
+}
+.employer-block.style-2 .inner-box {
   position: relative;
 }
-.employer-2-col .inner-box .button-readmore {
+.employer-block.style-2 .inner-box .button-readmore {
   position: absolute;
   right: 0;
 }
-.employer-2-col .inner-box .button-readmore span {
+.employer-block.style-2 .inner-box .button-readmore span {
   margin-right: 16px;
   height: 40px;
   border-radius: 1000px;
@@ -1370,12 +1373,12 @@ button.tf-button span {
   cursor: pointer;
   transition: all 0.3s ease-in-out;
 }
-.employer-2-col .inner-box .button-readmore span.icon-heart:active,
-.employer-2-col .inner-box .button-readmore span.icon-heart:hover {
+.employer-block.style-2 .inner-box .button-readmore span.icon-heart:active,
+.employer-block.style-2 .inner-box .button-readmore span.icon-heart:hover {
   color: #eb4d4d;
 }
-.employer-2-col .inner-box .button-readmore button,
-.employer-3-col .inner-box button {
+.employer-block.style-2 .inner-box .button-readmore button,
+.employer-block.style-3 .inner-box button {
   border: 1px solid #14a077;
   border-radius: 4px;
   padding: 8px 20px;
@@ -1385,24 +1388,24 @@ button.tf-button span {
   line-height: 24px;
   font-weight: 700;
 }
-.employer-2-col .inner-box .button-readmore button:hover,
-.employer-3-col .inner-box button:hover {
+.employer-block.style-2 .inner-box .button-readmore button:hover,
+.employer-block.style-3 .inner-box button:hover {
   background-color: #14a077;
   border: 1px solid #ffffff;
   transition: all 300ms ease;
   color: #ffffff;
 }
 /* ================= wd-employer style3 =================== */
-.employer-3-col .inner-box {
+.employer-block.style-3 .inner-box {
   flex-direction: column;
   justify-content: center;
   align-items: center;
   position: relative;
 }
-.employer-3-col .inner-box .box-content {
+.employer-block.style-3 .inner-box .box-content {
   text-align: center;
 }
-.employer-3-col .inner-box span.icon-heart {
+.employer-block.style-3 .inner-box span.icon-heart {
   position: absolute;
   top: 0;
   right: 0;
@@ -1415,11 +1418,14 @@ button.tf-button span {
   cursor: pointer;
   transition: all 0.3s ease-in-out;
 }
-.employer-3-col .inner-box span.icon-heart:active,
-.employer-3-col .inner-box span.icon-heart:hover {
+.employer-block.style-3 .inner-box span.icon-heart:active,
+.employer-block.style-3 .inner-box span.icon-heart:hover {
   color: #eb4d4d;
 }
-.employer-3-col .inner-box button {
+.employer-block.style-3 .group-btn {
+  width: 100%;
+}
+.employer-block.style-3 .inner-box button {
   margin-top: 20px;
   width: 100%;
 }
@@ -2240,7 +2246,51 @@ button.tf-button span {
   margin-top: 30px;
   position: relative;
 }
-/* responsive */
+/*-------------------------------- employers------------------------------------- */
+.job-search-form .form-style-1 {
+  width: 17.5%;
+  border-right: 1px solid #e5e5e5;
+}
+.job-search-form .form-group-3 .current,
+.job-search-form .form-group-4 .current,
+.job-search-form .form-group-5 .current {
+  padding-left: 24px;
+}
+.inner-form .form-group-1,
+.inner-form .form-group-2,
+.inner-form .form-group-3 {
+  flex: none;
+}
+.inner-form .form-group-2 {
+  padding-right: 0;
+}
+.inner-form .form-group-3 {
+  padding: 0;
+}
+.inner-form button.btn-find {
+  padding: 12px 25px;
+}
+.content-tab.padding {
+  padding-right: 80px;
+}
+.content-tab.padding .employer-block.style-3 {
+  margin-bottom: 28px;
+}
+.tf-container.ct1 {
+  width: 1490px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.group-col-4 {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -32px;
+}
+.group-col-4 .cl4 {
+  width: calc(25% - 32px);
+  margin-left: 32px;
+}
+/*===================================================== responsive =================================================================*/
 @media (max-width: 1440px) {
   .features-job.style-3 {
     height: auto;
@@ -2252,6 +2302,18 @@ button.tf-button span {
   .wd-iconbox.style-1 .img-iconbox img {
     height: auto;
     width: 100%;
+  }
+}
+@media (max-width: 1024px) {
+  .job-search-form .form-style-1 {
+    width: 100%;
+    border: none;
+  }
+  /* ================= employers ================================= */
+
+  .group-col-3 .cl3,
+  .group-col-2 .cl2 {
+    width: calc(100% - 32px);
   }
 }
 @media (max-width: 1300px) {
@@ -2476,6 +2538,35 @@ button.tf-button span {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+  }
+  /* ================= employers ================================= */
+  .employer-block .inner-box {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .employer-block.style-2 .inner-box .button-readmore {
+    position: unset;
+    margin-top: 32px;
+    width: 100%;
+  }
+  .employer-block.style-2 .inner-box .button-readmore button {
+    width: 100%;
+  }
+  .employer-block.style-2 .inner-box .button-readmore span {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-right: 0;
+  }
+  .content-tab.padding {
+    padding: 0;
+  }
+  .wd-findjob-filer .group-select {
+    display: flex;
+    flex-direction: column;
+  }
+  .wd-findjob-filer .group-select .nice-select:not(:last-child) {
+    margin-bottom: 12px;
   }
 }
 
