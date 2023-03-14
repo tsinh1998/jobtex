@@ -676,31 +676,38 @@ background: #fff;
     } */
     .side-style .sidebar__menu li ul.feat-show.show {
         display: none;
+ 
     }
+
+    /* .side-style .dash-title {
+        opacity: 0;
+        visibility: visible;
+    } */
     .side-style ul li ul,
     .side-style .dash-title {
         display: unset;
+        transition: 0s linear 0.1s;
     }
-    .side-style .categories_menu_toggle2,
+    /* .side-style .categories_menu_toggle2,
     .side-style .dash-title .categories_menu_toggle {
         opacity: 0;
-        /* visibility: visible; */
-    }
+        visibility: visible;
+    } */
     .side-style li:hover .categories_menu_toggle2 {
         display: unset;
     }
     .side-style li:hover .categories_menu_toggle2,
     .side-style a:hover .categories_menu_toggle {
         opacity: 1;
-        /* visibility: visible; */
+        visibility: visible;
         -webkit-transform : translateY(0);
     -ms-transform     : translateY(0);
     -o-transform      : translateY(0);
     transform         : translateY(0);
- 
+    transition: all 0.3s ease;
          /* display: block; */
     }
- 
+
     .side-style a .categories_menu_toggle {
         /* background-color: $color-1; */
         position: absolute;
@@ -708,14 +715,15 @@ background: #fff;
         background-color: #14A077;
         color: #fff;
         top: -10px;
-        left: 50px;
+        left: 50px; 
         z-index: 0;
         padding: 0px 10px;
         opacity: 0;
-        /* visibility: hidden; */
+        visibility: hidden;
         transform: translateY(15px);
         box-shadow: 0px 2px 4px rgb(0 0 0 / 10%);
-        transition: all 0.3s ease;
+        transition: 0s linear 0.1s;
+        /* transition: all 0.1s ease; */
     }
     .side-style  li .categories_menu_toggle2 {
         position: absolute !important;
@@ -1318,7 +1326,6 @@ background: #fff;
     opacity           : 1;
     position: absolute;
     width: 176px;
-
     transform         : translateY(0);
     transition        : all 0.3s ease;
 }
@@ -2446,6 +2453,53 @@ background: #fff;
 .flat-dashboard-candidates .applicants .candidates-wrap .map {
     margin-right: 10px;
 }
+.flat-dashboard-candidates .dropdown a{
+    all:unset;
+}
+.more-icon {
+    width: 5px;
+    height: 5px;
+    background-color: #000;
+    border-radius: 50%;
+    margin-right: 5px;
+    display: inline-block;
+}
+/* .flat-dashboard-candidates .dropdown ul li span::before {
+    font-family      : 'icomoon';
+    content          : "\e982";
+    font-size: 15px;
+    margin-right: 4px;
+} */
+.flat-dashboard-candidates .dropdown>a::after {
+    display: none;
+}
+.flat-dashboard-candidates .dropdown ul.show {
+    opacity: 1;
+    position: absolute;
+    width: 150px;
+    text-align: start;
+    display: grid;
+    transform: translateY(0);
+    right: 0;
+    transition: all 0.3s ease;
+}
+.flat-dashboard-candidates .dropdown .more-ic {
+    margin-right: 7px;
+    font-size: 14px;
+}
+.flat-dashboard-candidates .table-responsive {
+    overflow-x: unset;
+}
+@media only screen and (max-width: 991px) {
+    .flat-dashboard-candidates .table-responsive {
+        overflow-x: auto;
+    }
+ 
+}
+/* .flat-dashboard-candidates tbody tr td:last-child {
+    width: 30%;
+} */
+
 /* .header {
     position: relative;
     z-index: 100;
