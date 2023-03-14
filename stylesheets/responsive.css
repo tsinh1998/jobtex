@@ -90,6 +90,13 @@
     .wd-filter-radio .content .fl-cl {
         width: calc(30% - 30px);
       }
+      .group-4-8 .cl4,
+      .group-4-8 .cl8 {
+        width: calc(100% - 32px);
+      }
+      .group-4-8 .cl4 {
+        margin-bottom: 60px;
+      }
 }
 @media only screen and (max-width: 1200px) {
     .sticky-area-wrap .header-ct-right .account {
@@ -493,7 +500,8 @@
     .wd-popup-job-apply .group-form .inner {
         width: calc(100% - 20px);
     }
-    .group-col-3 .cl3 {
+    .group-col-3 .cl3,
+    .group-col-2 .cl2 {
         width: calc(100% - 32px);
       }
     .wd-cv-item .content-right {
