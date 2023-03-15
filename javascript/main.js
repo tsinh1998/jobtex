@@ -462,7 +462,7 @@ var loadmore2 = function () {
       $(this).find(".content-tab").children().first().show();
       $(this)
         .find(".menu-tab")
-        .children("div.user-tag, .btn-display")
+        .children("div.user-tag, .btn-display, .ct-tab")
         .on("click", function (e) {
           e.preventDefault();
           var liActive = $(this).index();
