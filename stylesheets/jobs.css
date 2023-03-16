@@ -645,26 +645,6 @@ h3 span.icon-bolt {
   -webkit-appearance: none;
 }
 
-/* range-slide */
-/* .range-slide input::-webkit-slider-thumb {
-      -webkit-appearance: none;
-      appearance: none;
-      pointer-events: all;
-      border-radius: 50%;
-      cursor: pointer;
-      width: 18px;
-      height: 18px;
-    }
-    
-    .display {
-      margin: 40px;
-      width: 240px;
-      display: flex;
-      justify-content: space-between;
-    } */
-
-/* slide two */
-
 .price-input {
   color: #14a077;
   font-weight: 700;
@@ -779,6 +759,16 @@ input[type="number"]::-webkit-inner-spin-button {
   -webkit-transition: 0.2s;
   transition: opacity 0.2s;
 }
+/* input employers range 50% */
+/* .widget-filter .group-input.style-1 input[type="range"] {
+  background: linear-gradient(
+    to right,
+    #14a077 0%,
+    #14a077 50%,
+    #ddd 6%,
+    #ddd 0%
+  );
+} */
 .filter-block .range-slider-one input::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
@@ -1928,7 +1918,7 @@ button.tf-button span {
 /*wd-form-rating-page  */
 .wd-form-rating-page {
   max-width: 930px;
-  margin: 57px auto;
+  margin: 57px auto 80px;
   padding-right: 15px;
   padding-left: 15px;
 }
@@ -2080,6 +2070,11 @@ button.tf-button span {
 .wd-job-author {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  padding: 40px 40px 28px;
+  margin-bottom: 50px;
+  border-bottom: 1px solid #e5e5e5;
 }
 .wd-job-author h3 {
   font-weight: 700;
@@ -2119,9 +2114,7 @@ button.tf-button span {
   margin-right: 20px;
 }
 .wd-job-author .inner-job-right .icon-share2:hover {
-  background: #148160;
-  border-color: #148160;
-  color: #fff;
+  color: #148160;
 }
 .wd-job-author .inner-job-right button {
   display: block;
@@ -2288,6 +2281,21 @@ button.tf-button span {
 .group-col-4 .cl4 {
   width: calc(25% - 32px);
   margin-left: 32px;
+}
+.content-job.style-scroll.style-1 {
+  height: 70vh;
+}
+.job-article.single-employer .inner-content {
+  padding-right: 37px;
+}
+.job-article.single-employer .inner-content .job-rating {
+  padding-left: 15px;
+}
+.job-article.single-employer .related-job {
+  margin: 40px -37px 40px 0px;
+}
+.job-article.single-employer .wd-form-rating {
+  margin-right: -37px;
 }
 /*===================================================== responsive =================================================================*/
 @media (max-width: 1440px) {
