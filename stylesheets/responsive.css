@@ -258,6 +258,9 @@
 .wd-job-author2 {
     padding: 20px;
 }
+.job-article.single-job .inner-content {
+    padding: 0;
+}
     .group-location .box-3,
     .group-location .box-6 {
         width: calc(50% - 20px );
@@ -417,7 +420,8 @@
 }
 @media only screen and (max-width: 767px) {
     .group-location .box-3,
-    .group-location .box-6 {
+    .group-location .box-6,
+    .form-candidate .group-input .ip {
         width: calc(100% - 20px );
     }
     .tf-slider .form-sl .form-group-4 {
@@ -428,7 +432,8 @@
     .footer .select-language {
        display: none;
     }
-    .wd-job-author2 {
+    .wd-job-author2,
+    .wrapper-author-page-title.style2 .wd-author-page-title  {
         display: block;
     }
     .wd-job-author2 .content-left .thumb {
@@ -484,7 +489,9 @@
     .wd-popup-job-apply .content .group-file .inner.left,
     .wd-popup-job-apply .content .group-seclect-file,
     .wd-popup-job-apply .content h6,
-    .wd-popup-job-apply .group-form .inner:first-child {
+    .wd-popup-job-apply .group-form .inner:first-child,
+    .wrapper-author-page-title.style2 .author-archive-header,
+    .form-candidate .ip {
         margin-bottom: 20px;
     }
     .tf-slider .heading.text-center h2 {
@@ -553,5 +560,8 @@
     }
     .sidebar-popup .widget-filter {
         width: 80%;
+    }
+    .form-candidate .group-input {
+        margin-bottom: 0;
     }
 }
