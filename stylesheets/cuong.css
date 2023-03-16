@@ -3535,7 +3535,7 @@ margin-bottom: 12px;
 border: 1px solid #E5E5E5;
 border-radius: 8px;
 }
-.form-candidate > .ip {
+.form-candidate .ip.out {
   margin-bottom: 20px;
 }
 .form-candidate button {
