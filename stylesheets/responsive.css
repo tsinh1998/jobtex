@@ -19,6 +19,10 @@
     .group-half-map.style2 .content-left {
         margin-bottom: 50px;
     }
+    .job-search-form.style2 .form-group:first-child,
+    .job-search-form.style2 .form-group {
+        width: 25%;
+    }
 }
 @media only screen and (max-width: 1550px) {
     .header-customize-item.help,
@@ -174,6 +178,19 @@
     .group-col-3 .cl3 {
         width: calc(50% - 32px);
       }
+      .job-search-form.style2 .form-group:first-child,
+    .job-search-form.style2 .form-group {
+        width: 25%;
+    }
+    .job-search-form.style2 .form-group.location {
+        margin: 0;
+    }
+    .row-group-search {
+        flex-wrap: wrap;
+    }
+    .job-search-form.style2 .form-group:not(:last-child) {
+        border-right: unset;
+    }
 }
 @media only screen and (max-width: 1024px) {
     .sticky-area-wrap .header-ct-center {
@@ -392,6 +409,10 @@
     }
     .group-select-display {
         margin-bottom: 30px;
+    }
+    .job-search-form.style2 .form-group:first-child, .job-search-form.style2 .form-group {
+        width:100%;
+        margin-bottom: 20px;
     }
 }
 @media only screen and (max-width: 767px) {
