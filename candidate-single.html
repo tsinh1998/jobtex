@@ -1,0 +1,853 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="ie" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
+<!--<![endif]-->
+
+<head>
+  <!-- Basic Page Needs -->
+  <!--[if IE
+      ]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"
+    /><![endif]-->
+
+  <title>Jobtex TF</title>
+
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  <!-- Font -->
+  <link rel="stylesheet" href="fonts/fonts.css" />
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="stylesheets/bootstrap.min.css" />
+
+  <!-- swiper slider -->
+  <link rel="stylesheet" href="stylesheets/swiper-bundle.min.css" />
+
+  <!-- Mobile Specific Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+  <!-- Theme Style -->
+  <link rel="stylesheet" type="text/css" href="stylesheets/shortcodes.css" />
+  <link rel="stylesheet" type="text/css" href="stylesheets/style.css" />
+  <link rel="stylesheet" type="text/css" href="stylesheets/jobs.css">
+
+  <!-- Favicon and Touch Icons  -->
+  <link rel="shortcut icon" href="images/favicon.png">
+  <link rel="apple-touch-icon-precomposed" href="images/favicon.png">
+
+  <!-- Responsive -->
+  <link rel="stylesheet" type="text/css" href="stylesheets/responsive.css" />
+
+</head>
+
+<body>
+
+  <div class="sidebar-popup">
+    <div class="modal-menu__backdrop"></div>
+    <div class="widget-filter">
+      <form action="GET">
+        <div class="group-form">
+          <label class="title">Search Company</label>
+          <div class="group-input search-ip">
+            <button><i class="icon-search"></i></button>
+            <input type="text" placeholder="Keywork" required>
+          </div>
+        </div>
+        <div class="group-form">
+          <label class="title">Location</label>
+          <div class="group-input has-icon">
+            <i class="icon-map-pin"></i>
+            <select>
+              <option value="0">All Location</option>
+              <option value="0">India</option>
+              <option value="0">Singapore</option>
+              <option value="0">French</option>
+            </select>
+          </div>
+        </div>
+        <div class="group-form">
+          <label class="title">Job Title</label>
+          <div class="group-input">
+            <select>
+              <option value="0">Design & Creative </option>
+              <option value="0">Design</option>
+              <option value="0">Ux/Ui</option>
+            </select>
+          </div>
+        </div>
+        <div class="group-form">
+          <label class="title">On-site/Remote</label>
+          <div class="group-input">
+            <select>
+              <option value="0">On-site  </option>
+              <option value="0">Remote</option>
+              <option value="0">Freelancer</option>
+            </select>
+          </div>
+        </div>
+        <div class="group-form">
+          <label class="title">Job Types</label>
+          <div class="group-input">
+            <select>
+              <option value="0">SoftWere  </option>
+              <option value="0">Website</option>
+            </select>
+          </div>
+        </div>
+        <div class="group-form">
+          <label class="title">Salaries</label>
+          <div class="group-input">
+            <select>
+              <option value="0">All Salaries </option>
+              <option value="0">Website</option>
+            </select>
+          </div>
+        </div>
+        <div class="group-form st2">
+          <label class="title st2">Radius: <span id="default-side" class="color-pri1"></span> <span>Miles</span>  </label>
+          <div class="group-input">
+            <input type="range" min="1" max="100" value="25" class="range-input" id="myRange" />
+          </div>
+        </div>
+        <div class="group-form">
+          <label class="title">Posted Anytime</label>
+          <div class="group-input">
+            <select>
+              <option value="0">Posted Anytime </option>
+              <option value="0">Website</option>
+            </select>
+          </div>
+        </div>
+        <div class="group-form">
+          <label class="title">All Seniority Levels</label>
+          <div class="group-input">
+            <select>
+              <option value="0">All Seniority Levels </option>
+              <option value="0">Website</option>
+            </select>
+          </div>
+        </div>
+        <div class="group-form">
+          <label class="title">Company</label>
+          <div class="group-input">
+            <select>
+              <option value="0">Company </option>
+              <option value="0">Website</option>
+            </select>
+          </div>
+        </div>
+        <button type="submit">Find Jobs</button>
+      </form>
+    </div>
+  </div>
+
+
+  <!-- HEADER -->
+  <header id="header" class="header header-default">
+
+    <div class="tf-container ct2">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="sticky-area-wrap">
+            <div class="header-ct-left">
+              <div id="logo" class="logo">
+                <a href="index.html">
+                  <img class="site-logo" src="images/logo.png" alt="Image" />
+
+                </a>
+              </div>
+              <div class="categories">
+                <a href="#"><span class="icon-grid"></span>Categories</a>
+                <div class="sub-categorie">
+                  <ul class="pop-up">
+                    <li>
+                      <a href="#"><span class="icon-categorie-1"></span>Design & Creative</a>
+                    </li>
+                    <li>
+                      <a href="#"><span class="icon-categorie-8"></span>Digital Marketing</a>
+                    </li>
+                    <li class="active">
+                      <a href="#"><span class="icon-categorie-2"></span>Development & IT</a>
+                    </li>
+                    <li>
+                      <a href="#"><span class="icon-categorie-3"></span>Music & Audio</a>
+                    </li>
+                    <li>
+                      <a href="#"><span class="icon-categorie-4"></span>Finance &
+                        Accounting</a>
+                    </li>
+                    <li>
+                      <a href="#"><span class="icon-categorie-5"></span>Programming & Tech</a>
+                    </li>
+                    <li>
+                      <a href="#"><span class="icon-categorie-6"></span>Video & Animation</a>
+                    </li>
+                    <li>
+                      <a href="#"><span class="icon-categorie-7"></span>Writing &
+                        translation</a>
+                    </li>
+                  </ul>
+                  <div class="pop-up-content">
+                    <div class="pop-up-item">
+                      <div class="top-title">Top Categories</div>
+                      <div class="top-item"><a href="#">Design & Creative</a></div>
+                      <div class="top-item"><a href="#">Digital marketing</a></div>
+                      <div class="top-item"><a href="#">Development & IT</a></div>
+                      <div class="top-item"><a href="#">Music & Audio</a></div>
+                      <div class="top-item">
+                        <a href="#">Finance & Accounting</a>
+                      </div>
+                      <div class="top-item"><a href="#">Programming & Tech</a></div>
+                      <div class="top-item"><a href="#">video & Animation</a></div>
+                    </div>
+                    <div class="pop-up-item">
+                      <div class="top-title">Top Skills</div>
+                      <div class="top-item"><a href="#">Adobe Photoshop</a></div>
+                      <div class="top-item"><a href="#">adobe XD</a></div>
+                      <div class="top-item"><a href="#">Android Developer</a></div>
+                      <div class="top-item"><a href="#">Figma</a></div>
+                      <div class="top-item"><a href="#">CSS, Html</a></div>
+                      <div class="top-item"><a href="#">BA</a></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="header-ct-center">
+              <div class="nav-wrap">
+                <nav id="main-nav" class="main-nav">
+                  <ul id="menu-primary-menu" class="menu">
+                    <li class="menu-item current-item">
+                      <a href="index.html">Demos </a>
+                      <ul class="sub-menu">
+                        <li class="menu-item current-item">
+                          <a href="playgame.html">PlayGame </a>
+                        </li>
+                        <li class="menu-item">
+                          <a href="profile.html">Profile </a>
+                        </li>
+                        <li class="menu-item">
+                          <a href="faq.html">FAQs </a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="menu-item menu-item-has-children">
+                      <a href="brower.html">Find jobs </a>
+                      <ul class="sub-menu">
+                        <li class="menu-item">
+                          <a href="playgame.html">PlayGame </a>
+                        </li>
+                        <li class="menu-item">
+                          <a href="profile.html">Profile </a>
+                        </li>
+                        <li class="menu-item">
+                          <a href="faq.html">FAQs </a>
+                        </li>
+                      </ul>
+                    </li>
+
+                    <li class="menu-item menu-item-has-children">
+                      <a href="login.html">Employers</a>
+                      <ul class="sub-menu">
+                        <li class="menu-item">
+                          <a href="playgame.html">PlayGame </a>
+                        </li>
+                        <li class="menu-item">
+                          <a href="profile.html">Profile </a>
+                        </li>
+                        <li class="menu-item">
+                          <a href="faq.html">FAQs </a>
+                        </li>
+                      </ul>
+                    </li>
+
+                    <li class="menu-item menu-item-has-children">
+                      <a href="#">Candidates</a>
+                      <ul class="sub-menu">
+                        <li class="menu-item">
+                          <a href="playgame.html">PlayGame </a>
+                        </li>
+                        <li class="menu-item">
+                          <a href="profile.html">Profile </a>
+                        </li>
+                        <li class="menu-item">
+                          <a href="faq.html">FAQs </a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="menu-item menu-item-has-children">
+                      <a href="#">Blog</a>
+                      <ul class="sub-menu">
+                        <li class="menu-item">
+                          <a href="playgame.html">PlayGame </a>
+                        </li>
+                        <li class="menu-item">
+                          <a href="profile.html">Profile </a>
+                        </li>
+                        <li class="menu-item">
+                          <a href="faq.html">FAQs </a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="menu-item menu-item-has-children">
+                      <a href="#">Pages</a>
+                      <ul class="sub-menu">
+                        <li class="menu-item">
+                          <a href="playgame.html">PlayGame </a>
+                        </li>
+                        <li class="menu-item">
+                          <a href="profile.html">Profile </a>
+                        </li>
+                        <li class="menu-item">
+                          <a href="faq.html">FAQs </a>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </nav>
+                <div class="mobile-button"><span></span></div>
+              </div>
+            </div>
+            <div class="header-ct-right">
+              <div class="header-customize-item help">
+                <a href="#"><span class="icon-help-circle"></span></a>
+              </div>
+              <div class="header-customize-item bell">
+                <span class="icon-bell"></span>
+                <div class="sub-notification">
+                  <div class="sub-notification-heading">
+                    <div class="sub-notification-title">Notification</div>
+                    <span>5 New</span>
+                  </div>
+                  <div class="sub-notification-content">
+                    <div class="sub-notification-item icon-plus">
+                      <div class="time">Last day</div>
+                      <div class="content">
+                        Your submit job <span class="name">Graphic Design</span> is
+                        <span class="status">Success</span>
+                      </div>
+                    </div>
+                    <div class="sub-notification-item icon-plus">
+                      <div class="time">5 Day ago</div>
+                      <div class="content">
+                        A new application is submitted on your job
+                        <span class="name">Graphic Design</span> by
+                        <span class="name">Maverick Nguyen</span>
+                      </div>
+                    </div>
+                    <div class="sub-notification-item icon-plus">
+                      <div class="time">5 Day ago</div>
+                      <div class="content">
+                        A new application is submitted on your job
+                        <span class="name">Graphic Design</span> by
+                        <span class="name">Maverick Nguyen</span>
+                      </div>
+                    </div>
+                    <div class="sub-notification-item icon-plus">
+                      <div class="time">Last day</div>
+                      <div class="content">
+                        Your submit job <span class="name">Graphic Design</span> is
+                        <span class="status">Success</span>
+                      </div>
+                    </div>
+                    <div class="sub-notification-item icon-plus">
+                      <div class="time">5 Day ago</div>
+                      <div class="content">
+                        A new application is submitted on your job
+                        <span class="name">Graphic Design</span> by
+                        <span class="name">Maverick Nguyen</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="sub-notification-button">
+                    <a href="#">Read All</a>
+                  </div>
+                </div>
+              </div>
+              <div class="header-customize-item account">
+                <img src="images/user/avatar/image-01.jpg" alt="" />
+                <div class="name">
+                  Candidates<span class="icon-keyboard_arrow_down"></span>
+                </div>
+                <div class="sub-account">
+                  <div class="sub-account-item">
+                    <a href="#"><span class="icon-dashboard"></span>Dashboard</a>
+                  </div>
+                  <div class="sub-account-item">
+                    <a href="#"><span class="icon-profile"></span> Profile</a>
+                  </div>
+                  <div class="sub-account-item">
+                    <a href="#"><span class="icon-resumes"></span> Resumes</a>
+                  </div>
+                  <div class="sub-account-item">
+                    <a href="#"><span class="icon-my-apply"></span> My Applied</a>
+                  </div>
+                  <div class="sub-account-item">
+                    <a href="#"><span class="icon-work"></span> Saved Jobs</a>
+                  </div>
+                  <div class="sub-account-item">
+                    <a href="#"><span class="icon-bell1"></span> Candidate Alerts</a>
+                  </div>
+                  <div class="sub-account-item">
+                    <a href="#"><span class="icon-chat"></span> Messages</a>
+                  </div>
+                  <div class="sub-account-item">
+                    <a href="#"><span class="icon-following"></span> Following Employers</a>
+                  </div>
+                  <div class="sub-account-item">
+                    <a href="#"><span class="icon-meeting"></span> Meeting</a>
+                  </div>
+                  <div class="sub-account-item">
+                    <a href="#"><span class="icon-change-passwords"></span> Change
+                      Passwords</a>
+                  </div>
+                  <div class="sub-account-item">
+                    <a href="#"><span class="icon-trash"></span> Delete Profile</a>
+                  </div>
+                  <div class="sub-account-item">
+                    <a href="#"><span class="icon-log-out"></span> Log Out</a>
+                  </div>
+                </div>
+              </div>
+              <div class="header-customize-item button">
+                <a href="#">Upload Resume</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- END HEADER -->
+
+    <section class="wrapper-author-page-title style2">
+      <div class="tf-container">
+        <div class="wd-author-page-title">
+          <div class="author-archive-header">
+            <img src="images/user/avatar/avt-author-1.jpg" alt="images/user/avatar/avt-author-1.jpg" class="logo-company">
+            <div class="content">
+              <a href="#" class="tag-head">Available now</a>
+              <h4><a href="#">Computer Systems Analyst</a></h4>
+              <h3><a href="#">Maverick Nguyen</a> <span class="icon-bolt"></span></h3>
+              <ul class="author-list">
+                <li class="tag"> Blender </li>
+                <li class="tag"> Sketch </li>
+                <li class="tag"> Adobe XD </li>
+                <li class="tag"> Figma </li>
+                <li class="map"> <span class="icon-map-pin"></span>&nbsp; Tokyo, Japan </li>
+                <li class="price"><span class="icon-dolar1"></span>&nbsp; $300/day </li>
+              </ul>
+            </div>
+          </div>
+          <div class="author-archive-footer">
+              <button class="tf-btn">DownLoad CV</button>
+              <button class="tf-btn btn-author">Message</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="tf-container">
+        <div class="row">
+          <div class="col-lg-8">
+            <article class="job-article tf-tab single-job">
+              <ul class="menu-tab">
+                <li class="ct-tab">Resumes</li>
+                <li class="ct-tab">Portfolio</li>
+                <li class="ct-tab">Contact</li>
+              </ul>
+              <div class="content-tab">
+                <div class="inner-content">
+                  <h5>About me</h5>
+                  <p>Are you a User Experience Designer with a track record of delivering intuitive digital experiences that
+                    drive results? Are you a strategic storyteller and systems thinker who can concept and craft smart,
+                    world-class campaigns across a variety of mediums?
+                  </p>
+                  <p class="mg-19">Deloitte's Green Dot Agency is looking to add a Lead User Experience Designer to our
+                    experience design team. We want a passionate creative who's inspired by new trends and emerging
+                    technologies, and is able to integrate them into memorable user experiences. A problem solver who is
+                    entrepreneurial, collaborative, hungry, and humble; can deliver beautifully designed, leading-edge
+                    experiences under tight deadlines; and who has demonstrated proven expertise.
+                  </p>
+                  <h5>Education</h5>
+                  <div class="group-infor">
+                    <div class="inner">
+                      <div class="sub-heading">FPT University <span>2019 - 2021</span></div>
+                      <div class="heading">Graphic Design</div>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+                    </div>
+                    <div class="inner">
+                      <div class="sub-heading">TB Course <span>2019 - 2021</span></div>
+                      <div class="heading">UX Design</div>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+                    </div>
+                  </div>
+
+                  <h5>Experience</h5>
+                  <div class="group-infor">
+                    <div class="inner">
+                      <div class="sub-heading">FPT University <span>2019 - 2021</span></div>
+                      <div class="heading">Graphic Design</div>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+                    </div>
+                    <div class="inner">
+                      <div class="sub-heading">TB Course <span>2019 - 2021</span></div>
+                      <div class="heading">UX Design</div>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+                    </div>
+                  </div>
+
+                  <div class="group-skill group-col-2">
+                    <div class="inner cl2">
+                      <h5>management skills</h5>
+                      <div class="wd-cv-skill">
+                        <div class="progress-item">
+                          <div class="progress-heading">
+                            <div class="heading-progress">HTML & cSS</div>
+                            <div class="donat-bg" data-percent="60%">
+                              <div class="custom-donat"></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="wd-cv-skill">
+                        <div class="progress-item">
+                          <div class="progress-heading">
+                            <div class="heading-progress">word</div>
+                            <div class="donat-bg" data-percent="90%">
+                              <div class="custom-donat"></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="wd-cv-skill">
+                        <div class="progress-item">
+                          <div class="progress-heading">
+                            <div class="heading-progress">Excel</div>
+                            <div class="donat-bg" data-percent="90%">
+                              <div class="custom-donat"></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="inner cl2">
+                      <h5>Design</h5>
+                      <div class="wd-cv-skill">
+                        <div class="progress-item">
+                          <div class="progress-heading">
+                            <div class="heading-progress">Figma</div>
+                            <div class="donat-bg" data-percent="80%">
+                              <div class="custom-donat"></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="wd-cv-skill">
+                        <div class="progress-item">
+                          <div class="progress-heading">
+                            <div class="heading-progress">Photoshop</div>
+                            <div class="donat-bg" data-percent="70%">
+                              <div class="custom-donat"></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="wd-cv-skill">
+                        <div class="progress-item">
+                          <div class="progress-heading">
+                            <div class="heading-progress">Ilustration</div>
+                            <div class="donat-bg" data-percent="90%">
+                              <div class="custom-donat"></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+             
+                  <h5>Portfolio</h5>
+                  <div class="post-about widget-dash-video style2 st">
+                    <div class="video-wrap gallery">
+                      <div class="swiper-item gallery-slide">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide swiper-slide-1">
+    
+                            <div class="images">
+                              <a href="https://youtu.be/MLpWrANjFbI" class="lightbox-image">
+                                <svg width="56" height="56" viewBox="0 0 56 56" fill="none"
+                                  xmlns="http://www.w3.org/2000/svg">
+                                  <path
+                                    d="M27.5795 50.5623C40.2726 50.5623 50.5624 40.2725 50.5624 27.5794C50.5624 14.8863 40.2726 4.59656 27.5795 4.59656C14.8865 4.59656 4.59668 14.8863 4.59668 27.5794C4.59668 40.2725 14.8865 50.5623 27.5795 50.5623Z"
+                                    fill="#EB4D4D"></path>
+                                  <path
+                                    d="M20.9141 27.5794V24.1779C20.9141 19.7882 24.0167 18.0185 27.8089 20.2019L30.7507 21.9026L33.6925 23.6034C37.4847 25.7867 37.4847 29.3721 33.6925 31.5554L30.7507 33.2562L27.8089 34.9569C24.0167 37.1403 20.9141 35.3476 20.9141 30.9809V27.5794Z"
+                                    fill="white"></path>
+                                </svg>
+                              </a>
+                            </div>
+                          </div>
+                          <div class="swiper-slide swiper-slide-2">
+    
+                            <div class="images">
+                              <a href="https://youtu.be/MLpWrANjFbI" class="lightbox-image">
+                                <svg width="56" height="56" viewBox="0 0 56 56" fill="none"
+                                  xmlns="http://www.w3.org/2000/svg">
+                                  <path
+                                    d="M27.5795 50.5623C40.2726 50.5623 50.5624 40.2725 50.5624 27.5794C50.5624 14.8863 40.2726 4.59656 27.5795 4.59656C14.8865 4.59656 4.59668 14.8863 4.59668 27.5794C4.59668 40.2725 14.8865 50.5623 27.5795 50.5623Z"
+                                    fill="#EB4D4D"></path>
+                                  <path
+                                    d="M20.9141 27.5794V24.1779C20.9141 19.7882 24.0167 18.0185 27.8089 20.2019L30.7507 21.9026L33.6925 23.6034C37.4847 25.7867 37.4847 29.3721 33.6925 31.5554L30.7507 33.2562L27.8089 34.9569C24.0167 37.1403 20.9141 35.3476 20.9141 30.9809V27.5794Z"
+                                    fill="white"></path>
+                                </svg>
+                              </a>
+                            </div>
+                          </div>
+                          <div class="swiper-slide swiper-slide-3">
+    
+                            <div class="images">
+                              <a href="https://youtu.be/MLpWrANjFbI" class="lightbox-image">
+                                <svg width="56" height="56" viewBox="0 0 56 56" fill="none"
+                                  xmlns="http://www.w3.org/2000/svg">
+                                  <path
+                                    d="M27.5795 50.5623C40.2726 50.5623 50.5624 40.2725 50.5624 27.5794C50.5624 14.8863 40.2726 4.59656 27.5795 4.59656C14.8865 4.59656 4.59668 14.8863 4.59668 27.5794C4.59668 40.2725 14.8865 50.5623 27.5795 50.5623Z"
+                                    fill="#EB4D4D"></path>
+                                  <path
+                                    d="M20.9141 27.5794V24.1779C20.9141 19.7882 24.0167 18.0185 27.8089 20.2019L30.7507 21.9026L33.6925 23.6034C37.4847 25.7867 37.4847 29.3721 33.6925 31.5554L30.7507 33.2562L27.8089 34.9569C24.0167 37.1403 20.9141 35.3476 20.9141 30.9809V27.5794Z"
+                                    fill="white"></path>
+                                </svg>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-item gallery-thumb">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide swiper-slide-1">
+                            <div class="icon-image-wrap">
+    
+                            </div>
+                          </div>
+                          <div class="swiper-slide swiper-slide-2">
+                            <div class="icon-image-wrap">
+    
+                            </div>
+                          </div>
+                          <div class="swiper-slide swiper-slide-3">
+                            <div class="icon-image-wrap">
+    
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- <div class="button-custom-slider">
+                                          <div class="swiper-button-next3 button-slide-custom-next"><span class="icon-keyboard_arrow_right"></span></div>
+                                          <div class="swiper-button-prev3 button-slide-custom-prev"><span class="icon-keyboard_arrow_leftt"></span> </div>
+                                      </div>  -->
+    
+                    </div>
+                  </div>
+
+                  <div class="form-candidate">
+                    <h5>Contact Candidate</h5>
+                    <form action="" method="post">
+                      <div class="group-input">
+                        <input type="text">
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="col-lg-4">
+            <div class="cv-form-details">
+              <ul class="list-infor">
+                <li><div class="category">Career Finding</div><div class="detail">UI UX Designer</div></li>
+                <li><div class="category">Location</div><div class="detail">Hanoi City, VietNam</div></li>
+                <li><div class="category">Phone Number</div><div class="detail">123  456  7890 </div></li>
+                <li><div class="category">Email</div><div class="detail">hi.avitex@gmail.com</div></li>
+                <li><div class="category">Offered Salary</div><div class="detail">$2500/Month</div></li>
+                <li><div class="category">Experience time</div><div class="detail">5 Years</div></li>
+                <li><div class="category">Language</div><div class="detail">English, Vietnamese </div></li>
+                <li><div class="category">Age</div><div class="detail">26 Years Old</div></li>
+                <li><div class="category">Qualification</div><div class="detail">Master Degree</div></li>
+              </ul>
+              
+              <div class="wd-social d-flex aln-center">
+                <span>Socials:</span>
+                <ul class="list-social d-flex aln-center">
+                    <li><a href="#"><i class="icon-facebook"></i></a></li>
+                    <li><a href="#"><i class="icon-linkedin2"></i></a></li>
+                    <li><a href="#"><i class="icon-twitter"></i></a></li>
+                    <li><a href="#"><i class="icon-pinterest"></i></a></li>
+                    <li><a href="#"><i class="icon-instagram1"></i></a></li>
+                    <li><a href="#"><i class="icon-youtube"></i></a></li>
+                </ul>
+            </div>
+            <div class="preview-cv mgt-32">
+              <div class="title">Samle_cv_jobitex</div>
+              <div class="category">PDF</div>
+              <div class="icon icon-file-pdf"></div>
+            </div>
+            <a href="#" class="btn-dowload"><i class="icon-download"></i> Download CV</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  <!--End wd-partner -->
+  <footer class="footer">
+    <div class="wprt-spacer clearfix" data-desktop="60" data-mobi="40" data-smobi="60"></div>
+    <div class="top-footer">
+        <div class="tf-container">
+            <div class="row">
+                <div class="col-lg-2 col-md-4">
+                    <div class="footer-logo">
+                        <img src="images/logo.png" alt="images">
+                    </div>
+                </div>
+                <div class="col-lg-10 col-md-8">
+                    <div class="wd-social d-flex aln-center">
+                        <span>Follow Us:</span>
+                        <ul class="list-social d-flex aln-center">
+                            <li><a href="#"><i class="icon-facebook"></i></a></li>
+                            <li><a href="#"><i class="icon-linkedin2"></i></a></li>
+                            <li><a href="#"><i class="icon-twitter"></i></a></li>
+                            <li><a href="#"><i class="icon-pinterest"></i></a></li>
+                            <li><a href="#"><i class="icon-instagram1"></i></a></li>
+                            <li><a href="#"><i class="icon-youtube"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-12">
+                    <div class="wprt-spacer clearfix top-ft" data-desktop="20" data-mobi="40" data-smobi="60"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="wprt-spacer clearfix" data-desktop="40" data-mobi="40" data-smobi="40"></div>
+    <div class="inner-footer">
+        <div class="tf-container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="footer-cl-1">
+                        <div class="icon-infor d-flex aln-center">
+                            <div class="icon">
+                                <span class="icon-call-calling"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span></span>
+                            </div>
+                            <div class="content">
+                                <p>Need help? 24/7</p>
+                                <h6><a href="tel:0123456678">001-1234-88888</a></h6>
+                            </div>
+                        </div>
+                        <p>Job Searching Just Got Easy. Use Jobtex to run a hiring site and earn money in the process!</p>
+                        <div class="ft-icon"> <i class="icon-map-pin"></i> 101 E 129th St, East Chicago, IN 46312, US</div>
+                        <form action="#" id="subscribe-form">
+                            <input type="email" placeholder="Your email address" required="" id="subscribe-email">
+                            <button class="tf-button" type="submit" id="subscribe-button"><i class="icon-paper-plane-o"></i></button>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <div class="footer-cl-2">
+                        <h6 class="ft-title">
+                            Quick Links
+                        </h6>
+                        <ul class="navigation-menu-footer">
+                            <li> <a href="#">Job Packages</a> </li>
+                            <li> <a href="#">Post New Job</a> </li>
+                            <li> <a href="#">Jobs Listing</a> </li>
+                            <li> <a href="#">Jobs Style Grid</a> </li>
+                            <li> <a href="#">Employer Listing</a> </li>
+                            <li> <a href="#">Employers Grid</a> </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4">
+                    <div class="footer-cl-3">
+                        <h6 class="ft-title">
+                            For Candidates
+                        </h6>
+                        <ul class="navigation-menu-footer">
+                            <li> <a href="#">User Dashboard</a> </li>
+                            <li> <a href="#">CV Packages</a> </li>
+                            <li> <a href="#">Candidate Listing</a> </li>
+                            <li> <a href="#">Candidates Grid</a> </li>
+                            <li> <a href="#">About us</a> </li>
+                            <li> <a href="#">Contact us </a> </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4">
+                    <div class="footer-cl-4">
+                        <h6 class="ft-title">
+                            For Employers
+                        </h6>
+                        <ul class="navigation-menu-footer">
+                            <li> <a href="#">Post New Job</a> </li>
+                            <li> <a href="#">Employer Listing</a> </li>
+                            <li> <a href="#">Employers Grid</a> </li>
+                            <li> <a href="#">Job Packages</a> </li>
+                            <li> <a href="#">Jobs Listing</a> </li>
+                            <li> <a href="#">Jobs Style Grid</a> </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4">
+                    <div class="footer-cl-5">
+                        <h6 class="ft-title">
+                            Download App
+                        </h6>
+                        <ul class="ft-download">
+                            <li> <a href="#"><img src="images/review/btn3.png" alt="images"></a></li>
+                            <li> <a href="#"><img src="images/review/btn4.png" alt="images"></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-12">
+                    <div class="wprt-spacer clearfix top-ft" data-desktop="40" data-mobi="20" data-smobi="20"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bottom">
+        <div class="tf-container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6">
+                    <div class="bt-left">
+                        <div class="copyright">©2023 Jobtex. All Rights Reserved.</div>
+                        <div class="select-language">
+                            <div class="dropdown" id="language">
+                                <a class="btn-selector nolink input-form"><span><img src="images/review/flag.png" alt=""></span> English</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <ul class="menu-bottom d-flex aln-center">
+                        <li><a href="#">Terms Of Services</a> </li>
+                        <li><a href="#">Privacy Policy</a> </li>
+                        <li><a href="#">Cookie Policy</a> </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="javascript/jquery.min.js"></script>
+<script src="javascript/swiper-bundle.min.js"></script>
+<script src="javascript/bootstrap.min.js"></script>
+<script src="javascript/jquery.fancybox.js"></script>
+<script src="javascript/plugin.min.js"></script>
+<script src='javascript/wow.min.js'></script>
+<script src="javascript/range-side.js"></script>
+<script src='javascript/swiper.js'></script>
+<script src='javascript/jquery.nice-select.min.js'></script>
+<script src="javascript/main.js"></script>
+</body>
+</html>

@@ -2152,7 +2152,7 @@ button.tf-button span {
   border-radius: 8px;
   margin: 9px 28px 9px 0px;
 }
-.wd-author-page-title p {
+.wd-author-page-title .tag-head {
   background-color: #14a077;
   padding: 7px 12px;
   color: #ffffff;
@@ -2161,7 +2161,6 @@ button.tf-button span {
   font-size: 12px;
   line-height: 16px;
   display: inline-block;
-  cursor: pointer;
 }
 .wd-author-page-title h4 {
   font-size: 18px;
