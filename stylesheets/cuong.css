@@ -3049,6 +3049,29 @@ border-color: #14A077;
 .group-select-display .inner {
   margin-right: 17px;
 }
+.group-select-display .menu-tab {
+  display: flex;
+  align-items: center;
+}
+.group-select-display .menu-tab .ct-tab {
+  font-size: 16px;
+  line-height: 26px;
+  text-transform: capitalize;
+  font-weight: 700;
+  cursor: pointer;
+  border-bottom: 2px solid #E5E5E5;
+  color: #B1B1B1;
+  padding-bottom: 5px;
+}
+.group-select-display .menu-tab .ct-tab:not(:last-child) {
+  margin-right: 40px;
+}
+.group-select-display .menu-tab .ct-tab.active {
+  color: #121212;
+  border-color: #14A077;
+}
+.group-select-display .menu-tab li
+.group-col-3,
 .group-col-3 {
   display: flex;
   flex-wrap: wrap;
@@ -3538,7 +3561,9 @@ border-radius: 8px;
 .form-candidate .ip.out {
   margin-bottom: 20px;
 }
-.form-candidate button {
+.form-candidate button,
+.btn-pri,
+.wd-meta-select-job button.btn-pri {
   padding: 11px 32px;
 background: #14A077;
 border-radius: 4px;
@@ -3548,9 +3573,101 @@ line-height: 26px;
 color: #FFFFFF;
 border-color: transparent;
 text-transform: capitalize;
-
 margin-top: 25px;
+}
+.btn-pri,
+.wd-meta-select-job button.btn-pri {
+  margin-top: 0;
+}
+.job-search-form.style2.cv .form-group{
+  width: 302px;
+}
+.job-search-form.style2.cv .form-group:first-child span {
+  padding-left: 0;
+}
 
+/* --------------\---------------------------accodion------------------------------------ */
+.tf-container.st2 {
+  width: 720px;
+}
+.flat-accordion .toggle-content {
+  display: none;
+  font-weight: 400;
+font-size: 16px;
+line-height: 26px;
+color: #64666C;
+}
+.flat-accordion .flat-toggle {
+  border: 1px solid #B1B1B1;
+  border-radius: 8px;
+  padding: 21px 28px 20px 27px;
+  margin-bottom: 21px;
+}
+.flat-accordion .flat-toggle .toggle-title {
+  position: relative;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 28px;
+  text-transform: capitalize;
+  color: #121212;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -ms-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+.flat-accordion .flat-toggle .toggle-title.active {
+  padding-bottom: 22px;
+  border-bottom: 1px solid #E5E5E5;
+  margin-bottom: 16px;
+}
+.flat-accordion .flat-toggle.active {
+  padding-bottom: 14px;
+}
+.flat-accordion .flat-toggle .toggle-title span::before,
+.flat-accordion .flat-toggle .toggle-title span::after {
+  content: '';
+  width: 21.17px;
+  height: 2.22px;
+  position: absolute;
+  top: 50%;
+  right: 8px;
+  background: #121212;
+  transform: translateY(-50%);
+  opacity: 1;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.flat-accordion .flat-toggle .toggle-title span::after {
+  transform: rotate(90deg);
+  margin-top: -1px;
+}
+.flat-accordion .flat-toggle .toggle-title.active span::after {
+  opacity: 0;
+  visibility: hidden;
+}
+.flat-accordion .flat-toggle .toggle-title.active span::before {
+  margin-top: -11px;
+}
+.accordion-page  .flat-accordion{
+  margin-bottom: 33px;
+}
+.accordion-page h4 {
+  margin-bottom: 11px;
+}
+.accordion-page .des {
+  font-size: 18px;
+line-height: 28px;
+color: #64666C;
+
+margin-bottom: 32px;
+}
+.accordion-page h6 {
+  margin-bottom: 20px;
 }
 /* --------------\---------------------------animation------------------------------------ */
 .ani1 {

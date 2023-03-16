@@ -132,22 +132,33 @@
 }); 
 
   var accordion = function () {
-    if ($("div").hasClass("widget-accordion")) {
-      $(".accordion-items").on("click", ".accordion-heading", function () {
-        $(this).toggleClass("active").next().slideToggle();
+    var args = { duration: 600 };
+        $('.flat-toggle .toggle-title.active').siblings('.toggle-content').show();
+        $('.flat-toggle.enable .toggle-title').on('click', function () {
+            $(this).closest('.flat-toggle').find('.toggle-content').slideToggle(args);
+            $(this).toggleClass('active');
+        });
 
-        $(".accordion-content").not($(this).next()).slideUp(300);
+        $('.flat-accordion .toggle-title').on('click', function () {
+            if (!$(this).is('.active')) {
+                $(this).closest('.flat-accordion').find('.toggle-title.active').toggleClass('active').next().slideToggle(args);
+                $(this).toggleClass('active');
+                $(this).next().slideToggle(args);
+            } else {
+                $(this).toggleClass('active');
+                $(this).next().slideToggle(args);
+            }
+        });
 
-        $(this).siblings().removeClass("active");
-      });
-      $(".accordion-items-1").on("click", ".accordion-heading-1", function () {
-        $(this).toggleClass("active").next().slideToggle();
-
-        $(".accordion-content-1").not($(this).next()).slideUp(300);
-
-        $(this).siblings().removeClass("active");
-      });
-    }
+        $('.flat-accordion .flat-toggle').on('click', function () {
+            if (!$(this).is('.active')) {
+                $(this).find('.flat-toggle.activ').toggleClass('active').next();
+                $(this).toggleClass('active');
+            } else {
+                $(this).toggleClass('active');
+   
+            }
+        });
   };
 
   var parallax = function () {
@@ -462,7 +473,7 @@ var loadmore2 = function () {
       $(this).find(".content-tab").children().first().show();
       $(this)
         .find(".menu-tab")
-        .children("div.user-tag, .btn-display")
+        .children("div.user-tag, .btn-display, .ct-tab")
         .on("click", function (e) {
           e.preventDefault();
           var liActive = $(this).index();

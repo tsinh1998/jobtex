@@ -243,6 +243,14 @@
     .row-group-search { 
         display: block;
     }
+    .row-group-search.st2 {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .row-group-search.st2 .form-group:first-child,
+    .row-group-search.st2  .form-group {
+        width: 20% !important;
+    }
     .job-search-form .form-group-2,
      .job-search-form .form-group-3,
      .job-search-form .form-group-1 {
@@ -254,7 +262,13 @@
     }
 }
 @media only screen and (max-width: 991px) {
-    
+    .row-group-search.st2 .form-group:first-child,
+    .row-group-search.st2  .form-group {
+        width: 50% !important;
+    }
+    .row-group-search.st2  .form-group span {
+        padding-left: 0;
+    }
 .wd-job-author2 {
     padding: 20px;
 }
