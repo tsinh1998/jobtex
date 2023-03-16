@@ -462,7 +462,7 @@ var loadmore2 = function () {
       $(this).find(".content-tab").children().first().show();
       $(this)
         .find(".menu-tab")
-        .children("div.user-tag, .btn-display, .ct-tab")
+        .children("div.user-tag, .btn-display")
         .on("click", function (e) {
           e.preventDefault();
           var liActive = $(this).index();
@@ -649,6 +649,9 @@ var Modal_Right = function() {
     dropdown("#item_2");
     dropdown("#item_3");
     dropdown("#item_4");
+    dropdown("#item_5");
+    dropdown("#item_6");
+    dropdown("#item_7");
     dropdown2("#items_1");
     dropdown2("#items_2");
     dropdown2("#items_3");
