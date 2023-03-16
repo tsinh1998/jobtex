@@ -70,13 +70,26 @@
   border: 1px solid #e5e5e5;
   border-radius: 8px;
 }
-
+.widget-blog-1.style-1 {
+  flex-direction: column;
+  gap: 0;
+  margin-bottom: 40px;
+}
+.widget-blog-1.style-1 .img-blog {
+  width: 100%;
+}
+.widget-blog-1.style-1 .content {
+  padding: 24px;
+}
 .widget-blog-1 .content {
   padding: 27px 0;
 }
+.widget-blog-1.style-1.margin-1 {
+  margin-top: -140px;
+}
 
-.sub-title {
-  width: max-content;
+.widget-blog-1 .sub-title {
+  display: inline-block;
   padding: 4px 12px;
   background: rgba(20, 129, 96, 0.1);
   border-radius: 40px;
@@ -88,13 +101,14 @@
   margin-bottom: 8px;
 }
 
-.main-title {
+.widget-blog-1 .main-title {
   font-family: "Plus Jakarta Sans", sans-serif;
   font-weight: 700;
   font-size: 24px;
   line-height: 30px;
   color: #121212;
   margin-bottom: 8px;
+  text-transform: capitalize;
 }
 
 .widget-blog-1 .content .meta {
@@ -238,9 +252,14 @@
 }
 
 .widget-side-bar .recent-posts .widget-blog-1 {
+  align-items: center;
   gap: 16px;
   border: none;
   margin-bottom: 28px;
+}
+.widget-side-bar .recent-posts .img-blog {
+  width: 80px;
+  height: 80px;
 }
 
 .widget-side-bar .recent-posts .widget-blog-1 .content {
@@ -343,8 +362,6 @@
   box-shadow: 0px 10px 25px rgba(54, 95, 104, 0.1);
   border: none;
 }
-
-
 
 /*=============== HOME PAGE ==================*/
 .tf-title.style-2 {
