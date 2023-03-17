@@ -2382,6 +2382,23 @@ button.tf-button span {
   .blog-detail-side-bar-content .image-single {
     flex-wrap: wrap;
   }
+  .blog-detail-side-bar-content .tag-social {
+    margin-bottom: 0 !important;
+  }
+  .blog-detail-side-bar-content .tag-social,
+  .blog-detail-side-bar-content .tag-social .widget-popular-tags,
+  .blog-detail-side-bar-content .tag-social .wd-social {
+    flex-direction: column;
+    align-items: flex-start !important;
+    gap: 12px;
+  }
+  .blog-detail-side-bar-content .tag-social .widget-popular-tags {
+    margin-bottom: 16px;
+  }
+  .blog-detail-side-bar-content .nav-links {
+    flex-direction: column;
+    padding: 0 !important;
+  }
 }
 @media (max-width: 1300px) {
   /* wd-iconbox */
