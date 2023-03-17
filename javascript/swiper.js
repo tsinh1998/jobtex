@@ -229,6 +229,32 @@ if ($("div").hasClass("swiper")) {
 }
 
 if ($("div").hasClass("swiper")) {
+  const swiper = new Swiper(".partner-type-7", {
+    direction: "horizontal",
+    effect: "slide",
+    slidesPerView: 1,
+    loop: true,
+    spaceBetween: 69,
+    breakpoints: {
+      400: {
+        slidesPerView: 3,
+        spaceBetween: 20,
+      },
+      800: {
+        slidesPerView: 5,
+        spaceBetween: 30,
+      },
+      1170: {
+        slidesPerView: 7,
+      },
+    },
+    autoplay: {
+      delay: 3000,
+    },
+  });
+}
+
+if ($("div").hasClass("swiper")) {
   const swiper = new Swiper(".tes-category-job", {
     direction: "horizontal",
     effect: "slide",
