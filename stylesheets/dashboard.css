@@ -386,7 +386,7 @@ background: #fff;
     content: '\e996';
     font-family: 'icomoon';
     font-size: 16px;
-    margin-right: 5px;
+    margin-right: 2px;
 }
 
 .flat-dashboard-applicants .applicants .action-wrap ul {
@@ -478,6 +478,11 @@ background: #fff;
 .dashboard .button-status.style-2 {
     background-color: #504CFE1A;
     color: #504CFE;
+}
+
+.dashboard .button-status.style-3 {
+    background-color: #EB4D4D1A;
+    color: #EB4D4D;
 }
 
 .dashboard .button-cancel {
@@ -1040,13 +1045,13 @@ background: #fff;
     justify-content: space-between;
 }
 
-.flat-dashboard-about .profile-wrap .button-wrap .star i {
+.dashboard .star i {
     font-size: 12.8px;
     color: #FCC65D;
     margin-left: 1px;
 }
 
-.flat-dashboard-about .profile-wrap .button-wrap .star .style {
+.dashboard .star .style {
     color: #E5E5E5;
 }
 
@@ -2500,13 +2505,13 @@ background: #fff;
     font-weight: 400;
 }
 
-.flat-dashboard-candidates .dropdown a{
+.flat-dashboard-candidates .wrap-applicants .dropdown a{
     all:unset;
 }
-.flat-dashboard-candidates .dropdown {
+.flat-dashboard-candidates .wrap-applicants .dropdown {
     margin-top: -9px;
 }
-.more-icon {
+.flat-dashboard-candidates .more-icon {
     width: 4px;
     height: 4px;
     background-color: #000;
@@ -2514,17 +2519,17 @@ background: #fff;
     margin-right: 1px;
     display: inline-block;
 }
-.more-icon:nth-child(2) {
+.flat-dashboard-candidates .more-icon:nth-child(2) {
     margin-right: 0.7px;
 }
-.more-icon:last-child {
+.flat-dashboard-candidates .more-icon:last-child {
     margin-right: 0;
 }
 
-.flat-dashboard-candidates .dropdown>a::after {
+.flat-dashboard-candidates .wrap-applicants .dropdown>a::after {
     display: none;
 }
-.flat-dashboard-candidates .dropdown ul.show {
+.flat-dashboard-candidates .wrap-applicants .dropdown ul.show {
     opacity: 1;
     position: absolute;
     width: 150px;
@@ -2534,7 +2539,7 @@ background: #fff;
     right: 0;
     transition: all 0.3s ease;
 }
-.flat-dashboard-candidates .dropdown .more-ic {
+.flat-dashboard-candidates .wrap-applicants .dropdown .more-ic {
     margin-right: 7px;
     font-size: 14px;
 }
@@ -2669,18 +2674,18 @@ background: #fff;
     padding-bottom: 13px;
 }
 
-.wd-popup-job-apply .content h3 {
+.flat-dashboard-resumes .wd-file-apply .content h3 {
     margin-bottom: 17px;
 }
-.wd-popup-job-apply .content .group-seclect-file {
+.flat-dashboard-resumes  .wd-file-apply .content .group-seclect-file {
     border: 1px solid #E5E5E5;
     border-radius: 8px;
     margin-bottom: 20px;
 }
-.wd-popup-job-apply .content .custom-file::-webkit-file-upload-button {
+.flat-dashboard-resumes  .wd-file-apply .content .custom-file::-webkit-file-upload-button {
     display: none;
 }
-.wd-popup-job-apply .content .custom-file::before {
+.flat-dashboard-resumes  .wd-file-apply .content .custom-file::before {
     content: 'PDF';
     display: block;
     outline: none;
@@ -2693,23 +2698,23 @@ background: #fff;
     line-height: 26px;
     color: #121212;
   }
-  .wd-popup-job-apply .content .right .custom-file::before {
+  .flat-dashboard-resumes  .wd-file-apply .content .right .custom-file::before {
     content: 'Doc';
   }
-  .wd-popup-job-apply .content .custom-file:hover::before {
+  .flat-dashboard-resumes  .wd-file-apply .content .custom-file:hover::before {
     border-color: black;
   }
-  .wd-popup-job-apply .content .custom-file:active::before {
+  .flat-dashboard-resumes  .wd-file-apply .content .custom-file:active::before {
     background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9);
   } 
-.wd-popup-job-apply .content .group-file {
+  .flat-dashboard-resumes  .wd-file-apply .content .group-file {
     display: flex;
     margin-left: -40px;
     padding: 16px;
     border-radius: 8px;
     padding-bottom: 14px;
   }
-  .wd-popup-job-apply .content .group-file .inner {
+  .flat-dashboard-resumes  .wd-file-apply .content .group-file .inner {
     width: calc(30% - 40px);
     margin-left: 40px;
     padding: 13px 55px 13px 12px;
@@ -2717,7 +2722,7 @@ background: #fff;
     border-radius: 8px;
     position: relative;
   }
-  .wd-popup-job-apply .content .group-file .inner i {
+  .flat-dashboard-resumes  .wd-file-apply .content .group-file .inner i {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -2744,12 +2749,6 @@ background: #fff;
 .flat-dashboard-resumes .form-member {
     margin-bottom: 22px;
 }
-/* .flat-dashboard-overview .timeline-wrap .content .title-content {
-    padding-top: 5px;
-}
-.flat-dashboard-overview .timeline-wrap .content .title-client {
-    margin-bottom: 8px;
-} */
 
 .flat-dashboard-resumes .wrap-counter {
     width: 100%;
@@ -2789,6 +2788,76 @@ background: #fff;
     content: "%";
     color: #B1B1B1;
 }
+
+/* dashboard-following-employers */
+.flat-dashboard-following .applicants .wrap-applicants {
+    padding: 0px 42px 1px 40px;
+}
+.flat-dashboard-following tbody tr:nth-child(1) td {
+    padding: 24px 16px 15px;
+}
+.flat-dashboard-following tbody tr td {
+    padding: 11.5px 16px 12px;
+}
+.flat-dashboard-following .applicants .content h3 {
+    margin-right: 8px;
+}
+
+.briefcase svg {
+    margin-right: 4px;
+}
+.flat-dashboard-following .button-cancel.btn-3 {
+    background: #14A077;
+    color: #fff;
+}
+.flat-dashboard-following .button-cancel {
+    margin-left: 13px;
+}
+
+/* flat dashboard save  */
+
+/* .flat-dashboard-save {
+    padding: 24px 16px 22px 16px;
+} */
+.flat-dashboard-save thead tr th {
+    padding: 24px 16px 22px 16px;
+}
+.flat-dashboard-save .applicants .wrap-applicants {
+    padding: 0px 42px 15px 40px;
+}
+.flat-dashboard-save tbody tr:nth-child(1) td {
+    padding: 33px 16px 25px;
+}
+.flat-dashboard-save tbody tr td {
+    padding: 23px 16px 25px;
+    border-bottom: 0px;
+}
+.flat-dashboard-save thead tr th:nth-child(1) {
+    padding-left: 40px;
+}
+
+.flat-dashboard-save thead tr th:nth-child(2) {
+    padding-left: 35px;
+}
+.flat-dashboard-save thead tr th:last-child {
+    padding-right: 25px;
+}
+.flat-dashboard-save tbody tr td:nth-child(1) {
+    width: 55.5%;
+}
+.flat-dashboard-save tbody tr td:nth-child(2) {
+    width: 16.8%;
+}
+.flat-dashboard-save tbody tr td:nth-child(3) {
+    width: 16.8%;
+}
+
+.flat-dashboard-save tbody tr td:last-child {
+    padding-right: 37px;
+}
+
+
+
 @media only screen and (max-width: 991px) {
     .flat-dashboard-candidates .table-responsive {
         overflow-x: auto;
