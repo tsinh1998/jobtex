@@ -2442,7 +2442,36 @@ button.tf-button span {
   color: #64666c;
   margin: 0;
 }
-
+/* =============== shop =================== */
+.wd-shop .inner-box .logo-company {
+  max-width: 132px;
+  height: 200px;
+  margin: 25px 0px;
+}
+.wd-shop .inner-box .group-btn button {
+  text-transform: capitalize;
+  margin-top: 8px;
+}
+.wd-shop h3 {
+  text-transform: capitalize;
+  padding-bottom: 8px;
+}
+.wd-shop .price {
+  display: flex;
+  justify-content: center;
+  gap: 4px;
+}
+.wd-shop .price .price-first {
+  line-height: 26px;
+  font-size: 12px;
+  text-decoration: line-through;
+}
+.wd-shop .price .bold {
+  font-size: 16px;
+  line-height: 26px;
+  color: #64666c;
+  font-weight: 700;
+}
 /*===================================================== responsive =================================================================*/
 @media (max-width: 1440px) {
   .features-job.style-3 {
