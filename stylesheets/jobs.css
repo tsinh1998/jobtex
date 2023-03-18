@@ -1714,6 +1714,16 @@ button.tf-button span {
 .wd-partner .swiper-wrapper {
   align-items: center;
 }
+.wd-partner.style-1 {
+  padding: 0;
+  background-color: #ffffff;
+}
+.wd-partner.style-1 h1 {
+  padding-bottom: 40px;
+  color: #121212;
+}
+.wd-partner.style-1 img {
+}
 /*wd-skill-progress */
 .group-skills h3 {
   font-size: 20px;
@@ -2329,10 +2339,139 @@ button.tf-button span {
 .pagination-job.style-1 {
   justify-content: flex-start;
 }
-/* .widget-side-bar .recent-posts .widget-blog-1 img {
-  width: 80px;
-  height: 80px;
-} */
+/* ====================PAGE=========================== */
+.wd-banner-CTA {
+  background-image: url(../images/partners/CTA.png);
+  image-rendering: pixelated;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 0px;
+  background-repeat: no-repeat;
+  /* margin-left: 16%;
+  margin-right: 16%; */
+  /* box-shadow: 0px 2px 2px rgba(28, 36, 51, 0.1); */
+
+  /* background-position: center;
+  /* background-repeat: no-repeat; */
+}
+
+.group-banner-CTA h3 {
+  text-transform: capitalize;
+  color: #ffffff;
+  font-size: 36px;
+  line-height: 44px;
+  margin-bottom: 16px;
+}
+.group-banner-CTA p {
+  color: #f1f1f1;
+  font-size: 16px;
+  line-height: 26px;
+}
+.group-banner-CTA .group-btn {
+  margin-top: 28px;
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+}
+.group-banner-CTA .tf-btn {
+  text-transform: capitalize;
+  border: 1px solid #ffffff;
+  color: #14a077;
+  width: 184px;
+  padding: 12px 0px;
+}
+.group-banner-CTA .tf-btn:hover {
+  border-color: #148160;
+  background-color: #148160;
+  color: #ffffff;
+}
+.wrap-bg-counter {
+  position: relative;
+  margin: 0 auto;
+  padding-right: 15px;
+  padding-left: 15px;
+  width: 1170px;
+  max-width: 100%;
+}
+
+.wd-banner-counter {
+  padding: 80px 0px 105px;
+  background-image: url(../images/partners/couter.png);
+}
+.group-title-counter h3 {
+  line-height: 44px;
+  font-size: 36px;
+  color: #23262f;
+  margin-bottom: 8px;
+}
+.group-title-counter {
+  padding-bottom: 40px;
+  text-align: center;
+}
+.group-counter {
+  border-radius: 20px;
+  background-color: #ffffff;
+  position: relative;
+  padding: 40px 0px;
+}
+.group-counter .widget-counter {
+  border-right: 1px solid #e5e5e5;
+}
+.group-counter .widget-counter.br-none {
+  border-right: hidden;
+}
+.group-counter .thumb {
+  position: absolute;
+  top: -22px;
+  right: 80px;
+  width: 49px;
+  height: 49px;
+}
+.wd-review-job.page-text h3 {
+  margin-bottom: 20px;
+  font-size: 36px;
+  line-height: 44px;
+  font-weight: 700;
+}
+.wd-review-job.page-text p {
+  font-size: 16px;
+  line-height: 26px;
+  color: #64666c;
+  margin: 0;
+}
+/* =============== shop =================== */
+.wd-shop .inner-box .logo-company {
+  max-width: 132px;
+  height: 200px;
+  margin: 25px 0px;
+}
+.wd-shop .inner-box .group-btn button {
+  text-transform: capitalize;
+  margin-top: 8px;
+}
+.wd-shop h3 {
+  text-transform: capitalize;
+  padding-bottom: 8px;
+}
+.wd-shop .price {
+  display: flex;
+  justify-content: center;
+  gap: 4px;
+}
+.wd-shop .price .price-first {
+  line-height: 26px;
+  font-size: 12px;
+  text-decoration: line-through;
+}
+.wd-shop .price .bold {
+  font-size: 16px;
+  line-height: 26px;
+  color: #64666c;
+  font-weight: 700;
+}
 /*===================================================== responsive =================================================================*/
 @media (max-width: 1440px) {
   .features-job.style-3 {
@@ -2381,6 +2520,23 @@ button.tf-button span {
   /* ========= blog ========== */
   .blog-detail-side-bar-content .image-single {
     flex-wrap: wrap;
+  }
+  .blog-detail-side-bar-content .tag-social {
+    margin-bottom: 0 !important;
+  }
+  .blog-detail-side-bar-content .tag-social,
+  .blog-detail-side-bar-content .tag-social .widget-popular-tags,
+  .blog-detail-side-bar-content .tag-social .wd-social {
+    flex-direction: column;
+    align-items: flex-start !important;
+    gap: 12px;
+  }
+  .blog-detail-side-bar-content .tag-social .widget-popular-tags {
+    margin-bottom: 16px;
+  }
+  .blog-detail-side-bar-content .nav-links {
+    flex-direction: column;
+    padding: 0 !important;
   }
 }
 @media (max-width: 1300px) {
