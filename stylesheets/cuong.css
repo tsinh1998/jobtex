@@ -3669,6 +3669,226 @@ margin-bottom: 32px;
 .accordion-page h6 {
   margin-bottom: 20px;
 }
+/* --------------\---------------------------term------------------------------------ */
+.tab-term {
+  position: relative;
+}
+.tab-term::after {
+  position: absolute;
+  content: '';
+  left: 0;
+  top: 0;
+  width: 1px;
+  height: 100%;
+  background: #E5E5E5;
+}
+.tab-term li {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 28px;
+  text-transform: capitalize;
+  color: #121212;
+  cursor: pointer;
+  padding: 9px 0;
+  padding-left: 15px;
+  border-left: 3px solid transparent;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -ms-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+.tab-term li.active,
+.tab-term li:hover {
+border-left: 3px solid #14A077;
+}
+.tab-term li:not(:last-child) {
+  margin-bottom: 18px;
+}
+.term-content {
+  padding-left: 92px;
+}
+.term-content h4 {
+  margin-bottom: 39px;
+}
+.term-content h6 {
+  text-transform: capitalize;
+}
+.term-content p,
+.term-content .list-dot li {
+  font-weight: 400;
+font-size: 18px;
+line-height: 28px;
+color: #64666C;
+margin-bottom: 12px;
+}
+.term-content h6 {
+  margin-bottom: 12px;
+}
+.term-content .mgb-32 {
+  margin-bottom: 32px;
+}
+.term-content .list-dot {
+  margin-bottom: 12px;
+}
+.wd-form-login {
+  max-width: 472px;
+  margin: 0 auto;
+  text-align: center;
+}
+.wd-form-login .nofi-form {
+  background: #f5f5f5;
+  border-radius: 8px;
+  padding: 12px 16px;
+  text-align: left;
+  margin-bottom: 25px;
+}
+.wd-form-login .nofi-form p {
+  font-weight: 400;
+font-size: 14px;
+line-height: 22px;
+color: #64666C;
+}
+.wd-form-login .nofi-form p:not(:last-child) {
+  margin-bottom: 7px;
+}
+.wd-form-login .nofi-form p span {
+  color: #121212;
+  font-weight: 700;
+}
+.wd-form-login h4 {
+  margin-bottom: 32px;
+}
+.wd-form-login .ip {
+  text-align: left;
+  margin-bottom: 25px;
+}
+.wd-form-login .ip label {
+  font-weight: 400;
+font-size: 16px;
+line-height: 26px;
+color: #121212;
+margin-bottom: 11px;
+}
+.wd-form-login .ip label span {
+  color: #DB4444;
+}
+.wd-form-login .ip input {
+  padding: 12px 16px;
+background: #FFFFFF;
+border: 1px solid #E5E5E5;
+border-radius: 4px;
+font-weight: 400;
+font-size: 16px;
+line-height: 26px;
+color: #121212;
+}
+.wd-form-login .ip input:focus {
+  border-color: #14A077;
+}
+.wd-form-login .ip input::placeholder {
+  color: #B1B1B1;
+}
+.wd-form-login .ip .inputs-group {
+  position: relative;
+}
+.wd-form-login .ip .inputs-group a {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 15px;
+  font-size: 20px;
+  cursor: pointer;
+  color: #64666C;
+}
+.wd-form-login .group-ant-choice {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 400;
+font-size: 14px;
+line-height: 22px;
+color: #64666C;
+margin-bottom: 24px;
+}
+.wd-form-login .group-ant-choice a {
+  color: #14A077;
+}
+.wd-form-login .group-ant-choice .sub-ip input {
+  border: 1px solid #64666C;
+border-radius: 2px;
+width: 15px;
+height: 15px;
+margin-right: 10px;
+}
+.wd-form-login .line-ip {
+  position: relative;
+  text-align: center;
+  font-weight: 400;
+font-size: 16px;
+line-height: 26px;
+color: #64666C;
+margin-bottom: 23px;
+}
+.wd-form-login .line-ip span {
+  padding: 10px 22px;
+  background: #fff;
+  position: relative;
+    z-index: 5;
+}
+.wd-form-login .line-ip::after {
+  content: '';
+  width: 100%;
+  height: 1px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  transform: translateY(-50%);
+  background: #E5E5E5;
+}
+.wd-form-login .btn-social {
+  display: block;
+  padding: 11px 20px;
+background: #F5F5F2;
+border: 1px solid #E5E5E5;
+border-radius: 99px;
+font-weight: 700;
+font-size: 16px;
+line-height: 24px;
+color: #121212;
+margin-bottom: 11px;
+}
+.wd-form-login .btn-social:hover {
+  background: #14A077;
+  color: #fff;
+}
+.wd-form-login .btn-social img {
+  margin-right: 10px;
+}
+.wd-form-login button {
+  padding: 11px 32px;
+  background: #14A077;
+  border-radius: 4px;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  border-color: #14A077;
+  text-transform: capitalize;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 26px;
+  margin-top: 13px;
+}
+.wd-form-login .sign-up {
+  font-weight: 400;
+font-size: 14px;
+line-height: 22px;
+color: #64666C;
+margin-top: 25px;
+}
+.wd-form-login .sign-up a {
+  font-weight: 700;
+}
 /* --------------\---------------------------animation------------------------------------ */
 .ani1 {
   -webkit-animation: ani1 10s infinite ease-in-out alternate;
