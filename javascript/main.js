@@ -623,6 +623,35 @@ var Modal_Right = function() {
   }
 };
 
+var btnQuantity = function () {
+  $('.minus-btn').on('click', function(e) {
+      e.preventDefault();
+      var $this = $(this);
+      var $input = $this.closest('div').find('input');
+      var value = parseInt($input.val());
+  
+      if (value > 1) {
+          value = value - 1;
+      } 
+  
+  $input.val(value);
+  
+  });
+  
+  $('.plus-btn').on('click', function(e) {
+      e.preventDefault();
+      var $this = $(this);
+      var $input = $this.closest('div').find('input');
+      var value = parseInt($input.val());
+  
+      if (value > 0) {
+          value = value + 1;
+      } 
+  
+      $input.val(value);
+  });
+}
+
   var preload = function () {
     $(window).on("load", function () {
       $("#preload")
@@ -649,6 +678,7 @@ var Modal_Right = function() {
     parallax();
     gallery();
     flatSpacer();
+    btnQuantity();
     dropdown("#item_date");
     dropdown("#item_size");
     dropdown("#language");

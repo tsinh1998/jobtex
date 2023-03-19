@@ -232,16 +232,16 @@ if ($("div").hasClass("swiper")) {
   const swiper = new Swiper(".partner-type-7", {
     direction: "horizontal",
     effect: "slide",
-    slidesPerView: 1,
+    slidesPerView: 3,
     loop: true,
     spaceBetween: 69,
     breakpoints: {
       400: {
-        slidesPerView: 3,
+        slidesPerView: 4,
         spaceBetween: 20,
       },
       800: {
-        slidesPerView: 5,
+        slidesPerView: 4,
         spaceBetween: 30,
       },
       1170: {

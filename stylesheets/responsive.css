@@ -191,6 +191,29 @@
     .job-search-form.style2 .form-group:not(:last-child) {
         border-right: unset;
     }
+    .wd-review-job.contentbox1 {
+        padding: 0px;
+    }
+    .group-contact-us {
+        flex-wrap: wrap;
+    }
+    .group-contact-us .infor-contact-v1 {
+        width: 100%;
+    }
+    .group-contact-us .form-candidate {
+        width: 100%;
+    }
+    .infor-contact-v1,
+    .group-contact-us .form-candidate {
+        padding: 50px;
+    }
+    .infor-contact-v1 .list-social {
+        margin-left: 0px;
+        flex-wrap: wrap;
+    }
+    .infor-contact-v1 .list-social li {
+        margin-bottom: 15px;
+    }
 }
 @media only screen and (max-width: 1024px) {
     .sticky-area-wrap .header-ct-center {
@@ -260,6 +283,21 @@
     .job-search-form .nice-select {
         padding: 20px 0;
     }
+    .pricing-box {
+        margin-bottom: 32px;
+    }
+    .group-pricing-v1.ct2 {
+        padding-left: 0px;
+    }
+    .shop-thumb {
+        margin-bottom: 40px;
+    }
+    .shop-details .shop-content .group-ip {
+        flex-wrap: nowrap;
+    }
+    .shop-details .shop-content .group-ip .cl3 {
+        width: calc(33.3333% - 32px);
+    }
 }
 @media only screen and (max-width: 991px) {
     .row-group-search.st2 .form-group:first-child,
@@ -307,6 +345,9 @@
     .wd-review-job.thumb-style3 {
         padding-top: 0px;
         margin-bottom: 60px;
+    }
+    .wd-review-job.contentbox1 {
+        margin-top: 40px;
     }
     .wd-review-job.mgl-100 {
         margin-left: 0;
@@ -508,7 +549,9 @@
     .wd-popup-job-apply .content h6,
     .wd-popup-job-apply .group-form .inner:first-child,
     .wrapper-author-page-title.style2 .author-archive-header,
-    .form-candidate .ip {
+    .form-candidate .ip,
+    .shop-details .shop-content .group-ip .cl3,
+    .rating-review .left-rating  {
         margin-bottom: 20px;
     }
     .tf-slider .heading.text-center h2 {
@@ -569,7 +612,8 @@
     .wd-cv-item .content-right {
         padding: 50px 20px;
     }
-    .cv-road-map {
+    .cv-road-map,
+    .shop-details .shop-content .heart-btn {
         margin: 0;
     }
     .wd-popup-job-apply.style3 .content {
@@ -580,5 +624,50 @@
     }
     .form-candidate .group-input {
         margin-bottom: 0;
+    }
+    .wd-review-job.thumb2 .tes-box {
+        top: 62%;
+    }
+    .infor-contact-v1 .icon-inforr .content p {
+        font-size: 16px;
+    }
+    .infor-contact-v1 .icon-inforr .content h6 {
+        font-size: 22px;
+    }
+    .infor-contact-v1, .group-contact-us .form-candidate,
+    .banner-contact-v1 {
+        padding: 50px 20px;
+    }
+    .group-pricing-v1.st2 {
+        text-align: center;
+    }
+    .pricing-table tr .tb1 {
+        width: 40%;
+    }
+    .pricing-table tr .tb2, .pricing-table tr:last-child .tb2,
+    .pricing-table tr .tb3, .pricing-table tr:last-child .tb3,
+    .pricing-table tr .tb4, .pricing-table tr:last-child .tb4 {
+        width: 20%;
+    }
+    .pricing-table tr td {
+        font-size: 16px;
+    }
+    .shop-details .shop-content .group-ip,
+    .job-rating .group-title,
+    .rating-review {
+        flex-wrap: wrap;
+    }
+    .shop-details .shop-content .group-ip .cl3 {
+        width: calc(100% - 32px);
+    }
+    .job-rating .group-title .inner .list-star li {
+        font-size: 16px;
+    }
+    .job-rating .group-title .inner {
+        margin-top: 10px;
+    }
+    .rating-review .left-rating,
+    .job-rating.st2 .rating-review .right-rating {
+        width: 100%;
     }
 }
