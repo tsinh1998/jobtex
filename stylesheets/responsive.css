@@ -101,6 +101,12 @@
       .group-4-8 .cl4 {
         margin-bottom: 60px;
       }
+      .shopping-cart .coupon .cp-form {
+        display: block;
+    }
+    .shopping-cart .coupon .cp-form .btn {
+        margin-top: 30px;
+    }
 }
 @media only screen and (max-width: 1200px) {
     .sticky-area-wrap .header-ct-right .account {
@@ -452,7 +458,8 @@
     .footer .bt-left .copyright {
         margin-right: 20px;
     }
-    .wd-cv-item {
+    .wd-cv-item,
+    .shopping-cart .coupon .cp-form {
        margin-bottom: 50px;
     }
     .wd-popup-form .content,
@@ -669,5 +676,8 @@
     .rating-review .left-rating,
     .job-rating.st2 .rating-review .right-rating {
         width: 100%;
+    }
+    .shopping-cart .list-shop {
+        width: 200%;
     }
 }
