@@ -797,9 +797,10 @@ input[type="color"],
   transition: ease-out 0.3s;
   min-width: 250px;
   border: 1px solid #e5e5e5;
-  border-radius: 0px 0px 8px 8px;
+  border-radius: 8px;
   display: flex;
   text-align: start;
+  overflow: hidden;
 }
 
 #main-nav #menu-primary-menu > li .sub-menu li a {
