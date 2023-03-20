@@ -2472,6 +2472,193 @@ button.tf-button span {
   color: #64666c;
   font-weight: 700;
 }
+/* --------Check out-------------------- */
+.group-8-4 {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -32px;
+}
+.group-8-4 .cl8 {
+  width: calc(60.666667% - 32px);
+  margin-left: 32px;
+}
+.group-8-4 .cl4 {
+  width: calc(35.333333% - 32px);
+  margin-left: 88px;
+}
+.bg-coupon {
+  background: rgba(20, 160, 119, 0.05);
+  border-left: 4.23px solid #14a077;
+  padding: 11px 31px;
+}
+.bg-coupon p {
+  font-size: 16px;
+  line-height: 26px;
+}
+.bg-coupon a {
+  color: #14a077;
+  text-decoration: underline;
+}
+.form-checkout {
+  padding: 0;
+  border: none;
+}
+.form-checkout .group-input input,
+.form-checkout .group-input-st1 input {
+  padding: 15px 16px;
+  background-color: #ffffff;
+  border-radius: 4px;
+  border: 1px solid #e5e5e5;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #121212;
+  height: 56px;
+}
+.form-checkout .group-note textarea {
+  background-color: #ffffff;
+  border: 1px solid #e5e5e5;
+  height: auto;
+}
+.form-checkout .group-title {
+  margin-bottom: 20px;
+}
+.form-checkout .group-input-st1,
+.form-checkout .group-ant-choice {
+  margin-bottom: 20px;
+}
+.form-checkout .group-input label,
+.form-checkout .group-input-st1 label,
+.form-checkout .group-note label {
+  font-size: 16px;
+  margin-bottom: 12px;
+  position: relative;
+}
+.form-checkout .group-input label::after,
+.form-checkout .group-input-st1 label::after,
+.form-checkout .group-note label::after {
+  content: "*";
+  position: absolute;
+  color: red;
+}
+.form-checkout .group-ant-choice .sub-ip:first-child {
+  margin-bottom: 8px;
+}
+.form-checkout .group-note textarea {
+  margin-top: 0;
+}
+.form-checkout .group-input-st1 input {
+  padding: 15px 16px;
+}
+.wd-order {
+  margin-bottom: 32px;
+}
+.bg-checkout {
+  background-color: #f5f5f5;
+  border: 1px solid #e5e5e5;
+  border-radius: 8px;
+  padding: 24px;
+}
+.wd-order h5 {
+  margin-bottom: 24px;
+}
+.wd-order .product-list img {
+  width: 40px;
+  height: 60px;
+  margin: 0 15px;
+}
+.wd-order .product-list,
+.wd-order .group-shipping {
+  margin-bottom: 28px;
+}
+.wd-order .product-list .product-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e5e5e5;
+}
+.wd-order .product-list .product-item:last-child {
+  margin-bottom: 0;
+}
+.wd-order .product-list .info {
+  display: flex;
+  align-items: center;
+}
+.wd-order .product-list .product-item h6 {
+  font-size: 16px;
+  line-height: 26px;
+  margin-left: 8px;
+}
+.wd-order .product-list .product-item .price {
+  margin: 0;
+  color: #121212;
+  font-size: 16px;
+  line-height: 26px;
+}
+.wd-order .group-shipping h6 {
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 700;
+}
+.group-shipping ul {
+  margin: 12px 0px;
+}
+.group-shipping .shipping-item {
+  display: flex;
+  justify-content: space-between;
+}
+.group-shipping .shipping-item:first-child {
+  margin-bottom: 8px;
+}
+.group-shipping .shipping-item p {
+  color: #64666c;
+}
+.group-shipping .shipping-item a,
+.group-shipping .shipping-item span {
+  color: #121212;
+}
+.group-total {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 28px;
+}
+.wd-payment .group-input {
+  display: flex;
+  align-items: baseline;
+  margin-bottom: 20px;
+}
+.wd-payment .group-input input {
+  margin-right: 12px;
+  cursor: pointer;
+  font-size: 16px;
+  position: relative;
+  /* opacity: 0; */
+}
+.wd-payment .group-input label {
+  color: #121212;
+  font-size: 18px;
+  line-height: 28px;
+}
+.wd-payment .group-input p {
+  color: #64666c;
+  margin-top: 4px;
+  font-size: 16px;
+  line-height: 26px;
+}
+.wd-payment .btn-payment {
+  width: 100%;
+}
+.wd-payment .btn-payment:hover {
+  background-color: #148160;
+}
+.group-input input[name="radio"] {
+  accent-color: #14a077;
+}
+
 /*===================================================== responsive =================================================================*/
 @media (max-width: 1440px) {
   .features-job.style-3 {
