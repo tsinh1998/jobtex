@@ -2473,7 +2473,7 @@ button.tf-button span {
   font-weight: 700;
 }
 /* --------Check out-------------------- */
-.group-8-4 {
+/* .group-8-4 {
   display: flex;
   flex-wrap: wrap;
   margin-left: -32px;
@@ -2485,7 +2485,7 @@ button.tf-button span {
 .group-8-4 .cl4 {
   width: calc(35.333333% - 32px);
   margin-left: 88px;
-}
+} */
 .bg-coupon {
   background: rgba(20, 160, 119, 0.05);
   border-left: 4.23px solid #14a077;
@@ -2550,6 +2550,9 @@ button.tf-button span {
 .form-checkout .group-input-st1 input {
   padding: 15px 16px;
 }
+.shop-content.margin {
+  margin-left: 88px;
+}
 .wd-order {
   margin-bottom: 32px;
 }
@@ -2559,7 +2562,8 @@ button.tf-button span {
   border-radius: 8px;
   padding: 24px;
 }
-.wd-order h5 {
+.wd-order h5,
+.wd-payment h5 {
   margin-bottom: 24px;
 }
 .wd-order .product-list img {
@@ -2650,7 +2654,15 @@ button.tf-button span {
   line-height: 26px;
 }
 .wd-payment .btn-payment {
+  text-transform: capitalize;
+  background-color: #14a077;
+  border: none;
+  padding: 12px 0px;
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 4px;
   width: 100%;
+  color: #ffffff;
 }
 .wd-payment .btn-payment:hover {
   background-color: #148160;
@@ -2671,6 +2683,9 @@ button.tf-button span {
   .wd-iconbox.style-1 .img-iconbox img {
     height: auto;
     width: 100%;
+  }
+  .shop-content.margin {
+    margin-left: 0;
   }
 }
 @media (max-width: 1024px) {
