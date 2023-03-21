@@ -51,33 +51,33 @@
   // Header Fixed
   var headerFixed = function () {
     if ($("header").hasClass("header-fixed")) {
-      var nav = $(".sticky-area-wrap");
+      var nav = $("#header");
 
       if (nav.length) {
         var offsetTop = nav.offset().top,
           headerHeight = nav.height(),
-          injectSpace = $("<div>", {
+          injectSpace = $("<div class='space-header'>", {
             height: headerHeight,
           });
         if ($("header").hasClass("header-default")) {
           injectSpace.insertAfter(nav);
         }
-
         $(window).on("load scroll", function () {
           if ($(window).scrollTop() > offsetTop + headerHeight) {
-            nav.addClass("fixed-hide");
+            nav.addClass("is-fixed");
             injectSpace.show();
           } else {
-            nav.removeClass("fixed-hide");
+            nav.removeClass("is-fixed");
             injectSpace.hide();
           }
 
           if ($(window).scrollTop() > 500) {
-            nav.addClass("fixed-show");
+            nav.addClass("is-small");
           } else {
-            nav.removeClass("fixed-show");
+            nav.removeClass("is-small");
           }
         });
+
       }
     }
   };
@@ -655,10 +655,10 @@
 
   var preload = function () {
     $(window).on("load", function () {
-      $("#preload")
+      $(".preload")
         .delay(1500)
         .fadeOut("fast", function () {
-          $("#preload").remove();
+          $(".preload").remove();
         });
     });
   };

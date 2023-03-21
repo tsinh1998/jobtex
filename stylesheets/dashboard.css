@@ -3286,30 +3286,6 @@ background: #fff;
     width: 30%;
 } */
 
-#header.is-fixed {
-        position: fixed;
-        top: 0px;
-        left: 0;
-        width: 100%;
-        box-shadow: 1px 1px 5px 0px rgb(0 0 0 / 30%);
-        z-index: 999;
-        /* background: $color-1; */
-        border: none;
-        opacity: 0;
-        /* @include transition5;
-        #main-nav > ul > li > a {
-            color: $color-2;
-        }
-        #main-nav > ul > .current-menu-item > a {
-            color: $color-6;
-        }    */
-    }
-
-#header.is-fixed.is-small {
-    top: 0;
-    opacity: 1;
-    visibility: visible;
-}
 
 @media only screen and (max-width: 1700px) {
     .dashboard.show .dashboard__content {
