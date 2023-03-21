@@ -562,6 +562,25 @@ input[type="color"],
   position: relative;
   top: 4px;
 }
+/* header fixed */
+.header.style-absolute .sticky-area-wrap.fixed-hide.fixed-show {
+  background-color: #121212;
+}
+.sticky-area-wrap.fixed-hide {
+  position: fixed;
+  top: -100px;
+  width: 100%;
+  z-index: 9989;
+  background-color: #fff;
+  box-shadow: 0 0px 10px rgba(0, 0, 0, 0.07);
+  transition: all ease 0.4s;
+}
+
+.sticky-area-wrap.fixed-show {
+  top: 0;
+  left: 0;
+  right: 0;
+}
 
 .usefull-link {
   display: flex;
