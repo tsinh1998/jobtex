@@ -756,6 +756,20 @@ input[type="color"],
   position: relative;
 }
 
+#menu-primary-menu > li.current-item > a,
+#menu-primary-menu > li > a:hover,
+#header.style-absolute #main-nav #menu-primary-menu > li.current-item > a,
+#header.style-absolute #main-nav #menu-primary-menu > li:hover > a {
+  color: #14a077;
+}
+
+#main-nav #menu-primary-menu li.current-item a::after ,
+#main-nav #menu-primary-menu li:hover a::after,
+#header.style-absolute #main-nav #menu-primary-menu li.current-item > a::after,
+#header.style-absolute #main-nav #menu-primary-menu li:hover > a::after {
+  background: #14a077;
+}
+
 #main-nav #menu-primary-menu > li:not(:first-child) {
   margin-left: 41px;
 }
