@@ -623,6 +623,12 @@ var Modal_Right = function() {
   }
 };
 
+var setTimeIn = function () {
+  if ($(".wd-popup-form").length > 0) {
+    $(".wd-popup-form").delay(2000).show(0);
+  }
+};
+
 var btnQuantity = function () {
   $('.minus-btn').on('click', function(e) {
       e.preventDefault();
@@ -673,6 +679,7 @@ var btnQuantity = function () {
     goTop();
     mobileNav();
     counter();
+    setTimeIn();
     tfTabs();
     filter();
     parallax();
