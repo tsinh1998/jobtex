@@ -47,7 +47,7 @@ function newMessage() {
 };
 
 $('.icon-send').click(function() {
-  $newMessage();
+  newMessage();
 });
 
 $(window).on('keydown', function(e) {
