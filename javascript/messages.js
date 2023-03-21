@@ -33,3 +33,26 @@ function setAciveChat(f) {
   friends.img = f.querySelector('.images').innerHTML
   chat.img.innerHTML = friends.img
 }
+
+function newMessage() {
+	message = $(".write input").val();
+	if($.trim(message) == '') {
+		return false;
+	}
+
+	$('<div class="bubble me">' + message + '</div>').appendTo($(' .right .chat'));
+	$('.write input').val(null);
+  // $('<div class="history-time">').appendTo($('.right .chat'));
+
+};
+
+$('.icon-send').click(function() {
+  $newMessage();
+});
+
+$(window).on('keydown', function(e) {
+  if (e.which == 13) {
+    newMessage();
+    return false;
+  }
+});
