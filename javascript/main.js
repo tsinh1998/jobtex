@@ -56,12 +56,16 @@
       if (nav.length) {
         var offsetTop = nav.offset().top,
           headerHeight = nav.height(),
-          injectSpace = $("<div class='space-header'>", {
+          injectSpace = $("<div>", {
             height: headerHeight,
           });
-        if ($("header").hasClass("header-default")) {
+
+        if ($("header").hasClass("style-absolute")) {
+          injectSpace.hide();
+        } else {
           injectSpace.insertAfter(nav);
         }
+
         $(window).on("load scroll", function () {
           if ($(window).scrollTop() > offsetTop + headerHeight) {
             nav.addClass("is-fixed");
@@ -71,7 +75,7 @@
             injectSpace.hide();
           }
 
-          if ($(window).scrollTop() > 500) {
+          if ($(window).scrollTop() > 400) {
             nav.addClass("is-small");
           } else {
             nav.removeClass("is-small");
@@ -605,10 +609,16 @@
       });
     }
     if (modalMenu3.length) {
-      const close = function () {
-        modalMenu3.addClass("modal-menu--close");
+      const open = function () {
+        modalMenu3.addClass("modal-menu--open");
       };
-      $(".modal-menu__backdrop, .title-button-group").on("click", function () {
+      const close = function () {
+        modalMenu3.removeClass("modal-menu--open");
+      };
+      $(".btn-popup").on("click", function () {
+        open();
+      });
+      $(".modal-menu__backdrop").on("click", function () {
         close();
       });
     }

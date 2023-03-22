@@ -2617,11 +2617,18 @@ color: #121212;
 
 .wd-popup-form.modal-menu--close .content,
 .wd-popup-form.modal-menu--close .modal-menu__backdrop,
-.wd-popup-job-apply.modal-menu--close .content,
-.wd-popup-job-apply.modal-menu--close .modal-menu__backdrop {
+.wd-popup-job-apply .content,
+.wd-popup-job-apply .modal-menu__backdrop {
   visibility: hidden;
   opacity: 0;
 }
+
+.wd-popup-job-apply.modal-menu--open .content,
+.wd-popup-job-apply.modal-menu--open .modal-menu__backdrop {
+  visibility: visible;
+  opacity: 1;
+}
+
 
 .wd-popup-form .modal-menu__backdrop,
 .wd-popup-job-apply .modal-menu__backdrop {
