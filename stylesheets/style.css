@@ -760,7 +760,7 @@ input[type="color"],
 
 }
 
-#main-nav #menu-primary-menu > li.current-item > a::before  {
+#main-nav #menu-primary-menu > li.menu-item-has-children > a::before  {
   content: "\e9a2";
   font-family: "icomoon";
   font-weight: 400;
