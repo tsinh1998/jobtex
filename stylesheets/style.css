@@ -756,6 +756,24 @@ input[type="color"],
   position: relative;
 }
 
+#menu-primary-menu > li.current-item::after {
+
+}
+
+#main-nav #menu-primary-menu > li.current-item > a::before  {
+  content: "\e9a2";
+  font-family: "icomoon";
+  font-weight: 400;
+  font-size: 20px;
+  position: absolute;
+  right: -20px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
 #menu-primary-menu > li.current-item > a,
 #menu-primary-menu > li > a:hover,
 #header.style-absolute #main-nav #menu-primary-menu > li.current-item > a,
