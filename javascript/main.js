@@ -163,13 +163,13 @@
   var goTop = function () {
     $(window).scroll(function () {
       if ($(window).scrollTop() > 500) {
-        $(".go-top").addClass("show");
+        $("#scroll-top").addClass("show");
       } else {
-        $(".go-top").removeClass("show");
+        $("#scroll-top").removeClass("show");
       }
     });
 
-    $(".go-top").on("click", function (e) {
+    $("#scroll-top").on("click", function (e) {
       e.preventDefault();
       $("html, body").animate({ scrollTop: 0 }, 1000);
     });
