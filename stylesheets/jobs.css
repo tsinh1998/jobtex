@@ -214,7 +214,7 @@ button.btn-find:hover {
   align-items: center;
 }
 .features-job .inner-box .logo-company {
-  margin: 6px 16px 6px 0px;
+  margin: 9px 16px 9px 0px;
 }
 .features-job .inner-box .logo-company > img {
   max-width: 60px;
@@ -555,15 +555,6 @@ h3 span.icon-bolt {
   font-size: 14px;
   line-height: 24px;
 }
-
-/* sidebar-job.css */
-/* sidebar */
-
-/* .main-content {
-    max-width: 1410px;
-    display: flex;
-    margin: 60px auto;
-  } */
 
 /* sidebar */
 .wrapper {
@@ -988,7 +979,7 @@ input[type="number"]::-webkit-inner-spin-button {
   background: #f5f5f5;
   transition: all 0.5s ease-in-out;
 }
-.job-category-box button span {
+.job-category-box .btn-category-job span {
   margin-left: 4px;
   font-size: 20px;
 }
@@ -998,10 +989,10 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 .job-category-box.active a,
 .job-category-box.active p,
-.job-category-box.active button,
+.job-category-box.active .btn-category-job,
 .job-category-box:hover a,
 .job-category-box:hover p,
-.job-category-box:hover button {
+.job-category-box:hover .btn-category-job {
   color: #ffffff;
 }
 
@@ -1024,7 +1015,7 @@ input[type="number"]::-webkit-inner-spin-button {
   font-size: 14px;
   line-height: 22px;
 }
-.job-category-box button {
+.job-category-box .btn-category-job {
   color: #14a077;
   text-transform: none;
   border: none;
@@ -1266,7 +1257,7 @@ input[type="number"]::-webkit-inner-spin-button {
   font-weight: 400;
   line-height: 28px;
 }
-button.tf-button {
+.tf-button {
   padding: 0;
   border: none;
   display: inline-flex;
@@ -1276,9 +1267,8 @@ button.tf-button {
   font-weight: 700;
   line-height: 26px;
 }
-button.tf-button span {
+.tf-button span {
   color: #14a077;
-  font-size: 20px;
   margin-left: 4px;
 }
 /* employer-block */
@@ -1705,7 +1695,7 @@ button.tf-button span {
   line-height: 28px;
   text-align: center;
   color: #ffffff;
-  padding-bottom: 20px;
+  padding-bottom: 25px;
 }
 .wd-partner .swiper-wrapper {
   align-items: center;
@@ -1718,8 +1708,25 @@ button.tf-button span {
   padding-bottom: 40px;
   color: #121212;
 }
-.wd-partner.style-1 img {
+.partner1 {
+  width: 181.33px !important;
 }
+.partner2 {
+  width: 183.29px !important;
+}
+.partner3 {
+  width: 149.76px !important;
+}
+.partner4 {
+  width: 166.49px !important;
+}
+.partner5 {
+  width: 160.46px !important;
+}
+.partner6 {
+  width: 223.9px !important;
+}
+
 /*wd-skill-progress */
 .group-skills h3 {
   font-size: 20px;
@@ -2666,6 +2673,13 @@ button.tf-button span {
 .group-input input[name="radio"] {
   accent-color: #14a077;
 }
+/* override home */
+.wd-review-job.pt9 {
+  padding-top: 32px;
+}
+.wd-review-job.pt10 {
+  padding-top: 29px;
+}
 
 /*===================================================== responsive =================================================================*/
 @media (max-width: 1440px) {
@@ -2998,6 +3012,9 @@ button.tf-button span {
 }
 
 @media (max-width: 700px) {
+  .wd-partner {
+    height: auto;
+  }
   /* wd-job-author */
   .wd-job-author {
     flex-direction: column;

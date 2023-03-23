@@ -382,23 +382,24 @@
   margin-top: 8px;
   text-align: center;
 }
-button.tf-button.style-1 {
+.tf-button.style-1 {
   border: 1px solid #14a077;
-  padding: 12px 32px;
+  padding: 12px 30px;
+  text-transform: capitalize;
   border-radius: 4px;
 }
-button.tf-button.style-1:hover {
+.tf-button.style-1:hover {
   background: #14a077;
   color: #fff;
 }
-button.tf-button.style-1 span {
+.tf-button.style-1 span {
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   -ms-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
-button.tf-button.style-1:hover span {
+.tf-button.style-1:hover span {
   color: #fff;
 }
 .wrap-testimonials {
@@ -488,6 +489,8 @@ button.tf-button.style-1:hover span {
   font-weight: 500;
 }
 .box-latest ul li {
+  font-size: 16px;
+  line-height: 26px;
   display: inline-block;
 }
 .box-latest ul li:first-child {
