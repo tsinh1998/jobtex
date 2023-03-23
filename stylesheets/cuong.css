@@ -2617,14 +2617,24 @@ color: #121212;
 
 .wd-popup-form.modal-menu--close .content,
 .wd-popup-form.modal-menu--close .modal-menu__backdrop,
+.wd-popup-form .content,
+.wd-popup-form .modal-menu__backdrop,
 .wd-popup-job-apply .content,
 .wd-popup-job-apply .modal-menu__backdrop {
   visibility: hidden;
   opacity: 0;
 }
 
+.wd-popup-form.modal-menu--close .content,
+.wd-popup-form.modal-menu--close .modal-menu__backdrop {
+  visibility: hidden !important;
+  opacity: 0 !important;
+}
+
 .wd-popup-job-apply.modal-menu--open .content,
-.wd-popup-job-apply.modal-menu--open .modal-menu__backdrop {
+.wd-popup-job-apply.modal-menu--open .modal-menu__backdrop,
+.wd-popup-form.modal-menu--open .content,
+.wd-popup-form.modal-menu--open .modal-menu__backdrop {
   visibility: visible;
   opacity: 1;
 }
@@ -4819,7 +4829,6 @@ margin-bottom: 24px;
   text-align: center;
 }
 .wd-popup-form {
-  display: none;
   -webkit-transition: all 0.3s ease-in-out;
 -moz-transition: all 0.3s ease-in-out;
 -ms-transition: all 0.3s ease-in-out;
