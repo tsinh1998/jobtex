@@ -36,9 +36,9 @@
     <link rel="stylesheet" href="icons/icomoon/style.css">
   
 </head>
-<body class="dashboard show header-fixed"> 
+<body class="dashboard show "> 
 
-    <header id="header" class="header header-default">
+    <header id="header" class="header header-default header-fixed">
         <div class="tf-container ct2">
           <div class="row">
             <div class="col-md-12">
@@ -310,72 +310,148 @@
             </div>
           </div>
         </div>
+        <div class="btn header-item " id="left-menu-btn">
+          <span class="hamburger-icon">
+              <span></span>
+              <span></span>
+              <span></span>
+          </span>
+       </div>
     </header>
 
-    
-     <!-- <div class="btn click">
-        <span class="icon-menu"></span>
-     </div> -->
-    <div class="btn">
-      <span class="hamburger-icon">
-          <span></span>
-          <span></span>
-          <span></span>
-      </span>
-   </div>
-     <nav class="dashboard__sidebar show noo noo2">
-        <ul class="sidebar__menu">
-          <li class="feat-btn  categories_title2"><a href="#"><span class="icon-dashboard  dash-icon categories_title"></span><span class="dash-title categories_menu_toggle" >Dashboard</span> </a>
-            <!-- <ul class="feat-show dash-show  categories_menu_toggle2">
-              <li><a href="index.html">Home </a></li>
-              <li><a href="home-nft.html">Home </a></li>
-           </ul> -->
-          </li>
-          <li class="feat-btn  categories_title2"><a href="#"><span class="icon-profile  dash-icon categories_title"></span><span class="dash-title categories_menu_toggle" >Profile</span> </a>
-            <!-- <ul class="feat-show dash-show  categories_menu_toggle2">
-              <li><a href="index.html">Home Main</a></li>
-              <li><a href="home-nft.html">Home NFT</a></li>
-              <li><a href="home-defi-v1.html">Home Defi</a></li>
-           </ul> -->
-          </li>
-          <li class="feat-btn  categories_title2">
-            <a href="#"><span class="icon-work dash-icon categories_title"></span><span class="dash-title categories_menu_toggle" >My Job</span> </a>
-          </li>
-          <li class="feat-btn  categories_title2">
-            <a href="#"><span class="icon-submit dash-icon categories_title"></span><span class="dash-title categories_menu_toggle" >Submit Job</span> </a>
-          </li>
-          <li class="feat-btn  categories_title2">
-            <a href="#"><span class="icon-applicant dash-icon categories_title"></span><span class="dash-title categories_menu_toggle" >applicants Jobs</span> </a>
-          </li>
-          <li class="feat-btn  categories_title2">
-            <a href="#"><span class="icon-save-candidate dash-icon categories_title"></span><span class="dash-title categories_menu_toggle" >Saved Candidates</span> </a>
-          </li>
+        <!-- ========== Left Sidebar ========== -->
+        <div class="left-menu">
 
-          <li class="feat-btn  categories_title2">
-            <a href="#"><span class="icon-bell1 dash-icon categories_title"></span><span class="dash-title categories_menu_toggle" >candidate Alerts</span> </a>
-          </li>
-          <li class="feat-btn  categories_title2">
-            <a href="#"><span class="icon-mypackage dash-icon categories_title"></span><span class="dash-title categories_menu_toggle" >My Packages</span> </a>
-          </li>
-          <li class="feat-btn  categories_title2">
-            <a href="#"><span class="icon-chat dash-icon categories_title"></span><span class="dash-title categories_menu_toggle" >Messages</span> </a>
-          </li>
+          <!--- Sidemenu -->
+          <div id="sidebar-menu">
 
-          <li class="feat-btn  categories_title2">
-            <a href="#"><span class="icon-meeting dash-icon categories_title"></span><span class="dash-title categories_menu_toggle" >Meeting</span> </a>
-          </li>
-          <li class="feat-btn  categories_title2">
-            <a href="#"><span class="icon-change-passwords dash-icon categories_title"></span><span class="dash-title categories_menu_toggle" >Change passwords</span> </a>
-          </li>
-          <li class="feat-btn  categories_title2">
-            <a href="#"><span class="icon-trash dash-icon categories_title"></span><span class="dash-title categories_menu_toggle" >Delete Profile</span> </a>
-          </li>
-          <li class="feat-btn  categories_title2">
-            <a href="#"><span class="icon-log-out dash-icon categories_title"></span><span class="dash-title categories_menu_toggle" >Log out</span> </a>
-          </li>
+              <ul class="downmenu list-unstyled" id="side-menu">
 
-        </ul>
-     </nav>
+                  <li>
+                      <a  class="has-arrow tf-effect">
+                        <span class="icon-dashboard dash-icon"></span>
+                          <span class="dash-titles">Dashboard</span>
+                      </a>
+                      <ul class="sub-menu2" aria-expanded="false">
+                        <li><a href="dashboard.html" class="">Dashboard 01</a></li>
+                        <li><a href="dashboard-02.html">Dashboard 02</a></li>
+                    </ul>
+                  </li>
+
+                  <li>
+                      <a  class="has-arrow tf-effect">
+                        <span class="icon-profile dash-icon"></span>
+                          <span class="dash-titles">Profile</span>
+                      </a>
+                      <ul class="sub-menu2" aria-expanded="false">
+                        <li><a href="dashboard-profile.html" >Profile</a></li>
+                        <li><a href="dashboard-profile-setting.html" >Profile Setting 01</a></li>
+                        <li><a href="dashboard-profile-setting-02.html" >Profile Setting 02</a></li>
+                    </ul>
+                  </li>
+
+                  <li>
+                      <a  class="has-arrow tf-effect">
+                        <span class="icon-work dash-icon"></span>
+                          <span class="dash-titles">My Job</span>
+                      </a>
+                      <ul class="sub-menu2" aria-expanded="false">
+                          <li><a href="dashboard-my-job.html">My Job</a></li>
+                          <li><a href="dashboard-my-applied.html">My Applied</a></li>
+                      </ul>
+                  </li>
+
+                  <li>
+                    <a href="dashboard-submit-job.html" class=" tf-effect">
+                      <span class="icon-submit dash-icon"></span>
+                        <span class="dash-titles">Submit Job</span>
+                    </a>
+                </li>
+
+                <li>
+                  <a href="dashboard-applicants-jobs.html" class="tf-effect">
+                    <span class="icon-applicant dash-icon"></span>
+                    <span class="dash-titles">applicants Jobs</span>
+                  </a>
+                </li>
+
+                <li>
+                  <a  class="has-arrow tf-effect">
+                    <span class="icon-save-candidate dash-icon"></span>
+                    <span class="dash-titles">Saved Candidates</span>
+                  </a>
+                  <ul class="sub-menu2" aria-expanded="false">
+                    <li><a href="dashboard-saved-candidates.html">Saved Candidates</a></li>
+                    <li><a href="dashboard-save-jobs.html">Save Jobs</a></li>
+                  </ul>
+                </li>
+
+                <li>
+                  <a href="dashboard-alerts-candidate.html" class="tf-effect">
+                    <span class="icon-bell1 dash-icon"></span>
+                    <span class="dash-titles">candidate Alerts</span>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="dashboard-my-packages.html" class="tf-effect">
+                    <span class="icon-mypackage dash-icon"></span>
+                    <span class="dash-titles">My Packages</span>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="dashboard-messages.html" class="tf-effect">
+                    <span class="icon-chat dash-icon"></span>
+                    <span class="dash-titles">Messages</span>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="dashboard-meetings.html" class="tf-effect">
+                    <span class="icon-meeting dash-icon"></span>
+                    <span class="dash-titles">Meeting</span>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="dashboard-change-passwords.html" class="tf-effect">
+                    <span class="icon-change-passwords dash-icon"></span>
+                    <span class="dash-titles">Change passwords</span>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="dashboard-delete-profile.html" class="tf-effect ">
+                    <span class="icon-trash dash-icon"></span>
+                    <span class="dash-titles">Delete Profile</span>
+                  </a>
+                </li>
+
+                <li>
+                  <a  class="has-arrow tf-effect">
+                    <span class="icon-grid dash-icon"></span>
+                    <span class="dash-titles">Pages</span>
+                  </a>
+                  <ul class="sub-menu2" aria-expanded="false">
+                    <li><a href="dashboard-overview.html">Overview</a></li>
+                    <li><a href="dashboard-resumes.html">Resumes</a></li>
+                    <li><a href="dashboard-post-new-job.html">Post New Job</a></li>
+                    <li><a href="dashboard-following-employers.html">Following Employers</a></li>
+                  </ul>
+                </li>
+
+                <li>
+                  <a href="#" class="tf-effect">
+                    <span class="icon-log-out dash-icon"></span>
+                    <span class="dash-titles">Log out</span>
+                  </a>
+                </li>
+
+              </ul>
+          </div>
+    </div>
+    <!-- left sidebar end -->
     
   
 
@@ -727,7 +803,8 @@
     <script src='javascript/wow.min.js'></script>
     <script src="javascript/main.js"></script>
     <script src="javascript/countto.js"></script>
-    
+    <script src="javascript/dashboard-menu.min.js"></script>
+    <script src="javascript/dashboard-menu.js"></script>
 
 </body>
 </html>
