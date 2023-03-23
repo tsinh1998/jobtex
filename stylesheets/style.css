@@ -756,10 +756,9 @@ input[type="color"],
 }
 
 #menu-primary-menu > li.current-item::after {
-
 }
 
-#main-nav #menu-primary-menu > li.menu-item-has-children > a::before  {
+#main-nav #menu-primary-menu > li.menu-item-has-children > a::before {
   content: "\e9a2";
   font-family: "icomoon";
   font-weight: 400;
@@ -780,7 +779,7 @@ input[type="color"],
   color: #14a077;
 }
 
-#main-nav #menu-primary-menu li.current-item a::after ,
+#main-nav #menu-primary-menu li.current-item a::after,
 #main-nav #menu-primary-menu li:hover a::after,
 #header.style-absolute #main-nav #menu-primary-menu li.current-item > a::after,
 #header.style-absolute #main-nav #menu-primary-menu li:hover > a::after {
@@ -1528,15 +1527,12 @@ input[type="color"],
 }
 /* Blog
 --------------------------- */
-.blog.main-content {
-  /* width: 100%;
-  max-width: 1410px;
-  margin: auto; */
+.blog.wrap-blog {
   padding: 60px 0;
   display: flex;
   gap: 32px;
 }
-.blog.main-content.style-1 {
+.blog.wrap-blog.style-1 {
   gap: 152px;
 }
 
@@ -1564,12 +1560,6 @@ input[type="color"],
 
 /* Blog masonry
 --------------------------- */
-/* .blog-masonry.main-content {
-  width: 100%;
-  max-width: 1410px;
-  margin: auto;
-  padding: 60px 0;
-} */
 
 .blog-masonry .list-blog-wrap {
   display: flex;
@@ -1624,7 +1614,7 @@ input[type="color"],
 
 /* Blog grid
 --------------------------- */
-.blog-grid.main-content {
+.blog-grid.wrap-blog {
   width: 100%;
   max-width: 1410px;
   margin: auto;
@@ -1675,7 +1665,7 @@ input[type="color"],
 
 /* blog-detail-side-bar
 ---------------------------------- */
-.blog-detail-side-bar.main-content {
+.blog-detail-side-bar.wrap-blog {
   width: 100%;
   max-width: 1410px;
   margin: auto;
@@ -2072,13 +2062,18 @@ input[type="color"],
 }
 
 @keyframes bounceIn {
-  from, 20%, 40%, 60%, 80%, to {
-    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  from,
+  20%,
+  40%,
+  60%,
+  80%,
+  to {
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
   }
 
   0% {
     opacity: 0;
-    transform: scale3d(.3, .3, .3);
+    transform: scale3d(0.3, 0.3, 0.3);
   }
 
   20% {
@@ -2086,7 +2081,7 @@ input[type="color"],
   }
 
   40% {
-    transform: scale3d(.9, .9, .9);
+    transform: scale3d(0.9, 0.9, 0.9);
   }
 
   60% {
@@ -2095,7 +2090,7 @@ input[type="color"],
   }
 
   80% {
-    transform: scale3d(.97, .97, .97);
+    transform: scale3d(0.97, 0.97, 0.97);
   }
 
   to {
@@ -2143,7 +2138,7 @@ input[type="color"],
   background-color: #14a077;
 }
 #scroll-top::before,
- #scroll-top::after {
+#scroll-top::after {
   content: "";
   position: absolute;
   top: 0;

@@ -92,26 +92,6 @@
     });
   };
 
-  var btn = function () {
-    $(".btn").click(function () {
-      $(this).toggleClass("click");
-      $(".dashboard__sidebar").toggleClass("show");
-      $(".dashboard").toggleClass("show");
-
-      $(".dashboard__sidebar").toggleClass("side-style");
-      $(this).find(".dash-show").removeClass("feat-show");
-    });
-
-    $(".feat-btn").click(function () {
-      $(this).find(".feat-show").toggleClass("show");
-      $("show").slideToggle();
-    });
-
-    $(".sidebar__menu li").click(function () {
-      $(this).addClass("active").siblings().removeClass("active");
-    });
-  };
-
   /*---categories slideToggle---*/
   $(".categories_title").on("click", function () {
     $(this).toggleClass("active");
@@ -679,7 +659,6 @@
   $(function () {
     headerFixed();
     showsearch();
-    btn();
     dropOptionForm();
     flatProgressBar();
     accordion();
