@@ -560,6 +560,14 @@
     }
   };
 
+  var setTimeIn = function () {
+    if ($(".wd-popup-form").length > 0) {
+      setTimeout(function () { 
+        $('.wd-popup-form').addClass('modal-menu--open');
+      }, 4000);
+    }
+  };
+
   var Modal_Right = function () {
     const body = $("body");
     const modalMenu = $(".sidebar-popup");
@@ -611,11 +619,7 @@
     }
   };
 
-  var setTimeIn = function () {
-    if ($(".wd-popup-form").length > 0) {
-      $(".wd-popup-form").delay(2000).show(0);
-    }
-  };
+
 
   var btnQuantity = function () {
     $(".minus-btn").on("click", function (e) {
