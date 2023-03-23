@@ -3,6 +3,7 @@
 @import url(dashboard.css);
 @import url(nice-select.css);
 @import url(../fonts/icon-font.css);
+@import url(animate.css);
 /* widget-menu-link */
 .tf-container {
   position: relative;

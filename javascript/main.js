@@ -555,6 +555,8 @@
     }
   };
 
+  new WOW().init();
+
   var progressProduct = function () {
     if ($(".progress-item").length > 0) {
       $(".progress-item").appear(function () {
