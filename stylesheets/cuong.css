@@ -5124,6 +5124,78 @@ line-height: 30px;
 .footer .list-social li a {
   background: #fff;
 }
+.wd-review-job.page-text.stc .tf-button {
+  background: #14A077;
+  color: #fff;
+  margin-top: 19px;
+  padding: 11px 32px;
+}
+.wd-review-job.page-text.stc {
+  margin-left: -43px;
+  padding: 58px 0px 58px 5px;
+}
+.wd-review-job.thumb2.stc  .thumb {
+  margin-left: -81px;
+}
+.wd-review-job.thumb2.stc .trader-box {
+  top: 27.6%;
+  right: 11%;
+}
+.wd-review-job.thumb2.stc .trader-box .content {
+  padding: 8px 42px;
+}
+.wd-review-job.thumb2.stc  .tes-box {
+  top: 61%;
+  left: 2.5%;
+}
+.wd-review-job.thumb2.stc .icon1 {
+  left: 15%;
+  top: 28.4%;
+  bottom: unset;
+}
+.wd-review-job.thumb2 .icon2 {
+  left: 23%;
+  top: 56%;
+}
+.group-title-counter.stc p {
+  font-size: 18px;
+  line-height: 28px;
+}
+.wrap-bg-counter.stc {
+  width: 1200px;
+}
+.title-iconbox.stc h4 {
+  text-transform: unset;
+  margin-bottom: 15px;
+}
+.title-iconbox.stc.style-3 {
+  padding-bottom: 48px;
+}
+.tf-iconbox.style-3.stc2 .box-content .box-title {
+  margin-bottom: 16px;
+  font-size: 24px;
+line-height: 30px;
+}
+.tf-iconbox.style-3.stc2 .box-content p {
+  font-size: 16px;
+line-height: 26px;
+}
+.tf-iconbox.style-3.stc2 .box-content button {
+  margin-top: 18px;
+}
+.tf-iconbox.style-3.stc2 {
+  padding-bottom: 36px;
+}
+.wd-review-job.contentbox1.stc3 {
+  padding: 81px 0px 81px 12px;
+}
+.tes-slider.stc .tes-bullet {
+  bottom: -14.2% !important;
+  left: 6px !important;
+}
+.wrap-testimonials.stc {
+  padding-bottom: 53px; 
+}
 /* --------------\---------------------------animation------------------------------------ */
 .ani1 {
   -webkit-animation: ani1 10s infinite ease-in-out alternate;

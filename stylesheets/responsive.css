@@ -227,6 +227,9 @@
     .cv-form-details .wd-social span {
         margin-right: 20px;
     }
+    .tf-iconbox.style-3.stc2 {
+        margin-bottom: 32px ;
+    }
 }
 @media only screen and (max-width: 1024px) {
     .sticky-area-wrap .header-ct-center {
@@ -255,7 +258,8 @@
         left: 5.7%;
         z-index: 2;
     }
-    .tf-slider.sl7 .form-sl .row-group-search {
+    .tf-slider.sl7 .form-sl .row-group-search,
+    .wd-review-job.page-text.stc {
         margin: 0;
     }
     .post-navigation {
@@ -695,5 +699,14 @@
     }
     .shopping-cart .list-shop {
         width: 200%;
+    }
+    .wd-review-job.thumb2.stc .tes-box {
+        top: 74%;
+    }
+    .wd-review-job.thumb2.stc .trader-box {
+        top: 49.6%;
+    }
+    .wd-review-job.page-text.stc {
+        padding-left: 0;
     }
 }
