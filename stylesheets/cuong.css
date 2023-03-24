@@ -2257,7 +2257,7 @@
 }
 
 .widget-filter .group-form {
-  margin-bottom: 27.4px;
+  margin-bottom: 28px;
 }
 
 .widget-filter .group-form .title {
@@ -2266,7 +2266,7 @@
   line-height: 26px;
   text-transform: capitalize;
   color: #121212;
-  margin-bottom: 11px;
+  margin-bottom: 12px;
 }
 
 .widget-filter .group-form .title span {
@@ -2356,8 +2356,11 @@
   transition: opacity 0.2s;
   padding: 0;
 }
+.widget-filter .group-form.mb1 {
+  margin-bottom: 27px;
+}
 .widget-filter .group-form .title.st2 {
-  margin-bottom: 16px;
+  margin-bottom: 20px;
 }
 .widget-filter .group-form.st2 {
   margin-bottom: 30px;
@@ -4908,10 +4911,10 @@
   width: 100%;
 }
 .features-job.wd-thum-career.cl2 .job-archive-header ul,
-.features-job.candidate-layout .job-archive-header ul{
+.features-job.candidate-layout .job-archive-header ul {
   margin-top: 9px;
 }
-.features-job.wd-thum-career.cl2  .thumb,
+.features-job.wd-thum-career.cl2 .thumb,
 .features-job.candidate-layout .thumb {
   width: 60px;
   height: 60px;
@@ -4981,10 +4984,10 @@
 .group-half-map .content-left.stc .content-job .features-job {
   padding: 24px 23px 24px 24px;
 }
-.group-half-map .content-left.stc  .wd-thum-career .thumb {
+.group-half-map .content-left.stc .wd-thum-career .thumb {
   margin: 16px 13px 30px 0px;
 }
-.group-half-map .content-left.stc  .features-job .job-archive-header ul {
+.group-half-map .content-left.stc .features-job .job-archive-header ul {
   margin-top: 9px;
 }
 .group-half-map .content-left.stc .job-archive-header span.icon-heart {
