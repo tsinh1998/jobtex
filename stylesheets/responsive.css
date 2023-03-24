@@ -70,6 +70,9 @@
     .group-half-map .content-left {
         width: 50%;
     }
+    .group-half-map .content-left.stc {
+        padding: 15px;
+    }
 }
 @media only screen and (max-width: 1300px) {
     .sticky-area-wrap .header-ct-left .categories {
@@ -188,7 +191,8 @@
     .job-search-form.style2 .form-group {
         width: 25%;
     }
-    .job-search-form.style2 .form-group.location {
+    .job-search-form.style2 .form-group.location,
+    .cv-form-details.stc2 {
         margin: 0;
     }
     .row-group-search {
@@ -219,6 +223,9 @@
     }
     .infor-contact-v1 .list-social li {
         margin-bottom: 15px;
+    }
+    .cv-form-details .wd-social span {
+        margin-right: 20px;
     }
 }
 @media only screen and (max-width: 1024px) {
@@ -303,6 +310,9 @@
     }
     .shop-details .shop-content .group-ip .cl3 {
         width: calc(33.3333% - 32px);
+    }
+    .job-search-form.style2 .form-group:first-child, .job-search-form.style2 .form-group {
+        width: 100%;
     }
 }
 @media only screen and (max-width: 991px) {
@@ -474,12 +484,18 @@
     .wd-findjob-filer { 
         display: block;
     }
+    .stc .wd-findjob-filer {
+        display: flex;
+    }
     .group-select-display {
         margin-bottom: 30px;
     }
     .job-search-form.style2 .form-group:first-child, .job-search-form.style2 .form-group {
         width:100%;
         margin-bottom: 20px;
+    }
+    .tf-tab.no-avai2 {
+        margin-top: 60px;
     }
 }
 @media only screen and (max-width: 767px) {
