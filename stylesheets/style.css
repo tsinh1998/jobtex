@@ -743,9 +743,13 @@ input[type="color"],
   width: 100%;
   display: flex;
   align-items: center;
-  padding-left: 175px;
+  padding-left: 178px;
 }
-
+/* header-home-02 */
+.header-ct-center.st-1 {
+  justify-content: unset;
+  padding-left: 84px;
+}
 #main-nav #menu-primary-menu {
   display: flex;
   justify-content: center;
@@ -1228,14 +1232,25 @@ input[type="color"],
   margin-right: 21px;
   position: relative;
 }
-
+.sticky-area-wrap .header-ct-right.st-1 .account {
+  gap: 0;
+}
+.sticky-area-wrap .header-ct-right.st-1 .account .name {
+  margin-left: 8px;
+  position: relative;
+}
 .sticky-area-wrap .header-ct-right .account img {
   border-radius: 20px;
 }
-
-.sticky-area-wrap .header-ct-right .account > span {
+.sticky-area-wrap .header-ct-right .account .name span {
   font-size: 20px;
-  margin-left: 7px;
+  position: absolute;
+  right: -67px;
+  top: 12px;
+}
+.sticky-area-wrap .header-ct-right.st-1 .account .name span {
+  right: -27px;
+  top: 3px;
 }
 
 /* sub-account */
@@ -1279,10 +1294,9 @@ input[type="color"],
   visibility: visible;
   top: 62px;
 }
-
 .sticky-area-wrap .header-ct-right .button {
   flex-shrink: 0;
-  margin-left: 54px;
+  margin-left: 68px;
 }
 
 .sticky-area-wrap .header-ct-right .button a {

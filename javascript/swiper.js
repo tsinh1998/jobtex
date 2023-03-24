@@ -208,7 +208,7 @@ if ($("div").hasClass("swiper")) {
     effect: "slide",
     slidesPerView: 1,
     loop: true,
-    spaceBetween: 69,
+    spaceBetween: 68.95,
     breakpoints: {
       400: {
         slidesPerView: 3,
