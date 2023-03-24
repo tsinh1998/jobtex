@@ -452,10 +452,12 @@
   .wd-review-job.sl7 .thumb3 {
     margin-top: 40px;
   }
-  .footer-cl-1 {
+  .footer-cl-1,
+  .form-stc  {
     margin-right: 0;
   }
-  .footer-cl-3 {
+  .footer-cl-3,
+  .shop-content.margin.content-stc {
     margin-left: 0;
   }
   .footer-cl-1,

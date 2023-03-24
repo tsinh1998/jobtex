@@ -5199,6 +5199,9 @@ line-height: 26px;
 .wrap-testimonials.stc {
   padding-bottom: 53px; 
 }
+.content-stc .wd-payment .group-input input::after {
+  display: none;
+}
 /* --------------\---------------------------animation------------------------------------ */
 .ani1 {
   -webkit-animation: ani1 10s infinite ease-in-out alternate;
