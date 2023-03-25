@@ -2703,7 +2703,10 @@ input[type="number"]::-webkit-inner-spin-button {
 .wd-review-job.pt10 {
   padding-top: 29px;
 }
-
+/* --------blog----------- */
+.widget-blog-1.style-1 .content .meta {
+  margin-bottom: 0;
+}
 /*===================================================== responsive =================================================================*/
 @media (max-width: 1440px) {
   .features-job.style-3 {
