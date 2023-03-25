@@ -2273,6 +2273,19 @@ input[type="number"]::-webkit-inner-spin-button {
   margin-top: 30px;
   position: relative;
 }
+.group-half-map.st1 .wd-findjob-filer .group-select {
+  margin-right: 32px;
+}
+.group-half-map.st1 .content-left {
+  padding: 34px 18px 24px 31px;
+}
+.group-half-map .content-job.sc1 {
+  height: 90vh;
+}
+.group-half-map .content-job.sc1 .features-job {
+  margin-right: 30px;
+}
+
 /*-------------------------------- employers------------------------------------- */
 .job-search-form .form-style-1 {
   width: 17.5%;
