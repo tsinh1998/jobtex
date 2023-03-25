@@ -5208,6 +5208,30 @@
 .content-stc .wd-payment .group-input input::after {
   display: none;
 }
+.features-job.stc-apply {
+  padding-right: 28px;
+  padding-bottom: 23px;
+}
+.features-job.stc-apply .inner-box .button-readmore {
+  position: absolute;
+  top: 6px;
+  right: -1px;
+}
+.features-job.stc-apply .inner-box .button-readmore > span.icon-heart {
+  position: unset;
+  margin-right: 17px;
+}
+.features-job.stc-apply .job-footer-left {
+  padding-bottom: 19px;
+  padding-top: 15px;
+}
+.features-job.style-2.stc-apply .job-footer-right span.icon-dollar {
+color: #fff;
+background: #14a077;
+width: 20px;
+height: 20px;
+justify-content: center;
+}
 /* --------------\---------------------------animation------------------------------------ */
 .ani1 {
   -webkit-animation: ani1 10s infinite ease-in-out alternate;
