@@ -70,9 +70,11 @@
           if ($(window).scrollTop() > offsetTop + headerHeight) {
             nav.addClass("is-fixed");
             injectSpace.show();
+            $("#trans-logo").attr("src","images/logo.png");
           } else {
             nav.removeClass("is-fixed");
             injectSpace.hide();
+            $("#trans-logo").attr("src","images/logo-white.png");
           }
 
           if ($(window).scrollTop() > 400) {

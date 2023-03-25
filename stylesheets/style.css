@@ -568,9 +568,9 @@ input[type="color"],
   top: -80px;
   left: 0;
   width: 100%;
-  box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 3px 9px rgba(0, 0, 0, 0.05);
   z-index: 9999;
-  background: #121212;
+  background: #fff;
   border: none;
   opacity: 1;
   -webkit-transition: all 0.5s ease;
@@ -1085,6 +1085,16 @@ input[type="color"],
   position: relative;
   cursor: pointer;
 }
+.sticky-area-wrap .header-ct-right .bell::before {
+  content: '';
+  position: absolute;
+  top: -28px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 30px;
+  height: 82px;
+}
 
 .sticky-area-wrap .header-ct-right .bell span {
   position: relative;
@@ -1231,6 +1241,7 @@ input[type="color"],
   align-items: center;
   margin-right: 21px;
   position: relative;
+  cursor: pointer;
 }
 .sticky-area-wrap .header-ct-right.st-1 .account {
   gap: 0;
@@ -1271,6 +1282,17 @@ input[type="color"],
   border-radius: 0px 0px 8px 8px;
 }
 
+.sticky-area-wrap .header-ct-right .account::after {
+  content: '';
+  position: absolute;
+  top: -20px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 160px;
+  height: 82px;
+}
+
 .sticky-area-wrap .header-ct-right .account .sub-account-item {
   width: 100%;
   padding: 12px;
@@ -1279,14 +1301,25 @@ input[type="color"],
   font-size: 16px;
   line-height: 28px;
 }
-
+.sticky-area-wrap .header-ct-right .account .sub-account-item a span::before {
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -ms-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
 .sticky-area-wrap .header-ct-right .account .sub-account-item a {
   color: #121212;
+}
+.sticky-area-wrap .header-ct-right .account .sub-account-item a:hover,
+.sticky-area-wrap .header-ct-right .account .sub-account-item a:hover span::before {
+  color: #14a077;
 }
 
 .sticky-area-wrap .header-ct-right .account .sub-account-item span {
   font-size: 24px;
   margin-right: 12px;
+  vertical-align: middle;
 }
 
 .sticky-area-wrap .header-ct-right .account:hover .sub-account {
@@ -1327,9 +1360,19 @@ input[type="color"],
 #header.style-absolute .sticky-area-wrap .header-ct-right .button a {
   color: #fff;
 }
+#header.style-absolute.is-small .sticky-area-wrap .header-ct-left .categories > a span,
+#header.style-absolute.is-small .sticky-area-wrap .header-ct-left .categories > a,
+#header.style-absolute.is-small #main-nav #menu-primary-menu > li > a,
+#header.style-absolute.is-small .sticky-area-wrap .header-ct-right .help a,
+#header.style-absolute.is-small .sticky-area-wrap .header-ct-right .bell,
+#header.style-absolute.is-small .sticky-area-wrap .header-ct-right .account .name,
+#header.style-absolute.is-small .sticky-area-wrap .header-ct-right .button a {
+  color: #121212;
+}
 #header.style-absolute #main-nav #menu-primary-menu li a::after {
   background: #fff;
 }
+
 
 /* Footer
 ------------------------------------------ */

@@ -332,6 +332,10 @@
   .job-article.single-job .inner-content {
     padding: 0;
   }
+  .job-article .related-job,
+  .client-review > li {
+    margin: 0;
+  }
   .group-location .box-3,
   .group-location .box-6 {
     width: calc(50% - 20px);
@@ -475,7 +479,8 @@
     margin-right: 20px;
   }
   .wd-cv-item,
-  .shopping-cart .coupon .cp-form {
+  .shopping-cart .coupon .cp-form,
+  .group-job-sidebar {
     margin-bottom: 50px;
   }
   .wd-popup-form .content,
@@ -504,6 +509,20 @@
   .tf-tab.no-avai2 {
     margin-top: 60px;
   }
+  .list-job {
+    position: unset;
+    height: 100vh;
+    overflow: scroll;
+}
+.group-job-sidebar {
+  position: unset;
+  height: 100%;
+  margin-right: 0px;
+}
+.job-article {
+  overflow-y: unset;
+  height: unset;
+}
 }
 @media only screen and (max-width: 767px) {
   .group-location .box-3,
@@ -561,7 +580,8 @@
   .tf-slider .form-sl .form-group-1,
   .wd-popup-form .content .content-right,
   .wd-popup-form .content .content-left,
-  .wd-form-login {
+  .wd-form-login,
+  .rating-review .right-rating {
     width: 100%;
   }
   .wd-popup-form .content {
@@ -690,7 +710,8 @@
   }
   .shop-details .shop-content .group-ip,
   .job-rating .group-title,
-  .rating-review {
+  .rating-review,
+  .features-job .job-footer-right {
     flex-wrap: wrap;
   }
   .shop-details .shop-content .group-ip .cl3 {

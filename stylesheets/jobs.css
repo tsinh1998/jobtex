@@ -1020,6 +1020,11 @@ input[type="number"]::-webkit-inner-spin-button {
   color: #64666c;
   font-size: 14px;
   line-height: 22px;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -ms-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
 }
 .job-category-box .btn-category-job {
   color: #14a077;
