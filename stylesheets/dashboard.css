@@ -883,8 +883,8 @@ background: #fff;
     -webkit-transform: rotate(270deg);
     transform: rotate(270deg)
 }
-
-
+#sidebar-menu ul .ff-active a .dash-icon::before,
+#sidebar-menu ul .ff-active a .dash-icon,
 #sidebar-menu ul li a:hover .dash-icon::before,
 #sidebar-menu ul li a:hover .dash-icon {
     color: #14A077;
@@ -2088,9 +2088,6 @@ background: #fff;
     color: #fff;
 }
 
-.flat-dashboard-submit {
-    padding-bottom: 41px;
-}
 .flat-dashboard-submit .submit-job h3 {
     margin-bottom: 27px;
 }
@@ -2617,6 +2614,11 @@ background: #fff;
 }
 .flat-dashboard-user .wrap-profile .check-box {
     margin-bottom: 21px;
+    flex-wrap: wrap;
+}
+.flat-dashboard-user .wrap-profile .tag-box,
+.flat-dashboard-user .wrap-profile .tag-wrap {
+    flex-wrap: wrap;
 }
 .flat-dashboard-user .tag-box  a {
     font-size: 12px;
@@ -2756,8 +2758,6 @@ background: #fff;
 .flat-dashboard-candidates.style-overview tbody tr td {
     padding: 17px 10px 14px 20px;
 }
-
-
 
 
 /* flat dashboard setting2 */
@@ -3286,7 +3286,7 @@ background: #fff;
 .flat-dashboard-messages .right .conversation-start span {
     font-size: 12px;
     display: inline-block;
-    color: #14A077;
+    color: #64666C;
 }
  
   
@@ -3332,12 +3332,6 @@ background: #fff;
   }
 
 
-@media only screen and (max-width: 991px) {
-    .flat-dashboard-candidates .table-responsive {
-        overflow-x: auto;
-    }
- 
-}
 /* .flat-dashboard-candidates tbody tr td:last-child {
     width: 30%;
 } */
@@ -3373,6 +3367,9 @@ background: #fff;
     .dashboard .btn {
         left: 180px;
     }
+    .flat-dashboard-candidates .table-responsive {
+        overflow-x: auto;
+    }
     .flat-dashboard-dyagram .box-notifications {
         width: 39%;
         padding: 25px 15px;
@@ -3386,6 +3383,20 @@ background: #fff;
     .flat-dashboard-setting .wrap-img {
         width: 49.3%;
     }
+
+    .flat-dashboard-candidates.style-overview .applicants {
+        margin-left: 0;
+    }
+    .change-password .form-password {
+        width: 50%;
+    }
+    .flat-dashboard-detele .change-password .form-password {
+        width: 55%;
+    }
+
+    .flat-dashboard-setting .member-wrap .member-box {
+        width: 100%;
+    }
 }
 @media only screen and (max-width: 991px) {
     .dashboard .btn {
@@ -3397,7 +3408,14 @@ background: #fff;
     .sidebar-enable .left-menu {
         display: none;
     }
+    
     .page-title-dashboard {
+        padding: 30px 0 30px;
+    }
+    .page-title-dashboard.style {
+        padding: 30px 0 15px;
+    }
+    .page-title-dashboard.style2 {
         padding: 30px 0 30px;
     }
    
@@ -3460,11 +3478,9 @@ background: #fff;
     .flat-dashboard-about .sidebar-map .box-icon a {
         margin-right: 7px;
     }
+    .flat-dashboard-about .sidebar-extended p,
     .flat-dashboard-about .sidebar-map .box-icon a:last-child {
         margin-right: 0;
-    }
-    .flat-dashboard-about .sidebar-extended p {
-        padding-right: 0;
     }
 
     .flat-dashboard-about .post-about {
@@ -3475,7 +3491,6 @@ background: #fff;
     .flat-dashboard-setting .profile-setting {
         padding: 32px 15px 34px;
     }
-
     .flat-dashboard-setting .author-profile {
         flex-wrap: wrap;
     }
@@ -3486,7 +3501,6 @@ background: #fff;
         width: 100px;
         height: 100px;
     }
-
     .flat-dashboard-setting .button-style {
         width: 100%;
         text-align: start;
@@ -3498,8 +3512,103 @@ background: #fff;
         margin-bottom: 40px;
     }
 
+    .flat-dashboard-user .wrap-profile {
+        display: block;
+    }
+    .flat-dashboard-user .wrap-profile .box-profile {
+        margin-bottom: 18px;
+    }
+    .flat-dashboard-overview .post-about .education-wrap {
+        padding-left: 18px;
+        margin-bottom: 30px;
+    }
+    .flat-dashboard-overview .title-user {
+        margin-bottom: 16px;
+    }
+
+    .flat-dashboard-month .wrap-month {
+        padding: 23px 15px 23px 15px;
+    }
+
+    .flat-dashboard-submit .package-wrap .box {
+        padding: 24px 15px 22px;
+    }
+    .flat-dashboard-month .wrap-title,
+    .flat-dashboard-submit .submit-job h3 {
+        margin-bottom: 20px;
+    }
+
+    .flat-dashboard-month .wrap-month .titles {
+        margin-bottom: 18px;
+    }
+    .flat-dashboard-month .wrap-month ul,
+    .flat-dashboard-month .wrap-month .money-box {
+        margin-bottom: 23px;
+    }
     
-    
+    .flat-dashboard-post .text-editor-wrap {
+        margin-bottom: 40px;
+    }
+
+    .flat-dashboard-password .change-password {
+        padding: 25px 15px;
+    }
+    .change-password .form-password {
+        width: 100%;
+    }
+    .change-password .inner {
+        margin-bottom: 20px;
+    }
+    .change-password .inner:nth-child(3) {
+        margin-bottom: 25px;
+    }
+    .change-password h3 {
+        margin-bottom: 22px;
+    }
+    .flat-dashboard-detele .change-password .form-password {
+        width: 100%;
+    }
+    .flat-dashboard-detele h3 {
+        margin-bottom: 5px;
+    }
+
+    .flat-dashboard-meetings .applicants .wrap-applicants {
+        padding: 15px 15px 15px 15px;
+    }
+
+    .page-title-dashboard.style2 .title-dash{
+        margin-bottom: 15px;
+    }
+
+    .flat-dashboard-resumes .wd-file-apply .content .group-file .inner {
+        width: calc(50% - 40px);
+    }
+
+    .flat-dashboard-messages .dash-search {
+        padding: 25px 15px 18px;
+    }
+    .flat-dashboard-messages .left {
+        width: 31.5%;
+    }
+    .flat-dashboard-messages .left .people .person {
+        padding: 13px 15px 10px;
+    }
+    .flat-dashboard-messages .left .people .person .time {
+        right: 10px;
+    }
+    .flat-dashboard-messages .right .chat {
+        padding: 26px 15px 30px;
+    }
+    .flat-dashboard-messages .right .top {
+        padding: 21px 15px 16px;
+    }
+    .flat-dashboard-messages .right .write {
+        padding: 11px 0 13px 15px;
+    }
+    .flat-dashboard-messages .right .write .write-box {
+        width: calc(100% - 85px);
+    }
+   
 
   
   
@@ -3512,7 +3621,14 @@ background: #fff;
     .left-menu {
         top: 83px;
     }
+    .dashboard .btn {
+        top: 18px;
+    }
 
+    .flat-dashboard-bottom {
+        margin-bottom: 15px;
+    }
+      
     .flat-icon-dashboard .box-icon {
         width: calc(100% - 20px);
     }
@@ -3623,6 +3739,96 @@ background: #fff;
 
     .flat-dashboard-setting .map-content {
         margin-bottom: 30px;
+    }
+
+    .flat-dashboard-user .wrap-profile .box-profile {
+        display: block;
+    }
+
+    .flat-dashboard-user .wrap-profile .images {
+        margin-bottom: 12px;
+    }
+    .flat-dashboard-user .tag-box a {
+        margin-bottom: 6px;
+    }
+    .flat-dashboard-user .wrap-profile .check-box {
+        margin-bottom: 18px;
+    }
+    .flat-dashboard-candidates.style-overview .applicants .title-appli {
+        padding: 19px 15px 8px 15px;
+    }
+    .flat-dashboard-month .wrap-month {
+        margin-bottom: 20px;
+    }
+    .flat-dashboard-submit .package-wrap .box {
+        width: calc(100% - 20px);
+    }
+
+    .page-title-dashboard.style .title-dashboard {
+        display: block;
+    }
+    .page-title-dashboard.style .title-dashboard .title-box {
+        margin-bottom: 12px;
+    }
+
+    .dashboard .button-wrap .tf-button a {
+        margin-right: 15px;
+    }
+
+    .flat-dashboard-resumes .wd-file-apply .content .group-file .inner {
+        width: calc(100% - 40px);
+        margin-bottom: 10px;
+    }
+    .flat-dashboard-resumes .wd-file-apply .content .group-file .inner:last-child {
+        margin-bottom: 0;
+    }
+
+    .flat-dashboard-resumes .group-date fieldset:nth-child(2) {
+        width: 100%;
+        padding-left: 0;
+    }
+    .flat-dashboard-resumes .group-date fieldset:nth-child(1) label,
+    .flat-dashboard-resumes .group-date fieldset:nth-child(1) {
+        width: 100%;
+    }
+    .flat-dashboard-resumes .wd-file-apply .content .group-file,
+    .flat-dashboard-resumes .group-date,
+    .flat-dashboard-resumes .group-down {
+        display: block;
+    }
+    .flat-dashboard-resumes .dropdown-box {
+        width: 100%;
+        display: block;
+        margin-bottom: 12px;
+    }
+    .flat-dashboard-resumes .dropdown-box .dropdown {
+        width: 100%;
+    }
+    .flat-dashboard-resumes .widget-counter {
+        width: 100%;
+        display: block;
+    }
+  
+    .flat-dashboard-messages .content {
+        display: block;
+    }
+    .flat-dashboard-messages .right {
+        width: 100%;
+    }
+    .flat-dashboard-messages .left {
+        width: 100%;
+        border-bottom: 1px solid #E5E5E5;
+    }
+    .flat-dashboard-messages .left .people {
+        border-right: 0;
+    }  
+    .flat-dashboard-messages .right .bubble.me,  
+    .flat-dashboard-messages .right .bubble.you {
+        max-width: 70.5%;
+    }
+
+    .flat-dashboard-messages .right .chat {
+        padding: 26px 15px 95px;
     }
    
 }
