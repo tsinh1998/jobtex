@@ -59,6 +59,9 @@
     t(function() {
         t('[data-bs-toggle="popover"]').popover()
     }),
+    
+    $(function () {
 
-    t.init();
+    });
+    // t.init();
 }(jQuery);
