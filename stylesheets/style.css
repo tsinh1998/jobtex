@@ -551,10 +551,6 @@ input[type="color"],
   display: block;
 }
 
-.sticky-area-wrap .header-ct-left .logo .site-logo.st1 {
-  display: none;
-}
-
 .sticky-area-wrap .header-ct-left .logo {
   flex-shrink: 0;
   margin-right: 48px;
@@ -589,7 +585,7 @@ input[type="color"],
   width: 100%;
   box-shadow: 0px 3px 9px rgba(0, 0, 0, 0.05);
   z-index: 9999;
-  background: #fff;
+  background: #121212;
   border: none;
   opacity: 1;
   -webkit-transition: all 0.5s ease;
@@ -599,25 +595,9 @@ input[type="color"],
   transition: all 0.5s ease;
 }
 
-.header.is-fixed,
-#header.style-absolute.is-fixed .header-ct-left .site-logo {
-  display: none;
-}
 
-.header.is-fixed,
-#header.header-default.is-fixed .header-ct-left .site-logo.st1 {
-  display: block;
-}
 
-#header.style-absolute.is-fixed .sticky-area-wrap .header-ct-left .categories>a span,
-#header.style-absolute.is-fixed .sticky-area-wrap .header-ct-left .categories>a,
-#header.style-absolute.is-fixed #main-nav #menu-primary-menu>li>a,
-#header.style-absolute.is-fixed .sticky-area-wrap .header-ct-right .help a,
-#header.style-absolute.is-fixed .sticky-area-wrap .header-ct-right .bell,
-#header.style-absolute.is-fixed .sticky-area-wrap .header-ct-right .account .name,
-#header.style-absolute.is-fixed .sticky-area-wrap .header-ct-right .button a {
-  color: #111;
-}
+
 
 .header.is-fixed.is-small,
 #header.style-absolute.is-small {
