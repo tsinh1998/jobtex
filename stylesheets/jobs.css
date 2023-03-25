@@ -2709,6 +2709,16 @@ input[type="number"]::-webkit-inner-spin-button {
   padding-top: 29px;
 }
 /* --------blog----------- */
+.blog-detail-01 > .widget-blog-1.style-1 {
+  margin-bottom: 0;
+}
+.blog-detail-01 .widget-blog-1 .content {
+  text-align: center;
+}
+.blog-detail-01 .widget-blog-1 .main-heading {
+  padding: 16px 0px;
+  margin: 0;
+}
 .widget-blog-1.style-1 .content .meta {
   margin-bottom: 0;
 }
