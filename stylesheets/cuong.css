@@ -1621,7 +1621,6 @@
 .job-article .inner-content .job-rating h6 {
   font-size: 20px;
   line-height: 28px;
-  margin-left: -4px;
   margin-bottom: 29px;
 }
 .job-article .inner-content .job-rating {
@@ -1711,7 +1710,6 @@
   padding-top: 28px;
   padding-bottom: 27px;
   border-bottom: 1px solid #e5e5e5;
-  margin-left: -6px;
   margin-right: 3px;
 }
 .btn-load {
@@ -1726,7 +1724,6 @@
   margin-bottom: 22px;
 }
 .job-article .related-job {
-  margin-left: -5px;
   margin-right: 6px;
 }
 /* -----------------------------------------cv item------------------------------------ */

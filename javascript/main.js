@@ -650,6 +650,11 @@
       $input.val(value);
     });
   };
+  var stickSidebar = function () {
+    if ($(".sticky-sidebar").length) {
+      $(".sticky-sidebar").theiaStickySidebar();
+    }
+  }
 
   var preload = function () {
     $(window).on("load", function () {
@@ -674,6 +679,7 @@
     setTimeIn();
     tfTabs();
     filter();
+    stickSidebar();
     parallax();
     gallery();
     flatSpacer();
