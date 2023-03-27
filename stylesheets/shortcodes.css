@@ -506,12 +506,13 @@
 /* WD-get app */
 .wd-get-app .thumb img {
   height: 438px;
+  object-fit: cover;
 }
 .wd-get-app.style-1 .thumb img {
   height: 478px;
 }
 .wd-get-app .thumb {
-  margin-left: 0%;
+  margin-left: -3%;
 }
 .wd-get-app .content {
   padding-left: 52px;
