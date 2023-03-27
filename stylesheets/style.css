@@ -1998,8 +1998,9 @@ input[type="color"],
 }
 
 .widget-comment-wrap .feature-post img {
-  border-radius: 30px;
-  width: 100%;
+  border-radius: 1000px;
+  max-width: 60px;
+  height: 60px;
 }
 
 .widget-comment-wrap .content-post {
@@ -2079,7 +2080,7 @@ input[type="color"],
 }
 
 .widget-comment-wrap .helpfull span {
-  font-size: 20px;
+  font-size: 16px;
   margin-left: 8px;
 }
 
