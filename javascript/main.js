@@ -703,6 +703,7 @@
     dropdown2("#items_3");
     dropdown2("#items_4");
     dropdown2("#items_5");
+    dropdown2("#items_6");
     loadmore();
     loadmore2();
     UpImg();
