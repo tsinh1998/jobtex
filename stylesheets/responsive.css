@@ -246,7 +246,8 @@
   }
   .header-style2,
   .tf-slider.sl7 .heading h2,
-  .tf-slider.sl7 .heading p {
+  .tf-slider.sl7 .heading p,
+  .tf-slider .form-sl .row-group-search.home1 .form-group-1 {
     padding: 0;
   }
   .header-style2 .sticky-area-wrap .header-ct-center {
@@ -268,7 +269,8 @@
   .wd-social .list-social {
     flex-wrap: wrap;
   }
-  .wd-social .list-social li {
+  .wd-social .list-social li,
+  .tf-slider .form-sl .row-group-search.home1 .form-group-2 {
     margin-bottom: 15px;
   }
   .group-half-map.style2 .content-left {
@@ -313,9 +315,19 @@
     width: calc(33.3333% - 32px);
   }
   .job-search-form.style2 .form-group:first-child,
-  .job-search-form.style2 .form-group {
+  .job-search-form.style2 .form-group,
+  .tf-slider .form-sl .row-group-search.home1 .form-group-1 {
     width: 100%;
   }
+  .tf-slider .form-sl .row-group-search.home1 .form-group-1 {
+    max-width: unset;
+  }
+  .tf-slider .form-sl .row-group-search.home1 .form-group-1 input {
+    padding-left: 0;
+  }
+  .tf-slider .form-sl .row-group-search.home1 .form-group-2 span {
+    left: 0px;
+}
 }
 @media only screen and (max-width: 991px) {
   .row-group-search.st2 .form-group:first-child,
@@ -523,6 +535,7 @@
   overflow-y: unset;
   height: unset;
 }
+
 }
 @media only screen and (max-width: 767px) {
   .group-location .box-3,
