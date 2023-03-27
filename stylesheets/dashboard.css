@@ -648,19 +648,45 @@ background: #fff;
     bottom: 0;
     position: fixed;
     top: 81px;
+}
+.ff-active {
     -webkit-box-shadow: 0 0 13px 0 rgba(236,236,241,.44);
     box-shadow: 0 0 13px 0 rgba(236,236,241,.44);
     overflow-x: hidden;
     overflow-y: auto;
-   
+    width: 280px;
 }
 
-.left-menu:hover  {
-    /* width: 5px; */
+
+ .ff-active {
+    direction: inherit;
+    -webkit-box-sizing: border-box!important;
+    box-sizing: border-box!important;
+    position: relative;
+    display: block;
+    height: 100%;
+    width: auto;
+    visibility: visible;
+    overflow: auto;
+    max-width: 100%;
+    max-height: 100%;
+    scrollbar-width: none;
+
+} 
+.ff-active::-webkit-scrollbar,.simplebar-hide-scrollbar::-webkit-scrollbar {
+    display: none
+}
+.ff-active::-webkit-scrollbar {
+    width: 5px;
+    background: rgba(0, 0, 0, .0);
 
 }
+  
+.ff-active::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, .3);
 
-.left-menu::-webkit-scrollbar {
+}
+/* .left-menu::-webkit-scrollbar {
     width: 5px;
     background: rgba(0, 0, 0, .0);
     opacity: 0;
@@ -669,7 +695,7 @@ background: #fff;
 .left-menu::-webkit-scrollbar-thumb {
     background-color: rgba(0, 0, 0, .3);
     opacity: 0;
-}
+} */
 /* .left-menu::-webkit-scrollbar-thumb,
 .left-menu::-webkit-scrollbar:hover {
     opacity: 1;
