@@ -1100,7 +1100,7 @@ input[type="number"]::-webkit-inner-spin-button {
 .group-category-job {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  margin-left: -20px;
 }
 
 .group-category-job.padding {
@@ -1108,7 +1108,9 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .job-category-box {
-  width: 266px;
+  width: calc(20% - 20px);
+  margin-left: 20px;
+  margin-bottom: 20px;
   box-shadow: 0px 2px 2px rgba(28, 36, 51, 0.1);
   border-radius: 8px;
   padding: 28px;
@@ -2409,6 +2411,9 @@ input[type="number"]::-webkit-inner-spin-button {
 .wd-form-rating .wrap-input label,
 .wd-form-rating .wrap-notes label {
   margin-bottom: 12px;
+  font-size: 16px;
+  line-height: 26px;
+  color: #121212;
 }
 
 .wd-form-rating .wrap-input input,
@@ -2424,16 +2429,20 @@ input[type="number"]::-webkit-inner-spin-button {
   border: 1px solid#14A077;
 }
 
-.wd-form-rating input::placeholder {
-  color: #121212;
+.wd-form-rating textarea {
+  width: 100%;
+  height: 112px;
 }
 
+.wd-form-rating input::placeholder,
 .wd-form-rating textarea::placeholder {
-  color: #b1b1b1;
+  font-size: 16px;
+  line-height: 26px;
+  color: #64666C;
 }
 
-.tf-btn-submit.style-2 {
-  padding: 12px 49px;
+.wd-form-rating .tf-btn-submit.style-2 {
+  padding: 12px 28px;
   text-transform: capitalize;
 }
 
@@ -3179,6 +3188,11 @@ input[type="number"]::-webkit-inner-spin-button {
   text-align: center;
 }
 
+.blog-detail .widget-blog-1 .sub-title {
+  margin: 0;
+}
+
+.blog-detail .widget-blog-1 .main-heading,
 .blog-detail-01 .widget-blog-1 .main-heading {
   padding: 16px 0px;
   margin: 0;

@@ -4,6 +4,7 @@
 @import url(nice-select.css);
 @import url(../fonts/icon-font.css);
 @import url(animate.css);
+
 /* widget-menu-link */
 .tf-container {
   position: relative;
@@ -14,6 +15,7 @@
   width: 1440px;
   max-width: 100%;
 }
+
 .widget-menu-link {
   width: 100%;
   background-color: #f5f5f5;
@@ -71,30 +73,34 @@
   border: 1px solid #e5e5e5;
   border-radius: 8px;
 }
+
 .widget-blog-1.style-1 {
   flex-direction: column;
   gap: 0;
   margin-bottom: 40px;
 }
+
 .widget-blog-1.style-1 .img-blog {
   width: 100%;
 }
+
 .widget-blog-1.style-1 .content {
   padding: 24px;
 }
+
 .widget-blog-1 .content {
   padding: 27px 0;
 }
+
 .widget-blog-1.style-1.margin-1 {
   margin-top: -140px;
 }
 
 .widget-blog-1 .sub-title {
   display: inline-block;
-  padding: 4px 12px;
+  padding: 4px 16px;
   background: rgba(20, 129, 96, 0.1);
   border-radius: 40px;
-  font-family: "Plus Jakarta Sans", sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 26px;
@@ -260,6 +266,7 @@
   border: none;
   margin-bottom: 28px;
 }
+
 .widget-side-bar .recent-posts .img-blog {
   width: 80px;
   height: 80px;
@@ -371,27 +378,33 @@
   text-align: center;
   display: block;
 }
+
 .tf-title.style-3 {
   display: flex;
   text-align: left;
 }
+
 .tf-title.style-4 h1 {
   margin-bottom: 8px;
 }
+
 .wrap-button {
   margin-top: 8px;
   text-align: center;
 }
+
 .tf-button.style-1 {
   border: 1px solid #14a077;
   padding: 12px 30px;
   text-transform: capitalize;
   border-radius: 4px;
 }
+
 .tf-button.style-1:hover {
   background: #14a077;
   color: #fff;
 }
+
 .tf-button.style-1 span {
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
@@ -399,19 +412,24 @@
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
+
 .tf-button.style-1:hover span {
   color: #fff;
 }
+
 .wrap-testimonials {
   padding-bottom: 80px;
 }
+
 .swiper-wrapper.style-1 {
   padding-bottom: 32px;
   cursor: pointer;
 }
+
 .tes-bullet.style-1 {
   bottom: 0 !important;
 }
+
 .tf-title.margin {
   margin-bottom: 32px;
 }
@@ -419,65 +437,70 @@
 .wrap-count {
   padding: 40px 0px;
 }
+
 .wd-job-location.style-1 img {
   height: 450px;
 }
+
 .wd-job-location.style-2 img {
   width: 333px;
   height: 333px;
 }
+
 .wrap-testimonials.style-1 {
   padding-bottom: 0;
 }
+
 .listing-maps .i4ewOd-pzNkMb-haAclf {
   display: none !important;
 }
+
 .tf-slider.style-1 {
   background: none;
   padding: 0;
 }
-/* .form-sl.style-1 {
-  background: #ffffff;
-  box-shadow: 0px 2px 2px rgb(28 36 51 / 10%);
-  border-radius: 8px;
-  margin-right: -20px;
-  padding: 16px 16px 14px 16px;
-} */
+
 .tf-slider.style-1 .content .form-sl {
   margin-bottom: 0;
   margin-top: -50px;
 }
-/* wd latest New */
 
+/* wd latest New */
 .box-latest:hover,
-.box-latest .box-content:hover {
+.box-latest:hover .box-content {
   box-shadow: 0px 10px 25px rgba(54, 95, 104, 0.1);
   border-color: #fff;
 }
+
 .box-latest .img-latest img {
   width: 100%;
   border-radius: 8px 8px 0 0;
 }
+
 .box-latest .box-content {
   padding: 24px;
   border: 1px solid #ebebeb;
   border-top: none;
   border-radius: 0px 0px 8px 8px;
 }
+
 .box-latest .box-content h3 {
   font-size: 24px;
   line-height: 30px;
   margin: 8px 0px;
 }
+
 .box-latest .box-content h3 a {
   transition: all 0.3s ease-in-out;
   font-weight: 700;
   color: #121212;
   text-transform: capitalize;
 }
+
 .box-latest .box-content h3 a:hover {
   color: #14a077;
 }
+
 .box-latest .heading p {
   display: inline-block;
   padding: 4px 12px;
@@ -488,32 +511,40 @@
   line-height: 16px;
   font-weight: 500;
 }
+
 .box-latest ul li {
   font-size: 16px;
   line-height: 26px;
   display: inline-block;
 }
+
 .box-latest ul li:first-child {
   margin-right: 16px;
 }
+
 .bg-get-app {
   background: linear-gradient(84.42deg, #f7ecea 0%, #f4f0e7 100%);
 }
+
 .wd-review-job.contentbox1.padding {
   padding-top: 72.92px;
 }
+
 /* OVERRIDE */
 /* WD-get app */
 .wd-get-app .thumb img {
   height: 438px;
   object-fit: cover;
 }
+
 .wd-get-app.style-1 .thumb img {
   height: 478px;
 }
+
 .wd-get-app .thumb {
   margin-left: -3%;
 }
+
 .wd-get-app .content {
   padding-left: 52px;
 }
