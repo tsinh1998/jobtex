@@ -40,7 +40,7 @@ function newMessage() {
 		return false;
 	}
 
-	$( '<div class="bubble me">' + message + '</div>').appendTo($(' .right .active-chat'));
+	$( '<div class="bubble you">' + message + '</div>').appendTo($(' .right .active-chat'));
 	$('.write input').val(null);
   // $('<div class="history-time">').appendTo($('.right .chat'));
   
