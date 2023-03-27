@@ -2662,6 +2662,11 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 /*-------------------------------- employers------------------------------------- */
+.row-group-search.inner-form .form-group-1>input,
+.row-group-search.inner-form .form-group-2 .nice-select {
+  border-right: none;
+}
+
 .job-search-form .form-style-1 {
   width: 17.5%;
   border-right: 1px solid #e5e5e5;
