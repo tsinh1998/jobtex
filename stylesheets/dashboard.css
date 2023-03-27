@@ -168,7 +168,7 @@
     justify-content: space-between;
 }
 
-.page-title-dashboard.style .tf-button a {
+.page-title-dashboard.style .tt-button a {
     padding: 11px 32px;
     background: #14A077;
     color: #fff;
@@ -652,17 +652,28 @@ background: #fff;
     box-shadow: 0 0 13px 0 rgba(236,236,241,.44);
     overflow-x: hidden;
     overflow-y: auto;
+   
+}
+
+.left-menu:hover  {
+    /* width: 5px; */
+
 }
 
 .left-menu::-webkit-scrollbar {
     width: 5px;
     background: rgba(0, 0, 0, .0);
+    opacity: 0;
 }
   
 .left-menu::-webkit-scrollbar-thumb {
     background-color: rgba(0, 0, 0, .3);
+    opacity: 0;
 }
-
+/* .left-menu::-webkit-scrollbar-thumb,
+.left-menu::-webkit-scrollbar:hover {
+    opacity: 1;
+} */
 
 #sidebar-menu {
     padding: 21px 17px 17px;
@@ -983,7 +994,7 @@ background: #fff;
     margin-right: 8px;
 }
 
-.dashboard .tf-button a {
+.dashboard .tt-button a {
     padding: 11px 47px;
     border: 1px solid #14A077;
     font-family: "Plus Jakarta Sans" , sans-serif;
@@ -993,7 +1004,7 @@ background: #fff;
     border-radius: 4px;
 }
 
-.dashboard .tf-button a.btn-3 {
+.dashboard .tt-button a.btn-3 {
     background: #14A077;
     color: #fff;
 }
@@ -1072,7 +1083,7 @@ background: #fff;
     margin-bottom: 30px;
 }
 
-.flat-dashboard-about .sidebar-extended .tf-button a {
+.flat-dashboard-about .sidebar-extended .tt-button a {
     padding: 11px 0;
     width: 100%;
     text-align: center;
@@ -1846,7 +1857,7 @@ background: #fff;
 .dashboard .button-wrap {
     margin-bottom: 20px;
 }
-.dashboard .button-wrap .tf-button a {
+.dashboard .button-wrap .tt-button a {
     padding: 11px 31.5px;
     margin-right: 28px;
 }
@@ -2165,8 +2176,8 @@ background: #fff;
     box-shadow: 0px 10px 25px rgba(54, 95, 104, 0.1);
 }
 
-.flat-dashboard-month .wrap-month:hover .tf-button a,
-.flat-dashboard-month .wrap-month.active .tf-button a {
+.flat-dashboard-month .wrap-month:hover .tt-button a,
+.flat-dashboard-month .wrap-month.active .tt-button a {
     background: #14A077;
     color: #fff;
 }
@@ -2211,7 +2222,7 @@ background: #fff;
     margin-right: 11px;
     
 }
-.flat-dashboard-month .wrap-month .tf-button a {
+.flat-dashboard-month .wrap-month .tt-button a {
     width: 100%;
     text-align: center;
     padding: 11px 15px;
@@ -2243,7 +2254,7 @@ background: #fff;
     margin-bottom: 20px;
 }
 
-.flat-dashboard-post .btn-wrap .tf-button a {
+.flat-dashboard-post .btn-wrap .tt-button a {
     margin-right: 48px;
 }
 
@@ -2323,7 +2334,7 @@ background: #fff;
     border: 0px;
 }
 
-.change-password .tf-button a {
+.change-password .tt-button a {
     padding: 11px 31px;
 }
 
@@ -2348,7 +2359,7 @@ background: #fff;
     margin-bottom: 17px;
 }
 
-.flat-dashboard-detele .tf-button a {
+.flat-dashboard-detele .tt-button a {
     background: #EB4D4D;
     color: #fff !important; 
     border: 1px solid #EB4D4D;
@@ -2451,7 +2462,7 @@ background: #fff;
     padding: 118px 0 33px;
 }
 
-.page-title-dashboard.style2 .tf-button a {
+.page-title-dashboard.style2 .tt-button a {
     font-size: 14px;
 }
 
@@ -2648,7 +2659,7 @@ background: #fff;
 .flat-dashboard-user .map {
     margin-right: 23px;
 }
-.flat-dashboard-user .tf-button a {
+.flat-dashboard-user .tt-button a {
     padding: 11px 40px 11px 31px;
 }
 
@@ -3787,7 +3798,7 @@ background: #fff;
         margin-bottom: 12px;
     }
 
-    .dashboard .button-wrap .tf-button a {
+    .dashboard .button-wrap .tt-button a {
         margin-right: 15px;
     }
 
