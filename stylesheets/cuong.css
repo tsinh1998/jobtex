@@ -2792,6 +2792,17 @@
   margin-bottom: 17px;
   cursor: pointer;
 }
+.wd-popup-form .content .content-right .title-button-group i {
+  display: inline-block;
+  -webkit-transition: all 0.5s ease 0s;
+  -moz-transition: all 0.5s ease 0s;
+  -ms-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+}
+.wd-popup-form .content .content-right .title-button-group:hover i {
+  transform: rotate(90deg) scale(0.7);
+}
 .wd-popup-form .content .content-right p {
   font-size: 16px;
   line-height: 26px;
@@ -2846,6 +2857,9 @@
 .wd-popup-form .content .content-right .group-radio input:checked,
 .wd-popup-job-apply .content .group-radio input:checked {
   border: 5px solid #14a077;
+}
+.wd-popup-form .content .content-right .group-radio input::after {
+  display: none;
 }
 .wd-popup-job-apply .content h6 {
   text-align: center;

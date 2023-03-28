@@ -231,6 +231,11 @@ button.btn-find:hover {
   gap: 32;
   border: 1px solid #e5e5e5;
   padding: 24px;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -ms-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
 }
 
 .features-job:hover {
