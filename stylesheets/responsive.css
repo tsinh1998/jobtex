@@ -362,7 +362,8 @@
   .tf-slider .heading p {
     padding-right: 100px;
   }
-  .wd-counter {
+  .wd-counter,
+  .wd-iconbox .tf-iconbox {
     margin-bottom: 30px;
   }
   .wd-review-job.thumb1 .thumb {
