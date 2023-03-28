@@ -558,6 +558,18 @@ input[type="color"],
 
 .sticky-area-wrap .header-ct-left .categories {
   position: relative;
+  cursor: pointer;
+}
+
+.sticky-area-wrap .header-ct-left .categories::before {
+  content: '';
+  position: absolute;
+  top: -28px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 82px;
 }
 
 .sticky-area-wrap .header-ct-left .categories a {

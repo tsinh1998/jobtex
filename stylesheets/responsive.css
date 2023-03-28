@@ -328,8 +328,17 @@
   .tf-slider .form-sl .row-group-search.home1 .form-group-1 input {
     padding-left: 0;
   }
+  .tf-slider .form-sl .row-group-search.home1.st .form-group-1 input {
+    padding-left: 45px;
+  }
   .tf-slider .form-sl .row-group-search.home1 .form-group-2 span {
     left: 0px;
+}
+.tf-slider .form-sl .row-group-search.home1.st .form-group-1 span {
+  left: 0px;
+}
+.features-job .job-footer-right {
+  flex-wrap: wrap;
 }
 }
 @media only screen and (max-width: 991px) {
