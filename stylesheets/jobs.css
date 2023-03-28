@@ -3249,6 +3249,11 @@ input[type="number"]::-webkit-inner-spin-button {
     border: none;
   }
 
+  /* wd job - location */
+  .wd-job-location.style-1 {
+    margin-bottom: 30px;
+  }
+
   /* ================= employers ================================= */
 
   .group-col-3 .cl3,
