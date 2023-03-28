@@ -593,8 +593,10 @@
       });
     }
     if (modalMenu2.length) {
+
       const close = function () {
         modalMenu2.addClass("modal-menu--close");
+        modalMenu2.removeClass("modal-menu--open");
       };
       $(".modal-menu__backdrop, .title-button-group").on("click", function () {
         close();

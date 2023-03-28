@@ -2693,7 +2693,11 @@
   z-index: 99999;
   visibility: visible;
   opacity: 1;
-  transition: 0.3s;
+  -webkit-transition: all 0.4s ease 0s;
+  -moz-transition: all 0.4s ease 0s;
+  -ms-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
 }
 
 .wd-popup-form.modal-menu--close .content,
@@ -2720,20 +2724,28 @@
   opacity: 1;
 }
 
+.wd-popup-form.modal-menu--open .content {
+  transform: translate(-50%, -50%);
+
+}
+
 .wd-popup-form .modal-menu__backdrop,
 .wd-popup-job-apply .modal-menu__backdrop {
   right: 0;
   background: #12121255;
-  opacity: 1;
-  will-change: opacity;
-  transition: opacity 0.25s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  opacity: 0;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -ms-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
   cursor: url(../images/review/icon-close.png), auto;
 }
 
 .wd-popup-form .content {
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -55%);
   display: flex;
   background: #ffffff;
   border-left: 1px solid #e5e5e5;
