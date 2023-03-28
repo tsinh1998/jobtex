@@ -109,6 +109,9 @@
   .shopping-cart .coupon .cp-form .btn {
     margin-top: 30px;
   }
+  .aln-center-mb {
+    align-items: center;
+  }
 }
 @media only screen and (max-width: 1200px) {
   .sticky-area-wrap .header-ct-right .account {
@@ -322,9 +325,15 @@
   .tf-slider .form-sl .row-group-search.home1 .form-group-1 {
     max-width: unset;
   }
-  .tf-slider .form-sl .row-group-search.home1 .form-group-1 input {
+  .tf-slider .form-sl .row-group-search.home1 .form-group-1 input,
+  .wd-review-job.contentbox1.pl1.stc {
     padding-left: 0;
   }
+  .wd-review-job.contentbox1.pl1.stc {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    margin-bottom: 0;
+}
   .tf-slider .form-sl .row-group-search.home1.st .form-group-1 input {
     padding-left: 45px;
   }
