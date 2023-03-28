@@ -1292,14 +1292,15 @@ input[type="number"]::-webkit-inner-spin-button {
 /* .features-job.style-3:hover {
   border-color: ;
 } */
-
 .features-job.style-3 .company {
   display: flex;
   align-items: center;
   flex: 0.8;
+  /* width: 25%; */
 }
 
 .features-job.style-3 .inner-box {
+  flex-wrap: wrap;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -1347,6 +1348,8 @@ input[type="number"]::-webkit-inner-spin-button {
   font-size: 14px;
   font-weight: 400;
   display: inline-flex;
+  flex-wrap: wrap;
+  /* width: 25%; */
 }
 
 .features-job.style-3 .info li:first-child {
@@ -1364,6 +1367,7 @@ input[type="number"]::-webkit-inner-spin-button {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  /* width: 14%; */
 }
 
 .features-job.style-3 .category .tag span {
@@ -1387,6 +1391,7 @@ input[type="number"]::-webkit-inner-spin-button {
   font-size: 16px;
   line-height: 26px;
   color: #121212;
+  /* width: 17%; */
 }
 
 .features-job.style-3 .salary .dollar {
@@ -1403,6 +1408,7 @@ input[type="number"]::-webkit-inner-spin-button {
 .features-job.style-3 .group-btn {
   display: flex;
   align-items: center;
+  /* width: 12%; */
 }
 
 .features-job.style-3 .group-btn span.icon-heart {
@@ -3235,6 +3241,8 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 @media (max-width: 1024px) {
+
+
   .group-category-job .job-category-box {
     width: calc(33.3333% - 20px);
   }
@@ -3316,6 +3324,11 @@ input[type="number"]::-webkit-inner-spin-button {
 
 @media (max-width: 1300px) {
 
+  .features-job.style-3 .company {
+    flex: none;
+    width: 50%;
+  }
+
   /* wd-iconbox */
   .wd-iconbox.style-1 .box {
     display: flex;
@@ -3366,9 +3379,9 @@ input[type="number"]::-webkit-inner-spin-button {
   /* wd-get app */
 
   /* wd-jobs */
-  .features-job.style-3 .inner-box {
+  /* .features-job.style-3 .inner-box {
     flex-direction: column;
-  }
+  } */
 
   /* wd-review-job */
   .wd-review-job .thumb3 {
@@ -3382,6 +3395,8 @@ input[type="number"]::-webkit-inner-spin-button {
 
 /* mobile */
 @media (max-width: 550px) {
+
+
   .group-category-job .job-category-box {
     width: calc(100% - 20px);
   }
@@ -3651,6 +3666,16 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 @media (max-width: 700px) {
+  .features-job.style-3 .company {
+    flex: none;
+    width: 100%;
+  }
+
+  .features-job.style-3 .inner-box {
+    row-gap: 10px;
+    align-items: flex-start;
+  }
+
   .wd-partner {
     height: auto;
   }
