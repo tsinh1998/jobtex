@@ -3222,19 +3222,25 @@ input[type="number"]::-webkit-inner-spin-button {
   .shop-content.margin {
     margin-left: 0;
   }
+
+  .wd-iconbox.style-2 .colum3 {
+    margin: 0;
+    width: 50%;
+    padding: 0px 70px;
+  }
+
+  .wd-iconbox .rg-st1 {
+    row-gap: 20px;
+  }
 }
 
 @media (max-width: 1024px) {
-  .group-category-job {
-    justify-content: center;
-  }
-
   .group-category-job .job-category-box {
-    width: calc(30% - 20px);
+    width: calc(33.3333% - 20px);
   }
 
   .group-category-job .job-category-box:last-child {
-    /* width: calc(50% - 20px); */
+    width: 100%;
 
   }
 
@@ -3324,8 +3330,8 @@ input[type="number"]::-webkit-inner-spin-button {
 /* tablet */
 @media (min-width: 550px) and (max-width: 768px) {
 
-
-  .group-category-job .job-category-box {
+  .group-category-job .job-category-box,
+  .group-category-job .job-category-box:last-child {
     width: calc(50% - 20px);
   }
 
@@ -3371,8 +3377,6 @@ input[type="number"]::-webkit-inner-spin-button {
 
 /* mobile */
 @media (max-width: 550px) {
-
-
   .group-category-job .job-category-box {
     width: calc(100% - 20px);
   }
@@ -3405,6 +3409,7 @@ input[type="number"]::-webkit-inner-spin-button {
   }
 
   .wd-iconbox.style-2 .colum3 {
+    padding: 0px 30px;
     width: 100%;
   }
 
@@ -3600,10 +3605,10 @@ input[type="number"]::-webkit-inner-spin-button {
   }
 
   /* ================= employers ================================= */
-  .employer-block .inner-box {
+  /* .employer-block .inner-box {
     flex-direction: column;
     align-items: flex-start;
-  }
+  } */
 
   .employer-block.style-2 .inner-box .button-readmore {
     position: unset;
@@ -3643,6 +3648,15 @@ input[type="number"]::-webkit-inner-spin-button {
 @media (max-width: 700px) {
   .wd-partner {
     height: auto;
+  }
+
+  .tf-title.style-3 {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .tf-title.style-3 .menu-tab {
+    justify-content: flex-start;
   }
 
   /* wd-job-author */
