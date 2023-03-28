@@ -109,6 +109,9 @@
   .shopping-cart .coupon .cp-form .btn {
     margin-top: 30px;
   }
+  .aln-center-mb {
+    align-items: center;
+  }
 }
 @media only screen and (max-width: 1200px) {
   .sticky-area-wrap .header-ct-right .account {
@@ -201,9 +204,6 @@
   }
   .job-search-form.style2 .form-group:not(:last-child) {
     border-right: unset;
-  }
-  .wd-review-job.contentbox1 {
-    padding: 0px;
   }
   .group-contact-us {
     flex-wrap: wrap;
@@ -325,9 +325,15 @@
   .tf-slider .form-sl .row-group-search.home1 .form-group-1 {
     max-width: unset;
   }
-  .tf-slider .form-sl .row-group-search.home1 .form-group-1 input {
+  .tf-slider .form-sl .row-group-search.home1 .form-group-1 input,
+  .wd-review-job.contentbox1.pl1.stc {
     padding-left: 0;
   }
+  .wd-review-job.contentbox1.pl1.stc {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    margin-bottom: 0;
+}
   .tf-slider .form-sl .row-group-search.home1.st .form-group-1 input {
     padding-left: 45px;
   }
@@ -393,8 +399,8 @@
     padding-top: 0px;
     margin-bottom: 60px;
   }
-  .wd-review-job.contentbox1 {
-    margin-top: 40px;
+  .wd-review-job.contentbox1.padding {
+    padding-top: 0;
   }
   .wd-review-job.mgl-100 {
     margin-left: 0;
@@ -627,7 +633,8 @@
   .wrapper-author-page-title.style2 .author-archive-header,
   .form-candidate .ip,
   .shop-details .shop-content .group-ip .cl3,
-  .rating-review .left-rating {
+  .rating-review .left-rating,
+  .tf-iconbox.style-1 .box-header {
     margin-bottom: 20px;
   }
   .tf-slider .heading.text-center h2 {

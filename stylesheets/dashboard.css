@@ -192,7 +192,17 @@
     padding: 21px 20px 19px 20px;
     align-items: center;
     border-radius: 8px;
+    transition: all .4s;
 }
+
+.flat-icon-dashboard .box-icon:hover {
+-webkit-transform: translateY(calc(-1.5rem / 5));
+    transform: translateY(calc(-1.5rem / 5));
+    -webkit-box-shadow: 0 5px 10px rgba(30,32,37,.12);
+    box-shadow: 0 5px 10px rgba(30,32,37,.12);
+}
+
+
 
 .flat-icon-dashboard .box-icon .icon {
     width: 80px;
@@ -702,7 +712,7 @@ background: #fff;
     justify-content: flex-start;
     -webkit-transition: all .4s;
     transition: all .4s;
-}
+} 
 
 
 #sidebar-menu ul li a:hover {
