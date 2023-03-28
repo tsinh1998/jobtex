@@ -202,9 +202,6 @@
   .job-search-form.style2 .form-group:not(:last-child) {
     border-right: unset;
   }
-  .wd-review-job.contentbox1 {
-    padding: 0px;
-  }
   .group-contact-us {
     flex-wrap: wrap;
   }
@@ -393,8 +390,8 @@
     padding-top: 0px;
     margin-bottom: 60px;
   }
-  .wd-review-job.contentbox1 {
-    margin-top: 40px;
+  .wd-review-job.contentbox1.padding {
+    padding-top: 0;
   }
   .wd-review-job.mgl-100 {
     margin-left: 0;
@@ -627,7 +624,8 @@
   .wrapper-author-page-title.style2 .author-archive-header,
   .form-candidate .ip,
   .shop-details .shop-content .group-ip .cl3,
-  .rating-review .left-rating {
+  .rating-review .left-rating,
+  .tf-iconbox.style-1 .box-header {
     margin-bottom: 20px;
   }
   .tf-slider .heading.text-center h2 {
