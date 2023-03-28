@@ -90,7 +90,6 @@
   border-bottom: hidden;
   border-left: hidden;
   margin-left: 8px;
-  border: unset;
   border-right: 1px solid #e5e5e5;
   width: 94%;
 }
@@ -3233,6 +3232,21 @@ input[type="number"]::-webkit-inner-spin-button {
 
 @media (max-width: 1024px) {
 
+  /* input style 1 */
+  .row-group-search .form-group-1>input {
+    width: 100%;
+    border: none;
+  }
+
+  .job-search-form .form-group-2 .nice-select {
+    width: 100%;
+    border: none;
+  }
+
+  .job-search-form .form-style-1 {
+    width: 100%;
+    border: none;
+  }
 
   .group-category-job .job-category-box {
     width: calc(33.3333% - 20px);
@@ -3387,6 +3401,10 @@ input[type="number"]::-webkit-inner-spin-button {
 /* mobile */
 @media (max-width: 550px) {
 
+  .widget-menu-link ul {
+    justify-content: center;
+  }
+
 
   .group-category-job .job-category-box {
     width: calc(100% - 20px);
@@ -3442,7 +3460,13 @@ input[type="number"]::-webkit-inner-spin-button {
   }
 
   .wd-review-job.contentbox1.style2 {
-    padding-top: 0;
+    padding: 0px 15px;
+    margin-bottom: 30px;
+  }
+
+  .group-list-icon {
+    flex-direction: column;
+    row-gap: 21px;
   }
 
   /* wg-get-app */
