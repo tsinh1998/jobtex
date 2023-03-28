@@ -266,6 +266,9 @@
   .wd-social {
     margin-bottom: 30px;
   }
+  .top-footer .wd-social {
+    margin-bottom: 0px;
+  }
   .wd-social .list-social {
     flex-wrap: wrap;
   }
