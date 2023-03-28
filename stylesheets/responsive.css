@@ -159,7 +159,8 @@
   .footer-cl-5 {
     margin-left: 20%;
   }
-  .job-article .inner-content {
+  .job-article .inner-content,
+  .wd-get-app .content {
     padding: 0px;
   }
   .features-job .inner-box span.icon-heart {
@@ -225,8 +226,15 @@
   .infor-contact-v1 .list-social li {
     margin-bottom: 15px;
   }
+  .wd-get-app .content .group-btn {
+    display: flex;
+    align-items: center;
+}
   .cv-form-details .wd-social span {
     margin-right: 20px;
+  }
+  .get-app-sc {
+    padding: 80px 0;
   }
 }
 @media only screen and (max-width: 1024px) {
@@ -384,7 +392,8 @@
   .wd-iconbox .tf-iconbox {
     margin-bottom: 30px;
   }
-  .wd-review-job.thumb1 .thumb {
+  .wd-review-job.thumb1 .thumb,
+  .wd-get-app .content {
     text-align: center;
   }
   .wd-review-job.thumb1 .trader-box.box3 {
@@ -415,7 +424,7 @@
   .wd-get-app .thumb {
     margin-left: 0%;
     text-align: center;
-    margin-bottom: 60px;
+    margin-bottom: 40px;
   }
   .tf-slider.sl6 .form-sl,
   .tf-slider.sl8 .form-sl,
@@ -554,7 +563,9 @@
   overflow-y: unset;
   height: unset;
 }
-
+.wd-get-app .content .group-btn {
+  justify-content: center;
+}
 }
 @media only screen and (max-width: 767px) {
   .group-location .box-3,
