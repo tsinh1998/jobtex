@@ -1275,7 +1275,7 @@ input[type="number"]::-webkit-inner-spin-button {
   border-top: 1px solid #e5e5e5;
   border-left: 1px solid #e5e5e5;
   border-right: 1px solid #e5e5e5;
-  border-bottom: hidden;
+  border-bottom: 1px solid transparent;
   /* padding: 24px; */
   margin-bottom: 0;
 }
@@ -1349,7 +1349,7 @@ input[type="number"]::-webkit-inner-spin-button {
   font-weight: 400;
   display: inline-flex;
   flex-wrap: wrap;
-  /* width: 25%; */
+  margin-left: -18rem;
 }
 
 .features-job.style-3 .info li:first-child {
@@ -2942,19 +2942,6 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 /* --------Check out-------------------- */
-/* .group-8-4 {
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: -32px;
-}
-.group-8-4 .cl8 {
-  width: calc(60.666667% - 32px);
-  margin-left: 32px;
-}
-.group-8-4 .cl4 {
-  width: calc(35.333333% - 32px);
-  margin-left: 88px;
-} */
 .bg-coupon {
   background: rgba(20, 160, 119, 0.05);
   border-left: 4.23px solid #14a077;
@@ -3211,6 +3198,10 @@ input[type="number"]::-webkit-inner-spin-button {
 
 /*===================================================== responsive =================================================================*/
 @media (max-width: 1440px) {
+  .features-job.style-3 .info {
+    margin-left: 0;
+  }
+
   .features-job.style-3 {
     height: auto;
   }
