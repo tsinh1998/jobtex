@@ -273,7 +273,7 @@
   }
 
   .group-contact-us,
-.wd-job-author2 .content-left .content .job-info {
+  .wd-job-author2 .content-left .content .job-info {
     flex-wrap: wrap;
   }
 
@@ -311,23 +311,28 @@
   .get-app-sc {
     padding: 80px 0;
   }
+
   .group-half-map.st1 .content-left {
     padding: 15px;
-}
-.group-half-map .content-job.sc1 .features-job,
-.group-half-map.style2 .content-left .st-filter,
-.group-half-map.style2 .content-job .features-job {
-  margin-right: 0;
-}
-.wd-job-author2 {
-  padding: 25px;
-}
-.wd-job-author2 .content-right .top {
-  text-align: right;
-}
-.wd-job-author2 .content-right .top a:not(:last-child) {
-  margin-bottom: 15px;
-}
+  }
+
+  .group-half-map .content-job.sc1 .features-job,
+  .group-half-map.style2 .content-left .st-filter,
+  .group-half-map.style2 .content-job .features-job {
+    margin-right: 0;
+  }
+
+  .wd-job-author2 {
+    padding: 25px;
+  }
+
+  .wd-job-author2 .content-right .top {
+    text-align: right;
+  }
+
+  .wd-job-author2 .content-right .top a:not(:last-child) {
+    margin-bottom: 15px;
+  }
 }
 
 @media only screen and (max-width: 1024px) {
@@ -715,6 +720,11 @@
     display: block;
   }
 
+  .wd-findjob-filer .button-filter {
+    display: inline-block;
+    margin-bottom: 15px;
+  }
+
   .stc .wd-findjob-filer {
     display: flex;
   }
@@ -753,19 +763,27 @@
   .wd-get-app .content .group-btn {
     justify-content: center;
   }
+
   .wrap-sidebar-full.pl1 {
     padding-left: 15px;
     padding-right: 15px;
-}
-.wd-job-author2 .content-right .top {
-  text-align: right;
-}
-.wd-job-author2 .content-right .top a:not(:last-child) {
-  margin-bottom: 15px;
-}
-.wd-job-author2 .content-left .content .job-info {
-  flex-wrap: wrap;
-}
+  }
+
+  .wd-job-author2 .content-right .top {
+    text-align: right;
+  }
+
+  .wd-job-author2 .content-right .top a:not(:last-child) {
+    margin-bottom: 15px;
+  }
+
+  .wd-job-author2 .content-left .content .job-info {
+    flex-wrap: wrap;
+  }
+
+  .wrap-sidebar-full .tf-tab {
+    padding: 0px 24px;
+  }
 }
 
 @media only screen and (max-width: 767px) {
@@ -1043,6 +1061,7 @@
   .group-col-3 .pricing-box.cl3 {
     width: calc(100% - 32px);
   }
+
   .cv-form-details {
     margin-top: 50px;
   }
