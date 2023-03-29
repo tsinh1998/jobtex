@@ -691,6 +691,11 @@
     display: block;
   }
 
+  .wd-findjob-filer .button-filter {
+    display: inline-block;
+    margin-bottom: 15px;
+  }
+
   .stc .wd-findjob-filer {
     display: flex;
   }
@@ -997,5 +1002,9 @@
 
   .group-col-3 .pricing-box.cl3 {
     width: calc(100% - 32px);
+  }
+
+  .wrap-sidebar-full .tf-tab {
+    padding: 0px 24px;
   }
 }

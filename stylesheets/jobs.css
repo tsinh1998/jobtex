@@ -1562,6 +1562,7 @@ input[type="number"]::-webkit-inner-spin-button {
 
 .employer-block.style-2 .inner-box {
   position: relative;
+  flex-wrap: wrap;
 }
 
 .employer-block.style-2 .inner-box .button-readmore {
@@ -3265,6 +3266,11 @@ input[type="number"]::-webkit-inner-spin-button {
     margin-bottom: 30px;
   }
 
+  /* -------- job ------------ */
+  .group-half-map.style2 .content-left .st-filter {
+    margin-right: 0;
+  }
+
   /* ================= employers ================================= */
 
   .group-col-3 .cl3,
@@ -3354,6 +3360,13 @@ input[type="number"]::-webkit-inner-spin-button {
   .wd-get-app .thumb img {
     height: auto !important;
   }
+}
+
+@media (max-width: 1200px) {
+  .group-half-map.st1 .content-left {
+    padding: 34px 15px 0px;
+  }
+
 }
 
 /* tablet */
@@ -3685,6 +3698,10 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 @media (max-width: 700px) {
+  .wd-banner-rating h6 {
+    margin-right: 0;
+  }
+
   .features-job.style-3 .company {
     flex: none;
     width: 100%;
