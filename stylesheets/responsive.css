@@ -260,7 +260,8 @@
   }
 
   .job-search-form.style2 .form-group.location,
-  .cv-form-details.stc2 {
+  .cv-form-details.stc2,
+  .job-article.single-employer .related-job {
     margin: 0;
   }
 
@@ -318,7 +319,8 @@
 
   .group-half-map .content-job.sc1 .features-job,
   .group-half-map.style2 .content-left .st-filter,
-  .group-half-map.style2 .content-job .features-job {
+  .group-half-map.style2 .content-job .features-job,
+  .job-article.single-employer .wd-form-rating {
     margin-right: 0;
   }
 
@@ -332,6 +334,17 @@
 
   .wd-job-author2 .content-right .top a:not(:last-child) {
     margin-bottom: 15px;
+  }
+  .job-article.single-employer .related-job {
+    margin: 50px 0;
+  }
+  .wd-job-author.stc-em2 {
+    padding: 25px;
+  }
+  .wd-job-author.stc-em2 .content .group-btn {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
   }
 }
 
@@ -483,6 +496,10 @@
 
   .features-job .job-footer-right {
     flex-wrap: wrap;
+  }
+  .wd-banner-rating {
+    margin-left: 5%;
+    margin-right: 5%;
   }
 }
 
@@ -818,7 +835,8 @@
     padding: 20px 0;
   }
 
-  .header .header-ct-center .mobile-button {
+  .header .header-ct-center .mobile-button,
+  .wd-banner-rating {
     margin: 0;
   }
 
@@ -1065,4 +1083,12 @@
   .cv-form-details {
     margin-top: 50px;
   }
+  .wd-job-author.stc-em {
+    padding: 25px;
+  }
+  .wd-job-author.stc-em .inner-job-right .icon-share2,
+  .wd-job-author.stc-em2 .inner-job-right .icon-share2 {
+    top: 25px;
+    right: 25px;
+}
 }

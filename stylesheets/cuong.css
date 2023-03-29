@@ -2332,6 +2332,7 @@
   font-size: 16px;
   line-height: 26px;
   color: #64666c;
+  gap: 15px;
 }
 
 .cv-form-details .list-infor li .detail {
