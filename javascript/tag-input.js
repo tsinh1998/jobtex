@@ -15,22 +15,6 @@ function addEvent(element) {
         addEvent();
     });
 
-    // element.addEventListener("focus", () => {
-    //     tagArea.classList.add("active");
-    //     label.classList.add("label-active");
-    // });
-
-    // element.addEventListener("blur", (e) => {
-    //     tagArea.classList.remove("active");
-    //     if (element.value === "" && tags.length === 0) {
-    //         label.classList.remove("label-active");
-    //     }
-    //     if (!element.value.match(/^\s+$/gi) && element.value !== "") {
-    //         tags.push(e.target.value.trim());
-    //         element.value = "";
-    //         renderTags();
-    //     }
-    // });
     
     element.addEventListener("keydown", (e) => {
         console.log(e);

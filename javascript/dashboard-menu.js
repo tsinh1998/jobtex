@@ -5,7 +5,7 @@
     t("#left-menu-btn").on("click", function(e) {
         e.preventDefault(),
         t("body").toggleClass("sidebar-enable"),
-        992 <= t(window).width() ? t("body").toggleClass("show-job") : t("body").removeClass("show-job")
+        1400 <= t(window).width() ? t("body").toggleClass("show-job") : t("body").removeClass("show-job")
     }),
    
     t("#sidebar-menu a").each(function() {
@@ -36,32 +36,8 @@
     }),
 
 
-    t(".right-bar-toggle").on("click", function(e) {
-        t("body").toggleClass("right-bar-enabled")
-    }),
-    t(document).on("click", "body", function(e) {
-        0 < t(e.target).closest(".right-bar-toggle, .right-bar").length || t("body").removeClass("right-bar-enabled")
-    }),
-    function() {
-        if (document.getElementById("topnav-menu-content")) {
-            for (var e = document.getElementById("topnav-menu-content").getElementsByTagName("a"), t = 0, n = e.length; t < n; t++)
-                e[t].onclick = function(e) {
-                    "#" === e.target.getAttribute("href") && (e.target.parentElement.classList.toggle("active"),
-                    e.target.nextElementSibling.classList.toggle("show"))
-                }
-                ;
-            window.addEventListener("resize", s)
-        }
-    }(),
-    t(function() {
-        t('[data-bs-toggle="tooltip"]').tooltip()
-    }),
-    t(function() {
-        t('[data-bs-toggle="popover"]').popover()
-    }),
-    
     $(function () {
 
     });
-    // t.init();
+
 }(jQuery);

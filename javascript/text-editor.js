@@ -19,21 +19,3 @@ buttons.forEach(button =>{
 
 })
 
-
-// fullScreen[0].addEventListener('click', ()=>{
-//     let title = document.getElementsByClassName('title')[0];
-//     let mainEditor = document.getElementsByClassName('text-editor-main')[0];
-//     let outputContent = document.getElementsByClassName('contentOutput')[0];
-//     title.classList.toggle('fullscreen-title');
-//     mainEditor.classList.toggle('fullscreen-text-editor');
-//     outputContent.classList.toggle('fullscreen-output');
-//     if (outputContent.classList.contains('fullscreen-output')){
-//         fullScreen[0].childNodes[0].classList.remove('fa-expand-arrows-alt');
-//         fullScreen[0].childNodes[0].classList.add('fa-compress-arrows-alt');
-//     }
-//     else{
-//         fullScreen[0].childNodes[0].classList.add('fa-expand-arrows-alt');
-//         fullScreen[0].childNodes[0].classList.remove('fa-compress-arrows-alt');
-//     }
-	
-// })
