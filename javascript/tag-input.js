@@ -12,7 +12,7 @@ let tags = ['Developer','Graphic Designer','VFX Artist'];
 function addEvent(element) {
     tagArea.addEventListener("click", () => {
         element.focus();
-        addEvent();
+        // addEvent();
     });
 
     
@@ -35,7 +35,6 @@ function addEvent(element) {
             renderTags();
         }
     });
-
     
     // event.preventDefault();
 }
