@@ -780,6 +780,10 @@
   .wd-job-author2 .content-left .content .job-info {
     flex-wrap: wrap;
   }
+
+  .wrap-sidebar-full .tf-tab {
+    padding: 0px 24px;
+  }
 }
 
 @media only screen and (max-width: 767px) {
@@ -1060,9 +1064,5 @@
 
   .cv-form-details {
     margin-top: 50px;
-  }
-
-  .wrap-sidebar-full .tf-tab {
-    padding: 0px 24px;
   }
 }
