@@ -631,10 +631,12 @@ background: #fff;
 
 .dashboard.show .dashboard__content {
     margin-left: 289px;
+    transition: all .2s ease-out;
 }
 
 .dashboard.show-job .dashboard__content {
     margin-left: 70px;
+    transition: all .2s ease-out;
 }
 
 /* menu */
@@ -2110,7 +2112,6 @@ background: #fff;
 
 /* flat Submit Job */
 
-
 .flat-dashboard-submit .submit-job h3 {
     margin-bottom: 27px;
 }
@@ -2811,10 +2812,14 @@ background: #fff;
     padding: 32px 32px 32px;
 }
 .flat-dashboard-resumes .author-profile {
-    margin-bottom: 32px;
+    margin-bottom: 31px;
     padding-bottom: 13px;
 }
-
+.flat-dashboard-resumes .wd-file-apply .title-box .sub-title {
+    text-transform: uppercase;
+    letter-spacing: 1.1px;
+    margin-bottom: 2px;
+}
 .flat-dashboard-resumes .wd-file-apply .content h3 {
     margin-bottom: 17px;
 }
@@ -2823,51 +2828,40 @@ background: #fff;
     border-radius: 8px;
     margin-bottom: 20px;
 }
-.flat-dashboard-resumes  .wd-file-apply .content .custom-file::-webkit-file-upload-button {
-    display: none;
-}
-.flat-dashboard-resumes  .wd-file-apply .content .custom-file::before {
-    content: 'PDF';
-    display: block;
-    outline: none;
-    white-space: nowrap;
-    -webkit-user-select: none;
-    cursor: pointer;
-    background: unset;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 26px;
-    color: #121212;
-}
-.flat-dashboard-resumes  .wd-file-apply .content .right .custom-file::before {
-    content: 'Doc';
-}
-.flat-dashboard-resumes  .wd-file-apply .content .custom-file:hover::before {
-    border-color: black;
-}
-.flat-dashboard-resumes  .wd-file-apply .content .custom-file:active::before {
-    background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9);
-} 
+
+
 .flat-dashboard-resumes  .wd-file-apply .content .group-file {
     display: flex;
-    margin-left: -40px;
+    flex-wrap: wrap;
+    margin-left: -77px;
     padding: 16px;
     border-radius: 8px;
     padding-bottom: 14px;
 }
 .flat-dashboard-resumes  .wd-file-apply .content .group-file .inner {
-    width: calc(30% - 40px);
-    margin-left: 40px;
-    padding: 13px 55px 13px 12px;
+    width: calc(30.65% - 77px);
+    margin-left: 77px;
+    padding: 9px 55px 13px 12px;
     background: rgba(20, 129, 96, 0.1);
     border-radius: 8px;
     position: relative;
 }
-.flat-dashboard-resumes  .wd-file-apply .content .group-file .inner i {
+
+.flat-dashboard-resumes  .wd-file-apply .content .group-file .inner .icon-close {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    right: 23px;
+    right: -40px;
+    font-weight: 600;
+    color: #EB4D4D;
+    font-size: 26px;
+
+}
+.flat-dashboard-resumes  .wd-file-apply .content .group-file .inner .file-icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 25px;
     font-size: 39px;
 }
 .flat-dashboard-resumes .text-editor-wrap {
@@ -3355,14 +3349,10 @@ background: #fff;
   }
 
 
-/* .flat-dashboard-candidates tbody tr td:last-child {
-    width: 30%;
-} */
-
 
 @media only screen and (max-width: 1700px) {
     .dashboard.show .dashboard__content {
-        margin-left: 0;
+        margin-left: 280px;
     }
     
 }
@@ -3371,9 +3361,33 @@ background: #fff;
     .dashboard .btn {
         left: 320px;
     }
-    .show-job .left-menu {
+
+    .left-menu {
         display: none;
     }
+    .sidebar-enable .left-menu  {
+        display: block;
+    }
+
+    .dashboard.show .dashboard__content {
+        margin-left: 0;
+    }
+    
+    /* .show-job .left-menu {
+        display: unset;
+    }
+    .left-menu {
+        display: none;
+    } */
+
+    /* .left-menu  {
+        display:none;
+    }
+
+
+    .sidebar-enable .left-menu {
+        display: block;
+    } */
     
 }
 
@@ -3428,9 +3442,7 @@ background: #fff;
     .left-menu {
         top: 73px;
     }
-    .sidebar-enable .left-menu {
-        display: none;
-    }
+   
     
     .page-title-dashboard {
         padding: 100px 0 30px;
@@ -3603,8 +3615,12 @@ background: #fff;
         margin-bottom: 15px;
     }
 
+    .flat-dashboard-resumes .wd-file-apply .content .group-file {
+        margin-left: -60px
+    }
     .flat-dashboard-resumes .wd-file-apply .content .group-file .inner {
-        width: calc(50% - 40px);
+        width: calc(47.5% - 60px);
+        margin-left: 60px
     }
 
     .flat-dashboard-messages .dash-search {
@@ -3800,15 +3816,23 @@ background: #fff;
     .dashboard .button-wrap .tt-button a {
         margin-right: 15px;
     }
-
+    .flat-dashboard-resumes .wd-file-apply .content .group-file {
+        padding: 15px 10px;
+    }
     .flat-dashboard-resumes .wd-file-apply .content .group-file .inner {
-        width: calc(100% - 40px);
+        width: calc(100% - 60px);
         margin-bottom: 10px;
     }
     .flat-dashboard-resumes .wd-file-apply .content .group-file .inner:last-child {
         margin-bottom: 0;
     }
-
+    .flat-dashboard-resumes .wd-file-apply .content .group-file .inner .file-icon {
+        right: 32px;
+    }
+    .flat-dashboard-resumes .wd-file-apply .content .group-file .inner .icon-close {
+        right: 4px;
+    }
+    
     .flat-dashboard-resumes .group-date fieldset:nth-child(2) {
         width: 100%;
         padding-left: 0;
@@ -3863,6 +3887,11 @@ background: #fff;
     .flat-dashboard-applicants .dash-search {
         flex-wrap: wrap;
         justify-content: center;
+        /* width: 100%; */
+    }
+    .flat-dashboard-applicants .dash-search .search,
+    .flat-dashboard-applicants .dash-search .search-form .search-field {
+        width: 100%;
     }
     .flat-dashboard-applicants .dash-search .search-flat {
         margin-bottom: 10px;
@@ -3875,6 +3904,7 @@ background: #fff;
         width: 100%;
         text-align: center;
     }
+
     .flat-dashboard-setting .author-profile .wrap-img .img-box {
         margin-right: 0;
         margin-bottom: 10px;
