@@ -341,7 +341,13 @@ h3 span.icon-bolt {
   font-size: 16px;
 }
 
-.features-job .job-archive-footer .job-tag span {
+.features-job .job-archive-footer .job-tag {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.features-job .job-archive-footer .job-tag li a {
   background-color: #f1f1f1;
   color: #121212;
   font-size: 12px;
@@ -351,9 +357,11 @@ h3 span.icon-bolt {
   border-radius: 52px;
 }
 
-.features-job .job-archive-footer .job-tag span:first-child {
-  margin-right: 8px;
+.features-job .job-archive-footer .job-tag li a:hover {
+  background: #148160;
+  color: #fff;
 }
+
 
 .features-job .star span,
 .employer-block .star span {
@@ -1369,7 +1377,7 @@ input[type="number"]::-webkit-inner-spin-button {
   /* width: 14%; */
 }
 
-.features-job.style-3 .category .tag span {
+.features-job.style-3 .category .job-tag li a {
   background-color: #f1f1f1;
   color: #121212;
   font-size: 12px;
@@ -1379,9 +1387,20 @@ input[type="number"]::-webkit-inner-spin-button {
   border-radius: 52px;
 }
 
-.features-job.style-3 .category .tag span:first-child {
-  margin-right: 8px;
+.features-job.style-3 .category .job-tag li a:hover {
+  background: #148160;
+  color: #fff;
 }
+
+.features-job.style-3 .category .job-tag {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+/* .features-job.style-3 .category .tag span:first-child {
+  margin-right: 8px;
+} */
 
 .features-job.style-3 .salary {
   display: flex;
@@ -3226,8 +3245,6 @@ input[type="number"]::-webkit-inner-spin-button {
 /* .sl-icon-box:hover .icon-content h5 a {
   color: #14A077;
 } */
-
-
 /*===================================================== responsive =================================================================*/
 @media (max-width: 1440px) {
   .features-job.style-3 .info {
@@ -3527,11 +3544,6 @@ input[type="number"]::-webkit-inner-spin-button {
   /* wd-job */
   .features-job.style-3 {
     height: auto;
-  }
-
-  .features-job .job-archive-footer .job-tag span:first-child {
-    display: inline-block;
-    margin-bottom: 10px;
   }
 
   .features-job .inner-box {
