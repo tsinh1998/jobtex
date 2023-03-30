@@ -3195,6 +3195,39 @@ input[type="number"]::-webkit-inner-spin-button {
   margin-bottom: 0;
 }
 
+.group-icon .sl-icon-box.box .icon {
+  position: relative;
+  cursor: pointer;
+}
+
+.group-icon .sl-icon-box.box .icon:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #fff;
+  border-radius: 50%;
+  transition: width 0.3s ease;
+  z-index: -1;
+  /* transition: all 0.3s ease; */
+}
+
+.group-icon .sl-icon-box.box:hover .icon:before {
+  width: 100%;
+  height: 100%;
+}
+
+.group-icon .sl-icon-box.box:hover .icon svg path {
+  fill: #14A077;
+}
+
+/* .sl-icon-box:hover .icon-content h5 a {
+  color: #14A077;
+} */
+
+
 /*===================================================== responsive =================================================================*/
 @media (max-width: 1440px) {
   .features-job.style-3 .info {
