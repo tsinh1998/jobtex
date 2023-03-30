@@ -1645,6 +1645,15 @@
 .cv-form-details.stc2 {
   margin-top: -181px;
   margin-left: 5px;
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+}
+
+.cv-form-details.stc2.remove-mgt {
+  margin-top: 0px;
 }
 
 .job-article.single-job.stc2 .menu-tab {
@@ -1678,28 +1687,24 @@
 }
 
 .group-job-sidebar {
-  position: sticky;
-  top: 0px;
-  height: 100%;
   margin-right: -7px;
 }
 
-.list-job {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  overflow: scroll;
+.job-article .inner-content.home2 {
+  overflow-y: scroll;
+  height: 70vh;
 }
 
-.job-article {
+.cv-form-details.job-sg {
   overflow-y: scroll;
-  height: 250vh;
+  height: 80vh;
 }
+
 
 .list-job::-webkit-scrollbar-track,
-.job-article::-webkit-scrollbar-track {
+.job-article::-webkit-scrollbar-track,
+.job-article .inner-content::-webkit-scrollbar-track,
+.cv-form-details.job-sg::-webkit-scrollbar-track {
   background-color: #fff;
   border: 1px solid #e5e5e5;
   border-left: unset;
@@ -1710,7 +1715,9 @@
 }
 
 .list-job::-webkit-scrollbar-thumb,
-.job-article::-webkit-scrollbar-thumb {
+.job-article::-webkit-scrollbar-thumb,
+.job-article .inner-content::-webkit-scrollbar-thumb,
+.cv-form-details.job-sg::-webkit-scrollbar-thumb {
   background-color: #e5e5e5;
   -webkit-backface-visibility: hidden;
   -moz-backface-visibility: hidden;
@@ -1719,8 +1726,10 @@
 }
 
 .list-job::-webkit-scrollbar,
-.job-article::-webkit-scrollbar {
-  width: 12px;
+.job-article::-webkit-scrollbar,
+.job-article .inner-content::-webkit-scrollbar,
+.cv-form-details.job-sg::-webkit-scrollbar {
+  width: 5px;
   height: 50px;
   background-color: #fff;
   -webkit-backface-visibility: hidden;
@@ -3318,6 +3327,10 @@
   height: 15px;
   margin-left: 3px;
   margin-right: 6px;
+}
+
+.wd-popup-job-apply .content .group-radio input::after {
+  display: none;
 }
 
 .wd-popup-form .content .content-right .group-radio input:checked,
@@ -6169,6 +6182,14 @@
   width: 20px;
   height: 20px;
   justify-content: center;
+}
+
+.features-job.ct-tab {
+  cursor: pointer;
+}
+
+.features-job.ct-tab.active {
+  border-color: #14a077;
 }
 
 /* --------------\---------------------------animation------------------------------------ */

@@ -88,6 +88,16 @@
     }
   };
 
+  var scrollEffect = function () {
+    $(window).on("load scroll", function () {
+      if ($(window).scrollTop() > 100) {
+        $(".cv-form-details.stc2").addClass("remove-mgt");
+      } else {
+        $(".cv-form-details.stc2").removeClass("remove-mgt");
+      }
+    });
+  };
+
   var showsearch = function () {
     $(".icon-show-search").click(function () {
       $(".top-search").slideToggle("show");
@@ -684,6 +694,7 @@
     stickSidebar();
     parallax();
     gallery();
+    scrollEffect();
     flatSpacer();
     btnQuantity();
     dropdown("#item_date");

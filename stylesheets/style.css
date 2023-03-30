@@ -1047,6 +1047,12 @@ margin-bottom: 17px;
   background-color: #fff;
 }
 
+.header.style-absolute.is-fixed .header-ct-center .mobile-button::before,
+.header.style-absolute.is-fixed .header-ct-center .mobile-button::after,
+.header.style-absolute.is-fixed .header-ct-center .mobile-button span {
+  background-color: #121212;
+}
+
 .header .header-ct-center .mobile-button::before {
   -webkit-transform: translate3d(0, -7px, 0);
   -moz-transform: translate3d(0, -7px, 0);
