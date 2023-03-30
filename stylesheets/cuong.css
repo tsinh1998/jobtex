@@ -1700,6 +1700,22 @@
   height: 80vh;
 }
 
+.form-sticky {
+  position: relative;
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+}
+
+.form-sticky {
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9;
+}
 
 .list-job::-webkit-scrollbar-track,
 .job-article::-webkit-scrollbar-track,
@@ -2882,7 +2898,7 @@
 
 .sidebar-popup .widget-filter::-webkit-scrollbar,
 .style-scroll::-webkit-scrollbar {
-  width: 12px;
+  width: 5px;
   height: 50px;
   background-color: #fff;
   -webkit-backface-visibility: hidden;
