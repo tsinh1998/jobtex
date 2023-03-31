@@ -487,11 +487,21 @@
   border-color: #fff;
 }
 
+.box-latest .img-latest {
+  overflow: hidden;
+  border-radius: 8px 8px 0 0;
+
+}
+
 .box-latest .img-latest img {
   width: 100%;
-  border-radius: 8px 8px 0 0;
-  height: 260px;
+  transition: all 0.3s ease-in-out;
   object-fit: cover;
+}
+
+.box-latest:hover .img-latest img {
+  transform: scale3d(1.1, 1.1, 1.1);
+
 }
 
 .box-latest .box-content {
@@ -518,7 +528,7 @@
   color: #14a077;
 }
 
-.box-latest .heading p {
+.box-latest .heading .tag {
   display: inline-block;
   padding: 4px 12px;
   background: rgba(41, 100, 225, 0.1);
@@ -527,6 +537,12 @@
   font-size: 12px;
   line-height: 16px;
   font-weight: 500;
+  cursor: pointer;
+}
+
+.box-latest .heading .tag:hover {
+  background-color: #14a077;
+  color: #fff;
 }
 
 .box-latest ul li {
