@@ -785,7 +785,6 @@ background: #fff;
 
 
 .show-job .left-menu {
-    position: absolute;
     width: 70px;
     z-index: 5
 }
