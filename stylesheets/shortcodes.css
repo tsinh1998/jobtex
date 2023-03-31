@@ -475,6 +475,7 @@
 
 /* wd latest New */
 .box-latest {
+  cursor: pointer;
   transition: all 0.3s ease-in-out;
 
 }
@@ -487,12 +488,12 @@
 
 .box-latest .img-latest {
   overflow: hidden;
+  border-radius: 8px 8px 0 0;
+
 }
 
 .box-latest .img-latest img {
   width: 100%;
-  border-radius: 8px 8px 0 0;
-  height: 260px;
   transition: all 0.3s ease-in-out;
   object-fit: cover;
 }
