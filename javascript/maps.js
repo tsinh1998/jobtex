@@ -43,20 +43,20 @@
     var locations = [
       [
         locationData(
-          "images/resource/company-logo/1-1.png",
+          "images/logo-company/cty1.png",
           "job-single-v1.html",
           "Software Engineer",
           "Segment",
           "London, UK"
         ),
-        40.94401669296697,
+        46,
         -74.16938781738281,
         1,
-        '<div style="background-image: url(images/resource/company-logo/3-1.png);"></div>',
+        '<div style="background-image: url(images/logo-company/cty1.png);"></div>',
       ],
       [
         locationData(
-          "images/resource/company-logo/1-2.png",
+          "images/logo-company/cty2.png",
           "job-single-v1.html",
           "Software Engineer",
           "Segment",
@@ -65,11 +65,11 @@
         40.77055783505125,
         -74.26002502441406,
         2,
-        '<div style="background-image: url(images/resource/company-logo/3-2.png);"></div>',
+        '<div style="background-image: url(images/logo-company/cty2.png);"></div>',
       ],
       [
         locationData(
-          "images/resource/company-logo/1-3.png",
+          "images/logo-company/cty3.png",
           "job-single-v1.html",
           "Software Engineer",
           "Segment",
@@ -78,24 +78,24 @@
         40.7427837,
         -73.11445617675781,
         3,
-        '<div style="background-image: url(images/resource/company-logo/3-3.png);"></div>',
+        '<div style="background-image: url(images/logo-company/cty3.png);"></div>',
       ],
       [
         locationData(
-          "images/resource/company-logo/1-4.png",
+          "images/logo-company/cty4.png",
           "job-single-v1.html",
           "Software Engineer",
           "Segment",
           "London, UK"
         ),
-        40.70437865245596,
-        -73.98674011230469,
+        40.704225,
+        -73.993312,
         4,
-        '<div style="background-image: url(images/resource/company-logo/3-4.png);"></div>',
+        '<div style="background-image: url(images/logo-company/cty4.png);"></div>',
       ],
       [
         locationData(
-          "images/resource/company-logo/1-5.png",
+          "images/logo-company/cty5.png",
           "job-single-v1.html",
           "Software Engineer",
           "Segment",
@@ -104,11 +104,11 @@
         40.641311,
         -73.778139,
         5,
-        '<div style="background-image: url(images/resource/company-logo/3-5.png);"></div>',
+        '<div style="background-image: url(images/logo-company/cty5.png);"></div>',
       ],
       [
         locationData(
-          "images/resource/company-logo/1-6.png",
+          "images/logo-company/cty6.png",
           "job-single-v1.html",
           "Software Engineer",
           "Segment",
@@ -117,20 +117,20 @@
         41.080938,
         -73.535957,
         6,
-        '<div style="background-image: url(images/resource/company-logo/3-6.png);"></div>',
+        '<div style="background-image: url(images/logo-company/cty6.png);"></div>',
       ],
       [
         locationData(
-          "images/resource/company-logo/1-7.png",
+          "images/logo-company/cty7.png",
           "job-single-v1.html",
           "Software Engineer",
           "Segment",
           "London, UK"
         ),
-        41.079386,
+        30.079386,
         -73.519478,
         7,
-        '<div style="background-image: url(images/resource/company-logo/3-7.png);"></div>',
+        '<div style="background-image: url(images/logo-company/cty7.png);"></div>',
       ],
     ];
 
@@ -275,7 +275,7 @@ if(infoBox_ratingType='star-rating'){starRating('.infoBox .'+infoBox_ratingType+
     var map = new google.maps.Map(document.getElementById("map"), {
       zoom: zoomLevel,
       scrollwheel: scrollEnabled,
-      center: new google.maps.LatLng(40.8, -73.7),
+      center: new google.maps.LatLng(40.705999, -74.003221),
       mapTypeId: google.maps.MapTypeId.ROADMAP,
       zoomControl: false,
       mapTypeControl: false,
@@ -528,7 +528,7 @@ if(infoBox_ratingType='star-rating'){starRating('.infoBox .'+infoBox_ratingType+
     var single_map = new google.maps.Map(
       document.getElementById("singleListingMap"),
       {
-        zoom: 15,
+        zoom: 16,
         center: myLatlng,
         scrollwheel: false,
         zoomControl: false,
