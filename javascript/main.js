@@ -91,9 +91,23 @@
   var scrollEffect = function () {
     $(window).on("load scroll", function () {
       if ($(window).scrollTop() > 100) {
+        $(".fixed-content").addClass("is-fixed");
         $(".cv-form-details.stc2").addClass("remove-mgt");
       } else {
+        $(".fixed-content").removeClass("is-fixed");
         $(".cv-form-details.stc2").removeClass("remove-mgt");
+      }
+      if ($(window).scrollTop() > 300) {
+        $(".form-meta2").addClass("is-fixed");
+        $(".sticky-home2").addClass("add-mgt");
+      } else {
+        $(".form-meta2").removeClass("is-fixed");
+        $(".sticky-home2").removeClass("add-mgt");
+      }
+      if ($(window).scrollTop() > 800) {
+        $(".cv-form-details.job-sg").addClass("add-mgt");
+      } else {
+        $(".cv-form-details.job-sg").removeClass("add-mgt");
       }
     });
   };
@@ -629,6 +643,11 @@
     if (modalMenu4.length) {
       $(".filter-radio").on("click", function () {
         modalMenu4.toggleClass("modal-menu--open");
+      });
+      $(document).on("click.filter-radio", function(a) {
+        if ($(a.target).closest('.filter-radio, .wd-filter-radio').length === 0) {
+          modalMenu4.removeClass("modal-menu--open");
+        }
       });
     }
   };
