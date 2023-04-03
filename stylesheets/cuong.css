@@ -1706,7 +1706,7 @@
 }
 
 .cv-form-details.job-sg.add-mgt {
-  margin-top: 100px;
+  margin-top: 110px;
 }
 
 .form-sticky {
@@ -6239,24 +6239,39 @@
   transition: all 0.3s ease-in-out;
 }
 
-/* .fixed-content.is-fixed {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  margin: 0;
-  padding: 15px;
-  background: #fff;
-  z-index: 999;
-  box-shadow: 0px 3px 9px rgba(0, 0, 0, 0.05);
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  -ms-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-} */
+.video-thumb {
+  margin-bottom: 30px;
+}
 
-
+.video-thumb .thumb img {
+  width: 100%;
+  height: 492px;
+  object-fit: cover;
+}
+.video-thumb .thumb {
+  position: relative;
+  margin-bottom: 20px;
+}
+.video-thumb .thumb a {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.video-thumb .thumb-menu {
+  display: flex;
+  margin-left: -20px;
+}
+.video-thumb .thumb-menu li {
+  width: calc(33.33333% - 20px);
+  margin-left: 20px;
+  cursor: pointer;
+}
+.video-thumb .thumb-menu li img {
+  height: 160px;
+  object-fit: cover;
+  width: 100%;
+}
 /* --------------\---------------------------animation------------------------------------ */
 .ani1 {
   -webkit-animation: ani1 10s infinite ease-in-out alternate;

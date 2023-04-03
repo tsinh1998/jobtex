@@ -104,7 +104,7 @@
         $(".form-meta2").removeClass("is-fixed");
         $(".sticky-home2").removeClass("add-mgt");
       }
-      if ($(window).scrollTop() > 800) {
+      if ($(window).scrollTop() > 500) {
         $(".cv-form-details.job-sg").addClass("add-mgt");
       } else {
         $(".cv-form-details.job-sg").removeClass("add-mgt");
@@ -497,6 +497,37 @@
     });
   };
 
+  var tfTabs2 = function () {
+    $(".tf-tab2").each(function () {
+      $(this).find(".content-tab2").children().hide();
+      $(this).find(".content-tab2").children().first().show();
+      $(this)
+        .find(".menu-tab2")
+        .children(".ct-tab2")
+        .on("click", function (e) {
+          e.preventDefault();
+          var liActive = $(this).index();
+          var contentActive = $(this)
+            .siblings()
+            .removeClass("active")
+            .parents(".tf-tab2")
+            .find(".content-tab2")
+            .children()
+            .eq(liActive);
+          contentActive.addClass("active").fadeIn("slow");
+          contentActive.siblings().removeClass("active");
+          $(this)
+            .addClass("active")
+            .parents(".tf-tab2")
+            .find(".content-tab2")
+            .children()
+            .eq(liActive)
+            .siblings()
+            .hide();
+        });
+    });
+  };
+
   // Mobile Navigation
   var mobileNav = function () {
     var mobile = window.matchMedia("(max-width: 1024px)");
@@ -709,6 +740,7 @@
     counter();
     setTimeIn();
     tfTabs();
+    tfTabs2();
     filter();
     stickSidebar();
     parallax();
