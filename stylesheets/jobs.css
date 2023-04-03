@@ -236,6 +236,17 @@ button.btn-find:hover {
   -ms-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
+  position: relative;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.jobtex-link-item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .features-job:hover {
@@ -299,7 +310,23 @@ button.btn-find:hover {
   text-transform: capitalize;
 }
 
-.features-job .job-archive-header h3 a:hover {
+.features-job .job-archive-header h3 a:not(.jobtex-link-item),
+.features-job.style-3 .box-content h3 a:not(.jobtex-link-item),
+.features-job .job-archive-footer .job-tag li a:not(.jobtex-link-item),
+.features-job.style-3 .category .job-tag li a:not(.jobtex-link-item),
+.employer-block .box-content h3 a:not(.jobtex-link-item) {
+  position: relative;
+  z-index: 2;
+}
+
+.features-job .job-archive-header span.icon-heart:not(.jobtex-link-item),
+.features-job.style-3 .group-btn span.icon-heart:not(.jobtex-link-item) {
+  /* position: relative; */
+  z-index: 2;
+}
+
+.features-job .job-archive-header h3 a:hover,
+.features-job.style-3 .box-content h3 a:hover {
   color: #14a077;
 }
 
@@ -1266,6 +1293,8 @@ input[type="number"]::-webkit-inner-spin-button {
   padding: 24px;
   border-radius: 8px;
   transition: all 0.3s ease-in-out;
+  position: relative;
+  cursor: pointer;
 }
 
 .employer-block:hover {
