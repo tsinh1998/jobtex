@@ -27,6 +27,10 @@
   .job-search-form.style2 .form-group {
     width: 25%;
   }
+  .cv-form-details.job-sg.add-mgt {
+    margin-top: 0px;
+  }
+  
 }
 
 @media only screen and (max-width: 1550px) {
