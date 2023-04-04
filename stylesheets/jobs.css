@@ -1,4 +1,4 @@
-.wd-feature-map iframe {
+.wd-feature-map #map {
   width: 100%;
   height: 600px;
 }
@@ -3028,9 +3028,304 @@ input[type="number"]::-webkit-inner-spin-button {
   fill: #14A077;
 }
 
-/* .sl-icon-box:hover .icon-content h5 a {
-  color: #14A077;
+/* =============MAP================================== */
+.map-marker-container {
+  position: absolute;
+  margin-top: 10px;
+  transform: translate3d(-50%, -100%, 0);
+}
+
+.marker-container {
+  position: relative;
+  /* margin: 10px auto;
+  top: -5px; */
+  top: 25px;
+  left: 10px;
+  width: 46px;
+  height: 46px;
+  z-index: 1;
+  border-radius: 50%;
+  cursor: pointer;
+  -webkit-perspective: 1000;
+}
+
+.face {
+  position: absolute;
+  width: 28px;
+  height: 28px;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  text-align: center;
+  /* border-radius: 50%; */
+  color: #fff;
+  z-index: 100;
+  background: #4cbfd8;
+  font-size: 24px;
+  box-sizing: content-box;
+  background-clip: content-box;
+  line-height: 46px;
+}
+
+.face:before {
+  position: absolute;
+  left: -8px;
+  top: -8px;
+  height: 44px;
+  width: 44px;
+  border-radius: 50%;
+  border: 8px solid rgba(255, 255, 255);
+  box-shadow: 0 2px 30px rgba(20, 159, 117, 0.2);
+  content: "";
+}
+
+.face>div {
+  background-image: url(images/resource/company-logo/3-1.png);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  /* border-radius: 50%; */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.map-marker-container:hover .marker-container .marker-card,
+.clicked .marker-container .marker-card,
+.map-marker-container.clicked .marker-card {
+  transform: rotateY(360deg);
+  transition: all 0.4s ease-in-out;
+}
+
+#singleListingMap .marker-container {
+  cursor: default;
+}
+
+.map-marker-container[data-marker_id="0"] .marker-arrow:before {
+  border-color: #4cbfd8 transparent transparent;
+}
+
+.map-marker-container[data-marker_id="1"] .marker-arrow:before {
+  border-color: #ff8480 transparent transparent;
+}
+
+.map-marker-container[data-marker_id="2"] .marker-arrow:before {
+  border-color: #8c689d transparent transparent;
+}
+
+.map-marker-container[data-marker_id="3"] .marker-arrow:before {
+  border-color: #35c2a5 transparent transparent;
+}
+
+.map-marker-container[data-marker_id="4"] .marker-arrow:before {
+  border-color: #ff8480 transparent transparent;
+}
+
+.map-marker-container[data-marker_id="5"] .marker-arrow:before {
+  border-color: #ffb874 transparent transparent;
+}
+
+.map-marker-container[data-marker_id="6"] .marker-arrow:before {
+  border-color: #ff007a transparent transparent;
+}
+
+.map-marker-container[data-marker_id="0"] .face {
+  background-color: #4cbfd8;
+}
+
+.map-marker-container[data-marker_id="1"] .face {
+  background-color: #ff8480;
+}
+
+.map-marker-container[data-marker_id="2"] .face {
+  background-color: #8c689d;
+}
+
+.map-marker-container[data-marker_id="3"] .face {
+  background-color: #35c2a5;
+}
+
+.map-marker-container[data-marker_id="4"] .face {
+  background-color: #ff8480;
+}
+
+.map-marker-container[data-marker_id="5"] .face {
+  background-color: #ffb874;
+}
+
+.map-marker-container[data-marker_id="6"] .face {
+  background-color: #ff007a;
+}
+
+.marker-card {
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  position: absolute;
+  z-index: 1;
+}
+
+/*==========================
+Map Listing Item
+===========================*/
+#map .infoBox {
+  margin-left: 170px;
+  margin-bottom: -100px;
+}
+
+.map-listing-item {
+  position: relative;
+}
+
+.map-listing-item .infoBox-close {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  width: 24px;
+  height: 24px;
+  background: #fff;
+  color: #202124;
+  line-height: 24px;
+  font-size: 20px;
+  border-radius: 8px;
+  z-index: 9;
+  text-align: center;
+  cursor: pointer;
+  transition: all 300ms ease;
+}
+
+.map-listing-item .infoBox-close:hover {
+  /* background-color: #1967D2; */
+  font-weight: 700;
+  color: #14a077;
+}
+
+.map-listing-item .inner-box {
+  position: relative;
+  padding: 20px 16px;
+  padding-left: 93px;
+  border-radius: 12px;
+  background: #ffffff;
+  min-width: 366px;
+  box-shadow: 0px 10px 25px rgba(54, 95, 104, 0.1);
+}
+
+/* .map-listing-item .inner-box:before {
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  margin-left: -9px;
+  border-left: 9px solid transparent;
+  border-right: 9px solid transparent;
+  border-top: 9px solid #ffffff;
+  content: "";
 } */
+
+.map-listing-item .image-box {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+}
+
+.map-listing-item .image {
+  display: block;
+  height: 60px;
+  width: 60px;
+  overflow: hidden;
+  margin-bottom: 0;
+}
+
+.map-listing-item .image img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  transition: all 500ms ease;
+}
+
+.map-listing-item .content {
+  position: relative;
+  min-height: 50px;
+}
+
+.map-listing-item .title {
+  color: #ffffff;
+  opacity: 0.6;
+  margin-left: 3px;
+}
+
+.map-listing-item h4 {
+  position: relative;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  color: #14A077;
+}
+
+.map-listing-item h4 a {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 24px;
+  color: #14A077;
+  transition: all 300ms ease;
+}
+
+.map-listing-item h4 a:hover {
+  color: #14A077;
+}
+
+.map-listing-item h3 {
+  position: relative;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 28px;
+  margin-bottom: 4px;
+}
+
+.map-listing-item h3 a {
+
+  color: #202124;
+  transition: all 300ms ease;
+}
+
+.map-listing-item h3 a:hover {
+  color: #14A077;
+}
+
+.map-listing-item .location {
+  color: #64666C;
+  font-size: 14px;
+  line-height: 22px;
+
+}
+
+.map-listing-item .job-info {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.map-listing-item .job-info li {
+  position: relative;
+  font-size: 14px;
+  line-height: 22px;
+  color: #696969;
+  font-weight: 400;
+  padding-left: 25px;
+  margin-right: 20px;
+}
+
+.map-listing-item .job-info li .icon {
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 18px;
+  line-height: 22px;
+  color: #696969;
+}
+
+.map-listing-item .job-info li a {
+  color: #696969;
+}
+
 /*===================================================== responsive =================================================================*/
 @media (max-width: 1440px) {
   .features-job.style-3 .info {
