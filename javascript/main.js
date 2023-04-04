@@ -90,24 +90,20 @@
 
   var scrollEffect = function () {
     $(window).on("load scroll", function () {
-      if ($(window).scrollTop() > 100) {
-        $(".fixed-content").addClass("is-fixed");
-        $(".cv-form-details.stc2").addClass("remove-mgt");
-      } else {
-        $(".fixed-content").removeClass("is-fixed");
-        $(".cv-form-details.stc2").removeClass("remove-mgt");
-      }
       if ($(window).scrollTop() > 300) {
         $(".form-meta2").addClass("is-fixed");
         $(".sticky-home2").addClass("add-mgt");
+        var heightside3 = $(".wrapper-author-page-title").height() + 80;
+        $(".cv-form-details.job-sg").css("top",heightside3);
       } else {
         $(".form-meta2").removeClass("is-fixed");
         $(".sticky-home2").removeClass("add-mgt");
       }
       if ($(window).scrollTop() > 500) {
-        $(".cv-form-details.job-sg").addClass("add-mgt");
-      } else {
-        $(".cv-form-details.job-sg").removeClass("add-mgt");
+        var heightside = $(".wd-job-author2").height() + 80;
+        var heightside2 = $(".wd-job-author").height() + 80;
+        $(".cv-form-details.job-sg").css("top",heightside);
+        $(".cv-form-details.job-sg").css("top",heightside2);
       }
     });
   };
@@ -616,6 +612,13 @@
       });
     }
   };
+
+  $(document).ready(function(){
+
+    var height =$( window ).height() + 20;
+    $('.row-height').css("height",height);
+    $('.row-height').css("max-height",height);
+    })
 
   var setTimeIn = function () {
     if ($(".wd-popup-form").length > 0) {

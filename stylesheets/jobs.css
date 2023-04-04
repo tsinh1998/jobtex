@@ -2435,16 +2435,11 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .wrap-sidebar-full .widget-filter {
-  height: 109vh;
-  overflow-y: scroll;
   padding: 18px 24px 20px 17px;
 }
 
 .wrap-sidebar-full .content-tab {
   max-width: unset;
-  height: 96vh;
-  overflow-y: scroll;
-  margin-right: -11px;
 }
 
 .wrap-sidebar-full .content-tab .group-col-3 {
@@ -2465,12 +2460,12 @@ input[type="number"]::-webkit-inner-spin-button {
   padding: 34px 18px 24px 31px;
   padding-bottom: 0;
 }
-
+/* 
 .group-half-map .content-job.sc1,
 .group-half-map .content-job,
 .content-job.style-scroll.style-1 {
   height: 67.5vh;
-}
+} */
 
 .group-half-map .content-job.sc1 .features-job {
   margin-right: 5px;

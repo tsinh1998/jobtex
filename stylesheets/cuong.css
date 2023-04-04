@@ -1696,8 +1696,6 @@
 }
 
 .cv-form-details.job-sg {
-  overflow-y: scroll;
-  height: 80vh;
   -webkit-transition: all 0.3s ease-out 0s;
   -moz-transition: all 0.3s ease-out 0s;
   -ms-transition: all 0.3s ease-out 0s;
@@ -1871,6 +1869,7 @@
   width: 100%;
   height: 6px;
   background-color: #e5e5e5;
+  z-index: 3;
 }
 
 .rating-review .right-rating .rating-details .donat-bg .custom-donat {
@@ -2968,22 +2967,39 @@
   margin: 0 -15px;
 }
 
-.group-half-map .content-job {
+/* .group-half-map .content-job {
   max-width: unset;
   height: 80vh;
   overflow-y: scroll;
+} */
+
+.row-height {
+  position: sticky;
+  top: 0;
+}
+
+.po-sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 10px;
+}
+
+.top-map-jobs2 {
+  position: sticky;
+  top: 0;
+  z-index: 5;
 }
 
 .group-half-map.style2 .widget-filter {
-  height: 92vh;
-  overflow-y: scroll;
+  /* height: 92vh;
+  overflow-y: scroll; */
   padding: 12px 23px 20px 16px;
 }
 
 .group-half-map .content-left {
   position: relative;
   width: 41.3%;
-  padding: 34px 40px 40px 40px;
+  padding: 34px 40px 0px 40px;
 }
 
 .group-half-map .content-right {
@@ -3157,7 +3173,7 @@
 }
 
 .group-half-map.style2 .content-left .st-job {
-  padding: 35px 0px 20px 0px;
+  padding: 35px 0px 0px 0px;
 }
 
 .group-half-map.style2 .content-job .features-job {
@@ -3795,7 +3811,8 @@
 
 .top-map-jobs {
   margin-top: -57px;
-  position: relative;
+  position: sticky;
+  top: 0;
   z-index: 5;
 }
 
@@ -4476,7 +4493,7 @@
 
 /* --------------\---------------------------term------------------------------------ */
 .tab-term {
-  position: relative;
+  position: sticky;
 }
 
 .tab-term::after {
@@ -5911,7 +5928,7 @@
 }
 
 .group-half-map .content-left.stc {
-  padding: 31px 49px 40px 47px;
+  padding: 31px 49px 0px 47px;
 }
 
 .group-half-map .content-left.stc .content-job .features-job {
