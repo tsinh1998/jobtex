@@ -7,34 +7,37 @@
     function locationData(
       locationImg,
       locationURL,
+      locationTopCity,
       locationTitle,
-      job_type,
+      // job_type,
       job_address
     ) {
       return (
         "" +
         '<div class="map-listing-item">' +
         '<div class="inner-box">' +
-        '<div class="infoBox-close"><i class="fa fa-times"></i></div>' +
+        '<div class="infoBox-close"><span class="icon-close"></span></div>' +
         '<div class="image-box">' +
         '<figure class="image"><img src="' +
         locationImg +
         '" alt=""></figure>' +
         "</div>" +
         '<div class="content">' +
+        "<h4><a >" +
+        locationTopCity +
+        "</a></h4>" +
         '<h3><a href="' +
         locationURL +
         '">' +
         locationTitle +
+        "&nbsp;" +
+        '<span class="icon-bolt"></span>' +
         "</a></h3>" +
-        '<ul class="job-info">' +
-        '<li><span class="icon flaticon-briefcase"></span> ' +
-        job_type +
-        "</li>" +
-        '<li><span class="icon flaticon-map-locator"></span>' +
+        '<p class="location">' +
+        '<span class="icon icon-map-pin"></span>' +
+        "&nbsp;" +
         job_address +
-        "</li>" +
-        "</ul>" +
+        "</p>" +
         "</div>" +
         "</div>"
       );
@@ -43,94 +46,81 @@
     var locations = [
       [
         locationData(
-          "images/logo-company/cty1.png",
-          "job-single-v1.html",
-          "Software Engineer",
-          "Segment",
-          "London, UK"
+          "images/logo-company/cty11.png",
+          "jobs-single.html",
+          "TOP Agency, Inc",
+          "Full Stack Development",
+          "Las Vegas, NV 89107, USA"
         ),
-        46,
-        -74.16938781738281,
+        40.706755,
+        -74.006821,
         1,
-        '<div style="background-image: url(images/logo-company/cty1.png);"></div>',
+        '<div style="background-image: url(images/logo-company/cty11.png);"></div>',
       ],
       [
         locationData(
-          "images/logo-company/cty2.png",
-          "job-single-v1.html",
-          "Software Engineer",
-          "Segment",
-          "London, UK"
+          "images/logo-company/cty9.png",
+          "jobs-single.html",
+          "TOP Agency, Inc",
+          "Full Stack Development",
+          "Las Vegas, NV 89107, USA"
         ),
-        40.77055783505125,
-        -74.26002502441406,
+        40.705445,
+        -74.00423,
         2,
-        '<div style="background-image: url(images/logo-company/cty2.png);"></div>',
-      ],
-      [
-        locationData(
-          "images/logo-company/cty3.png",
-          "job-single-v1.html",
-          "Software Engineer",
-          "Segment",
-          "London, UK"
-        ),
-        40.7427837,
-        -73.11445617675781,
-        3,
-        '<div style="background-image: url(images/logo-company/cty3.png);"></div>',
-      ],
-      [
-        locationData(
-          "images/logo-company/cty4.png",
-          "job-single-v1.html",
-          "Software Engineer",
-          "Segment",
-          "London, UK"
-        ),
-        40.704225,
-        -73.993312,
-        4,
-        '<div style="background-image: url(images/logo-company/cty4.png);"></div>',
-      ],
-      [
-        locationData(
-          "images/logo-company/cty5.png",
-          "job-single-v1.html",
-          "Software Engineer",
-          "Segment",
-          "London, UK"
-        ),
-        40.641311,
-        -73.778139,
-        5,
-        '<div style="background-image: url(images/logo-company/cty5.png);"></div>',
-      ],
-      [
-        locationData(
-          "images/logo-company/cty6.png",
-          "job-single-v1.html",
-          "Software Engineer",
-          "Segment",
-          "London, UK"
-        ),
-        41.080938,
-        -73.535957,
-        6,
-        '<div style="background-image: url(images/logo-company/cty6.png);"></div>',
+        '<div style="background-image: url(images/logo-company/cty9.png);"></div>',
       ],
       [
         locationData(
           "images/logo-company/cty7.png",
-          "job-single-v1.html",
-          "Software Engineer",
-          "Segment",
-          "London, UK"
+          "jobs-single.html",
+          "TOP Agency, Inc",
+          "Full Stack Development",
+          "Las Vegas, NV 89107, USA"
         ),
-        30.079386,
-        -73.519478,
-        7,
+        40.703859,
+        -74.009766,
+        3,
         '<div style="background-image: url(images/logo-company/cty7.png);"></div>',
+      ],
+      [
+        locationData(
+          "images/logo-company/cty6.png",
+          "jobs-single.html",
+          "TOP Agency, Inc",
+          "Full Stack Development",
+          "Las Vegas, NV 89107, USA"
+        ),
+        40.706828,
+        -74.014434,
+        4,
+        '<div style="background-image: url(images/logo-company/cty6.png);"></div>',
+      ],
+      [
+        locationData(
+          "images/logo-company/cty15.png",
+          "jobs-single.html",
+          "TOP Agency, Inc",
+          "Full Stack Development",
+          "Las Vegas, NV 89107, USA"
+        ),
+        40.709024,
+        -74.012139,
+        5,
+        '<div style="background-image: url(images/logo-company/cty15.png);"></div>',
+      ],
+      [
+        locationData(
+          "images/logo-company/cty16.png",
+          "jobs-single.html",
+          "TOP Agency, Inc",
+          "Full Stack Development",
+          "Las Vegas, NV 89107, USA"
+        ),
+        40.704015,
+        -73.992613,
+        6,
+        '<div style="background-image: url(images/logo-company/cty16.png);"></div>',
       ],
     ];
 
@@ -258,8 +248,6 @@
     }
     starRating(".star-rating");
 
-    /*google.maps.event.addListener(ib,'domready',function(){if(infoBox_ratingType='numerical-rating'){numericalRating('.infoBox .'+infoBox_ratingType+'');}
-if(infoBox_ratingType='star-rating'){starRating('.infoBox .'+infoBox_ratingType+'');}});*/
     var mapZoomAttr = $("#map").attr("data-map-zoom");
     var mapScrollAttr = $("#map").attr("data-map-scroll");
     if (typeof mapZoomAttr !== typeof undefined && mapZoomAttr !== false) {
@@ -402,7 +390,7 @@ if(infoBox_ratingType='star-rating'){starRating('.infoBox .'+infoBox_ratingType+
       maxWidth: 0,
       pixelOffset: new google.maps.Size(-134, -55),
       zIndex: null,
-      boxStyle: { width: "320px" },
+      boxStyle: { width: "360px" },
       closeBoxMargin: "0",
       closeBoxURL: "",
       infoBoxClearance: new google.maps.Size(25, 25),
