@@ -1737,6 +1737,7 @@
 }
 
 .sticky-home2.add-mgt {
+  top: 100px;
 }
 
 .list-job::-webkit-scrollbar-track,
