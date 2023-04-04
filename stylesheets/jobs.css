@@ -3304,6 +3304,9 @@ Map Listing Item
   background: rgba(20, 129, 96, 0.1);
   border-radius: 24px;
   padding: 7px 12px;
+  transition: all 0.3s ease-in-out;
+
+
 }
 
 .map-listing-item .location .type:hover {
