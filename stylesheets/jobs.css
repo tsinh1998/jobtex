@@ -3275,7 +3275,6 @@ Map Listing Item
   font-weight: 700;
   font-size: 20px;
   line-height: 28px;
-  margin-bottom: 4px;
 }
 
 .map-listing-item h3 a {
@@ -3292,7 +3291,23 @@ Map Listing Item
   color: #64666C;
   font-size: 14px;
   line-height: 22px;
+  cursor: pointer;
+  margin-top: 8px;
 
+}
+
+.map-listing-item .location .type {
+  font-size: 12px;
+  line-height: 16px;
+  color: #14A077;
+  background: rgba(20, 129, 96, 0.1);
+  border-radius: 24px;
+  padding: 4px 12px;
+}
+
+.map-listing-item .location .type:hover {
+  color: #fff;
+  background: #14A077;
 }
 
 .map-listing-item .job-info {
@@ -3322,6 +3337,22 @@ Map Listing Item
 
 .map-listing-item .job-info li a {
   color: #696969;
+}
+
+.cluster-map-visible {
+  text-align: center;
+  font-size: 16px !important;
+  color: #FFFFFF !important;
+  font-weight: 500 !important;
+  border-radius: 50%;
+  width: 40px !important;
+  height: 40px !important;
+  line-height: 40px !important;
+  background-color: #14A077;
+  border: 7px solid rgba(25, 103, 210, 0.2);
+  box-shadow: 0 7px 30px rgba(33, 33, 33, 0.3);
+  box-sizing: content-box;
+  background-clip: content-box;
 }
 
 /*===================================================== responsive =================================================================*/
