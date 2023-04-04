@@ -233,6 +233,10 @@
     width: 100%;
   }
 
+  .content-job {
+    max-width: 100%;
+  }
+
   .group-half-map .content-left {
     padding: 15px;
   }

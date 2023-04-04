@@ -2106,6 +2106,7 @@ background: #fff;
 }
 
 .flat-dashboard-submit .package-wrap .box {
+    position: relative;
     width: calc(50% - 20px);
     margin-left: 20px;
     background-color: #fff;
@@ -2125,7 +2126,7 @@ background: #fff;
     margin: 0 14px 0 0;
     width: 20px;
     height: 20px;
-    position: relative;
+    position: unset;
     display: flex;
     align-items: center;
     justify-content: center;
