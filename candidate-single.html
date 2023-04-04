@@ -49,105 +49,34 @@
   <div class="preload preload-container">
     <div class="preload-logo"></div>
   </div>
-  <!-- /preload -->
-  <div class="sidebar-popup">
+  <!-- popup apply job -->
+  <div class="wd-popup-job-apply style2">
     <div class="modal-menu__backdrop"></div>
-    <div class="widget-filter">
-      <form action="GET">
-        <div class="group-form">
-          <label class="title">Search Company</label>
-          <div class="group-input search-ip">
-            <button><i class="icon-search"></i></button>
-            <input type="text" placeholder="Keywork" required>
-          </div>
-        </div>
-        <div class="group-form">
-          <label class="title">Location</label>
-          <div class="group-input has-icon">
-            <i class="icon-map-pin"></i>
-            <select>
-              <option value="0">All Location</option>
-              <option value="0">India</option>
-              <option value="0">Singapore</option>
-              <option value="0">French</option>
-            </select>
-          </div>
-        </div>
-        <div class="group-form">
-          <label class="title">Job Title</label>
-          <div class="group-input">
-            <select>
-              <option value="0">Design & Creative </option>
-              <option value="0">Design</option>
-              <option value="0">Ux/Ui</option>
-            </select>
-          </div>
-        </div>
-        <div class="group-form">
-          <label class="title">On-site/Remote</label>
-          <div class="group-input">
-            <select>
-              <option value="0">On-site  </option>
-              <option value="0">Remote</option>
-              <option value="0">Freelancer</option>
-            </select>
-          </div>
-        </div>
-        <div class="group-form">
-          <label class="title">Job Types</label>
-          <div class="group-input">
-            <select>
-              <option value="0">SoftWere  </option>
-              <option value="0">Website</option>
-            </select>
-          </div>
-        </div>
-        <div class="group-form">
-          <label class="title">Salaries</label>
-          <div class="group-input">
-            <select>
-              <option value="0">All Salaries </option>
-              <option value="0">Website</option>
-            </select>
-          </div>
-        </div>
-        <div class="group-form st2">
-          <label class="title st2">Radius: <span id="default-side" class="color-pri1"></span> <span>Miles</span>  </label>
-          <div class="group-input">
-            <input type="range" min="1" max="100" value="25" class="range-input" id="myRange" />
-          </div>
-        </div>
-        <div class="group-form">
-          <label class="title">Posted Anytime</label>
-          <div class="group-input">
-            <select>
-              <option value="0">Posted Anytime </option>
-              <option value="0">Website</option>
-            </select>
-          </div>
-        </div>
-        <div class="group-form">
-          <label class="title">All Seniority Levels</label>
-          <div class="group-input">
-            <select>
-              <option value="0">All Seniority Levels </option>
-              <option value="0">Website</option>
-            </select>
-          </div>
-        </div>
-        <div class="group-form">
-          <label class="title">Company</label>
-          <div class="group-input">
-            <select>
-              <option value="0">Company </option>
-              <option value="0">Website</option>
-            </select>
-          </div>
-        </div>
-        <button type="submit">Find Jobs</button>
-      </form>
+    <div class="content">
+        <h6>Apply For This Job</h6>
+        <p>Select A Your CV</p>
+        <form action="get">
+            <div class="group-seclect-file">
+                <div class="group-file">
+                    <div class="inner left">
+                        <input class="custom-file" type="file" name="profile" required="">
+                        <i class="icon-file-pdf"></i>
+                    </div>
+                    <div class="inner right">
+                        <input class="custom-file" type="file" name="profile" required="">
+                        <i class="icon-file-doc"></i>
+                    </div>
+                </div>
+            </div>
+            <textarea placeholder="Message"></textarea>
+            <div class="group-radio">
+              <input type="radio"><label>You accept our <a href="#">Terms</a>  and <a href="#">Conditions</a>  and <a href="#">Privacy Policy</a> </label>
+            </div>
+            <button>Apply Job</button>
+          </form>
     </div>
-  </div>
+</div>
+<!-- end -->
   <!-- HEADER -->
   <header id="header" class="header header-default">
     <div class="tf-container ct2">
@@ -714,7 +643,7 @@
             </div>
           </div>
           <div class="author-archive-footer">
-              <button class="tf-btn">DownLoad CV</button>
+              <button class="tf-btn btn-popup">DownLoad CV</button>
               <button class="tf-btn btn-author">Message</button>
           </div>
         </div>
@@ -973,7 +902,7 @@
               <div class="category">PDF</div>
               <div class="icon icon-file-pdf"></div>
             </div>
-            <a href="#" class="btn-dowload"><i class="icon-download"></i> Download CV</a>
+            <a class="btn-dowload"><i class="icon-download"></i> Download CV</a>
             </div>
           </div>
         </div>
