@@ -52,7 +52,6 @@ function renderTags() {
     input.className = "tag-input";
     addEvent(input);
     ul.appendChild(input);
-    input.focus();
     setTimeout(() => (input.value = ""), 0);
 
 }

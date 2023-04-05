@@ -537,7 +537,7 @@
       if (mobile.matches) {
         $("#main-nav")
           .attr("id", "main-nav-mobi")
-          .appendTo(".nav-wrap")
+          .appendTo(".header")
           .hide()
           .children(".menu")
           .append(navExt)
@@ -720,13 +720,11 @@
   }
 
   var preload = function () {
-    $(window).on("load", function () {
-      $(".preload")
-        .delay(1500)
-        .fadeOut("fast", function () {
+    $(".preload").fadeOut('slow',function(){
+      setTimeout(function() {
           $(".preload").remove();
-        });
-    });
+      }, 1000);
+  });
   };
 
   // Dom Ready

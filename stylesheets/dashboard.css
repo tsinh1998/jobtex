@@ -654,6 +654,10 @@ background: #fff;
     overflow-y: auto;
     -webkit-box-shadow: 0 0 13px 0 rgba(236,236,241,.44);
     box-shadow: 0 0 13px 0 rgba(236,236,241,.44);
+    -webkit-animation-name: fadeInLeftSmall;
+    -webkit-animation-duration: 0.8s;
+    animation-name: fadeInLeftSmall;
+    animation-duration: 0.8s;
 }
 
 .left-menu::-webkit-scrollbar {
@@ -786,7 +790,11 @@ background: #fff;
 
 .show-job .left-menu {
     width: 70px;
-    z-index: 5
+    z-index: 5;
+    -webkit-animation-name: fadeInLeft;
+    -webkit-animation-duration: 0.8s;
+    animation-name: fadeInLeft;
+    animation-duration: 0.8s;
 }
 
 .show-job .left-menu .simplebar-content-wrapper,
@@ -822,8 +830,6 @@ background: #fff;
 }
 
 .show-job .left-menu #sidebar-menu>ul>li>a {
-    padding: 15px 14px;
-    min-height: 55px;
     -webkit-transition: none;
     transition: none
 }
@@ -835,7 +841,7 @@ background: #fff;
 
 .show-job .left-menu #sidebar-menu>ul>li>a .dash-titles {
     display: none;
-    padding-left: 25px
+    padding-left: 25px;
 }
 
 .show-job .left-menu #sidebar-menu>ul>li:hover>a {

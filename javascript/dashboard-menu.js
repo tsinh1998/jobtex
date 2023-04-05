@@ -11,7 +11,7 @@
                 $('body').addClass("sidebar-enable");
                $.cookie("isButtonActive", "1");
            }
-        1400 <= t(window).width() ? t("body").toggleClass("show-job") : t("body").removeClass("show-job")
+         t("body").toggleClass("show-job");
     });
          if($.cookie("isButtonActive") == 1)
         {

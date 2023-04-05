@@ -605,7 +605,7 @@
 @keyframes fadeInLeftSmall {
   from {
     opacity: 0;
-    transform: translate3d(-100px, 0, 0);
+    transform: translate3d(-30px, 0, 0);
   }
 
   to {
@@ -625,7 +625,7 @@
 @keyframes fadeInLeft {
   from {
     opacity: 0;
-    transform: translate3d(-50px, 0, 0);
+    transform: translate3d(-30px, 0, 0);
   }
 
   to {

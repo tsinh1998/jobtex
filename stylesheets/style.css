@@ -518,6 +518,10 @@ input[type="color"],
   border-bottom: 1px solid #e5e5e5;
 }
 
+.header {
+  position: relative;
+}
+
 #header.style-absolute {
   position: relative;
   z-index: 999;
@@ -547,7 +551,7 @@ input[type="color"],
 }
 
 .sticky-area-wrap .header-ct-left .logo .site-logo {
-  width: 150px;
+  width: 149px;
   display: block;
 }
 
@@ -614,6 +618,10 @@ input[type="color"],
 .header.is-fixed.is-small,
 #header.style-absolute.is-small {
   top: 0;
+  -webkit-animation-name: fadeInDown;
+  -webkit-animation-duration: 0.8s;
+  animation-name: fadeInDown;
+  animation-duration: 0.8s;
 }
 
 .usefull-link {
@@ -1119,8 +1127,10 @@ margin-bottom: 17px;
   top: 100%;
   left: 0;
   z-index: 999999;
-  background-color: #fff;
   box-shadow: 0px 3px 16px rgba(47, 83, 109, 0.12);
+  overflow-y: auto;
+  background: #fff;
+  max-height: 60vh;
 }
 
 .header #main-nav-mobi ul {
