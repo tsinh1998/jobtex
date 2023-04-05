@@ -92,12 +92,10 @@
     $(window).on("load scroll", function () {
       if ($(window).scrollTop() > 300) {
         $(".form-meta2").addClass("is-fixed");
-        $(".sticky-home2").addClass("add-mgt");
         var heightside3 = $(".wrapper-author-page-title").height() + 80;
         $(".cv-form-details.job-sg").css("top",heightside3);
       } else {
         $(".form-meta2").removeClass("is-fixed");
-        $(".sticky-home2").removeClass("add-mgt");
       }
         var heightside = $(".wd-job-author2").height() + 80;
         var heightside2 = $(".wd-job-author").height() + 80;
@@ -723,7 +721,7 @@
     $(".preload").fadeOut('slow',function(){
       setTimeout(function() {
           $(".preload").remove();
-      }, 1000);
+      }, 1500);
   });
   };
 
