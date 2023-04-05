@@ -99,12 +99,10 @@
         $(".form-meta2").removeClass("is-fixed");
         $(".sticky-home2").removeClass("add-mgt");
       }
-      if ($(window).scrollTop() > 500) {
         var heightside = $(".wd-job-author2").height() + 80;
         var heightside2 = $(".wd-job-author").height() + 80;
         $(".cv-form-details.job-sg").css("top",heightside);
         $(".cv-form-details.job-sg").css("top",heightside2);
-      }
     });
   };
 
