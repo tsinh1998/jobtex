@@ -52,11 +52,15 @@
   .sticky-area-wrap .header-ct-left .logo {
     margin-right: 20px;
   }
+
+  .sticky-area-wrap .header-ct-center {
+    padding-left: 0px;
+  }
 }
 
 @media only screen and (max-width: 1400px) {
   #main-nav #menu-primary-menu>li:not(:first-child) {
-    margin-left: 20px;
+    margin-left: 32px;
   }
 
   .tf-slider .heading h2 {

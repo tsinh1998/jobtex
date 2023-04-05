@@ -723,7 +723,7 @@ input[type="color"],
   text-align: left;
 }
 
-.sub-categorie ul.pop-up > li {
+.sub-categorie ul.pop-up>li {
   padding: 12px 11px;
   font-weight: 500;
   line-height: 28px;
@@ -736,8 +736,8 @@ input[type="color"],
   vertical-align: text-bottom;
 }
 
-.sub-categorie ul.pop-up > li:hover,
-.sub-categorie ul.pop-up > li.active {
+.sub-categorie ul.pop-up>li:hover,
+.sub-categorie ul.pop-up>li.active {
   background-color: #f5f5f2;
 }
 
@@ -807,28 +807,32 @@ input[type="color"],
   background: #E5E5E5;
 }
 
-.sub-categorie ul.pop-up > li:hover .group-menu-category {
+.sub-categorie ul.pop-up>li:hover .group-menu-category {
   opacity: 1;
-visibility: visible;
-top: 0%;
+  visibility: visible;
+  top: 0%;
 }
-.sub-categorie ul.pop-up > li:hover .group-menu-category .menu {
+
+.sub-categorie ul.pop-up>li:hover .group-menu-category .menu {
   opacity: 1;
   transition-delay: 0.15s;
 }
+
 .sub-categorie .group-menu-category h6 {
   font-weight: 700;
-font-size: 14px;
-line-height: 24px;
-color: #121212;
-margin-bottom: 17px;
+  font-size: 14px;
+  line-height: 24px;
+  color: #121212;
+  margin-bottom: 17px;
 }
+
 .sub-categorie .group-menu-category .menu ul li a {
   font-weight: 400;
   font-size: 14px;
   line-height: 22px;
   color: #121212;
 }
+
 .sub-categorie .group-menu-category .menu {
   width: 240px;
   padding: 0 24px;
@@ -839,12 +843,15 @@ margin-bottom: 17px;
   transition: all 0.3s ease-in-out;
   opacity: 0;
 }
+
 .sub-categorie .group-menu-category ul li a:hover {
   color: #14a077;
 }
+
 .sub-categorie .group-menu-category ul li:not(:last-child) {
   margin-bottom: 18px;
 }
+
 /* header-ct-center */
 .sticky-area-wrap .header-ct-center {
   flex-grow: 1;
@@ -1529,6 +1536,11 @@ margin-bottom: 17px;
 ------------------------------------------ */
 .footer {
   background-color: #f5f5f2;
+}
+
+.footer .footer-logo img {
+  width: 149px;
+  display: block;
 }
 
 .footer p {
