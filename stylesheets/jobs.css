@@ -20,7 +20,7 @@
   border: 1px solid #e5e5e5;
   box-shadow: 0px 2px 2px rgb(28 36 51 / 10%);
   border-radius: 8px;
-  padding: 15px 16px 13px 23px;
+  padding: 16px 16px 16px 24px;
   background-color: #ffffff;
 }
 
@@ -135,6 +135,7 @@ button.btn-find {
   color: #ffffff;
   border-radius: 4px;
   text-transform: none;
+  width: 100%;
 }
 
 button.btn-find:hover {
@@ -3359,6 +3360,13 @@ Map Listing Item
   background-clip: content-box;
 }
 
+/* custom input */
+.tf-slider .form-sl .form-group-1 input::placeholder {
+  color: #B1B1B1;
+  font-size: 16px;
+  line-height: 26px;
+}
+
 /*===================================================== responsive =================================================================*/
 @media (max-width: 1440px) {
   .features-job.style-3 .info {
@@ -3610,6 +3618,10 @@ Map Listing Item
     padding: 0;
   }
 
+  .tf-title p {
+    margin-bottom: 10px;
+  }
+
   .tf-title button {
     padding: 10px 0px;
   }
@@ -3661,12 +3673,15 @@ Map Listing Item
   }
 
   .features-job .inner-box {
-    flex-direction: column;
     align-items: flex-start;
   }
 
   .features-job .inner-box .box-content {
-    margin-top: 20px;
+    margin-right: 20px;
+  }
+
+  .features-job .job-archive-footer .job-tag li:first-child {
+    margin-bottom: 4px;
   }
 
   /* wd-tes */

@@ -262,10 +262,13 @@
     }
     var map = new google.maps.Map(document.getElementById("map"), {
       zoom: zoomLevel,
-      scrollwheel: scrollEnabled,
-      center: new google.maps.LatLng(40.705999, -74.003221),
+      scrollwheel: false,
+      center: new google.maps.LatLng(40.706243, -74.000303),
       mapTypeId: google.maps.MapTypeId.ROADMAP,
-      zoomControl: false,
+      zoomControl: true,
+      zoomControlOptions: {
+        position: google.maps.ControlPosition.TOP_LEFT,
+      },
       mapTypeControl: false,
       scaleControl: false,
       panControl: false,

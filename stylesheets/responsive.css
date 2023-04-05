@@ -27,10 +27,11 @@
   .job-search-form.style2 .form-group {
     width: 25%;
   }
+
   .cv-form-details.job-sg.add-mgt {
     margin-top: 0px;
   }
-  
+
 }
 
 @media only screen and (max-width: 1550px) {
@@ -96,9 +97,11 @@
   .group-half-map .content-left.stc {
     padding: 15px;
   }
+
   .form-sticky {
     position: relative;
   }
+
   .sticky-home2.add-mgt {
     top: 15px;
   }
@@ -349,12 +352,15 @@
   .wd-job-author2 .content-right .top a:not(:last-child) {
     margin-bottom: 15px;
   }
+
   .job-article.single-employer .related-job {
     margin: 50px 0;
   }
+
   .wd-job-author.stc-em2 {
     padding: 25px;
   }
+
   .wd-job-author.stc-em2 .content .group-btn {
     display: flex;
     flex-wrap: wrap;
@@ -363,6 +369,10 @@
 }
 
 @media only screen and (max-width: 1024px) {
+  .nice-select::after {
+    right: 4px;
+  }
+
   .sticky-area-wrap .header-ct-center {
     justify-content: right;
   }
@@ -511,6 +521,7 @@
   .features-job .job-footer-right {
     flex-wrap: wrap;
   }
+
   .wd-banner-rating {
     margin-left: 5%;
     margin-right: 5%;
@@ -826,7 +837,7 @@
   }
 
   .tf-slider .form-sl .form-group-4 {
-    margin: 40px auto 0px auto;
+    /* margin: 40px auto 0px auto; */
   }
 
   .sticky-area-wrap .header-ct-right .button a,
@@ -1097,12 +1108,14 @@
   .cv-form-details {
     margin-top: 50px;
   }
+
   .wd-job-author.stc-em {
     padding: 25px;
   }
+
   .wd-job-author.stc-em .inner-job-right .icon-share2,
   .wd-job-author.stc-em2 .inner-job-right .icon-share2 {
     top: 25px;
     right: 25px;
-}
+  }
 }
