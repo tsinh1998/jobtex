@@ -3002,20 +3002,25 @@ input[type="number"]::-webkit-inner-spin-button {
 .group-icon .sl-icon-box.box .icon {
   position: relative;
   cursor: pointer;
+  transition: all 0.3s ease;
+
 }
 
-.group-icon .sl-icon-box.box .icon:before {
+/* .group-icon .sl-icon-box.box .icon:before {
   content: "";
   position: absolute;
   top: 0;
   left: 0;
   width: 0;
   height: 100%;
-  background-color: #fff;
   border-radius: 50%;
   transition: width 0.3s ease;
   z-index: -1;
-  /* transition: all 0.3s ease; */
+  transition: all 0.3s ease;
+} */
+.group-icon .sl-icon-box.box:hover .icon {
+  background-color: #fff;
+
 }
 
 .group-icon .sl-icon-box.box:hover .icon:before {
@@ -3367,6 +3372,10 @@ Map Listing Item
   line-height: 26px;
 }
 
+.content-tab.jobs-tab {
+  padding: 0px 13px;
+}
+
 /*===================================================== responsive =================================================================*/
 @media (max-width: 1440px) {
   .features-job.style-3 .info {
@@ -3392,17 +3401,27 @@ Map Listing Item
   }
 
   .wd-iconbox.style-2 .colum3 {
-    margin: 0;
-    width: 50%;
-    padding: 0px 70px;
+    margin-right: 50px;
   }
 
   .wd-iconbox .rg-st1 {
-    row-gap: 20px;
+    justify-content: center;
+    /* row-gap: 20px; */
   }
 }
 
 @media (max-width: 1024px) {
+
+
+  .wd-iconbox .tf-iconbox {
+    margin-bottom: 30px;
+  }
+
+  .wd-iconbox.style-2 .colum3 {
+    width: 50%;
+    margin-right: 0px;
+    padding: 0px 50px;
+  }
 
   /* input style 1 */
   .row-group-search .form-group-1>input {
@@ -3591,6 +3610,25 @@ Map Listing Item
 
 /* mobile */
 @media (max-width: 550px) {
+
+  /* jobs - haft map */
+  .group-half-map .content-job .features-job {
+    padding: 24px;
+  }
+
+  .features-job .inner-box .button-readmore.st1 {
+    position: unset;
+  }
+
+  .features-job .inner-box .button-readmore.st1 span.icon-heart {
+    position: absolute;
+    margin-right: 0;
+  }
+
+  .features-job .inner-box .button-readmore.st1 .btn-apply {
+    margin: 10px 0px;
+  }
+
   .widget-menu-link ul {
     justify-content: center;
   }
@@ -3631,7 +3669,6 @@ Map Listing Item
   }
 
   .wd-iconbox.style-2 .colum3 {
-    padding: 0px 30px;
     width: 100%;
   }
 

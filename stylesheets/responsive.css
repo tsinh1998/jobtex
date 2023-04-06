@@ -56,6 +56,10 @@
   .sticky-area-wrap .header-ct-center {
     padding-left: 0px;
   }
+
+  .sticky-area-wrap .header-ct-center.st-1 {
+    padding-left: 84px;
+  }
 }
 
 @media only screen and (max-width: 1400px) {
