@@ -3412,6 +3412,9 @@ Map Listing Item
 
 @media (max-width: 1024px) {
 
+  .wd-get-app .group-btn img {
+    margin-bottom: 20px;
+  }
 
   .wd-iconbox .tf-iconbox {
     margin-bottom: 30px;
@@ -3700,9 +3703,9 @@ Map Listing Item
   }
 
   /* wg-get-app */
-  .wd-get-app .group-btn img {
+  /* .wd-get-app .group-btn img {
     margin-bottom: 20px;
-  }
+  } */
 
   /* wd-job */
   .features-job.style-3 {
