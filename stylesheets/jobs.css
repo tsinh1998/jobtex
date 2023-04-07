@@ -1077,7 +1077,7 @@ input[type="number"]::-webkit-inner-spin-button {
 
 .features-job.style-3.mb1 {
   border-bottom: 1px solid #e5e5e5;
-  margin-bottom: 31px;
+  margin-bottom: 32px;
 }
 
 /* .features-job.style-3:hover {
@@ -3507,6 +3507,54 @@ Map Listing Item
   padding: 80px 0px 77px;
 }
 
+/*-----------------Inner page--------------------  */
+.breadcrumb-section,
+.form-sticky.stc1 {
+  margin-bottom: 60px;
+}
+
+/* .breadcrumb-section-two {
+  
+} */
+
+.form-sticky.stc2 {
+  margin-bottom: 40px;
+}
+
+.pagination-job.padding {
+  padding-top: 8px;
+}
+
+.pagination-job.p-top {
+  padding-top: 24px;
+}
+
+.inner-jobs-section,
+.inner-employer-section {
+  padding-bottom: 60px;
+}
+
+.inner-employer-section-two {
+  padding-bottom: 45px;
+}
+
+.inner-jobs-section-two {
+  padding: 40px 0px 60px;
+}
+
+.inner-jobs-section-three {
+  padding: 60px 0px;
+}
+
+.inner-jobs-section-three .features-job.mb1:last-child {
+  margin-bottom: 32px;
+}
+
+.group-col-3 .pagination-job {}
+
+
+
+
 /*===================================================== responsive =================================================================*/
 
 @media (max-width: 1440px) {
@@ -3899,6 +3947,13 @@ Map Listing Item
   .get-app-sc {
     padding: 60px 0;
   }
+
+  /*-----------------find jobs--------------------  */
+  .breadcrumb-section,
+  .form-sticky.stc1 {
+    margin-bottom: 40px;
+  }
+
 
   /* jobs - haft map */
   .group-half-map .content-job .features-job {
