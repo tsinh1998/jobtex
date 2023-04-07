@@ -3529,13 +3529,22 @@ Map Listing Item
   padding-top: 24px;
 }
 
+.pagination-job.p-top-st1 {
+  padding-top: 12px;
+}
+
 .inner-jobs-section,
-.inner-employer-section {
+.inner-employer-section,
+.candidates-section {
   padding-bottom: 60px;
 }
 
 .inner-employer-section-two {
   padding-bottom: 45px;
+}
+
+.inner-employer-section-three {
+  padding-top: 40px;
 }
 
 .inner-jobs-section-two {
@@ -3550,8 +3559,17 @@ Map Listing Item
   margin-bottom: 32px;
 }
 
-.group-col-3 .pagination-job {}
+.employer-block.style-2.stc2 {
+  margin-bottom: 32px;
+}
 
+.banner-section {
+  padding: 60px 0px;
+}
+
+.wd-thum-career {
+  margin-bottom: 16px;
+}
 
 
 
@@ -3948,12 +3966,15 @@ Map Listing Item
     padding: 60px 0;
   }
 
-  /*-----------------find jobs--------------------  */
+  /*-----------------Inner page--------------------  */
   .breadcrumb-section,
   .form-sticky.stc1 {
     margin-bottom: 40px;
   }
 
+  .banner-section {
+    padding: 40px 0px;
+  }
 
   /* jobs - haft map */
   .group-half-map .content-job .features-job {
