@@ -1077,6 +1077,7 @@ input[type="number"]::-webkit-inner-spin-button {
 
 .features-job.style-3.mb1 {
   border-bottom: 1px solid #e5e5e5;
+  margin-bottom: 31px;
 }
 
 /* .features-job.style-3:hover {
@@ -1674,7 +1675,7 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .wd-iconbox.style-1 .group-iconbox {
-  padding: 80.5px 139px 80.5px 80px;
+  padding: 80.5px 139px 80.5px 84px;
 }
 
 .tf-iconbox.style-1 {
@@ -3376,7 +3377,138 @@ Map Listing Item
   padding: 0px 13px;
 }
 
+/* ---------------------- tf section spacing ---------------------------------------------- */
+/* -------- home page -------- */
+.job-category-section {
+  padding: 80px 0px 60px;
+}
+
+.job-category-section-two {
+  padding: 90px 0px 60px;
+}
+
+.job-category-section-three {
+  padding: 87px 0px 60px;
+}
+
+.testimonials-category-section {
+  padding: 120px 0px 66px;
+}
+
+.jobs-section {
+  padding-bottom: 80px;
+}
+
+.jobs-section-two {
+  padding: 80px 0px;
+}
+
+.jobs-section-three {
+  padding-bottom: 73px;
+}
+
+.jobs-section-four {
+  padding-bottom: 105px;
+}
+
+.jobs-tab-section {
+  padding-bottom: 100px;
+}
+
+.employer-section {
+  padding: 88px 0px 48px;
+}
+
+.employer-section-two {
+  padding-bottom: 48px;
+}
+
+.employer-section-three {
+  padding: 78px 0px 48px;
+}
+
+.employer-section-four {
+  padding-bottom: 67px;
+}
+
+.testimonials-section {
+  padding-bottom: 52px;
+}
+
+.testimonials-section-two {
+  padding: 80px 0 52px;
+}
+
+.footer {
+  padding-top: 61px;
+}
+
+.footer .top-footer {
+  padding-bottom: 20px;
+}
+
+.footer .inner-footer {
+  padding: 40px 0px;
+}
+
+.tab-section {
+  padding-bottom: 53px;
+}
+
+.location-section {
+  padding: 56px 0px 60px;
+}
+
+.location-section-two {
+  padding: 60px 0px;
+}
+
+.location-section-two .tes-location {
+  padding-bottom: 54px;
+}
+
+.location-section-three {
+  padding: 53px 0px 40px;
+}
+
+.location-section-four {
+  padding: 60px 0px 40px;
+}
+
+.review-job-section {
+  padding: 77px 0px 52px;
+}
+
+.review-job-section-two {
+  padding-top: 80px;
+}
+
+.review-job-section-three {
+  padding: 60px 0px 50px;
+}
+
+.review-job-section-four {
+  padding: 80px 0px 53px;
+}
+
+.review-job-section-five {
+  padding: 144px 0px 65px;
+}
+
+.review-job-section-six {
+  padding: 100px 0px 82px;
+}
+
+.count-spacing {
+  padding: 40px 0px;
+}
+
+.news-section {
+  padding: 80px 0px 77px;
+}
+
 /*===================================================== responsive =================================================================*/
+
 @media (max-width: 1440px) {
   .features-job.style-3 .info {
     margin-left: 0;
@@ -3411,6 +3543,9 @@ Map Listing Item
 }
 
 @media (max-width: 1024px) {
+  .tf-slider .form-sl .form-group-2 span {
+    left: 9px;
+  }
 
   .wd-get-app .group-btn img {
     margin-bottom: 20px;
@@ -3563,6 +3698,86 @@ Map Listing Item
 
 }
 
+@media (max-width: 700px) {
+  .wd-banner-rating h6 {
+    margin-right: 0;
+  }
+
+  .features-job.style-3 .company {
+    flex: none;
+    width: 100%;
+  }
+
+  .features-job.style-3 .inner-box {
+    row-gap: 10px;
+    align-items: flex-start;
+  }
+
+  .wd-partner {
+    height: auto;
+  }
+
+  .tf-title.style-3 {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .tf-title.style-3 .menu-tab {
+    justify-content: flex-start;
+  }
+
+  /* wd-job-author */
+  .wd-job-author {
+    flex-direction: column;
+  }
+
+  .wd-job-author .inner-job-right {
+    align-items: center;
+    padding-top: 12px;
+  }
+
+  .wd-job-author .inner-job-right .group-btn {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .wd-job-author .inner-job-right .tf-btn-submit {
+    margin-bottom: 0px;
+  }
+
+  /* =====================blog======================= */
+  .blog .list-blog .widget-blog-1 {
+    flex-direction: column;
+  }
+
+  .widget-blog-1 .content {
+    padding: 0px 10px !important;
+  }
+
+  .widget-blog-1 img {
+    width: 100%;
+  }
+
+  .pagination-job.style-1 {
+    justify-content: center;
+  }
+
+  .blog.wrap-blog {
+    flex-direction: column;
+  }
+
+  .widget-side-bar .recent-posts .widget-blog-1 .content {
+    max-width: 100% !important;
+  }
+
+  .widget-side-bar .recent-posts .widget-blog-1 {
+    gap: 0px;
+    align-items: center;
+  }
+}
+
 /* tablet */
 @media (min-width: 550px) and (max-width: 768px) {
 
@@ -3611,8 +3826,79 @@ Map Listing Item
   }
 }
 
+
+
 /* mobile */
 @media (max-width: 550px) {
+
+  /* ---------------------- tf section spacing ---------------------------------------------- */
+  /* -------- home page -------- */
+  .job-category-section,
+  .job-category-section-two,
+  .job-category-section-three,
+  .testimonials-section-two,
+  .news-section {
+    padding: 60px 0px 40px;
+  }
+
+  .jobs-section,
+  .jobs-section-three,
+  .jobs-tab-section,
+  .jobs-section-four {
+    padding-bottom: 60px;
+  }
+
+  .jobs-section-two {
+    padding: 60px 0px;
+  }
+
+  .employer-section,
+  .employer-section-three,
+  .flat-row {
+    padding: 60px 0px 30px;
+  }
+
+  .employer-section-four {
+    padding-bottom: 40px;
+  }
+
+  .testimonials-section {
+    padding-bottom: 30px;
+  }
+
+  .footer {
+    padding-top: 40px;
+  }
+
+  .review-job-section,
+  .review-job-section-three {
+    padding: 50px 0px 0px;
+
+  }
+
+  .wd-review-job.contentbox1.pl1.stc {
+    padding-top: 0 !important;
+  }
+
+  .review-job-section-two {
+    padding-top: 30px;
+  }
+
+  .review-job-section-five {
+    padding: 80px 0px 40px;
+  }
+
+  .review-job-section-six {
+    padding: 80px 0px 60px;
+  }
+
+  .wd-review-job.contentbox1 {
+    padding-bottom: 0;
+  }
+
+  .get-app-sc {
+    padding: 60px 0;
+  }
 
   /* jobs - haft map */
   .group-half-map .content-job .features-job {
@@ -3642,17 +3928,16 @@ Map Listing Item
 
   /* wd-icon-box */
   .wd-iconbox .title-iconbox {
-    text-align: center;
+    /* text-align: center; */
   }
 
   .wd-iconbox .tf-iconbox {
-    text-align: center;
     margin-bottom: 20px;
   }
 
-  .tf-iconbox .box-header .icon {
+  /* .tf-iconbox .box-header .icon {
     margin-bottom: 0;
-  }
+  } */
 
   .tf-title {
     display: block;
@@ -3908,85 +4193,5 @@ Map Listing Item
 
   .group-col-4 .cl4 {
     width: calc(100% - 32px);
-  }
-}
-
-@media (max-width: 700px) {
-  .wd-banner-rating h6 {
-    margin-right: 0;
-  }
-
-  .features-job.style-3 .company {
-    flex: none;
-    width: 100%;
-  }
-
-  .features-job.style-3 .inner-box {
-    row-gap: 10px;
-    align-items: flex-start;
-  }
-
-  .wd-partner {
-    height: auto;
-  }
-
-  .tf-title.style-3 {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .tf-title.style-3 .menu-tab {
-    justify-content: flex-start;
-  }
-
-  /* wd-job-author */
-  .wd-job-author {
-    flex-direction: column;
-  }
-
-  .wd-job-author .inner-job-right {
-    align-items: center;
-    padding-top: 12px;
-  }
-
-  .wd-job-author .inner-job-right .group-btn {
-    display: flex;
-    width: 100%;
-    flex-wrap: wrap;
-    gap: 12px;
-  }
-
-  .wd-job-author .inner-job-right .tf-btn-submit {
-    margin-bottom: 0px;
-  }
-
-  /* =====================blog======================= */
-  .blog .list-blog .widget-blog-1 {
-    flex-direction: column;
-  }
-
-  .widget-blog-1 .content {
-    padding: 0px 10px !important;
-  }
-
-  .widget-blog-1 img {
-    width: 100%;
-  }
-
-  .pagination-job.style-1 {
-    justify-content: center;
-  }
-
-  .blog.wrap-blog {
-    flex-direction: column;
-  }
-
-  .widget-side-bar .recent-posts .widget-blog-1 .content {
-    max-width: 100% !important;
-  }
-
-  .widget-side-bar .recent-posts .widget-blog-1 {
-    gap: 0px;
-    align-items: center;
   }
 }

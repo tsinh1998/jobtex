@@ -5,6 +5,20 @@
   .sticky-area-wrap .header-ct-left {
     padding-right: 20px;
   }
+
+
+}
+
+@media only screen and (max-width: 1700px) {
+
+  .partner1,
+  .partner2,
+  .partner3,
+  .partner4,
+  .partner5,
+  .partner6 {
+    width: 181px !important;
+  }
 }
 
 @media only screen and (max-width: 1600px) {
