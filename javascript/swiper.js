@@ -210,21 +210,19 @@ if ($("div").hasClass("swiper")) {
     loop: true,
     spaceBetween: 68.95,
     breakpoints: {
-      300: {
+      400: {
         slidesPerView: 2,
-        spaceBetween: 10,
       },
       800: {
         slidesPerView: 5,
-        spaceBetween: 30,
       },
-      1170: {
+      1600: {
         slidesPerView: 6,
       },
     },
-    // autoplay: {
-    //   delay: 3000,
-    // },
+    autoplay: {
+      delay: 3000,
+    },
   });
 }
 

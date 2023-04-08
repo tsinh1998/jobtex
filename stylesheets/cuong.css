@@ -4915,6 +4915,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   padding: 32px 60px;
+  margin: 60px 0px;
   border-radius: 8px;
 }
 
@@ -5672,6 +5673,8 @@
 
 .shopping-cart .coupon .group-ip {
   display: flex;
+  flex-wrap: wrap;
+  row-gap: 8px;
 }
 
 .shopping-cart .coupon .group-ip input {
@@ -6220,7 +6223,7 @@
 }
 
 .wrap-testimonials.stc {
-  padding-bottom: 53px;
+  padding-bottom: 73px;
 }
 
 .content-stc .wd-payment .group-input input::after {

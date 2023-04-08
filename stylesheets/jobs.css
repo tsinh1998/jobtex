@@ -2506,7 +2506,7 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .inner-form button.btn-find {
-  padding: 12px 25px;
+  padding: 12px 24px;
 }
 
 .content-tab.padding {
@@ -3509,13 +3509,10 @@ Map Listing Item
 
 /*-----------------Inner page--------------------  */
 .breadcrumb-section,
-.form-sticky.stc1 {
+.form-sticky.stc1,
+.checkout-section .bg-coupon {
   margin-bottom: 60px;
 }
-
-/* .breadcrumb-section-two {
-  
-} */
 
 .form-sticky.stc2 {
   margin-bottom: 40px;
@@ -3535,7 +3532,9 @@ Map Listing Item
 
 .inner-jobs-section,
 .inner-employer-section,
-.candidates-section {
+.candidates-section,
+.pricing-section-three,
+.shop-section {
   padding-bottom: 60px;
 }
 
@@ -3567,7 +3566,9 @@ Map Listing Item
   margin-bottom: 32px;
 }
 
-.banner-section {
+.banner-section,
+.term-section,
+.blog-section {
   padding: 60px 0px;
 }
 
@@ -3615,6 +3616,59 @@ Map Listing Item
 
 .wd-cv-item .profile {
   padding-bottom: 82px;
+}
+
+.inner-review-section,
+.inner-iconbox-section {
+  padding: 80px 0px;
+}
+
+.inner-review-section-two {
+  padding-bottom: 50px;
+}
+
+.inner-testimonials-section {
+  padding-bottom: 60px;
+}
+
+.FAQ-section {
+  padding: 60px 0px 38px;
+}
+
+.pricing-section {
+  padding-bottom: 120px;
+}
+
+.pricing-section-two {
+  padding-bottom: 40px;
+}
+
+.shop-deltail-section {
+  padding-bottom: 72px;
+}
+
+.shop-details {
+  padding-bottom: 60px;
+}
+
+.checkout-section {
+  padding-bottom: 40px;
+}
+
+.account-section {
+  padding: 61px 0px 68px;
+}
+
+.inner-news-section {
+  padding: 55px 0px;
+}
+
+.inner-news-section-2 {
+  padding-bottom: 55px;
+}
+
+.blog-detail-section {
+  padding-top: 60px;
 }
 
 /*===================================================== responsive =================================================================*/
@@ -3717,17 +3771,26 @@ Map Listing Item
     width: calc(100% - 32px);
   }
 
+  .blog-section .group-col-3 .cl3 {
+    width: calc(100% - 32px) !important;
+  }
+
   .group-col-4 .cl4 {
     width: calc(33.3333% - 32px);
   }
 
-  /*----------------------------blog---------------------- */
   .blog .list-blog .widget-blog-1 {
     flex-direction: column;
   }
 
   .widget-blog-1 .content {
-    padding: 0px 10px !important;
+    padding: 0px 27px 27px !important;
+  }
+
+
+
+  .widget-blog-1 .content.stc {
+    padding: 24px !important;
   }
 
   .widget-blog-1 img {
@@ -3738,12 +3801,9 @@ Map Listing Item
     justify-content: center;
   }
 
-  .widget-side-bar {
-    width: 100%;
-    max-width: fit-content !important;
-  }
-
   /* ========= blog ========== */
+
+
   .blog-detail-side-bar-content .image-single {
     flex-wrap: wrap;
   }
@@ -3780,6 +3840,22 @@ Map Listing Item
 }
 
 @media (max-width: 1300px) {
+  .wrap-blog.stc {
+    flex-direction: column;
+  }
+
+  .blog.stc .list-blog {
+    max-width: 100%;
+  }
+
+  .wrap-blog.stc .widget-side-bar {
+    max-width: 100%;
+  }
+
+  .wrap-blog.stc .recent-posts .widget-blog-1 .content {
+    max-width: 100%;
+  }
+
   .features-job.style-3 .company {
     flex: none;
     width: 50%;
@@ -3874,8 +3950,10 @@ Map Listing Item
     justify-content: center;
   }
 
-  .blog.wrap-blog {
-    flex-direction: column;
+
+
+  .widget-side-bar {
+    max-width: 100%;
   }
 
   .widget-side-bar .recent-posts .widget-blog-1 .content {
@@ -4002,12 +4080,17 @@ Map Listing Item
     padding: 80px 0px 60px;
   }
 
-  .wd-review-job.contentbox1 {
+  .wd-review-job.contentbox1,
+  .pricing-section-two {
     padding-bottom: 0;
   }
 
   .get-app-sc {
     padding: 60px 0;
+  }
+
+  .pricing-section {
+    padding-bottom: 80px;
   }
 
   /*-----------------Inner page--------------------  */
@@ -4022,6 +4105,24 @@ Map Listing Item
 
   .wd-cv-item .profile {
     padding-bottom: 60px;
+  }
+
+  .inner-review-section,
+  .inner-iconbox-section {
+    padding: 60px 0px;
+  }
+
+  .flat-accordion .flat-toggle .toggle-title {
+    font-size: 18px;
+  }
+
+  .flat-accordion .flat-toggle {
+    /* padding: 20px 15px; */
+  }
+
+  .flat-accordion .flat-toggle .toggle-title span::before,
+  .flat-accordion .flat-toggle .toggle-title span::after {
+    right: -16px;
   }
 
   /* jobs - haft map */

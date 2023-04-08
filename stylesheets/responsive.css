@@ -130,6 +130,7 @@
 }
 
 @media only screen and (max-width: 1300px) {
+
   .sticky-area-wrap .header-ct-left .categories {
     display: none;
   }
@@ -291,6 +292,10 @@
 
   .group-col-3 .cl3 {
     width: calc(50% - 32px);
+  }
+
+  .blog-section .group-col-3 .cl3 {
+    width: calc(33.3333% - 32px);
   }
 
   .job-search-form.style2 .form-group:first-child,
