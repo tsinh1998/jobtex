@@ -304,6 +304,10 @@
     margin: 0;
   }
 
+  .cv-form-details.stc2.po-sticky {
+    margin-top: 50px;
+  }
+
   .row-group-search {
     flex-wrap: wrap;
   }

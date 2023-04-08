@@ -3539,6 +3539,10 @@ Map Listing Item
   padding-bottom: 60px;
 }
 
+.candidate-section-two {
+  padding: 40px 0px 60px;
+}
+
 .inner-employer-section-two {
   padding-bottom: 45px;
 }
@@ -3571,7 +3575,47 @@ Map Listing Item
   margin-bottom: 16px;
 }
 
+.content-left .widget-filter.mb1 {
+  margin-bottom: 40px;
+}
 
+.wd-thum-career.cl2.mb1 {
+  margin-bottom: 32px;
+}
+
+.wrapper-author-page-title.stc {
+  padding-top: 59px;
+  padding-bottom: 40px;
+}
+
+.wrapper-author-page-title.stc2 {
+  margin-bottom: 26px;
+}
+
+.wrapper-author-page-title.stc .wd-author-page-title {
+  padding-bottom: 28px;
+  border-bottom: 1px solid #E5E5E5;
+}
+
+.cadi-available-section {
+  padding: 40px 0px 195px;
+}
+
+.candidate-cv-section {
+  padding-bottom: 76px;
+}
+
+.candidate-cv-section-two {
+  padding-bottom: 80px;
+}
+
+.widget-filter.m-bottom {
+  margin-bottom: 40px;
+}
+
+.wd-cv-item .profile {
+  padding-bottom: 82px;
+}
 
 /*===================================================== responsive =================================================================*/
 
@@ -3974,6 +4018,10 @@ Map Listing Item
 
   .banner-section {
     padding: 40px 0px;
+  }
+
+  .wd-cv-item .profile {
+    padding-bottom: 60px;
   }
 
   /* jobs - haft map */

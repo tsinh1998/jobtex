@@ -2276,6 +2276,7 @@
   position: relative;
   margin-left: 26px;
   margin-right: 25px;
+  margin-bottom: 50px;
 }
 
 .cv-road-map::after {
@@ -2577,6 +2578,8 @@
 
 .wd-cv-template .content .list-category {
   display: flex;
+  flex-wrap: wrap;
+  row-gap: 16px;
   align-items: center;
 }
 
