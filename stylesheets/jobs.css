@@ -104,6 +104,10 @@
   margin-left: 8px;
 }
 
+/* input.input-filter-search::placeholder {
+  font-size: 16px !important;
+} */
+
 .form-group-1 span {
   left: 0px;
   top: 15px;
@@ -4186,6 +4190,10 @@ Map Listing Item
     margin-top: 10px;
     margin-bottom: 10px;
 
+  }
+
+  .row-group-search .form-group-1>input {
+    padding-right: 0px;
   }
 
   /* jobs - haft map */
