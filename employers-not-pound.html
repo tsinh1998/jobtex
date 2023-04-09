@@ -650,34 +650,12 @@
                     </div>
                   </div>
                   <div class="group-form filter-block">
-                    <div class="price-input">
-                      <h2 class="salaries">Estimate Salary:</h2>
-                      <span>$</span>
-                      <input type="number" class="input-min" value="1500" disabled />
-                      <span> - </span>
-                      <input type="number" class="input-max" value="3000" disabled />
-                      
-                    </div>
-                    <div class="range-slider-two style-1">
-                      <div class="progress"></div>
-                    </div>
-                    <div class="range-input">
-                      <input
-                        type="range"
-                        class="range-min"
-                        min="0"
-                        max="10000"
-                        value="1500"
-                        step="100"
-                      />
-                      <input
-                        type="range"
-                        class="range-max"
-                        min="0"
-                        max="10000"
-                        value="3000"
-                        step="100"
-                      />
+                    <div class="salary-slider-one">
+                      <div class="input-outer">
+                        <label>Estimate Salary:</label>
+                        <div class="salary-outer"><span class="count"></span></div>
+                      </div>
+                      <div class="salary-slider"></div>
                     </div>
                   </div>
                   <div class="group-form">
@@ -911,6 +889,8 @@
   <script src='javascript/swiper.js'></script>
   <script src='javascript/jquery.nice-select.min.js'></script>
   <script src="javascript/main.js"></script>
+  <script src="javascript/jquery-ui.min.js"></script>
+
 </body>
 
 </html>

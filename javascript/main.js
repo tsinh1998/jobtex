@@ -70,11 +70,11 @@
           if ($(window).scrollTop() > offsetTop + headerHeight) {
             nav.addClass("is-fixed");
             injectSpace.show();
-            $("#trans-logo").attr("src","images/logo.png");
+            $("#trans-logo").attr("src", "images/logo.png");
           } else {
             nav.removeClass("is-fixed");
             injectSpace.hide();
-            $("#trans-logo").attr("src","images/logo-white.png");
+            $("#trans-logo").attr("src", "images/logo-white.png");
           }
 
           if ($(window).scrollTop() > 400) {
@@ -83,7 +83,6 @@
             nav.removeClass("is-small");
           }
         });
-
       }
     }
   };
@@ -93,14 +92,14 @@
       if ($(window).scrollTop() > 300) {
         $(".form-meta2").addClass("is-fixed");
         var heightside3 = $(".wrapper-author-page-title").height() + 80;
-        $(".cv-form-details.job-sg").css("top",heightside3);
+        $(".cv-form-details.job-sg").css("top", heightside3);
       } else {
         $(".form-meta2").removeClass("is-fixed");
       }
-        var heightside = $(".wd-job-author2").height() + 80;
-        var heightside2 = $(".wd-job-author").height() + 80;
-        $(".cv-form-details.job-sg").css("top",heightside);
-        $(".cv-form-details.job-sg").css("top",heightside2);
+      var heightside = $(".wd-job-author2").height() + 80;
+      var heightside2 = $(".wd-job-author").height() + 80;
+      $(".cv-form-details.job-sg").css("top", heightside);
+      $(".cv-form-details.job-sg").css("top", heightside2);
     });
   };
 
@@ -609,17 +608,16 @@
     }
   };
 
-  $(document).ready(function(){
-
-    var height =$( window ).height() + 20;
-    $('.row-height').css("height",height);
-    $('.row-height').css("max-height",height);
-    })
+  $(document).ready(function () {
+    var height = $(window).height() + 20;
+    $(".row-height").css("height", height);
+    $(".row-height").css("max-height", height);
+  });
 
   var setTimeIn = function () {
     if ($(".wd-popup-form").length > 0) {
-      setTimeout(function () { 
-        $('.wd-popup-form').addClass('modal-menu--open');
+      setTimeout(function () {
+        $(".wd-popup-form").addClass("modal-menu--open");
       }, 4000);
     }
   };
@@ -647,7 +645,6 @@
       });
     }
     if (modalMenu2.length) {
-
       const close = function () {
         modalMenu2.addClass("modal-menu--close");
         modalMenu2.removeClass("modal-menu--open");
@@ -674,15 +671,40 @@
       $(".filter-radio").on("click", function () {
         modalMenu4.toggleClass("modal-menu--open");
       });
-      $(document).on("click.filter-radio", function(a) {
-        if ($(a.target).closest('.filter-radio, .wd-filter-radio').length === 0) {
+      $(document).on("click.filter-radio", function (a) {
+        if (
+          $(a.target).closest(".filter-radio, .wd-filter-radio").length === 0
+        ) {
           modalMenu4.removeClass("modal-menu--open");
         }
       });
     }
   };
 
+  //salary Range Slider
+  var rangeSlider = function () {
+    if ($(".salary-slider-one").length) {
+      $(".salary-slider-one .salary-slider").slider({
+        range: true,
+        min: 0,
+        max: 50000,
+        values: [17000, 24000],
+        slide: function (event, ui) {
+          $(".salary-slider-one .count").text(
+            ui.values[0] + "$" + " - " + ui.values[1] + "$"
+          );
+        },
+      });
 
+      $(".salary-slider-one .count").text(
+        $(".salary-slider").slider("values", 0) +
+          "$" +
+          " - " +
+          $(".salary-slider").slider("values", 1) +
+          "$"
+      );
+    }
+  };
 
   var btnQuantity = function () {
     $(".minus-btn").on("click", function (e) {
@@ -715,14 +737,14 @@
     if ($(".sticky-sidebar").length) {
       $(".sticky-sidebar").theiaStickySidebar();
     }
-  }
+  };
 
   var preload = function () {
-    $(".preload").fadeOut('slow',function(){
-      setTimeout(function() {
-          $(".preload").remove();
+    $(".preload").fadeOut("slow", function () {
+      setTimeout(function () {
+        $(".preload").remove();
       }, 1500);
-  });
+    });
   };
 
   // Dom Ready
@@ -772,6 +794,7 @@
     Modal_Right();
     popUpLightBox();
     progressProduct();
+    rangeSlider();
     preload();
   });
 })(jQuery);
