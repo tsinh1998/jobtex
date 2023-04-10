@@ -89,17 +89,25 @@
 
   var scrollEffect = function () {
     $(window).on("load scroll", function () {
+      var headerHeight = $('#header').height();
       if ($(window).scrollTop() > 300) {
         $(".form-meta2").addClass("is-fixed");
-        var heightside3 = $(".wrapper-author-page-title").height() + 80;
-        $(".cv-form-details.job-sg").css("top", heightside3);
       } else {
         $(".form-meta2").removeClass("is-fixed");
       }
+      var heightside3 = $(".wrapper-author-page-title").height() + 80;
       var heightside = $(".wd-job-author2").height() + 80;
       var heightside2 = $(".wd-job-author").height() + 80;
       $(".cv-form-details.job-sg").css("top", heightside);
       $(".cv-form-details.job-sg").css("top", heightside2);
+      $(".cv-form-details.job-sg").css("top", heightside3);
+      if($('#header').hasClass('header-fixed')) {
+        $(".fixed-space").css("top", headerHeight);
+        $(".cv-form-details.job-sg").css("top", heightside2 + headerHeight);
+        $(".cv-form-details.job-sg").css("top", heightside + headerHeight);
+        $(".cv-form-details.po-sticky.st2").css("top", headerHeight + 10);
+        $(".cv-form-details.po-sticky.stc2").css("top", headerHeight + 10);
+      }
     });
   };
 
