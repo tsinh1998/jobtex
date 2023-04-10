@@ -6318,6 +6318,162 @@
   width: 100%;
 }
 
+.wd-shop .product-hover-images img,
+.wd-shop .product-main-images img {
+  width: 100%;
+  height: auto;
+}
+
+.wd-shop .product-main-images {
+  -webkit-transition: opacity .8s ease;
+  transition: opacity .8s ease;
+}
+.wd-shop .product-hover-images {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: auto;
+  right: auto;
+  bottom: 0;
+  opacity: 0;
+  -webkit-transition: opacity .8s ease,-webkit-transform 1.1s cubic-bezier(.15,.75,.5,1) 0s;
+  transition: opacity .8s ease,-webkit-transform 1.1s cubic-bezier(.15,.75,.5,1) 0s;
+  transition: opacity .8s ease,transform 1.1s cubic-bezier(.15,.75,.5,1) 0s;
+  transition: opacity .8s ease,transform 1.1s cubic-bezier(.15,.75,.5,1) 0s,-webkit-transform 1.1s cubic-bezier(.15,.75,.5,1) 0s;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+}
+.wd-shop:hover .product-main-images {
+  opacity: 0;
+}
+.wd-shop:hover .product-hover-images {
+  opacity: 1;
+  -webkit-transform: scale3d(1.1,1.1,1.1) translateZ(0);
+  transform: scale3d(1.1,1.1,1.1) translateZ(0);
+}
+.wd-shop .list-btn-action {
+  position: absolute;
+  top: 1px;
+  right: 6px;
+}
+.wd-shop .list-btn-action li a {
+  width: 40px;
+height: 40px;
+border: 1px solid #E5E5E5;
+border-radius: 50%;
+display: inline-flex;
+align-items: center;
+justify-content: center;
+}
+.wd-shop .list-btn-action li:not(:last-child) {
+  margin-bottom: 15px;
+}
+.wd-shop .list-btn-action li a svg,
+.wd-shop .list-btn-action li a i {
+  width: 17px;
+  height: 17px;
+  font-size: 17px;
+}
+.wd-shop .list-btn-action li a:hover {
+  color: #EB4D4D;
+}
+.wd-shop .list-btn-action li a:not(.wish-list):hover {
+  background: #14A077;
+  border-color: #14A077;
+}
+.wd-shop .list-btn-action li a:hover path {
+  fill: #fff;
+}
+.wd-shop .list-btn-action li a path {
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.wd-shop .list-btn-action li a::after,
+.wd-shop .list-btn-action li a::before {
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.wd-shop .list-btn-action li a {
+  position: relative;
+}
+.wd-shop .list-btn-action li a::after {
+  position: absolute;
+  right: 130%;
+  top: 50%;
+  transform: translateY(-50%);
+  content: attr(data-tooltip);
+  padding: 2px 8px;
+  border-radius: 3px;
+  background: #121212;
+  color: #fff;
+  width: max-content;
+  z-index: 999;
+}
+.wd-shop .list-btn-action li a::before {
+  content: "";
+  position: absolute;
+  background: #121212;
+  border: 7px solid transparent;
+  z-index: 1000001;
+  right: 119%;
+  top: 50%;
+  transform: translateY(-50%) rotate(45deg);
+  z-index: 1;
+}
+.wd-shop .list-btn-action li a::after,
+.wd-shop .list-btn-action li a::before {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.wd-shop .list-btn-action li a:hover::after,
+.wd-shop .list-btn-action li a:hover::before {
+  opacity: 1;
+  visibility: visible;
+
+}
+
+.wd-shop .list-btn-action li a:hover::before {
+  transition-delay: 0.2s;
+}
+
+.wd-shop .list-btn-action li {
+  transform: translateX(50%);
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.wd-shop .list-btn-action li:nth-child(2) {
+  transition-delay: 0.1s;
+}
+
+.wd-shop .list-btn-action li:nth-child(3) {
+  transition-delay: 0.2s;
+}
+
+.wd-shop:hover .list-btn-action li {
+  transform: translateX(0);
+  opacity: 1;
+  visibility: visible;
+}
+
+.wd-shop {
+  overflow: hidden;
+}
+
 /* --------------\---------------------------animation------------------------------------ */
 .ani1 {
   -webkit-animation: ani1 10s infinite ease-in-out alternate;

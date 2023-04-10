@@ -2344,10 +2344,8 @@ input[type="color"],
   z-index: 100;
   margin: -100px 0 0 -100px;
   background: #ffffff;
-  background: url(../images/preloader.png) center center no-repeat;
+  background: url(../images/preloader.svg) center center no-repeat;
   animation: preload 1s linear infinite alternate;
-  -webkit-animation-name: bounceIn;
-  animation-name: bounceIn;
 }
 
 @keyframes bounceIn {
