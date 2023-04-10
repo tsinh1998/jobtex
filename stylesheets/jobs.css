@@ -1941,7 +1941,7 @@ input[type="number"]::-webkit-inner-spin-button {
   margin-bottom: 12px;
 }
 
-.wd-thum-career button {
+.wd-thum-career .tf-btn {
   text-transform: capitalize;
 }
 
@@ -2062,8 +2062,10 @@ input[type="number"]::-webkit-inner-spin-button {
   margin: 0;
 }
 
-.wd-thum-career.style-2 button {
+.wd-thum-career.style-2 .tf-btn {
   width: 100%;
+  display: block;
+  text-align: center;
 }
 
 /*wd-form-rating-page  */
@@ -3728,6 +3730,16 @@ Map Listing Item
   display: flex;
   align-items: center;
   color: #14A077;
+}
+
+.shop-details .shop-content button:hover {
+  background-color: #148160;
+  color: #ffffff;
+}
+
+.job-rating .group-title .btn:hover {
+  background: #14a077;
+  color: #fff;
 }
 
 /*===================================================== responsive =================================================================*/
