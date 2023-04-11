@@ -1238,4 +1238,10 @@
 .tf-iconbox.style-1 {
   flex-direction: unset;
 }
+.tf-slider.sl5 .form-sl,
+.tf-slider.sl6 .form-sl,
+.tf-slider.sl8 .form-sl {
+  margin-left: 0px;
+  margin-right: 0px;
+}
 }

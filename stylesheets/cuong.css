@@ -6505,6 +6505,10 @@ justify-content: center;
   margin: 24px 0px 25px;
 }
 
+.sc-getapp {
+  overflow: hidden;
+}
+
 /* --------------\---------------------------animation------------------------------------ */
 .ani1 {
   -webkit-animation: ani1 10s infinite ease-in-out alternate;
