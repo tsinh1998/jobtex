@@ -504,9 +504,9 @@
   transition: all 0.3s ease-out 0s;
 }
 
-/* .box-latest:hover .img-latest img {
+.box-latest:hover .img-latest img {
   transform: scale3d(1.1, 1.1, 1.1);
-} */
+}
 
 .box-latest .box-content {
   padding: 24px;

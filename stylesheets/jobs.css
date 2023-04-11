@@ -3745,6 +3745,7 @@ Map Listing Item
 .widget-blog-1.stc {
   cursor: pointer;
   border: none;
+  overflow: hidden;
 }
 
 .widget-blog-1.stc .content {
@@ -3778,6 +3779,7 @@ Map Listing Item
 }
 
 .widget-blog-1.stc .img-blog {
+  overflow: hidden;
   width: 100%;
   border-radius: 8px 8px 0 0;
   -webkit-transition: all 0.3s ease-out 0s;
@@ -3787,6 +3789,9 @@ Map Listing Item
   transition: all 0.3s ease-out 0s;
 }
 
+.widget-blog-1.stc:hover .img-blog {
+  transform: scale3d(1.1, 1.1, 1.1);
+}
 
 /*===================================================== responsive =================================================================*/
 
