@@ -563,7 +563,7 @@
 
   .row-group-search.st2 .form-group:first-child,
   .row-group-search.st2 .form-group {
-    width: 50% !important;
+    width: 49% !important;
   }
 
   .row-group-search.st2 .form-group span,
@@ -634,7 +634,7 @@
   .wd-review-job.contentbox1,
   .wd-review-job.thumb-style3 {
     padding-top: 0px;
-    margin-bottom: 60px;
+    margin-bottom: 0px;
   }
 
   .wd-review-job.contentbox1.padding {
@@ -855,6 +855,10 @@
 
   .wrap-sidebar-full .tf-tab {
     padding: 0px 24px;
+  }
+
+  .ctn2 .content-left {
+    margin-bottom: 40px;
   }
 }
 
