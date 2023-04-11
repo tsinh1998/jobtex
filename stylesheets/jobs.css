@@ -3745,7 +3745,7 @@ Map Listing Item
 .widget-blog-1.stc {
   cursor: pointer;
   border: none;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .widget-blog-1.stc .content {
@@ -3765,7 +3765,9 @@ Map Listing Item
   border-color: #fff;
 }
 
-.widget-blog-1.stc .sub-title {
+.widget-popular-tags .widget-popular-tags-wrap .widget-popular-tags-item a,
+.widget-blog-1 .sub-title {
+  cursor: pointer;
   -webkit-transition: all 0.3s ease-out 0s;
   -moz-transition: all 0.3s ease-out 0s;
   -ms-transition: all 0.3s ease-out 0s;
@@ -3773,15 +3775,21 @@ Map Listing Item
   transition: all 0.3s ease-out 0s;
 }
 
-.widget-blog-1.stc .sub-title:hover {
+.widget-popular-tags .widget-popular-tags-wrap .widget-popular-tags-item a:hover,
+.widget-blog-1 .sub-title:hover {
   background-color: #14A077;
   color: #fff;
 }
 
+
+
 .widget-blog-1.stc .img-blog {
   overflow: hidden;
-  width: 100%;
   border-radius: 8px 8px 0 0;
+}
+
+.widget-blog-1.stc .img-blog img {
+  width: 100%;
   -webkit-transition: all 0.3s ease-out 0s;
   -moz-transition: all 0.3s ease-out 0s;
   -ms-transition: all 0.3s ease-out 0s;
@@ -3789,7 +3797,7 @@ Map Listing Item
   transition: all 0.3s ease-out 0s;
 }
 
-.widget-blog-1.stc:hover .img-blog {
+.widget-blog-1.stc:hover .img-blog img {
   transform: scale3d(1.1, 1.1, 1.1);
 }
 

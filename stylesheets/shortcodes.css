@@ -303,7 +303,7 @@
   gap: 12px;
 }
 
-.widget-popular-tags .widget-popular-tags-wrap .widget-popular-tags-item {
+.widget-popular-tags .widget-popular-tags-wrap .widget-popular-tags-item a {
   padding: 8px 16px;
   background: #f1f1f1;
   border-radius: 24px;
