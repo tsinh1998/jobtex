@@ -6474,6 +6474,37 @@ justify-content: center;
   overflow: hidden;
 }
 
+.blog-details-section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.widget-side-bar.stc {
+  width: unset;
+  max-width: unset;
+  margin-top: -1px;
+  margin-left: 7px;
+}
+
+.blog.style-1.stc .blog-detail-side-bar-content>.widget-blog-1 .content {
+  margin-bottom: 2px;
+}
+
+.blog.style-1.stc .blog-detail-side-bar-content>.widget-blog-1 .image img {
+  height: 632px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.blog.style-1.stc .blog-detail-side-bar-content {
+  margin-right: 122px;
+  width: unset;
+}
+
+.blog.style-1.stc .wd-form-rating .form-rating-content {
+  margin: 24px 0px 25px;
+}
+
 /* --------------\---------------------------animation------------------------------------ */
 .ani1 {
   -webkit-animation: ani1 10s infinite ease-in-out alternate;

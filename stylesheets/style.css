@@ -2341,11 +2341,49 @@ input[type="color"],
   left: 50%;
   width: 200px;
   height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   z-index: 100;
   margin: -100px 0 0 -100px;
   background: #ffffff;
-  background: url(../images/preloader.svg) center center no-repeat;
-  animation: preload 1s linear infinite alternate;
+}
+
+.spinner {
+  width: 56px;
+  max-width: 56px;
+  height: 56px;
+  display: inline-grid;
+  border: 4.5px solid #0000;
+  border-radius: 50%;
+  border-color: #14a076a3 #0000;
+  animation: spinner-preloader 1s infinite linear;
+}
+
+.spinner::before,
+.spinner::after {
+  content: "";
+  grid-area: 1/1;
+  margin: 2.2px;
+  border: inherit;
+  border-radius: 50%;
+}
+
+.spinner::before {
+  border-color: #14a077 #0000;
+  animation: inherit;
+  animation-duration: 0.5s;
+  animation-direction: reverse;
+}
+
+.spinner::after {
+  margin: 8.9px;
+}
+
+@keyframes spinner-preloader {
+  100% {
+    transform: rotate(1turn);
+  }
 }
 
 @keyframes bounceIn {
