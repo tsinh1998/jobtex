@@ -590,6 +590,9 @@
 }
 
 @media only screen and (max-width: 991px) {
+  .wd-findjob-filer.mb1 .group-select {
+    margin-top: 20px;
+  }
 
   .row-group-search.st2 .form-group:first-child,
   .row-group-search.st2 .form-group {
