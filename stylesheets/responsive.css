@@ -1235,4 +1235,7 @@
   .review-job-section.stc {
     padding: 80px 0;
 }
+.tf-iconbox.style-1 {
+  flex-direction: unset;
+}
 }
