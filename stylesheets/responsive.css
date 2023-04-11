@@ -135,6 +135,10 @@
   .sticky-home2.add-mgt {
     top: 15px;
   }
+
+  .widget-blog-1 .content {
+    padding: 25px !important;
+}
 }
 
 @media only screen and (max-width: 1300px) {
@@ -188,6 +192,12 @@
   .aln-center-mb {
     align-items: center;
   }
+  .top-map-jobs,
+  .po-sticky,
+  .top-map-jobs2  {
+    position: relative;
+    top: 0 !important;
+  }
 }
 
 @media only screen and (max-width: 1200px) {
@@ -210,6 +220,12 @@
   .tf-slider .heading h2,
   .tf-slider .heading p {
     padding-right: 100px;
+  }
+
+  .wd-shop .list-btn-action li {
+    transform: translateX(0);
+    opacity: 1;
+    visibility: visible;
   }
 
   .tf-slider .form-sl .row-group-search {
@@ -249,7 +265,8 @@
   }
 
   .job-article .inner-content,
-  .wd-get-app .content {
+  .wd-get-app .content,
+  .form-checkout.form-checkout.form-stc {
     padding: 0px;
   }
 
@@ -315,10 +332,6 @@
   .cv-form-details.stc2,
   .job-article.single-employer .related-job {
     margin: 0;
-  }
-
-  .cv-form-details.stc2.po-sticky {
-    margin-top: 50px;
   }
 
   .row-group-search {
@@ -412,15 +425,15 @@
     right: 4px;
   }
 
-  .blog.style-1.stc .blog-detail-side-bar-content .nav-links .title-post.text-end {
+   .blog-detail-side-bar-content .nav-links .title-post.text-end {
     text-align: left !important;
   }
 
-  .blog.style-1.stc .blog-detail-side-bar-content .nav-links {
+   .blog-detail-side-bar-content .nav-links {
     padding: 30px 0 !important;
   }
 
-  .blog.style-1.stc .blog-detail-side-bar-content .nav-links .post-navigation.previous-post {
+   .blog-detail-side-bar-content .nav-links .post-navigation.previous-post {
     margin-bottom: 20px;
   }
 
@@ -447,10 +460,6 @@
   .tf-slider.sl7 .heading p,
   .tf-slider .form-sl .row-group-search.home1 .form-group-1 {
     padding: 0;
-  }
-
-  .header-style2 .sticky-area-wrap .header-ct-center {
-    padding: 20px 0;
   }
 
   .trader-box.sl7 {
@@ -615,6 +624,11 @@
     margin-top: 50px;
   }
 
+  .job-article .inner-content.home2 {
+    height: unset;
+    overflow: unset;
+  }
+
   .group-location .box-3,
   .group-location .box-6 {
     width: calc(50% - 20px);
@@ -634,7 +648,8 @@
   }
 
   .wd-counter,
-  .wd-iconbox .tf-iconbox {
+  .wd-iconbox .tf-iconbox,
+  .box-latest {
     margin-bottom: 30px;
   }
 
@@ -644,7 +659,7 @@
   }
 
   .wd-review-job.thumb1 .trader-box.box3 {
-    bottom: 7%;
+    bottom: -5%;
     left: 8.5%;
   }
 
@@ -824,11 +839,16 @@
     display: inline-block;
   }
 
+  .wd-findjob-filer .button-filter {
+    margin-bottom: 20px;
+  }
+
   .stc .wd-findjob-filer {
     display: flex;
   }
 
   .group-select-display {
+    margin-top: 30px;
     margin-bottom: 30px;
   }
 
@@ -836,6 +856,10 @@
   .job-search-form.style2 .form-group {
     width: 100%;
     margin-bottom: 20px;
+  }
+
+  .cv-form-details.stc2.po-sticky {
+    margin-top: 50px;
   }
 
   .tf-tab.no-avai2 {
@@ -875,11 +899,20 @@
   }
 
   .wrap-sidebar-full .tf-tab {
-    padding: 0px 24px;
+    padding: 0px 15px;
   }
+  .wrap-sidebar-full .tf-tab {
+    margin-left: 0px;
+}
+.wrap-sidebar-full .content-tab .group-col-3 {
+  margin-right: 0px;
+}
   .widget-side-bar.stc {
     margin: 0;
     margin-top: 60px;
+}
+.sc-getapp {
+  padding: 80px 0;
 }
 }
 
@@ -919,6 +952,11 @@
   .header .header-ct-center .mobile-button,
   .wd-banner-rating {
     margin: 0;
+  }
+
+  .review-job-section.stc .wd-review-job.contentbox1.style2,
+  .wrap-testimonials .menu-tab {
+    padding: 0;
   }
 
   .tf-sl2.wd-review-job.thumb2 .tes-box {
@@ -1012,10 +1050,13 @@
     justify-content: center;
   }
 
-  .footer .wd-social,
   .wd-job-author2 .content-right .gr-rating,
   .wd-job-author2 .content-right .price {
     justify-content: center;
+  }
+
+  .footer .wd-social {
+    justify-content: left;
   }
 
   .wd-job-author2 .content-right {
@@ -1073,7 +1114,8 @@
   }
 
   .wd-popup-job-apply.style3 .content,
-  .blog.style-1.stc .wd-form-rating {
+  .blog.style-1.stc .wd-form-rating,
+  .form-candidate {
     padding: 40px 20px;
   }
 
@@ -1146,7 +1188,8 @@
   }
 
   .rating-review .left-rating,
-  .job-rating.st2 .rating-review .right-rating {
+  .job-rating.st2 .rating-review .right-rating,
+  .wrapper-author-page-title.style2 .author-archive-footer button {
     width: 100%;
   }
 
@@ -1163,7 +1206,7 @@
   }
 
   .cv-form-details {
-    margin-top: 50px;
+    margin-top: 20px;
   }
 
   .wd-job-author.stc-em {
@@ -1175,4 +1218,7 @@
     top: 25px;
     right: 25px;
   }
+  .review-job-section.stc {
+    padding: 80px 0;
+}
 }
