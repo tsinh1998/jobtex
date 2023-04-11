@@ -77,7 +77,7 @@
             $("#trans-logo").attr("src", "images/logo-white.png");
           }
 
-          if ($(window).scrollTop() > 400) {
+          if ($(window).scrollTop() > 150) {
             nav.addClass("is-small");
           } else {
             nav.removeClass("is-small");
@@ -233,14 +233,39 @@
   };
 
   var popUpLightBox = function () {
-    if ($(".lightbox-image").length) {
-      $(".lightbox-image").fancybox({
-        openEffect: "fade",
-        closeEffect: "fade",
-        helpers: {
-          media: {},
+    if ($(".lightbox-image").length) { 
+      $(".lightbox-image").magnificPopup({
+        disableOn: 700,
+        type: 'iframe',
+        mainClass: 'mfp-fade',
+        removalDelay: 160,
+        preloader: false,
+
+        fixedContentPos: false
+    });
+    }
+    if ($(".lightbox-gallery").length) { 
+      $(".lightbox-gallery").magnificPopup({
+        type: 'image',
+        zoom: {
+          enabled: true, // By default it's false, so don't forget to enable it
+      
+          duration: 300, // duration of the effect, in milliseconds
+          easing: 'ease-in-out', // CSS transition easing function
+      
+          // The "opener" function should return the element from which popup will be zoomed in
+          // and to which popup will be scaled down
+          // By defailt it looks for an image tag:
+          opener: function(openerElement) {
+            // openerElement is the element on which popup was initialized, in this case its <a> tag
+            // you don't need to add "opener" option if this code matches your needs, it's defailt one.
+            return openerElement.is('img') ? openerElement : openerElement.find('img');
+          }
         },
-      });
+        gallery:{
+          enabled:true
+        }
+    });
     }
   };
 
@@ -496,37 +521,6 @@
     });
   };
 
-  var tfTabs2 = function () {
-    $(".tf-tab2").each(function () {
-      $(this).find(".content-tab2").children().hide();
-      $(this).find(".content-tab2").children().first().show();
-      $(this)
-        .find(".menu-tab2")
-        .children(".ct-tab2")
-        .on("click", function (e) {
-          e.preventDefault();
-          var liActive = $(this).index();
-          var contentActive = $(this)
-            .siblings()
-            .removeClass("active")
-            .parents(".tf-tab2")
-            .find(".content-tab2")
-            .children()
-            .eq(liActive);
-          contentActive.addClass("active").fadeIn("slow");
-          contentActive.siblings().removeClass("active");
-          $(this)
-            .addClass("active")
-            .parents(".tf-tab2")
-            .find(".content-tab2")
-            .children()
-            .eq(liActive)
-            .siblings()
-            .hide();
-        });
-    });
-  };
-
   // Mobile Navigation
   var mobileNav = function () {
     var mobile = window.matchMedia("(max-width: 1024px)");
@@ -751,7 +745,7 @@
     $(".preload").fadeOut("slow", function () {
       setTimeout(function () {
         $(".preload").remove();
-      }, 1500);
+      }, 1000);
     });
   };
 
@@ -767,7 +761,6 @@
     counter();
     setTimeIn();
     tfTabs();
-    tfTabs2();
     filter();
     stickSidebar();
     parallax();
