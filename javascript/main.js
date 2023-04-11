@@ -59,6 +59,7 @@
           injectSpace = $("<div>", {
             height: headerHeight,
           });
+          injectSpace.hide();
 
         if ($("header").hasClass("style-absolute")) {
           injectSpace.hide();
