@@ -4048,6 +4048,10 @@ Map Listing Item
     padding-top: 90px;
   }
 
+  .tf-slider.sl2 .content .list-category,
+  .tf-slider.sl4 .content .list-category {
+    margin-bottom: 60px;
+  }
 
 
   .tf-slider.sl4 {
@@ -4056,6 +4060,7 @@ Map Listing Item
 
   /* input */
   .tf-slider.sl1 {
+    padding-bottom: 100px;
     padding-top: 170px;
   }
 
@@ -4378,10 +4383,6 @@ Map Listing Item
     padding-right: 0px;
   }
 
-  .tf-slider.sl2 .list-category,
-  .tf-slider.sl4 .list-category {
-    margin-bottom: 60px;
-  }
 
   .features-job.stc.wd-thum-career.cl3 .job-archive-header {
     padding: 0px 0px 25px;
