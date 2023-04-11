@@ -1,3 +1,4 @@
+
 !function(t) {
     "use strict";
 
@@ -5,15 +6,17 @@
     t("#left-menu-btn").on("click", function(e) {
         e.preventDefault();   
         if($("body").hasClass("sidebar-enable") == true) {
-               $('body').removeClass("sidebar-enable");
-               $.cookie("isButtonActive", "0");
+            $("body").removeClass("sidebar-enable");
+            $.cookie("isButtonActive", "0");
            } else {
-                $('body').addClass("sidebar-enable");
-               $.cookie("isButtonActive", "1");
+            $('body').addClass("sidebar-enable");
+            $.cookie("isButtonActive", "1");
            }
-         t("body").toggleClass("show-job");
+        1400 <= t(window).width() ? t("body").toggleClass("show-job") : t("body").removeClass("show-job");
+        1400 <= $(window).width() ? $.cookie("isButtonActive", "0") :  $.cookie("isButtonActive", "0")
+
     });
-         if($.cookie("isButtonActive") == 1)
+        if($.cookie("isButtonActive") == 1)
         {
             $("body").addClass("sidebar-enable show-job");
         }
@@ -44,3 +47,4 @@
     });
 
 }(jQuery);
+

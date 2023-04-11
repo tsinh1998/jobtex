@@ -3346,55 +3346,42 @@ background: #fff;
     .dashboard.show .dashboard__content {
         margin-left: 280px;
     }
-    
+}
+
+@media only screen and (max-width: 1550px) {
+    .dashboard .btn {
+        left: 320px;
+    }
 }
 
 @media only screen and (max-width: 1400px) {
     .dashboard .btn {
-        left: 320px;
+        left: 200px;
     }
-
-    .left-menu {
+    .left-menu  {
         display: none;
     }
-    .sidebar-enable .left-menu  {
+
+    .sidebar-enable .left-menu {
         display: block;
+        box-shadow: 0 3.811px 8.0551px rgba(0, 0, 0, 0.5);
     }
+    
 
     .dashboard.show .dashboard__content {
         margin-left: 0;
     }
-    
-    /* .show-job .left-menu {
-        display: unset;
-    }
-    .left-menu {
+
+    .sticky-area-wrap .header-ct-left .categories a {
         display: none;
-    } */
-
-    /* .left-menu  {
-        display:none;
     }
-
-
-    .sidebar-enable .left-menu {
-        display: block;
-    } */
-    
-}
-
-@media only screen and (max-width: 1300px) {
-    .dashboard .btn {
-        left: 300px;
-    }
-  
     
 }
 
 
 @media only screen and (max-width: 1200px) {
     .dashboard .btn {
-        left: 180px;
+        left: 170px;
     }
     .flat-dashboard-candidates .table-responsive {
         overflow-x: auto;
@@ -3427,14 +3414,18 @@ background: #fff;
         width: 100%;
     }
 }
-@media only screen and (max-width: 991px) {
+
+@media only screen and (max-width: 1025px) {
     .dashboard .btn {
         top: 14px;
     }
+}
+
+@media only screen and (max-width: 991px) {
+   
     .left-menu {
         top: 73px;
     }
-   
     
     .page-title-dashboard {
         padding: 100px 0 30px;
