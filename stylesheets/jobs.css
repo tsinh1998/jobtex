@@ -3784,14 +3784,38 @@ Map Listing Item
     width: 100%;
   }
 
+  .job-search-form.st1 form,
   .job-search-form.style2 form {
     padding: 15px;
   }
 
+  .job-search-form.st1 .row-group-search .form-style-1 .nice-select {
+    padding: 12px 0px;
+  }
+
+  .job-search-form.st1 .row-group-search .form-style-1 .nice-select:after {
+    right: 20px;
+  }
+
+  .job-search-form.st1 .row-group-search .form-style-1 .icon-search,
+  .job-search-form.st1 .row-group-search .form-style-1 .icon-map-pin {
+    padding-left: 10px;
+  }
+
+  .job-search-form.st1 .row-group-search .form-group-1>input {
+    padding-left: 32px;
+  }
+
+  .job-search-form.st1 .row-group-search .form-style-1 .current {
+    padding-left: 40px;
+  }
+
+  .job-search-form.st1 .row-group-search .form-style-1,
   .job-search-form.style2 .form-group {
     border: 1px solid #E5E5E5 !important;
   }
 
+  .job-search-form.st1 .row-group-search .form-style-1,
   .job-search-form.style2,
   .job-search-form.style2 .form-group {
     margin-bottom: 15px !important;
@@ -4298,6 +4322,31 @@ Map Listing Item
   .tf-slider.sl2 .list-category,
   .tf-slider.sl4 .list-category {
     margin-bottom: 60px;
+  }
+
+  .features-job.stc.wd-thum-career.cl3 .job-archive-header {
+    padding: 0px 0px 25px;
+  }
+
+  .wd-thum-career.cl3 .job-archive-header span.icon-heart {
+    margin-right: 0px;
+  }
+
+  .job-search-form form {
+    padding: 15px;
+  }
+
+  .job-search-form.st1 .row-group-search .form-style-1 .icon-search,
+  .job-search-form.st1 .row-group-search .form-style-1 .icon-map-pin {
+    font-size: 20px;
+  }
+
+  .wd-form-rating {
+    padding: 30px 15px;
+  }
+
+  .widget-filter.st2 {
+    padding: 18px 15px 24px 15px;
   }
 
   /* jobs - haft map */
