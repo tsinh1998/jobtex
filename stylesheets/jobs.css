@@ -4035,6 +4035,34 @@ Map Listing Item
 
 @media (max-width: 700px) {
 
+  .tf-slider.sl8,
+  .tf-slider.sl6 {
+    padding-top: 160px;
+  }
+
+  .tf-slider.sl8 .group-icon {
+    margin-top: 90px;
+  }
+
+  .tf-slider.sl7 {
+    padding-top: 90px;
+  }
+
+
+
+  .tf-slider.sl4 {
+    padding-top: 80px;
+  }
+
+  /* input */
+  .tf-slider.sl1 {
+    padding-top: 170px;
+  }
+
+  .tf-slider.sl2 {
+    padding-top: 80px;
+  }
+
   .job-search-form .row-group-search.st2 .form-group:first-child,
   .job-search-form .row-group-search.st2 .form-group {
     width: 100% !important;
@@ -4283,14 +4311,7 @@ Map Listing Item
     right: -16px;
   }
 
-  /* input */
-  .tf-slider.sl1 {
-    padding-top: 170px;
-  }
 
-  .tf-slider.sl2 {
-    padding-top: 80px;
-  }
 
   .tf-slider.sl6 .form-sl,
   .tf-slider.sl8 .form-sl,
@@ -4305,11 +4326,28 @@ Map Listing Item
     padding-right: 15px;
   }
 
+  .tf-slider.sl4 .form-sl .form-group-1 span,
+  .tf-slider.sl4 .form-sl .form-group-2 span {
+    left: 0;
+  }
+
+
+
+  .tf-slider.sl3 .form-sl {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .tf-slider.sl8 .content .form-sl,
+  .tf-slider.sl6 .content .form-sl,
+  .tf-slider.sl5 .content .form-sl,
   .tf-slider.sl9 .form-sl.stc {
     margin-left: 0;
     margin-right: 0;
   }
 
+  .tf-slider.sl4 .form-sl .form-group-1 span,
+  .tf-slider.sl4 .form-sl .form-group-2 span,
   .job-search-form.st1 .row-group-search .form-group-1 .icon-search,
   .job-search-form.st1 .row-group-search .form-group-2 .icon-map-pin,
   .job-search-form.st1 .row-group-search .form-group-3 .icon-filter,
@@ -4319,16 +4357,17 @@ Map Listing Item
     font-size: 20px;
   }
 
-  .tf-slider .form-sl .row-group-search.home1.st .form-group-1 span.current,
-  .tf-slider.sl9 .form-sl.stc .row-group-search.home1 span.current {
-    font-size: 15px;
-  }
 
+  .tf-slider.sl4 .form-sl .form-group-1 input,
   .tf-slider .form-sl .row-group-search.home1.st .form-group-1 input,
   .tf-slider.sl9 .form-sl.stc .row-group-search.home1.st .form-group-1 input {
     padding-left: 27px !important;
   }
 
+  .tf-slider.sl4 .form-sl .form-group-1 input,
+  .tf-slider.sl4 .form-sl .form-group-2 .current,
+  .tf-slider .form-sl .row-group-search.home1.st .form-group-1 span.current,
+  .tf-slider.sl9 .form-sl.stc .row-group-search.home1 span.current,
   .tf-slider .form-sl .row-group-search.home1.st .form-group-1 input::placeholder,
   .tf-slider.sl9 .form-sl.stc .row-group-search.home1.st .form-group-1 input::placeholder {
     font-size: 15px;
