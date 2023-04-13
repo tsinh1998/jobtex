@@ -724,9 +724,17 @@ background: #fff;
 }
 
 #sidebar-menu ul li ul.sub-menu2 li a {
-    padding: .4rem 1.5rem .4rem 3.3rem;
+    padding: 0.4rem 1.5rem 0.4rem 2rem;
     font-size: 15px;
-    color: #464b50
+    color: #64666C;
+}
+
+#sidebar-menu ul li ul.sub-menu2 li a::before {
+    content: '';
+    width: 7px;
+    height: 2px;
+    margin-right: 4px;
+    background-color: #64666C;
 }
 
 #sidebar-menu ul li ul.sub-menu2 li ul.sub-menu2 {
@@ -771,6 +779,10 @@ background: #fff;
 #sidebar-menu ul li ul.sub-menu2 li a:hover {
     background-color: #F5F5F2;
     color: #14A077 !important;
+}
+
+#sidebar-menu ul li ul.sub-menu2 li a:hover::before {
+    background-color: #14A077;
 }
 
 .show-job #sidebar-menu ul li a:hover {
@@ -908,6 +920,11 @@ background: #fff;
 
 #sidebar-menu ul li ul.sub-menu2 li.ff-active a {
     background: #F5F5F2;
+    color: #14A077;
+}
+
+#sidebar-menu ul li ul.sub-menu2 li.ff-active a::before {
+    background-color: #14A077;
 }
 
 #sidebar-menu ul .ff-active a .dash-icon::before,
