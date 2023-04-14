@@ -59,7 +59,7 @@
           injectSpace = $("<div>", {
             height: headerHeight,
           });
-          injectSpace.hide();
+        injectSpace.hide();
 
         if ($("header").hasClass("style-absolute")) {
           injectSpace.hide();
@@ -90,7 +90,7 @@
 
   var scrollEffect = function () {
     $(window).on("load scroll", function () {
-      var headerHeight = $('#header').height();
+      var headerHeight = $("#header").height();
       if ($(window).scrollTop() > 300) {
         $(".form-meta2").addClass("is-fixed");
       } else {
@@ -102,7 +102,7 @@
       $(".cv-form-details.job-sg").css("top", heightside);
       $(".cv-form-details.job-sg").css("top", heightside2);
       $(".cv-form-details.job-sg").css("top", heightside3);
-      if($('#header').hasClass('header-fixed')) {
+      if ($("#header").hasClass("header-fixed")) {
         $(".fixed-space").css("top", headerHeight);
         $(".cv-form-details.job-sg").css("top", heightside2 + headerHeight);
         $(".cv-form-details.job-sg").css("top", heightside + headerHeight);
@@ -154,7 +154,7 @@
 
     $(".flat-accordion .flat-toggle").on("click", function () {
       if (!$(this).is(".active")) {
-        $(this).find(".flat-toggle.activ").toggleClass("active").next();
+        $(this).find(".flat-toggle.active").toggleClass("active").next();
         $(this).toggleClass("active");
       } else {
         $(this).toggleClass("active");
@@ -234,39 +234,41 @@
   };
 
   var popUpLightBox = function () {
-    if ($(".lightbox-image").length) { 
+    if ($(".lightbox-image").length) {
       $(".lightbox-image").magnificPopup({
         disableOn: 700,
-        type: 'iframe',
-        mainClass: 'mfp-fade',
+        type: "iframe",
+        mainClass: "mfp-fade",
         removalDelay: 160,
         preloader: false,
 
-        fixedContentPos: false
-    });
+        fixedContentPos: false,
+      });
     }
-    if ($(".lightbox-gallery").length) { 
+    if ($(".lightbox-gallery").length) {
       $(".lightbox-gallery").magnificPopup({
-        type: 'image',
+        type: "image",
         zoom: {
           enabled: true, // By default it's false, so don't forget to enable it
-      
+
           duration: 300, // duration of the effect, in milliseconds
-          easing: 'ease-in-out', // CSS transition easing function
-      
+          easing: "ease-in-out", // CSS transition easing function
+
           // The "opener" function should return the element from which popup will be zoomed in
           // and to which popup will be scaled down
           // By defailt it looks for an image tag:
-          opener: function(openerElement) {
+          opener: function (openerElement) {
             // openerElement is the element on which popup was initialized, in this case its <a> tag
             // you don't need to add "opener" option if this code matches your needs, it's defailt one.
-            return openerElement.is('img') ? openerElement : openerElement.find('img');
-          }
+            return openerElement.is("img")
+              ? openerElement
+              : openerElement.find("img");
+          },
         },
-        gallery:{
-          enabled:true
-        }
-    });
+        gallery: {
+          enabled: true,
+        },
+      });
     }
   };
 
@@ -524,57 +526,91 @@
 
   // Mobile Navigation
   var mobileNav = function () {
-    var mobile = window.matchMedia("(max-width: 1024px)");
-    var wrapMenu = $(".header-ct-center");
-    var navExtw = $(".nav-extend.active");
-    var navExt = $(".nav-extend.active").children();
+    // var mobile = window.matchMedia("(max-width: 1024px)");
+    // var wrapMenu = $(".header-ct-center");
+    // var navExtw = $(".nav-extend.active");
+    // var navExt = $(".nav-extend.active").children();
+    // responsivemenu(mobile);
+    // mobile.addListener(responsivemenu);
+    // function responsivemenu(mobile) {
+    //   if (mobile.matches) {
+    //     $("#main-nav")
+    //       .attr("id", "main-nav-mobi")
+    //       .appendTo(".header")
+    //       .hide()
+    //       .children(".menu")
+    //       .append(navExt)
+    //       .find("li:has(ul)")
+    //       .children("ul")
+    //       .removeAttr("style")
+    //       .hide()
+    //       .before('<span class="arrow"></span>');
+    //   } else {
+    //     $("#main-nav-mobi")
+    //       .attr("id", "main-nav")
+    //       .removeAttr("style")
+    //       .prependTo(wrapMenu)
+    //       .find(".ext")
+    //       .appendTo(navExtw)
+    //       .parent()
+    //       .siblings("#main-nav")
+    //       .find(".sub-menu")
+    //       .removeAttr("style")
+    //       .prev()
+    //       .remove();
+    //     $(".mobile-button").removeClass("active");
+    //     $(".mobile-button-style2").removeClass("active");
+    //     $(".sub-menu").css({ display: "block" });
+    //   }
+    // }
+    // $(document).on("click", ".mobile-button", function () {
+    //   $(this).toggleClass("active");
+    //   $("#main-nav-mobi").slideToggle();
+    // });
+    // $(document).on("click", ".mobile-button-style2", function () {
+    //   $(this).toggleClass("active");
+    //   $("#main-nav-mobi").slideToggle();
+    // });
+    // $(document).on("click", "#main-nav-mobi .arrow", function () {
+    //   $(this).toggleClass("active").next().slideToggle();
+    // });
+    // $(document).on(
+    //   "click",
+    //   ".menu-item-has-children.current-item",
+    //   function (e) {
+    //     $(this).toggleClass("active").next("ul").slideToggle(1000);
+    //     e.stopImmediatePropagation();
+    //   }
+    // );
+  };
 
-    responsivemenu(mobile);
-
-    mobile.addListener(responsivemenu);
-
-    function responsivemenu(mobile) {
-      if (mobile.matches) {
-        $("#main-nav")
-          .attr("id", "main-nav-mobi")
-          .appendTo(".header")
-          .hide()
-          .children(".menu")
-          .append(navExt)
-          .find("li:has(ul)")
-          .children("ul")
-          .removeAttr("style")
-          .hide()
-          .before('<span class="arrow"></span>');
+  var btnmenu = function () {
+    $(document).on("click", ".menu-item-has-children-mobile", function () {
+      var args = { duration: 600 };
+      if ($(this).hasClass("active")) {
+        $(this).children(".sub-menu-mobile").slideUp(args);
+        $(this).removeClass("active");
       } else {
-        $("#main-nav-mobi")
-          .attr("id", "main-nav")
-          .removeAttr("style")
-          .prependTo(wrapMenu)
-          .find(".ext")
-          .appendTo(navExtw)
-          .parent()
-          .siblings("#main-nav")
-          .find(".sub-menu")
-          .removeAttr("style")
-          .prev()
-          .remove();
-
-        $(".mobile-button").removeClass("active");
-        $(".mobile-button-style2").removeClass("active");
-        $(".sub-menu").css({ display: "block" });
+        $(".sub-menu-mobile").slideUp(args);
+        $(this).children(".sub-menu-mobile").slideDown(args);
+        $(".menu-item-has-children-mobile").removeClass("active");
+        $(this).addClass("active");
       }
-    }
-    $(document).on("click", ".mobile-button", function () {
-      $(this).toggleClass("active");
-      $("#main-nav-mobi").slideToggle();
     });
-    $(document).on("click", ".mobile-button-style2", function () {
-      $(this).toggleClass("active");
-      $("#main-nav-mobi").slideToggle();
-    });
-    $(document).on("click", "#main-nav-mobi .arrow", function () {
-      $(this).toggleClass("active").next().slideToggle();
+  };
+
+  var btnCategory = function () {
+    $(document).on("click", ".categories-mobile", function () {
+      var args = { duration: 600 };
+      if ($(this).hasClass("active")) {
+        $(this).children(".group-menu-category-mobile").slideUp(args);
+        $(this).removeClass("active");
+      } else {
+        $(".group-menu-category-mobile").slideUp(args);
+        $(this).children(".group-menu-category-mobile").slideDown(args);
+        $(".categories-mobile").removeClass("active");
+        $(this).addClass("active");
+      }
     });
   };
 
@@ -797,6 +833,8 @@
     popUpLightBox();
     progressProduct();
     rangeSlider();
+    btnmenu();
+    btnCategory();
     preload();
   });
 })(jQuery);

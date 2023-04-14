@@ -516,6 +516,7 @@ input[type="color"],
   background-color: #fff;
   text-align: center;
   border-bottom: 1px solid #e5e5e5;
+  height: 80px;
 }
 
 .header {
@@ -971,7 +972,7 @@ input[type="color"],
   min-width: 265px;
   border: 1px solid #e5e5e5;
   border-radius: 8px;
-  display: flex;
+  /* display: flex; */
   text-align: start;
   overflow: hidden;
 }
@@ -1038,7 +1039,7 @@ input[type="color"],
   content: "";
   position: absolute;
   top: 0;
-  height: 3px;
+  height: 2px;
   width: 100%;
   left: 0;
   top: 50%;
@@ -1082,8 +1083,8 @@ input[type="color"],
 
 .header .header-ct-center .mobile-button span {
   position: absolute;
-  width: 100%;
-  height: 3px;
+  width: 80%;
+  height: 2px;
   left: 0;
   top: 50%;
   overflow: hidden;
@@ -1442,7 +1443,7 @@ input[type="color"],
   right: 0;
   bottom: 0;
   width: 160px;
-  height: 82px;
+  height: 75px;
 }
 
 .sticky-area-wrap .header-ct-right .account .sub-account-item {

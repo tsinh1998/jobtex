@@ -3,7 +3,7 @@
 
 @media only screen and (max-width: 1700px) {
   .sticky-area-wrap .header-ct-left {
-    padding-right: 20px;
+    padding-right: 30px;
   }
 
 
@@ -50,9 +50,12 @@
 
 @media only screen and (max-width: 1550px) {
 
-  .header-customize-item.help,
+  /* .header-customize-item.help,
   .header-customize-item.bell {
     display: none;
+  } */
+  #main-nav #menu-primary-menu>li:not(:first-child) {
+    margin-left: 32px;
   }
 
   .blog.style-1.stc .blog-detail-side-bar-content {
@@ -76,7 +79,7 @@
   }
 
   .sticky-area-wrap .header-ct-center {
-    padding-left: 0px;
+    padding-left: 30px;
   }
 
   .sticky-area-wrap .header-ct-center.st-1 {
@@ -85,6 +88,32 @@
 }
 
 @media only screen and (max-width: 1400px) {
+
+  /* .header .header-ct-left {
+    display: none;
+  } */
+
+  .header .logo {
+    padding: 23px 0;
+  }
+
+  .header .sticky-area-wrap .button-filter .nav-mobile {
+    display: block;
+  }
+
+  .sticky-area-wrap .header-ct-center {
+    display: none;
+  }
+
+  .sticky-area-wrap .header-ct-right .account .name span {
+    right: -25px;
+  }
+
+
+  #main-nav #menu-primary-menu>li:not(:first-child) {
+    margin-left: 30px;
+  }
+
   #main-nav #menu-primary-menu>li:not(:first-child) {
     margin-left: 32px;
   }
@@ -138,14 +167,20 @@
 
   .widget-blog-1 .content {
     padding: 25px !important;
-}
+  }
 }
 
 @media only screen and (max-width: 1300px) {
 
-  .sticky-area-wrap .header-ct-left .categories {
-    display: none;
+
+  .sticky-area-wrap .header-ct-right .button {
+    flex-shrink: 0;
+    margin-left: 22px;
   }
+
+
+
+
 
   .tf-slider .list-category li:not(:last-child) {
     margin-right: 20px;
@@ -192,18 +227,21 @@
   .aln-center-mb {
     align-items: center;
   }
+
   .top-map-jobs,
   .po-sticky,
-  .top-map-jobs2  {
+  .top-map-jobs2 {
     position: relative;
     top: 0 !important;
   }
 }
 
 @media only screen and (max-width: 1200px) {
-  .sticky-area-wrap .header-ct-right .account {
+  /* .sticky-area-wrap .header-ct-right .account {
     display: none;
-  }
+  } */
+
+
 
   .sticky-area-wrap .header-ct-right .button a {
     margin: 10px 0;
@@ -421,19 +459,37 @@
 }
 
 @media only screen and (max-width: 1024px) {
+
+  .sub-categorie .pop-up {
+    padding: 24px;
+    border: 1px solid #e5e5e5;
+    width: 288px;
+    text-align: left;
+  }
+
+  .sticky-area-wrap .header-customize-item.button {
+    display: none;
+  }
+
+  .header .sticky-area-wrap .header-ct-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   .nice-select::after {
     right: 4px;
   }
 
-   .blog-detail-side-bar-content .nav-links .title-post.text-end {
+  .blog-detail-side-bar-content .nav-links .title-post.text-end {
     text-align: left !important;
   }
 
-   .blog-detail-side-bar-content .nav-links {
+  .blog-detail-side-bar-content .nav-links {
     padding: 30px 0 !important;
   }
 
-   .blog-detail-side-bar-content .nav-links .post-navigation.previous-post {
+  .blog-detail-side-bar-content .nav-links .post-navigation.previous-post {
     margin-bottom: 20px;
   }
 
@@ -904,19 +960,23 @@
   .wrap-sidebar-full .tf-tab {
     padding: 0px 15px;
   }
+
   .wrap-sidebar-full .tf-tab {
     margin-left: 0px;
-}
-.wrap-sidebar-full .content-tab .group-col-3 {
-  margin-right: 0px;
-}
+  }
+
+  .wrap-sidebar-full .content-tab .group-col-3 {
+    margin-right: 0px;
+  }
+
   .widget-side-bar.stc {
     margin: 0;
     margin-top: 60px;
-}
-.sc-getapp {
-  padding: 80px 0;
-}
+  }
+
+  .sc-getapp {
+    padding: 80px 0;
+  }
 
 
   .ctn2 .content-left {
@@ -942,8 +1002,12 @@
     /* margin: 40px auto 0px auto; */
   }
 
-  .sticky-area-wrap .header-ct-right .button a,
+  /* .sticky-area-wrap .header-ct-right .button a,
   .sticky-area-wrap .header-ct-right,
+  .footer .select-language,
+  .blog.style-1.stc .widget-comment-wrap .helpfull {
+    display: none;
+  } */
   .footer .select-language,
   .blog.style-1.stc .widget-comment-wrap .helpfull {
     display: none;
@@ -958,7 +1022,7 @@
     margin-right: 15px;
   }
 
-  #header .logo,
+
   .footer .bottom {
     padding: 20px 0;
   }
@@ -1232,16 +1296,19 @@
     top: 25px;
     right: 25px;
   }
+
   .review-job-section.stc {
     padding: 80px 0;
-}
-.tf-iconbox.style-1 {
-  flex-direction: unset;
-}
-.tf-slider.sl5 .form-sl,
-.tf-slider.sl6 .form-sl,
-.tf-slider.sl8 .form-sl {
-  margin-left: 0px;
-  margin-right: 0px;
-}
+  }
+
+  .tf-iconbox.style-1 {
+    flex-direction: unset;
+  }
+
+  .tf-slider.sl5 .form-sl,
+  .tf-slider.sl6 .form-sl,
+  .tf-slider.sl8 .form-sl {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
 }
