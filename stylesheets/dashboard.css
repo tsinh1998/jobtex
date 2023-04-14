@@ -3378,11 +3378,12 @@ background: #fff;
     
     .left-menu  {
         box-shadow: 0 3.811px 8.0551px rgba(0, 0, 0, 0.5);
-        display: none;
+        display: block;
     }
 
     .sidebar-enable .left-menu {
-        display: block;
+        
+        display: none;
     }
 
     .dashboard.show .dashboard__content {
@@ -3393,16 +3394,6 @@ background: #fff;
         display: none;
     }
 
-      /* .left-menu {
-        display: none;
-    }
-    .sidebar-enable .left-menu  {
-        display: block;
-    }
-
-    .dashboard.show .dashboard__content {
-        margin-left: 0;
-    } */
     
 }
 
