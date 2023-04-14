@@ -4860,6 +4860,7 @@ Map Listing Item
 .main-nav.mobile #menu-primary-menu li {
   border-bottom: 1px solid #E5E5E5;
   padding: 15px 0px;
+  cursor: pointer;
 }
 
 .main-nav.mobile #menu-primary-menu li:last-child,
@@ -4915,9 +4916,11 @@ Map Listing Item
   margin-left: 30px;
 }
 
+.header-style2 .button-filter .nav-mobile span,
+.header-default .button-filter .nav-mobile span,
 .header.style-absolute .button-filter .nav-mobile span {
   position: absolute;
-  width: 27px;
+  width: 24px;
   height: 2px;
   right: 0;
   top: 50%;
@@ -4932,7 +4935,7 @@ Map Listing Item
 
   height: 2px;
 
-  width: 27px;
+  width: 24px;
   right: 0;
   top: 83%;
   -webkit-transform-origin: 50% 50%;
@@ -4944,7 +4947,7 @@ Map Listing Item
   content: "";
   position: absolute;
   height: 2px;
-  width: 27px;
+  width: 24px;
   right: 0;
   top: 17%;
   -webkit-transform-origin: 50% 50%;
@@ -4958,6 +4961,18 @@ Map Listing Item
   background-color: #fff;
 }
 
+.header-style2 .button-filter .nav-mobile::before,
+.header-style2 .button-filter .nav-mobile::after,
+.header-style2 .button-filter .nav-mobile span,
+.header-default .button-filter .nav-mobile::before,
+.header-default .button-filter .nav-mobile::after,
+.header-default .button-filter .nav-mobile span,
+.header.style-absolute.is-fixed .button-filter .nav-mobile::before,
+.header.style-absolute.is-fixed .button-filter .nav-mobile::after,
+.header.style-absolute.is-fixed .button-filter .nav-mobile span {
+  background-color: #121212;
+
+}
 
 
 .sidebar-popup.menu-mobile-popup .widget-filter {
@@ -4989,6 +5004,7 @@ Map Listing Item
   margin-top: 4px;
   color: rgb(0, 0, 0);
   opacity: 0.5;
+  cursor: pointer;
 }
 
 .menu-mobile-popup .button a {
@@ -5079,6 +5095,7 @@ Map Listing Item
   width: 50%;
   position: relative;
   transition: all 0.3s ease;
+  cursor: pointer;
 
 }
 

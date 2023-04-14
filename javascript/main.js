@@ -657,7 +657,7 @@
     if ($(".wd-popup-form").length > 0) {
       setTimeout(function () {
         $(".wd-popup-form").addClass("modal-menu--open");
-      }, 4000);
+      }, 3000);
     }
   };
 
