@@ -97,7 +97,15 @@
     padding: 23px 0;
   }
 
-  .header .sticky-area-wrap .button-filter .nav-mobile {
+  .header-style2 .logo {
+    padding: 0;
+  }
+
+  .header-style2 .sticky-area-wrap .header-ct-right .bell .sub-notification {
+    width: 400px;
+  }
+
+  .header .sticky-area-wrap .nav-filter .nav-mobile {
     display: block;
   }
 
@@ -994,6 +1002,8 @@
 }
 
 @media only screen and (max-width: 767px) {
+
+
 
   .group-location .box-3,
   .group-location .box-6,

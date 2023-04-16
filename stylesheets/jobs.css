@@ -4277,6 +4277,13 @@ Map Listing Item
 
 /* mobile */
 @media (max-width: 550px) {
+  .dashboard #header .btn {
+    left: 150px;
+  }
+
+  .dashboard .sticky-area-wrap .header-ct-right .header-customize-item.help {
+    display: none;
+  }
 
   /* -------------------responsive header------------------------------= */
   #header .sticky-area-wrap .header-ct-left .logo .site-logo {
@@ -4300,6 +4307,10 @@ Map Listing Item
     width: 285px;
   }
 
+  #header.header-style2 .sticky-area-wrap .header-ct-right .bell .sub-notification {
+    left: -192px;
+  }
+
   #header .sticky-area-wrap .header-ct-left .logo {
     margin-right: 0;
   }
@@ -4319,16 +4330,20 @@ Map Listing Item
     margin-top: 7px;
   }
 
+  .header-style2 .sticky-area-wrap .header-ct-right .header-customize-item.help a,
+  .header-style2 .sticky-area-wrap .header-ct-right .header-customize-item.bell,
+  .header-style2 .header-customize-item.login>a,
   .sticky-area-wrap .header-ct-right .header-customize-item.help a,
   .sticky-area-wrap .header-ct-right .header-customize-item.bell {
     margin-right: 10px;
   }
 
+  .header-style2 .header-customize-item.login .item-login,
   .header-customize-item.account .name {
     display: none;
   }
 
-  #header .button-filter .nav-mobile {
+  #header .nav-filter .nav-mobile {
     margin-left: 0;
   }
 
@@ -4905,7 +4920,7 @@ Map Listing Item
   justify-content: center;
 }
 
-.button-filter .nav-mobile {
+.nav-filter .nav-mobile {
   display: none;
   position: relative;
   width: 26px;
@@ -4916,9 +4931,9 @@ Map Listing Item
   margin-left: 30px;
 }
 
-.header-style2 .button-filter .nav-mobile span,
-.header-default .button-filter .nav-mobile span,
-.header.style-absolute .button-filter .nav-mobile span {
+.header-style2 .nav-filter .nav-mobile span,
+.header-default .nav-filter .nav-mobile span,
+.header.style-absolute .nav-filter .nav-mobile span {
   position: absolute;
   width: 24px;
   height: 2px;
@@ -4929,7 +4944,7 @@ Map Listing Item
 }
 
 
-.header .button-filter .nav-mobile::after {
+.header .nav-filter .nav-mobile::after {
   content: "";
   position: absolute;
 
@@ -4943,7 +4958,7 @@ Map Listing Item
   transform-origin: 50% 50%;
 }
 
-.header .button-filter .nav-mobile::before {
+.header .nav-filter .nav-mobile::before {
   content: "";
   position: absolute;
   height: 2px;
@@ -4955,27 +4970,27 @@ Map Listing Item
   transform-origin: 50% 50%;
 }
 
-.header.style-absolute .button-filter .nav-mobile::before,
-.header.style-absolute .button-filter .nav-mobile::after,
-.header.style-absolute .button-filter .nav-mobile span {
+.header.style-absolute .nav-filter .nav-mobile::before,
+.header.style-absolute .nav-filter .nav-mobile::after,
+.header.style-absolute .nav-filter .nav-mobile span {
   background-color: #fff;
 }
 
-.header-style2 .button-filter .nav-mobile::before,
-.header-style2 .button-filter .nav-mobile::after,
-.header-style2 .button-filter .nav-mobile span,
-.header-default .button-filter .nav-mobile::before,
-.header-default .button-filter .nav-mobile::after,
-.header-default .button-filter .nav-mobile span,
-.header.style-absolute.is-fixed .button-filter .nav-mobile::before,
-.header.style-absolute.is-fixed .button-filter .nav-mobile::after,
-.header.style-absolute.is-fixed .button-filter .nav-mobile span {
+.header-style2 .nav-filter .nav-mobile::before,
+.header-style2 .nav-filter .nav-mobile::after,
+.header-style2 .nav-filter .nav-mobile span,
+.header-default .nav-filter .nav-mobile::before,
+.header-default .nav-filter .nav-mobile::after,
+.header-default .nav-filter .nav-mobile span,
+.header.style-absolute.is-fixed .nav-filter .nav-mobile::before,
+.header.style-absolute.is-fixed .nav-filter .nav-mobile::after,
+.header.style-absolute.is-fixed .nav-filter .nav-mobile span {
   background-color: #121212;
 
 }
 
 
-.sidebar-popup.menu-mobile-popup .widget-filter {
+.menu-mobile-popup .widget-filter {
   width: 300px;
   background-color: #fff;
   padding: 24px;
@@ -4987,11 +5002,11 @@ Map Listing Item
 
 }
 
-.sidebar-popup.menu-mobile-popup .modal-menu__backdrop {
+.menu-mobile-popup .modal-menu__backdrop {
   background: rgba(0, 0, 0, 0.5);
 }
 
-.sidebar-popup.menu-mobile-popup .mobile-header {
+.menu-mobile-popup .mobile-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -4999,7 +5014,7 @@ Map Listing Item
   border-bottom: 1px solid #E5E5E5;
 }
 
-.sidebar-popup.menu-mobile-popup .mobile-header .title-button-group {
+.menu-mobile-popup .mobile-header .title-button-group {
   font-size: 30px;
   margin-top: 4px;
   color: rgb(0, 0, 0);
@@ -5018,16 +5033,21 @@ Map Listing Item
   text-align: center;
 }
 
-.menu-mobile-popup.sidebar-popup.modal-menu--open .modal-menu__backdrop {
+.menu-mobile-popup.modal-menu--open .modal-menu__backdrop {
   left: 0%;
 }
 
-.sidebar-popup.menu-mobile-popup .modal-menu__backdrop {
+.menu-mobile-popup .modal-menu__backdrop {
   left: 100%;
 
 }
 
-.menu-mobile-popup.sidebar-popup .header-customize-item.button {
+.menu-mobile-popup .header-customize-item.login {
+  margin-top: 14px;
+  justify-content: center;
+}
+
+.menu-mobile-popup .header-customize-item.button {
   margin-top: 14px;
   display: block;
 }

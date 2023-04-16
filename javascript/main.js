@@ -664,6 +664,7 @@
   var Modal_Right = function () {
     const body = $("body");
     const modalMenu = $(".sidebar-popup");
+    const modalNav = $(".menu-mobile-popup");
     const modalMenu2 = $(".wd-popup-form");
     const modalMenu3 = $(".wd-popup-job-apply");
     const modalMenu4 = $(".wd-filter-radio");
@@ -677,6 +678,21 @@
       };
 
       $(".button-filter").on("click", function () {
+        open();
+      });
+      $(".modal-menu__backdrop, .title-button-group").on("click", function () {
+        close();
+      });
+    }
+    if (modalNav.length) {
+      const open = function () {
+        modalNav.addClass("modal-menu--open");
+      };
+      const close = function () {
+        modalNav.removeClass("modal-menu--open");
+      };
+
+      $(".nav-filter").on("click", function () {
         open();
       });
       $(".modal-menu__backdrop, .title-button-group").on("click", function () {
