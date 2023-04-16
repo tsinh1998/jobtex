@@ -976,7 +976,7 @@ input[type="color"],
 
 #menu-primary-menu li.menu-item-has-children span::before {
   position: absolute;
-  right: -3px;
+  right: -12px;
   top: 40%;
   font-size: 18px;
 }
@@ -1027,7 +1027,7 @@ input[type="color"],
   background-color: #fff;
   z-index: 20;
   transition: ease-out 0.3s;
-  min-width: 230px;
+  min-width: 240px;
   border: 1px solid #e5e5e5;
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
