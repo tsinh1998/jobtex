@@ -540,11 +540,6 @@ input[type="color"],
 
 /* header-ct-left */
 .sticky-area-wrap .header-ct-left {
-  /* display: flex;
-  padding-left: 59.57px;
-  padding-right: 138px;
-  gap: 49.5px;
-  align-items: center; */
   flex-grow: 0;
   justify-content: space-between;
   display: flex;

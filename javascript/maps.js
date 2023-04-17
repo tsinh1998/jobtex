@@ -9,7 +9,6 @@
       locationURL,
       locationTopCity,
       locationTitle,
-      // job_type,
       job_address
     ) {
       return (
