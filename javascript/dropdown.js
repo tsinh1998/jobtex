@@ -1,6 +1,6 @@
 // (function ($) {
- (function ($) {
-var dropdown = function (id) {
+(function ($) {
+  var dropdown = function (id) {
     var obj = $(id + ".dropdown");
     var btn = obj.find(".btn-selector");
     var dd = obj.find("ul");
@@ -47,8 +47,6 @@ var dropdown = function (id) {
 
     opt.on("click", function () {
       dd.hide();
-      // var txt = $(this).html();
-      // btn.html(txt);
     });
   };
 
