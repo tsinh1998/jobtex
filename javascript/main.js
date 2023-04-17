@@ -291,57 +291,7 @@
     });
   };
 
-  var dropdown = function (id) {
-    var obj = $(id + ".dropdown");
-    var btn = obj.find(".btn-selector");
-    var dd = obj.find("ul");
-    var opt = dd.find("li");
-    dd.hide();
-    obj
-      .on("mouseenter", function () {
-        dd.show();
-        dd.addClass("show");
-        $(this).css("z-index", 1000);
-      })
-      .on("mouseleave", function () {
-        dd.hide();
-        $(this).css("z-index", "auto");
-        dd.removeClass("show");
-      });
 
-    opt.on("click", function () {
-      dd.hide();
-      var txt = $(this).html();
-      opt.removeClass("active");
-      $(this).addClass("active");
-      btn.html(txt);
-    });
-  };
-
-  var dropdown2 = function (id) {
-    var obj = $(id + ".dropdown");
-    var btn = obj.find(".btn-selector");
-    var dd = obj.find("ul");
-    var opt = dd.find("li");
-    dd.hide();
-    obj
-      .on("mouseenter", function () {
-        dd.show();
-        dd.addClass("show");
-        $(this).css("z-index", 1000);
-      })
-      .on("mouseleave", function () {
-        dd.hide();
-        $(this).css("z-index", "auto");
-        dd.removeClass("show");
-      });
-
-    opt.on("click", function () {
-      dd.hide();
-      // var txt = $(this).html();
-      // btn.html(txt);
-    });
-  };
 
   var gallery = function () {
     if ($("div").hasClass("widget-dash-video")) {
@@ -524,65 +474,6 @@
     });
   };
 
-  // Mobile Navigation
-  var mobileNav = function () {
-    // var mobile = window.matchMedia("(max-width: 1024px)");
-    // var wrapMenu = $(".header-ct-center");
-    // var navExtw = $(".nav-extend.active");
-    // var navExt = $(".nav-extend.active").children();
-    // responsivemenu(mobile);
-    // mobile.addListener(responsivemenu);
-    // function responsivemenu(mobile) {
-    //   if (mobile.matches) {
-    //     $("#main-nav")
-    //       .attr("id", "main-nav-mobi")
-    //       .appendTo(".header")
-    //       .hide()
-    //       .children(".menu")
-    //       .append(navExt)
-    //       .find("li:has(ul)")
-    //       .children("ul")
-    //       .removeAttr("style")
-    //       .hide()
-    //       .before('<span class="arrow"></span>');
-    //   } else {
-    //     $("#main-nav-mobi")
-    //       .attr("id", "main-nav")
-    //       .removeAttr("style")
-    //       .prependTo(wrapMenu)
-    //       .find(".ext")
-    //       .appendTo(navExtw)
-    //       .parent()
-    //       .siblings("#main-nav")
-    //       .find(".sub-menu")
-    //       .removeAttr("style")
-    //       .prev()
-    //       .remove();
-    //     $(".mobile-button").removeClass("active");
-    //     $(".mobile-button-style2").removeClass("active");
-    //     $(".sub-menu").css({ display: "block" });
-    //   }
-    // }
-    // $(document).on("click", ".mobile-button", function () {
-    //   $(this).toggleClass("active");
-    //   $("#main-nav-mobi").slideToggle();
-    // });
-    // $(document).on("click", ".mobile-button-style2", function () {
-    //   $(this).toggleClass("active");
-    //   $("#main-nav-mobi").slideToggle();
-    // });
-    // $(document).on("click", "#main-nav-mobi .arrow", function () {
-    //   $(this).toggleClass("active").next().slideToggle();
-    // });
-    // $(document).on(
-    //   "click",
-    //   ".menu-item-has-children.current-item",
-    //   function (e) {
-    //     $(this).toggleClass("active").next("ul").slideToggle(1000);
-    //     e.stopImmediatePropagation();
-    //   }
-    // );
-  };
 
   var btnmenu = function () {
     $(document).on("click", ".menu-item-has-children-mobile", function () {
@@ -810,7 +701,6 @@
     flatProgressBar();
     accordion();
     goTop();
-    mobileNav();
     counter();
     setTimeIn();
     tfTabs();
@@ -821,26 +711,6 @@
     scrollEffect();
     flatSpacer();
     btnQuantity();
-    dropdown("#item_date");
-    dropdown("#item_size");
-    dropdown("#language");
-    dropdown("#item_category");
-    dropdown("#item_category2");
-    dropdown("#item_apply");
-    dropdown("#item_qualification");
-    dropdown("#item_1");
-    dropdown("#item_2");
-    dropdown("#item_3");
-    dropdown("#item_4");
-    dropdown("#item_5");
-    dropdown("#item_6");
-    dropdown("#item_7");
-    dropdown2("#items_1");
-    dropdown2("#items_2");
-    dropdown2("#items_3");
-    dropdown2("#items_4");
-    dropdown2("#items_5");
-    dropdown2("#items_6");
     loadmore();
     loadmore2();
     UpImg();

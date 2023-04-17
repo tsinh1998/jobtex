@@ -13,19 +13,8 @@
             $.cookie("isButtonActive", "1");
            }
         1400 <= t(window).width() ? t("body").toggleClass("show-job") : t("body").removeClass("show-job") ;
-        // 1400 <= t(window).width() ? $.cookie("isButtonActive", "0") :  $.cookie("isButtonActive", "0");
 
     });
-        // if ( $.cookie("isButtonActive") == 1){
-
-        // }
-
-        // $(window).resize(function() {
-        //     var width = $(window).width();
-        //     if (width < 1200){
-
-        //     }
-        //   });
           
         if($.cookie("isButtonActive") == 1)
         {
