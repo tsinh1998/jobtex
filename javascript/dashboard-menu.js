@@ -1,6 +1,5 @@
 !(function (t) {
   "use strict";
-
   t("#side-menu").downMenu(),
     t("#left-menu-btn").on("click", function (e) {
       e.preventDefault();
