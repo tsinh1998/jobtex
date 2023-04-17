@@ -938,6 +938,8 @@
 
 .tf-slider.sl9 {
   padding: 17px 0;
+  position: relative;
+  z-index: 10;
 }
 
 .tf-slider.sl2 h2,
