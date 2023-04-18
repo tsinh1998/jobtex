@@ -1083,6 +1083,14 @@ input[type="color"],
   background-color: #f5f5f2;
 }
 
+#main-nav #menu-primary-menu>li .sub-menu .nav-sub.current-item:last-child,
+#main-nav #menu-primary-menu .sub-menu .nav-sub .nav-menu-item.current-item:last-child,
+#main-nav #menu-primary-menu .sub-menu .nav-sub:last-child:hover,
+#main-nav #menu-primary-menu .sub-menu .nav-sub .nav-menu-item:last-child:hover {
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
 #main-nav #menu-primary-menu>li .sub-menu.st1 .nav-sub:hover>a,
 #main-nav #menu-primary-menu>li .sub-menu .nav-menu-item:hover a,
 #main-nav #menu-primary-menu>li .sub-menu .menu-item:hover a,
