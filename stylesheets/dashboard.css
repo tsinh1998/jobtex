@@ -3626,17 +3626,17 @@ input[type="radio"]:checked:after {
 }
 
 @media only screen and (max-width: 1400px) {
+
     .dashboard .btn {
         left: 200px;
     }
-
-    .left-menu {
-        box-shadow: 0 3.811px 8.0551px rgba(0, 0, 0, 0.5);
-        display: block;
+    .left-menu  {
+        display: none;
     }
 
     .sidebar-enable .left-menu {
-        display: none;
+        display: block;
+        box-shadow: 0 3.811px 8.0551px rgba(0, 0, 0, 0.5);
     }
 
     .dashboard.show .dashboard__content {
@@ -3646,6 +3646,8 @@ input[type="radio"]:checked:after {
     .sticky-area-wrap .header-ct-left .categories a {
         display: none;
     }
+      
+   
 }
 
 @media only screen and (max-width: 1200px) {
