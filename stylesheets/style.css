@@ -1033,7 +1033,7 @@ input[type="color"],
   background-color: #fff;
   z-index: 20;
   transition: ease-out 0.3s;
-  min-width: 230px;
+  min-width: 240px;
   border: 1px solid #e5e5e5;
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;

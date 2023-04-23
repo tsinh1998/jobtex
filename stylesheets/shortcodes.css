@@ -1822,6 +1822,11 @@
   margin-bottom: 3px;
 }
 
+.tf-slider.slider-map .form-sl {
+  margin-left: 231px;
+  margin-right: 247px;
+}
+
 .tf-sl3.wd-review-job.thumb2 .icon1 {
   right: -37%;
   top: 27.4%;
@@ -1879,6 +1884,7 @@
   margin-left: 231px;
   margin-right: 247px;
 }
+
 
 .tf-slider .content .icon.ic1 {
   position: absolute;
