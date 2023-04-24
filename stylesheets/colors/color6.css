@@ -1,0 +1,102 @@
+/**
+  * Color
+  * Border Color
+  * Background Color
+  * Shadow Color
+*/
+
+/* Color
+-------------------------------------------------------------- */
+a:hover,
+a:focus,
+#main-nav #menu-primary-menu .menu-item-has-children .menu-bar li:hover a,
+#main-nav #menu-primary-menu .menu-item-has-children .menu-bar li.current-item a,
+#header.style-absolute #main-nav #menu-primary-menu>li:hover>a #menu-primary-menu>li.current-item>a,
+.header-default .header-ct-center #menu-primary-menu .menu-item-has-children.current-item>a,
+.header-default .header-ct-center #menu-primary-menu .menu-item-has-children.current-item .nav-sub.current-item>a,
+.header-default .header-ct-center #menu-primary-menu .menu-item-has-children.current-item .nav-sub.current-item:hover .nav-menu-item.current-item>a,
+#menu-primary-menu>li>a:hover,
+#header.style-absolute #main-nav #menu-primary-menu>li.current-item>a,
+.menu-mobile-popup #menu-primary-menu .current-item>a,
+#header.style-absolute #main-nav #menu-primary-menu>li:hover>a,
+#main-nav #menu-primary-menu>li .sub-menu.st1 .nav-sub:hover>a,
+#main-nav #menu-primary-menu>li .sub-menu .nav-menu-item:hover a,
+#main-nav #menu-primary-menu>li .sub-menu .menu-item:hover a,
+#main-nav #menu-primary-menu>li .sub-menu .menu-item.current-item a,
+.sub-categorie ul.pop-up li:hover span::before,
+.sub-categorie ul.pop-up li.active span::before,
+.sub-categorie .group-menu-category ul li a:hover,
+.sticky-area-wrap .header-ct-right .account .sub-account-item a:hover,
+.sticky-area-wrap .header-ct-right .account .sub-account-item a:hover span::before,
+.sticky-area-wrap .header-ct-right .bell .sub-notification-heading span,
+.sticky-area-wrap .header-ct-right .bell .sub-notification-item .content .status,
+.tf-sl2.wd-review-job.thumb2 .tes-box .number,
+.nice-select .option.selected,
+.job-category-box h1 a:hover,
+.job-category-box .btn-category-job,
+.tf-button span,
+.features-job .job-archive-header h4 a,
+.features-job .job-archive-header h3 a:hover,
+.features-job.style-3 .box-content h3 a:hover,
+.wd-job-location .content h6 a:hover,
+.wd-job-location .content .category:hover,
+.employer-block .box-content h3 a:hover,
+.icon-call-calling .path1:before,
+.icon-call-calling .path2:before,
+.icon-call-calling .path3:before,
+.icon-call-calling .path4:before,
+.navigation-menu-footer li a:hover,
+.sub-categorie-mobile .pop-up .categories-mobile:hover>a,
+.sub-categorie-mobile .pop-up .categories-mobilea:active>a,
+.sub-categorie-mobile ul.pop-up li:hover span::before,
+.sub-categorie-mobile ul.pop-up li.active span::before {
+    color: #3c65f5;
+}
+
+.wd-review-job.thumb1 .trader-box .icon svg path,
+.wd-review-job.thumb1 .trader-box .icon svg circle {
+    stroke: #3c65f5;
+}
+
+.wd-review-job.contentbox1 .icon svg path {
+    fill: #3c65f5;
+}
+
+/* Border Color
+-------------------------------------------------------------- */
+.sticky-area-wrap .header-ct-right .button a,
+.sticky-area-wrap .header-ct-right .bell .sub-notification-item .time::before,
+.features-job:hover,
+.employer-block:hover,
+.navigation-menu-footer li a::after,
+.menu-mobile-popup .button a {
+    border-color: #3c65f5;
+
+}
+
+
+
+/* Background Color
+-------------------------------------------------------------- */
+#main-nav #menu-primary-menu li.current-item a::after,
+#main-nav #menu-primary-menu li:hover a::after,
+#header.style-absolute #main-nav #menu-primary-menu li.current-item>a::after,
+#header.style-absolute #main-nav #menu-primary-menu li:hover>a::after,
+.sticky-area-wrap .header-ct-right .bell::after,
+.sticky-area-wrap .header-ct-right .button a:hover,
+.sticky-area-wrap .header-ct-right .bell .sub-notification-button,
+button.btn-find,
+.wrap-testimonials .menu-tab .user-tag.active,
+.features-job .job-archive-footer .job-tag li a:hover,
+#scroll-top::before,
+#subscribe-form button,
+.list-social li a:hover,
+.menu-mobile-popup .menu-tab .user-tag.active,
+.switcher-container h2 a {
+    background-color: #3c65f5;
+}
+
+button.btn-find:hover {
+    background-color: #3c65f5;
+    opacity: 0.9;
+}

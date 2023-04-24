@@ -689,6 +689,23 @@
       $(".sticky-sidebar").theiaStickySidebar();
     }
   };
+
+  var swClick = function () {
+    function activeLayout() {
+      $(".switcher-container")
+        .on("click", "a.sw-light", function () {
+          $(this).toggleClass("active");
+          $("body").addClass("home-boxed");
+        })
+        .on("click", "a.sw-dark", function () {
+          $(this).removeClass("active").addClass("active");
+          $("body").removeClass("home-boxed");
+          return false;
+        });
+    }
+    activeLayout();
+  };
+
   /* preload
   ------------------------------------------------------------------------------------- */
   var preload = function () {
@@ -725,6 +742,7 @@
     progressProduct();
     rangeSlider();
     btnmenu();
+    swClick();
     btnCategory();
     preload();
   });

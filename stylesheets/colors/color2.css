@@ -1,0 +1,147 @@
+/**
+  * Color
+  * Border Color
+  * Background Color
+  * Shadow Color
+*/
+
+/* Color
+-------------------------------------------------------------- */
+a:hover,
+a:focus,
+#main-nav #menu-primary-menu .menu-item-has-children .menu-bar li:hover a,
+#main-nav #menu-primary-menu .menu-item-has-children .menu-bar li.current-item a,
+#header.style-absolute #main-nav #menu-primary-menu>li:hover>a #menu-primary-menu>li.current-item>a,
+.header-default .header-ct-center #menu-primary-menu .menu-item-has-children.current-item>a,
+.header-default .header-ct-center #menu-primary-menu .menu-item-has-children.current-item .nav-sub.current-item>a,
+.header-default .header-ct-center #menu-primary-menu .menu-item-has-children.current-item .nav-sub.current-item:hover .nav-menu-item.current-item>a,
+#menu-primary-menu>li>a:hover,
+#header.style-absolute #main-nav #menu-primary-menu>li.current-item>a,
+.menu-mobile-popup #menu-primary-menu .current-item>a,
+#header.style-absolute #main-nav #menu-primary-menu>li:hover>a,
+#main-nav #menu-primary-menu>li .sub-menu.st1 .nav-sub:hover>a,
+#main-nav #menu-primary-menu>li .sub-menu .nav-menu-item:hover a,
+#main-nav #menu-primary-menu>li .sub-menu .menu-item:hover a,
+#main-nav #menu-primary-menu>li .sub-menu .menu-item.current-item a,
+.sub-categorie ul.pop-up li:hover span::before,
+.sub-categorie ul.pop-up li.active span::before,
+.sub-categorie .group-menu-category ul li a:hover,
+.sticky-area-wrap .header-ct-right .account .sub-account-item a:hover,
+.sticky-area-wrap .header-ct-right .account .sub-account-item a:hover span::before,
+.sticky-area-wrap .header-ct-right .bell .sub-notification-heading span,
+.sticky-area-wrap .header-ct-right .bell .sub-notification-item .content .status,
+.tf-sl2.wd-review-job.thumb2 .tes-box .number,
+.nice-select .option.selected,
+.job-category-box h1 a:hover,
+.job-category-box .btn-category-job,
+.tf-button span,
+.features-job .job-archive-header h4 a,
+.features-job .job-archive-header h3 a:hover,
+.features-job.style-3 .box-content h3 a:hover,
+.wd-job-location .content h6 a:hover,
+.wd-job-location .content .category:hover,
+.employer-block .box-content h3 a:hover,
+.icon-call-calling .path1:before,
+.icon-call-calling .path2:before,
+.icon-call-calling .path3:before,
+.icon-call-calling .path4:before,
+.navigation-menu-footer li a:hover,
+.sub-categorie-mobile .pop-up .categories-mobile:hover>a,
+.sub-categorie-mobile .pop-up .categories-mobilea:active>a,
+.sub-categorie-mobile ul.pop-up li:hover span::before,
+.sub-categorie-mobile ul.pop-up li.active span::before,
+.wd-testimonials .author-group .position,
+.features-job.style-3 .box-content h4 a,
+.box-latest .box-content h3 a:hover,
+.sl-icon-box .icon-content h5 a:hover,
+.box-latest .heading .tag,
+.widget-filter button:hover,
+.cv-form-details .list-infor li .detail a {
+	color: #8b91dd;
+}
+
+.tf-iconbox .icon svg path,
+.wd-review-job.thumb1 .trader-box .icon svg path,
+.wd-review-job.thumb1 .trader-box .icon svg circle,
+.wd-review-job .icon-review .icon svg path {
+	stroke: #8b91dd;
+}
+
+.wd-review-job.contentbox1 .icon svg path,
+.group-icon .sl-icon-box.box:hover .icon svg path {
+	fill: #8b91dd;
+}
+
+/* Border Color
+-------------------------------------------------------------- */
+.sticky-area-wrap .header-ct-right .button a,
+.sticky-area-wrap .header-ct-right .bell .sub-notification-item .time::before,
+.wd-review-job .list-review2 li:hover::before,
+.wd-review-job .list-review2 li.active::before,
+.features-job:hover,
+.features-job.style-3:hover,
+.features-job.style-3.mb1:hover,
+.employer-block:hover,
+.navigation-menu-footer li a::after,
+.menu-mobile-popup .button a,
+.tf-button.style-1,
+.features-job.ct-tab.active,
+.group-select-display .btn-display:hover,
+.group-select-display .btn-display.active,
+.widget-filter button,
+.widget-filter button:hover,
+.wd-filter-radio .round input[type="checkbox"]:checked+label {
+	border-color: #8b91dd;
+
+}
+
+
+
+/* Background Color
+-------------------------------------------------------------- */
+#main-nav #menu-primary-menu li.current-item a::after,
+#main-nav #menu-primary-menu li:hover a::after,
+#header.style-absolute #main-nav #menu-primary-menu li.current-item>a::after,
+#header.style-absolute #main-nav #menu-primary-menu li:hover>a::after,
+.sticky-area-wrap .header-ct-right .bell::after,
+.sticky-area-wrap .header-ct-right .button a:hover,
+.sticky-area-wrap .header-ct-right .bell .sub-notification-button,
+button.btn-find,
+.wrap-testimonials .menu-tab .user-tag.active,
+.features-job .job-archive-footer .job-tag li a:hover,
+#scroll-top::before,
+#subscribe-form button,
+.list-social li a:hover,
+.menu-mobile-popup .menu-tab .user-tag.active,
+.tf-button.style-1:hover,
+.switcher-container h2 a,
+.features-job .inner-box .button-readmore button.btn-apply,
+.features-job .inner-box .button-readmore .btn-apply,
+.features-job.style-3 .category .job-tag li a:hover,
+.features-job.style-3 .group-btn button,
+.features-job.style-2.stc-apply .job-footer-right span.icon-dollar,
+.frag-btn:hover,
+.rating-review .right-rating .rating-details .donat-bg .custom-donat,
+.box-latest .heading .tag:hover,
+.wd-review-job .list-review2 li:hover::before,
+.wd-review-job .list-review2 li.active::before,
+.group-select-display .btn-display:hover,
+.group-select-display .btn-display.active,
+.pagination-job li.current a,
+.pagination-job li a:hover,
+.wd-findjob-filer .button-filter:hover,
+.widget-filter button,
+.wd-job-author2 .content-right .top .btn,
+.wd-job-author2 .content-right .price .icon-dollar,
+.wd-job-author2 .content-left .content .tags a:hover,
+.cv-form-details .wd-social ul li a:hover,
+.cv-form-details .form-job-single button,
+.wd-filter-radio .round input[type="checkbox"]:checked+label {
+	background-color: #8b91dd;
+}
+
+button.btn-find:hover,
+.features-job.style-3 .group-btn button:hover {
+	background-color: #8b91dd;
+	opacity: 0.9;
+}
