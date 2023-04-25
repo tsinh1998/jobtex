@@ -2,7 +2,6 @@
   * Color
   * Border Color
   * Background Color
-  * Shadow Color
 */
 
 /* Color
@@ -50,17 +49,25 @@ a:focus,
 .sub-categorie-mobile .pop-up .categories-mobilea:active>a,
 .sub-categorie-mobile ul.pop-up li:hover span::before,
 .sub-categorie-mobile ul.pop-up li.active span::before,
-.wd-testimonials .author-group .position {
+.wd-testimonials .author-group .position,
+.features-job.style-3 .box-content h4 a,
+.box-latest .box-content h3 a:hover,
+.sl-icon-box .icon-content h5 a:hover,
+.box-latest .heading .tag,
+.widget-filter button:hover,
+.cv-form-details .list-infor li .detail a {
 	color: #fb236a;
 }
 
 .tf-iconbox .icon svg path,
 .wd-review-job.thumb1 .trader-box .icon svg path,
-.wd-review-job.thumb1 .trader-box .icon svg circle {
+.wd-review-job.thumb1 .trader-box .icon svg circle,
+.wd-review-job .icon-review .icon svg path {
 	stroke: #fb236a;
 }
 
-.wd-review-job.contentbox1 .icon svg path {
+.wd-review-job.contentbox1 .icon svg path,
+.group-icon .sl-icon-box.box:hover .icon svg path {
 	fill: #fb236a;
 }
 
@@ -68,11 +75,24 @@ a:focus,
 -------------------------------------------------------------- */
 .sticky-area-wrap .header-ct-right .button a,
 .sticky-area-wrap .header-ct-right .bell .sub-notification-item .time::before,
+.wd-review-job .list-review2 li:hover::before,
+.wd-review-job .list-review2 li.active::before,
 .features-job:hover,
+.features-job.style-3:hover,
+.features-job.style-3.mb1:hover,
 .employer-block:hover,
 .navigation-menu-footer li a::after,
 .menu-mobile-popup .button a,
-.tf-button.style-1 {
+.tf-button.style-1,
+.features-job.ct-tab.active,
+.group-select-display .btn-display:hover,
+.group-select-display .btn-display.active,
+.widget-filter button,
+.widget-filter button:hover,
+.employer-block.style-2 .inner-box .button-readmore button,
+.employer-block.style-3 .inner-box button,
+.tf-btn,
+.wd-filter-radio .round input[type="checkbox"]:checked+label {
 	border-color: #fb236a;
 
 }
@@ -96,11 +116,38 @@ button.btn-find,
 .list-social li a:hover,
 .menu-mobile-popup .menu-tab .user-tag.active,
 .tf-button.style-1:hover,
-.switcher-container h2 a {
+.switcher-container h2 a,
+.features-job .inner-box .button-readmore button.btn-apply,
+.features-job .inner-box .button-readmore .btn-apply,
+.features-job.style-3 .category .job-tag li a:hover,
+.features-job.style-3 .group-btn button,
+.features-job.style-2.stc-apply .job-footer-right span.icon-dollar,
+.frag-btn:hover,
+.rating-review .right-rating .rating-details .donat-bg .custom-donat,
+.box-latest .heading .tag:hover,
+.wd-review-job .list-review2 li:hover::before,
+.wd-review-job .list-review2 li.active::before,
+.group-select-display .btn-display:hover,
+.group-select-display .btn-display.active,
+.pagination-job li.current a,
+.pagination-job li a:hover,
+.wd-findjob-filer .button-filter:hover,
+.widget-filter button,
+.wd-job-author2 .content-right .top .btn,
+.wd-job-author2 .content-right .price .icon-dollar,
+.wd-job-author2 .content-left .content .tags a:hover,
+.cv-form-details .wd-social ul li a:hover,
+.cv-form-details .form-job-single button,
+.employer-block.style-2 .inner-box .button-readmore button:hover,
+.employer-block.style-3 .inner-box button:hover,
+.tf-btn:hover,
+.tf-btn-submit,
+.wd-filter-radio .round input[type="checkbox"]:checked+label {
 	background-color: #fb236a;
 }
 
-button.btn-find:hover {
+button.btn-find:hover,
+.features-job.style-3 .group-btn button:hover {
 	background-color: #fb236a;
 	opacity: 0.9;
 }

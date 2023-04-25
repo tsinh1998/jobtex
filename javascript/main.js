@@ -25,6 +25,7 @@
  * rangeSlider
  * btnQuantity
  * stickSidebar
+ * Switcher
  * preload
  */
 

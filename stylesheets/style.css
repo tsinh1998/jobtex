@@ -9,6 +9,8 @@
   * Blog detail
   * Footer
   * Preload
+  * Boxed
+  * Switcher
   * Scroll 
   
 */
@@ -2800,11 +2802,6 @@ input[type="color"],
   display: inline-block;
   margin-right: 30px;
   margin-bottom: 20px;
-  /* -ms-transform: rotate(-45deg); */
-  /* IE 9 */
-  /* -webkit-transform: rotate(-45deg); */
-  /* Safari */
-  /* transform: rotate(-45deg); */
 }
 
 .sw-odd #color2 {
