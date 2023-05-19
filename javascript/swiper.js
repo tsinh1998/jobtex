@@ -276,3 +276,26 @@ if ($("div").hasClass("swiper")) {
     },
   });
 }
+
+if ($("div").hasClass("swiper-container")) {
+  var swiper = new Swiper(".feature-slider", {
+    loop: true,
+    slidesPerView: 1,
+    spaceBetween: 40,
+    navigation: {
+      clickable: true,
+      nextEl: ".button-lo-next",
+      prevEl: ".button-lo-prev",
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    breakpoints: {
+      1200: {
+        slidesPerView: 3,
+        spaceBetween: 40,
+      },
+    },
+  });
+}

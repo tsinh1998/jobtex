@@ -526,6 +526,11 @@ input[type="color"],
   height: 80px;
 }
 
+/* header-landing page */
+#header.header-landing {
+  background-color: #F8F8F8;
+}
+
 .header {
   position: relative;
 }
@@ -858,6 +863,11 @@ input[type="color"],
   display: flex;
   align-items: center;
   padding-left: 178px;
+}
+
+.header-landing .sticky-area-wrap .header-ct-center {
+  padding-left: 0px;
+  margin-left: -16px;
 }
 
 .header-ct-center.st-1 {
@@ -1205,6 +1215,10 @@ input[type="color"],
   align-items: center;
 }
 
+.header-landing .sticky-area-wrap .header-ct-right {
+  justify-content: center;
+}
+
 .sticky-area-wrap .header-ct-right .help a {
   color: #64666c;
   font-size: 24px;
@@ -1469,6 +1483,10 @@ input[type="color"],
   margin-left: 68px;
 }
 
+.header-landing .sticky-area-wrap .header-ct-right .button {
+  margin-left: 29px;
+}
+
 .sticky-area-wrap .header-ct-right .button a {
   padding: 12px 31px;
   border: 1px solid #14a077;
@@ -1477,6 +1495,18 @@ input[type="color"],
   line-height: 26px;
   border-radius: 4px;
   display: block;
+}
+
+.header-landing .sticky-area-wrap .header-ct-right .button a {
+  background: #14a077;
+  padding: 12px 32px;
+  color: #fff;
+  text-transform: capitalize;
+
+}
+
+.header-landing .sticky-area-wrap .header-ct-right .button a:hover {
+  background-color: #148160;
 }
 
 .sticky-area-wrap .header-ct-right .button a:hover {
