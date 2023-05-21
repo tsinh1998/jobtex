@@ -292,9 +292,35 @@ if ($("div").hasClass("swiper-container")) {
       clickable: true,
     },
     breakpoints: {
+      900: {
+        slidesPerView: 2,
+        spaceBetween: 40,
+      },
+    },
+  });
+}
+if ($("div").hasClass("swiper-container")) {
+  var swiper = new Swiper(".tes-home", {
+    loop: true,
+    slidesPerView: 1,
+    spaceBetween: 32,
+    navigation: {
+      clickable: true,
+      nextEl: ".button-tes-next",
+      prevEl: ".button-tes-prev",
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    breakpoints: {
+      500: {
+        slidesPerView: 2,
+        spaceBetween: 32,
+      },
       1200: {
         slidesPerView: 3,
-        spaceBetween: 40,
+        spaceBetween: 46,
       },
     },
   });
