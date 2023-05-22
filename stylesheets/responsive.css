@@ -290,6 +290,11 @@
   .wd-get-app .thumb img {
     height: auto !important;
   }
+
+  .mobile-section .title-iconbox p,
+  .tes-feature-section .title-iconbox p {
+    padding: 0;
+  }
 }
 
 @media only screen and (max-width: 1200px) {
@@ -511,12 +516,25 @@
     padding: 34px 15px 0px;
   }
 
-  .wrap-col-3.st1 .cl3 {
-    width: calc(100% - 52px);
+  .mobile-section .mobile-box-item {
+    gap: 0;
   }
 
-  .mobile-section .mobile-box-item .content-right {
-    margin-left: 0;
+
+  /* .mobile-section .mobile-box-item .content-right {
+    margin-left: -150px;
+  } */
+  .mobile-section .mobile-box-item .img-qr-code {
+    margin-left: -88px;
+    margin-top: -20px;
+  }
+
+  .mobile-section .mobile-box-item span {
+    background-color: #14a077;
+    border-radius: 10px;
+    padding: 15px;
+    margin-left: -95px;
+    margin-top: 43px;
   }
 
   /* .tes-feature-section .swiper-slide {
@@ -935,6 +953,15 @@
 }
 
 @media only screen and (max-width: 991px) {
+  .wrap-col-3.st1 {
+    margin-left: -15px;
+  }
+
+  .wrap-col-3.st1 .cl3 {
+    width: calc(33.3333% - 15px);
+    margin-left: 15px;
+  }
+
   .wd-findjob-filer.mb1 .group-select {
     margin-top: 20px;
   }
@@ -1278,7 +1305,12 @@
 
   .dashboard-section .article-top {
     flex-direction: column;
+    gap: 60px;
     align-items: unset;
+  }
+
+  .dashboard-section {
+    padding: 80px 0px;
   }
 
   .dashboard-section .article-top .inner-right img {
@@ -1294,9 +1326,42 @@
   .landing-footer .top-footer .content .icon5 {
     display: none;
   }
+
+  .home-box-item.st2 {
+    padding: 24px 14px 28px;
+  }
+
+
+  .landing-footer .content .inner h2,
+  .landing-footer .content .inner p {
+    padding: 0;
+  }
+
+  .tes-feature-section .feature-slider,
+  .tes-feature-section .feature-slider.st1 {
+    margin-left: 0;
+  }
 }
 
 @media only screen and (max-width: 768px) {
+  .wrap-col-3.st1 {
+    margin-left: -52px;
+  }
+
+  .wrap-col-3.st1 .cl3 {
+    width: calc(100% - 52px);
+    margin-left: 52px;
+  }
+
+  .mobile-section .mobile-box-item {
+    gap: 30px;
+  }
+
+  .mobile-section .mobile-box-item .content-right,
+  .mobile-section .mobile-box-item span {
+    margin: 0;
+  }
+
   .header .header-ct-center .btn-action {
     display: none;
   }
@@ -1676,12 +1741,15 @@
   }
 
   .home-box-item.st2 {
+    padding: 24px 24px 28px;
     margin-bottom: 30px;
   }
 
   .dashboard-section {
     padding: 80px 0px 50p;
   }
+
+
 }
 
 @media only screen and (max-width: 700px) {

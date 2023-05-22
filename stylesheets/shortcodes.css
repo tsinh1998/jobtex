@@ -10722,6 +10722,7 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .mobile-section .title-iconbox p {
+  padding: 0px 350px;
   color: #E5E5E5;
 }
 
@@ -10884,7 +10885,7 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .tes-feature-section .title-iconbox p {
-  padding: 0px 100px;
+  padding: 0px 357px;
   color: #E5E5E5;
 }
 
@@ -10979,6 +10980,7 @@ input[type="number"]::-webkit-inner-spin-button {
 
 .package-list {
   display: flex;
+  justify-content: center;
   cursor: pointer;
   margin: 0px -15px;
 }
@@ -11106,6 +11108,7 @@ input[type="number"]::-webkit-inner-spin-button {
 
 .tes-home-section .tf-title h2 {
   font-size: 44px;
+  padding-right: 107px;
   line-height: 50px;
   color: #ffffff;
 }
@@ -11212,6 +11215,7 @@ input[type="number"]::-webkit-inner-spin-button {
   font-size: 56px;
   line-height: 78px;
   margin: 20px 0px;
+  padding: 0px 200px;
 }
 
 .landing-footer .content .inner p {
@@ -11233,5 +11237,4 @@ input[type="number"]::-webkit-inner-spin-button {
 
 .landing-footer .bottom .bt-left {
   display: flex;
-  gap: 40px;
 }
