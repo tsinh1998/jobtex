@@ -537,9 +537,10 @@
     margin-top: 43px;
   }
 
-  /* .tes-feature-section .swiper-slide {
-    width: unset !important;
-  } */
+  .landing-footer .content .inner h2,
+  .landing-footer .content .inner p {
+    padding: 0;
+  }
 }
 
 @media only screen and (max-width: 1024px) {
@@ -1332,10 +1333,7 @@
   }
 
 
-  .landing-footer .content .inner h2,
-  .landing-footer .content .inner p {
-    padding: 0;
-  }
+
 
   .tes-feature-section .feature-slider,
   .tes-feature-section .feature-slider.st1 {
